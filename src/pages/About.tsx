@@ -23,7 +23,7 @@ const About = () => {
             {/* Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">15+</div>
+                <div className="text-3xl font-bold text-yellow-300 mb-2">28+</div>
                 <div className="text-blue-100 text-sm">Years Experience</div>
               </div>
               <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
