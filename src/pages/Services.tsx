@@ -272,7 +272,7 @@ const Services = () => {
                 <div className="text-center p-4 bg-white rounded-lg">
                   <div className="text-2xl mb-2">⚡</div>
                   <div className="text-sm font-semibold">Fast Response</div>
-                  <div className="text-xs text-gray-600">< 2 hour emergency response</div>
+                  <div className="text-xs text-gray-600">{"< 2 hour emergency response"}</div>
                 </div>
                 <div className="text-center p-4 bg-white rounded-lg">
                   <div className="text-2xl mb-2">📈</div>
