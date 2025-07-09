@@ -16,6 +16,7 @@ import Resources from './pages/Resources'
 import ServiceAreaDetail from './pages/ServiceAreaDetail'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
+import LegalDisclaimers from './pages/LegalDisclaimers'
 import Accessibility from './pages/Accessibility'
 import Sitemap from './pages/Sitemap'
 import LocateUs from './pages/LocateUs'
@@ -51,6 +52,7 @@ function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/legal-disclaimers" element={<LegalDisclaimers />} />
           <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/locate-us" element={<LocateUs />} />

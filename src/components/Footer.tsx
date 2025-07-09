@@ -65,135 +65,6 @@ const Footer = () => {
         </div>
 
 
-        {/* Legal Disclaimers */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="mb-6">
-            <h3 className="text-lg font-semibold text-white mb-6 text-center">Legal Information & Disclaimers</h3>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              {/* Professional Licensing */}
-              <div className="bg-gray-800 p-6 rounded-lg">
-                <h4 className="font-semibold text-white mb-3 flex items-center">
-                  <span className="w-5 h-5 bg-primary-500 rounded-full flex items-center justify-center mr-2">
-                    <span className="text-white text-xs">⚖️</span>
-                  </span>
-                  Professional Licensing
-                </h4>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  Manage369 is a licensed property management company in the State of Illinois. 
-                  License #: [License Number]. All property management activities are conducted 
-                  in accordance with Illinois Department of Financial and Professional Regulation 
-                  (IDFPR) requirements and Community Associations Institute (CAI) standards.
-                </p>
-              </div>
-
-              {/* Insurance & Bonding */}
-              <div className="bg-gray-800 p-6 rounded-lg">
-                <h4 className="font-semibold text-white mb-3 flex items-center">
-                  <span className="w-5 h-5 bg-secondary-500 rounded-full flex items-center justify-center mr-2">
-                    <span className="text-white text-xs">🛡️</span>
-                  </span>
-                  Insurance & Bonding
-                </h4>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  Manage369 maintains comprehensive general liability insurance, professional 
-                  liability insurance, and fidelity bonding to protect our clients' interests. 
-                  All insurance policies meet or exceed industry standards and state requirements.
-                </p>
-              </div>
-            </div>
-
-            {/* Service Disclaimers */}
-            <div className="bg-gray-800 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-white mb-4 flex items-center">
-                <span className="w-5 h-5 bg-accent-500 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-white text-xs">📋</span>
-                </span>
-                Service Disclaimers
-              </h4>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-300 text-sm">
-                <div>
-                  <p className="mb-3">
-                    <strong className="text-white">Property Management Services:</strong> All property management 
-                    services are provided subject to executed management agreements. Service availability 
-                    may vary by location and property type.
-                  </p>
-                  <p className="mb-3">
-                    <strong className="text-white">Emergency Response:</strong> 24/7 emergency response is 
-                    provided for life-threatening situations and property damage prevention. Response times 
-                    may vary based on location and circumstances.
-                  </p>
-                </div>
-                <div>
-                  <p className="mb-3">
-                    <strong className="text-white">Financial Management:</strong> All financial services are 
-                    conducted in accordance with Illinois law and industry standards. Manage369 maintains 
-                    separate trust accounts for client funds.
-                  </p>
-                  <p className="mb-3">
-                    <strong className="text-white">Vendor Services:</strong> Third-party vendors are 
-                    independent contractors. While we carefully screen vendors, Manage369 is not liable 
-                    for vendor performance beyond our direct oversight responsibilities.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Regulatory Compliance */}
-            <div className="bg-gray-800 p-6 rounded-lg mb-6">
-              <h4 className="font-semibold text-white mb-4 flex items-center">
-                <span className="w-5 h-5 bg-primary-500 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-white text-xs">📜</span>
-                </span>
-                Regulatory Compliance
-              </h4>
-              <div className="text-gray-300 text-sm space-y-3">
-                <p>
-                  <strong className="text-white">Fair Housing:</strong> Manage369 is committed to fair housing 
-                  practices and complies with all federal, state, and local fair housing laws including the 
-                  Fair Housing Act and Illinois Human Rights Act.
-                </p>
-                <p>
-                  <strong className="text-white">ADA Compliance:</strong> We assist clients in maintaining 
-                  compliance with the Americans with Disabilities Act (ADA) and provide guidance on 
-                  accessibility requirements for common areas and facilities.
-                </p>
-                <p>
-                  <strong className="text-white">Environmental Compliance:</strong> Property management services 
-                  include guidance on environmental regulations including asbestos, lead paint, and other 
-                  environmental hazards as required by law.
-                </p>
-              </div>
-            </div>
-
-            {/* Website Disclaimers */}
-            <div className="bg-gray-800 p-6 rounded-lg">
-              <h4 className="font-semibold text-white mb-4 flex items-center">
-                <span className="w-5 h-5 bg-secondary-500 rounded-full flex items-center justify-center mr-2">
-                  <span className="text-white text-xs">💻</span>
-                </span>
-                Website & Information Disclaimers
-              </h4>
-              <div className="text-gray-300 text-sm space-y-3">
-                <p>
-                  <strong className="text-white">Information Accuracy:</strong> While we strive to maintain 
-                  accurate and current information on this website, Manage369 makes no warranties about 
-                  the completeness, reliability, or accuracy of this information.
-                </p>
-                <p>
-                  <strong className="text-white">Service Availability:</strong> Services described on this 
-                  website may not be available in all areas. Please contact us to confirm service 
-                  availability in your specific location.
-                </p>
-                <p>
-                  <strong className="text-white">Third-Party Links:</strong> This website may contain links 
-                  to third-party websites. Manage369 is not responsible for the content or privacy 
-                  practices of external sites.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
         {/* Professional Certifications */}
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="text-center mb-6">
@@ -231,6 +102,7 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
               <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</Link>
               <Link to="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</Link>
+              <Link to="/legal-disclaimers" className="text-gray-400 hover:text-white text-sm transition-colors">Legal Disclaimers</Link>
               <Link to="/accessibility" className="text-gray-400 hover:text-white text-sm transition-colors">Accessibility</Link>
               <Link to="/sitemap" className="text-gray-400 hover:text-white text-sm transition-colors">Sitemap</Link>
             </div>
