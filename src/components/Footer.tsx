@@ -64,67 +64,9 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Comprehensive Sitemap */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-white mb-6 text-center">Complete Site Navigation</h3>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Main Pages */}
-              <div>
-                <h4 className="font-semibold text-white mb-4 border-b border-gray-700 pb-2">Main Pages</h4>
-                <ul className="space-y-2">
-                  <li><Link to="/" className="text-gray-300 hover:text-white transition-colors text-sm">Home</Link></li>
-                  <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors text-sm">About Us</Link></li>
-                  <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm">Contact</Link></li>
-                  <li><Link to="/locate-us" className="text-gray-300 hover:text-white transition-colors text-sm">Locate Us</Link></li>
-                  <li><Link to="/resources" className="text-gray-300 hover:text-white transition-colors text-sm">Resources</Link></li>
-                  <li><Link to="/sitemap" className="text-gray-300 hover:text-white transition-colors text-sm">Sitemap</Link></li>
-                </ul>
-              </div>
-
-              {/* Services */}
-              <div>
-                <h4 className="font-semibold text-white mb-4 border-b border-gray-700 pb-2">Our Services</h4>
-                <ul className="space-y-2">
-                  <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors text-sm">All Services</Link></li>
-                  <li><Link to="/services/condominium-management" className="text-gray-300 hover:text-white transition-colors text-sm">Condominium Management</Link></li>
-                  <li><Link to="/services/townhome-management" className="text-gray-300 hover:text-white transition-colors text-sm">Townhome Management</Link></li>
-                  <li><Link to="/services/hoa-management" className="text-gray-300 hover:text-white transition-colors text-sm">HOA Management</Link></li>
-                </ul>
-              </div>
-
-              {/* Chicago Areas */}
-              <div>
-                <h4 className="font-semibold text-white mb-4 border-b border-gray-700 pb-2">Chicago Areas</h4>
-                <ul className="space-y-2">
-                  <li><Link to="/service-areas" className="text-gray-300 hover:text-white transition-colors text-sm">All Service Areas</Link></li>
-                  <li><Link to="/service-areas/downtown-chicago" className="text-gray-300 hover:text-white transition-colors text-sm">Downtown Chicago</Link></li>
-                  <li><Link to="/service-areas/lincoln-park" className="text-gray-300 hover:text-white transition-colors text-sm">Lincoln Park</Link></li>
-                  <li><Link to="/service-areas/lakeview" className="text-gray-300 hover:text-white transition-colors text-sm">Lakeview</Link></li>
-                  <li><Link to="/service-areas/wicker-park" className="text-gray-300 hover:text-white transition-colors text-sm">Wicker Park</Link></li>
-                  <li><Link to="/service-areas/logan-square" className="text-gray-300 hover:text-white transition-colors text-sm">Logan Square</Link></li>
-                </ul>
-              </div>
-
-              {/* Suburbs */}
-              <div>
-                <h4 className="font-semibold text-white mb-4 border-b border-gray-700 pb-2">Chicago Suburbs</h4>
-                <ul className="space-y-2">
-                  <li><Link to="/service-areas/naperville" className="text-gray-300 hover:text-white transition-colors text-sm">Naperville</Link></li>
-                  <li><Link to="/service-areas/oak-park" className="text-gray-300 hover:text-white transition-colors text-sm">Oak Park</Link></li>
-                  <li><Link to="/service-areas/evanston" className="text-gray-300 hover:text-white transition-colors text-sm">Evanston</Link></li>
-                  <li><Link to="/service-areas/wheaton" className="text-gray-300 hover:text-white transition-colors text-sm">Wheaton</Link></li>
-                  <li><Link to="/service-areas/schaumburg" className="text-gray-300 hover:text-white transition-colors text-sm">Schaumburg</Link></li>
-                  <li><Link to="/service-areas/arlington-heights" className="text-gray-300 hover:text-white transition-colors text-sm">Arlington Heights</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* Legal Disclaimers */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
+        <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="mb-6">
             <h3 className="text-lg font-semibold text-white mb-6 text-center">Legal Information & Disclaimers</h3>
             
