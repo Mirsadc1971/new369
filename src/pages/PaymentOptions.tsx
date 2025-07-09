@@ -191,7 +191,7 @@ const PaymentOptions = () => {
           <div className="max-w-md mx-auto bg-white p-8 rounded-xl shadow-lg text-center">
             <h3 className="text-xl font-semibold mb-4">Mailing Address</h3>
             <div className="space-y-2 text-gray-700">
-              <p className="font-semibold">Stellar Property Management</p>
+              <p className="font-semibold">Manage369</p>
               <p>5107 North Western Avenue, Suite 1S</p>
               <p>Chicago, IL 60625</p>
             </div>
