@@ -64,6 +64,30 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Professional Certifications */}
+        <div className="border-t border-gray-800 mt-8 pt-8">
+          <div className="text-center mb-6">
+            <h3 className="text-lg font-semibold text-white mb-4">Professional Certifications & Memberships</h3>
+            <div className="flex justify-center items-center space-x-8">
+              <div className="flex flex-col items-center">
+                <img 
+                  src="/CAI National.png" 
+                  alt="CAI National - Community Associations Institute Member" 
+                  className="h-16 w-auto object-contain mb-2"
+                />
+                <span className="text-xs text-gray-400">CAI National Member</span>
+              </div>
+              <div className="flex flex-col items-center">
+                <img 
+                  src="/IDFPR_circular_logo.png" 
+                  alt="Illinois Department of Financial and Professional Regulation Licensed" 
+                  className="h-16 w-auto object-contain mb-2"
+                />
+                <span className="text-xs text-gray-400">IDFPR Licensed</span>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
