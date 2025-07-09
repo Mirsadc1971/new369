@@ -297,6 +297,190 @@ export const chicagoAreas: ServiceArea[] = [
 export const suburbAreas: ServiceArea[] = [
   {
     id: 7,
+    name: "Naperville",
+    slug: "naperville",
+    county: "DuPage",
+    type: "suburb",
+    population: 149000,
+    description: "Highly-rated suburban community known for excellent schools, family neighborhoods, and planned developments. Manage369 is the #1 property management company in Naperville.",
+    keyFeatures: [
+      "Top-rated school districts",
+      "Master-planned communities",
+      "Family-oriented neighborhoods",
+      "Modern townhome developments",
+      "Corporate headquarters location"
+    ],
+    propertyTypes: [
+      "Single-family home subdivisions",
+      "Townhome communities",
+      "Luxury condominium complexes",
+      "Active adult communities"
+    ],
+    marketInsights: [
+      "High property values driven by schools",
+      "Strong family demographic",
+      "Corporate relocation market",
+      "Stable long-term residents"
+    ],
+    localRegulations: [
+      "HOA covenant enforcement",
+      "Municipal building codes",
+      "School district boundaries",
+      "Environmental protection ordinances"
+    ],
+    managementChallenges: [
+      "Meeting high homeowner expectations",
+      "Managing large-scale developments",
+      "Coordinating with multiple HOAs",
+      "Maintaining premium community standards"
+    ],
+    solutions: [
+      "Comprehensive HOA management services",
+      "Professional landscape and maintenance",
+      "Community amenity programming",
+      "Transparent financial reporting"
+    ]
+  },
+  {
+    id: 8,
+    name: "Wheaton",
+    slug: "wheaton",
+    county: "DuPage",
+    type: "suburb",
+    population: 53000,
+    description: "Family-oriented community with excellent schools and historic downtown charm. Manage369 is the #1 property management company in Wheaton.",
+    keyFeatures: [
+      "Top-rated school systems",
+      "Historic downtown district",
+      "Family-centered community",
+      "Religious institution presence",
+      "Conservative family values"
+    ],
+    propertyTypes: [
+      "Single-family subdivisions",
+      "Townhome communities",
+      "Small condominium complexes",
+      "Historic downtown residences"
+    ],
+    marketInsights: [
+      "Family-driven housing market",
+      "School district premium",
+      "Conservative demographic preferences",
+      "Long-term resident stability"
+    ],
+    localRegulations: [
+      "Family-oriented housing codes",
+      "Historic downtown preservation",
+      "School proximity requirements",
+      "Community standards enforcement"
+    ],
+    managementChallenges: [
+      "Meeting conservative community expectations",
+      "Managing family-focused amenities",
+      "Maintaining community standards",
+      "Coordinating with religious institutions"
+    ],
+    solutions: [
+      "Family-first management approach",
+      "Community values alignment",
+      "Conservative financial management",
+      "Long-term relationship building"
+    ]
+  },
+  {
+    id: 9,
+    name: "Arlington Heights",
+    slug: "arlington-heights",
+    county: "Cook",
+    type: "suburb",
+    population: 75000,
+    description: "Established suburban community with excellent transportation, shopping, and family amenities. Manage369 provides comprehensive property management in Arlington Heights.",
+    keyFeatures: [
+      "Metra train station access",
+      "Woodfield Mall proximity",
+      "Established neighborhoods",
+      "Family recreation facilities",
+      "Corporate business presence"
+    ],
+    propertyTypes: [
+      "Established subdivisions",
+      "Condominium complexes",
+      "Townhome developments",
+      "Senior living communities"
+    ],
+    marketInsights: [
+      "Commuter-friendly location",
+      "Stable property values",
+      "Multigenerational appeal",
+      "Corporate housing demand"
+    ],
+    localRegulations: [
+      "Municipal development standards",
+      "Transportation corridor planning",
+      "Senior housing requirements",
+      "Commercial area integration"
+    ],
+    managementChallenges: [
+      "Managing aging housing stock",
+      "Competing with newer developments",
+      "Transportation parking management",
+      "Multigenerational community needs"
+    ],
+    solutions: [
+      "Property modernization programs",
+      "Transportation-focused amenities",
+      "Intergenerational programming",
+      "Professional corporate services"
+    ]
+  },
+  {
+    id: 10,
+    name: "Palatine",
+    slug: "palatine",
+    county: "Cook",
+    type: "suburb",
+    population: 69000,
+    description: "Northwest suburban community with diverse housing options and strong local economy. Manage369 is the premier property management company in Palatine.",
+    keyFeatures: [
+      "Diverse housing developments",
+      "Strong local business district",
+      "Family recreation programs",
+      "Transportation accessibility",
+      "Corporate headquarters presence"
+    ],
+    propertyTypes: [
+      "Mixed housing developments",
+      "Townhome associations",
+      "Condominium communities",
+      "Active adult developments"
+    ],
+    marketInsights: [
+      "Diverse demographic appeal",
+      "Competitive market pricing",
+      "Corporate relocation market",
+      "Transportation convenience premium"
+    ],
+    localRegulations: [
+      "Diverse housing integration requirements",
+      "Local business support ordinances",
+      "Transportation planning coordination",
+      "Municipal utility standards"
+    ],
+    managementChallenges: [
+      "Managing diverse community needs",
+      "Balancing development types",
+      "Transportation infrastructure coordination",
+      "Local business relationship management"
+    ],
+    solutions: [
+      "Inclusive community management",
+      "Diverse programming options",
+      "Transportation advocacy",
+      "Local business partnerships"
+    ]
+  },
+  {
+    id: 11,
     name: "Oak Park",
     slug: "oak-park",
     county: "Cook",
@@ -342,7 +526,7 @@ export const suburbAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 8,
+    id: 12,
     name: "Evanston",
     slug: "evanston",
     county: "Cook",
@@ -388,7 +572,7 @@ export const suburbAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 9,
+    id: 13,
     name: "Schaumburg",
     slug: "schaumburg",
     county: "Cook",
@@ -438,14 +622,14 @@ export const suburbAreas: ServiceArea[] = [
 // Additional service areas to reach 100+ total pages
 export const additionalServiceAreas: string[] = [
   // Chicago Neighborhoods
-  "West Loop", "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater",
+  "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater",
   "Gold Coast", "Humboldt Park", "Irving Park", "Lincoln Square", "Little Italy",
   "North Center", "Old Town", "Pilsen", "Ravenswood", "River North",
   "Rogers Park", "South Loop", "Streeterville", "Ukrainian Village", "Uptown",
   "West Town", "Wrigleyville",
   
   // Suburbs
-  "Arlington Heights", "Wheaton", "Palatine", "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield",
+  "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield",
   "Northbrook", "Glenview", "Skokie", "Niles", "Park Ridge", "Elmwood Park",
   "Riverside", "Brookfield", "La Grange", "Western Springs", "Hinsdale",
   "Clarendon Hills", "Westmont", "Downers Grove", "Lisle", "Glen Ellyn",
