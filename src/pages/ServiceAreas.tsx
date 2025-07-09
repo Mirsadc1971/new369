@@ -106,14 +106,12 @@ const ServiceAreas = () => {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-auto pt-4">
-                  <Link 
+                <Link 
                   to={`/service-areas/${area.slug}`} 
-                  className="btn-secondary w-full text-center"
-                  >
+                  className="btn-secondary w-full text-center mt-auto"
+                >
                   View Market Details
-                  </Link>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
