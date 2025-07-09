@@ -38,24 +38,26 @@ const ServiceAreas = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {chicagoAreas.map((area) => (
-              <div key={area.id} className="card hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold">{area.name}</h3>
-                  <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">
-                    {area.population?.toLocaleString()} residents
-                  </span>
-                </div>
-                <p className="body-text mb-4">{area.description}</p>
-                <div className="mb-4">
-                  <h4 className="font-semibold mb-2">Key Features:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    {area.keyFeatures.slice(0, 3).map((feature, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+              <div key={area.id} className="card hover:scale-105 transition-transform duration-300 flex flex-col justify-between h-full">
+                <div className="flex-grow">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-semibold">{area.name}</h3>
+                    <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">
+                      {area.population?.toLocaleString()} residents
+                    </span>
+                  </div>
+                  <p className="body-text mb-4">{area.description}</p>
+                  <div className="mb-4">
+                    <h4 className="font-semibold mb-2">Key Features:</h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      {area.keyFeatures.slice(0, 3).map((feature, index) => (
+                        <li key={index} className="flex items-start">
+                          <span className="w-2 h-2 bg-primary-500 rounded-full mr-2"></span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
                 <Link 
                   to={`/service-areas/${area.slug}`} 
@@ -83,24 +85,26 @@ const ServiceAreas = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {suburbAreas.map((area) => (
-              <div key={area.id} className="card hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold">{area.name}</h3>
-                  <span className="bg-secondary-100 text-secondary-700 px-3 py-1 rounded-full text-sm">
-                    {area.county} County
-                  </span>
-                </div>
-                <p className="body-text mb-4">{area.description}</p>
-                <div className="mb-4">
-                  <h4 className="font-semibold mb-2">Property Types:</h4>
-                  <ul className="text-sm text-gray-600 space-y-1">
-                    {area.propertyTypes.slice(0, 3).map((type, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="w-2 h-2 bg-secondary-500 rounded-full mr-2"></span>
-                        {type}
-                      </li>
-                    ))}
-                  </ul>
+              <div key={area.id} className="card hover:scale-105 transition-transform duration-300 flex flex-col justify-between h-full">
+                <div className="flex-grow">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-xl font-semibold">{area.name}</h3>
+                    <span className="bg-secondary-100 text-secondary-700 px-3 py-1 rounded-full text-sm">
+                      {area.county} County
+                    </span>
+                  </div>
+                  <p className="body-text mb-4">{area.description}</p>
+                  <div className="mb-4">
+                    <h4 className="font-semibold mb-2">Property Types:</h4>
+                    <ul className="text-sm text-gray-600 space-y-1">
+                      {area.propertyTypes.slice(0, 3).map((type, index) => (
+                        <li key={index} className="flex items-start">
+                          <span className="w-2 h-2 bg-secondary-500 rounded-full mr-2"></span>
+                          {type}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
                 <Link 
                   to={`/service-areas/${area.slug}`} 
