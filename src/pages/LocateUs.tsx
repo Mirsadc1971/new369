@@ -365,6 +365,43 @@ const LocateUs = () => {
       {/* Directions and Transportation */}
       <section className="section-padding bg-white">
         <div className="container-max">
+          {/* Google Map Section */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <h2 className="heading-2 mb-4">Find Manage369 on Google Maps</h2>
+              <p className="body-large max-w-3xl mx-auto">
+                Locate our Chicago property management office and get directions using Google Maps.
+              </p>
+            </div>
+            
+            <div className="bg-gray-100 p-4 rounded-xl">
+              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                <iframe 
+                  src="https://maps.app.goo.gl/gPy3kMGiv4bLnh4r7"
+                  width="100%" 
+                  height="450" 
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Manage369 Chicago Property Management Office Location"
+                  className="w-full h-96 md:h-[450px] rounded-lg"
+                ></iframe>
+              </div>
+              <div className="text-center mt-4">
+                <a 
+                  href="https://maps.app.goo.gl/gPy3kMGiv4bLnh4r7" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex items-center"
+                >
+                  Open in Google Maps
+                  <span className="ml-2">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="text-center mb-12">
             <h2 className="heading-2 mb-4">Getting to Manage369 in Chicago</h2>
             <p className="body-large max-w-3xl mx-auto">
