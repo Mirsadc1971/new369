@@ -141,7 +141,7 @@ const Sitemap = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/contact" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/contact" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">📞</span>
               </div>
@@ -149,7 +149,7 @@ const Sitemap = () => {
               <p className="text-sm text-gray-600">Contact us for a free consultation</p>
             </Link>
 
-            <Link to="/services" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/services" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">🏢</span>
               </div>
@@ -157,7 +157,7 @@ const Sitemap = () => {
               <p className="text-sm text-gray-600">Explore our management services</p>
             </Link>
 
-            <Link to="/service-areas" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/service-areas" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">📍</span>
               </div>
@@ -165,7 +165,7 @@ const Sitemap = () => {
               <p className="text-sm text-gray-600">Find your Chicago area</p>
             </Link>
 
-            <Link to="/about" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/about" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">ℹ️</span>
               </div>

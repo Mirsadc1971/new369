@@ -105,37 +105,43 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card text-center">
+            <div className="card text-center flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl text-white">🎯</span>
               </div>
-              <h3 className="heading-3 mb-4">Excellence</h3>
-              <p className="body-text">
-                We strive for excellence in every aspect of our service delivery, 
-                from routine maintenance to complex financial management.
-              </p>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Excellence</h3>
+                <p className="body-text">
+                  We strive for excellence in every aspect of our service delivery, 
+                  from routine maintenance to complex financial management.
+                </p>
+              </div>
             </div>
 
-            <div className="card text-center">
+            <div className="card text-center flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl text-white">🤝</span>
               </div>
-              <h3 className="heading-3 mb-4">Integrity</h3>
-              <p className="body-text">
-                Transparency, honesty, and ethical business practices form the 
-                foundation of all our client relationships and business operations.
-              </p>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Integrity</h3>
+                <p className="body-text">
+                  Transparency, honesty, and ethical business practices form the 
+                  foundation of all our client relationships and business operations.
+                </p>
+              </div>
             </div>
 
-            <div className="card text-center">
+            <div className="card text-center flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl text-white">⚡</span>
               </div>
-              <h3 className="heading-3 mb-4">Responsiveness</h3>
-              <p className="body-text">
-                Quick response times and proactive communication ensure that 
-                issues are addressed promptly and effectively.
-              </p>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Responsiveness</h3>
+                <p className="body-text">
+                  Quick response times and proactive communication ensure that 
+                  issues are addressed promptly and effectively.
+                </p>
+              </div>
             </div>
           </div>
         </div>

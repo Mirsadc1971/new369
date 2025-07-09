@@ -35,62 +35,68 @@ const Services = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">🏢</span>
               </div>
-              <h3 className="heading-3 mb-4">Condominium Management</h3>
-              <p className="body-text mb-6">
-                Specialized management for high-rise buildings, mid-rise complexes, 
-                and boutique condominium communities throughout Chicago.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• High-rise luxury buildings</li>
-                <li>• Mid-rise residential complexes</li>
-                <li>• Boutique condominium communities</li>
-                <li>• Mixed-use developments</li>
-              </ul>
-              <Link to="/services/condominium-management" className="btn-primary w-full text-center">
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Condominium Management</h3>
+                <p className="body-text mb-6">
+                  Specialized management for high-rise buildings, mid-rise complexes, 
+                  and boutique condominium communities throughout Chicago.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2 mb-6">
+                  <li>• High-rise luxury buildings</li>
+                  <li>• Mid-rise residential complexes</li>
+                  <li>• Boutique condominium communities</li>
+                  <li>• Mixed-use developments</li>
+                </ul>
+              </div>
+              <Link to="/services/condominium-management" className="btn-primary w-full text-center mt-auto">
                 Learn More
               </Link>
             </div>
 
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">🏘️</span>
               </div>
-              <h3 className="heading-3 mb-4">Townhome Management</h3>
-              <p className="body-text mb-6">
-                Comprehensive management for townhome communities, row houses, 
-                and attached home developments across Chicago suburbs.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• Townhome communities</li>
-                <li>• Row house developments</li>
-                <li>• Attached home associations</li>
-                <li>• Planned unit developments</li>
-              </ul>
-              <Link to="/services/townhome-management" className="btn-secondary w-full text-center">
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Townhome Management</h3>
+                <p className="body-text mb-6">
+                  Comprehensive management for townhome communities, row houses, 
+                  and attached home developments across Chicago suburbs.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2 mb-6">
+                  <li>• Townhome communities</li>
+                  <li>• Row house developments</li>
+                  <li>• Attached home associations</li>
+                  <li>• Planned unit developments</li>
+                </ul>
+              </div>
+              <Link to="/services/townhome-management" className="btn-secondary w-full text-center mt-auto">
                 Learn More
               </Link>
             </div>
 
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">🏡</span>
               </div>
-              <h3 className="heading-3 mb-4">HOA Management</h3>
-              <p className="body-text mb-6">
-                Full-service homeowners association management for single-family 
-                subdivisions and master-planned communities.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                <li>• Single-family subdivisions</li>
-                <li>• Master-planned communities</li>
-                <li>• Gated communities</li>
-                <li>• Mixed-use developments</li>
-              </ul>
-              <Link to="/services/hoa-management" className="btn-primary w-full text-center">
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">HOA Management</h3>
+                <p className="body-text mb-6">
+                  Full-service homeowners association management for single-family 
+                  subdivisions and master-planned communities.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2 mb-6">
+                  <li>• Single-family subdivisions</li>
+                  <li>• Master-planned communities</li>
+                  <li>• Gated communities</li>
+                  <li>• Mixed-use developments</li>
+                </ul>
+              </div>
+              <Link to="/services/hoa-management" className="btn-primary w-full text-center mt-auto">
                 Learn More
               </Link>
             </div>

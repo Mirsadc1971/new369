@@ -26,55 +26,61 @@ const Resources = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">📋</span>
               </div>
-              <h3 className="heading-3 mb-4">Board Resources</h3>
-              <p className="body-text mb-6">
-                Essential guides and tools for HOA and condominium board members 
-                to effectively govern their communities.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Board member responsibilities</li>
-                <li>• Meeting management guides</li>
-                <li>• Financial oversight best practices</li>
-                <li>• Legal compliance checklists</li>
-              </ul>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Board Resources</h3>
+                <p className="body-text mb-6">
+                  Essential guides and tools for HOA and condominium board members 
+                  to effectively govern their communities.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Board member responsibilities</li>
+                  <li>• Meeting management guides</li>
+                  <li>• Financial oversight best practices</li>
+                  <li>• Legal compliance checklists</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">🏠</span>
               </div>
-              <h3 className="heading-3 mb-4">Owner Resources</h3>
-              <p className="body-text mb-6">
-                Information and guidance for property owners to understand 
-                their rights, responsibilities, and community involvement.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Owner rights and responsibilities</li>
-                <li>• Assessment and fee information</li>
-                <li>• Architectural review processes</li>
-                <li>• Community involvement opportunities</li>
-              </ul>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Owner Resources</h3>
+                <p className="body-text mb-6">
+                  Information and guidance for property owners to understand 
+                  their rights, responsibilities, and community involvement.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Owner rights and responsibilities</li>
+                  <li>• Assessment and fee information</li>
+                  <li>• Architectural review processes</li>
+                  <li>• Community involvement opportunities</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">⚖️</span>
               </div>
-              <h3 className="heading-3 mb-4">Legal & Compliance</h3>
-              <p className="body-text mb-6">
-                Important legal information and compliance requirements 
-                for Chicago area property associations.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Chicago ordinances and regulations</li>
-                <li>• Illinois condominium law</li>
-                <li>• HOA governance requirements</li>
-                <li>• Insurance and liability guidelines</li>
-              </ul>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Legal & Compliance</h3>
+                <p className="body-text mb-6">
+                  Important legal information and compliance requirements 
+                  for Chicago area property associations.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Chicago ordinances and regulations</li>
+                  <li>• Illinois condominium law</li>
+                  <li>• HOA governance requirements</li>
+                  <li>• Insurance and liability guidelines</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

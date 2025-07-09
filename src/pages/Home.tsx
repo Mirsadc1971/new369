@@ -43,44 +43,50 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card text-center group hover:scale-105 transition-transform duration-300">
+            <div className="card text-center group hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-2xl">🏢</span>
               </div>
-              <h3 className="heading-3 mb-4">Condominium Management</h3>
-              <p className="body-text mb-6">
-                Comprehensive management for high-rise buildings, mid-rise complexes, and 
-                boutique condominium communities. From luxury downtown towers to neighborhood buildings.
-              </p>
-              <Link to="/services/condominium-management" className="btn-primary">
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Condominium Management</h3>
+                <p className="body-text mb-6">
+                  Comprehensive management for high-rise buildings, mid-rise complexes, and 
+                  boutique condominium communities. From luxury downtown towers to neighborhood buildings.
+                </p>
+              </div>
+              <Link to="/services/condominium-management" className="btn-primary mt-auto">
                 Learn More
               </Link>
             </div>
 
-            <div className="card text-center group hover:scale-105 transition-transform duration-300">
+            <div className="card text-center group hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-2xl">🏘️</span>
               </div>
-              <h3 className="heading-3 mb-4">Townhome Management</h3>
-              <p className="body-text mb-6">
-                Specialized services for townhome communities, row houses, and attached home 
-                developments. Expert management of shared amenities and community spaces.
-              </p>
-              <Link to="/services/townhome-management" className="btn-primary">
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Townhome Management</h3>
+                <p className="body-text mb-6">
+                  Specialized services for townhome communities, row houses, and attached home 
+                  developments. Expert management of shared amenities and community spaces.
+                </p>
+              </div>
+              <Link to="/services/townhome-management" className="btn-primary mt-auto">
                 Learn More
               </Link>
             </div>
 
-            <div className="card text-center group hover:scale-105 transition-transform duration-300">
+            <div className="card text-center group hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                 <span className="text-2xl">🏡</span>
               </div>
-              <h3 className="heading-3 mb-4">HOA Management</h3>
-              <p className="body-text mb-6">
-                Full-service homeowners association management for single-family subdivisions, 
-                master-planned communities, and mixed-use developments.
-              </p>
-              <Link to="/services/hoa-management" className="btn-primary">
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">HOA Management</h3>
+                <p className="body-text mb-6">
+                  Full-service homeowners association management for single-family subdivisions, 
+                  master-planned communities, and mixed-use developments.
+                </p>
+              </div>
+              <Link to="/services/hoa-management" className="btn-primary mt-auto">
                 Learn More
               </Link>
             </div>
@@ -111,7 +117,7 @@ const Home = () => {
               { name: "Wheaton", type: "Family Community", properties: "150+" },
               { name: "Arlington Heights", type: "Established Suburb", properties: "200+" }
             ].map((area, index) => (
-              <div key={index} className="card hover:scale-105 transition-transform duration-300">
+              <div key={index} className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
                 <h4 className="font-semibold text-lg mb-2">{area.name}</h4>
                 <p className="text-sm text-gray-600 mb-2">{area.type}</p>
                 <p className="text-primary-500 font-semibold">{area.properties} Properties</p>
