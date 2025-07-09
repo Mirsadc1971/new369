@@ -155,52 +155,6 @@ export const chicagoAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 11,
-    name: "Wicker Park",
-    slug: "wicker-park",
-    county: "Cook",
-    type: "neighborhood",
-    population: 26000,
-    description: "Trendy neighborhood known for its artistic vibe, historic homes, and vibrant dining and shopping scene. Manage369 provides expert property management in Wicker Park.",
-    keyFeatures: [
-      "Historic homes and converted lofts",
-      "Trendy dining and shopping districts",
-      "Artistic community atmosphere",
-      "Excellent public transportation",
-      "Mix of vintage and modern buildings"
-    ],
-    propertyTypes: [
-      "Converted loft buildings",
-      "Historic single-family homes",
-      "Modern condominium developments",
-      "Mixed-use properties"
-    ],
-    marketInsights: [
-      "Strong rental demand from young professionals",
-      "High property values with steady appreciation",
-      "Competitive market for unique properties",
-      "Strong interest in historic preservation"
-    ],
-    localRegulations: [
-      "Historic district guidelines",
-      "Mixed-use zoning requirements",
-      "Parking restrictions and permits",
-      "Entertainment venue regulations"
-    ],
-    managementChallenges: [
-      "Balancing historic preservation with modern amenities",
-      "Managing properties in high-traffic areas",
-      "Addressing noise concerns in entertainment districts",
-      "Navigating complex zoning requirements"
-    ],
-    solutions: [
-      "Specialized historic property maintenance",
-      "Proactive noise management strategies",
-      "Strong vendor relationships for unique properties",
-      "Community engagement initiatives"
-    ]
-  },
-  {
     id: 12,
     name: "Logan Square",
     slug: "logan-square",
@@ -246,102 +200,6 @@ export const chicagoAreas: ServiceArea[] = [
       "Local vendor partnerships"
     ]
   },
-  {
-    id: 13,
-    name: "Hyde Park",
-    slug: "hyde-park",
-    county: "Cook",
-    type: "neighborhood",
-    population: 25000,
-    description: "Historic lakefront neighborhood home to the University of Chicago with diverse architecture and strong community. Manage369 offers specialized property management in Hyde Park.",
-    keyFeatures: [
-      "University of Chicago campus",
-      "Historic architecture",
-      "Lakefront parks and beaches",
-      "Cultural institutions",
-      "Diverse community"
-    ],
-    propertyTypes: [
-      "Historic apartment buildings",
-      "University-adjacent housing",
-      "Single-family homes",
-      "Condominium conversions"
-    ],
-    marketInsights: [
-      "Stable market with university influence",
-      "Mix of student and professional residents",
-      "Year-round rental demand",
-      "Historic property premium"
-    ],
-    localRegulations: [
-      "University area development guidelines",
-      "Historic district requirements",
-      "Lakefront protection ordinances",
-      "Rental housing regulations"
-    ],
-    managementChallenges: [
-      "Balancing student and professional tenant needs",
-      "Maintaining historic properties",
-      "Academic calendar rental cycles",
-      "University relationship management"
-    ],
-    solutions: [
-      "Specialized student housing management",
-      "Historic property expertise",
-      "Academic calendar leasing strategies",
-      "University partnership programs"
-    ]
-  },
-  {
-    id: 14,
-    name: "West Loop",
-    slug: "west-loop",
-    county: "Cook",
-    type: "neighborhood",
-    population: 28000,
-    description: "Former industrial area transformed into a trendy neighborhood with converted lofts, high-end dining, and modern condos. Manage369 is the #1 property management company in West Loop.",
-    keyFeatures: [
-      "Converted warehouse lofts",
-      "Award-winning restaurant scene",
-      "Modern luxury developments",
-      "Proximity to downtown",
-      "Tech company offices"
-    ],
-    propertyTypes: [
-      "Luxury loft conversions",
-      "High-rise condominiums",
-      "Mixed-use developments",
-      "Boutique apartment buildings"
-    ],
-    marketInsights: [
-      "Rapidly appreciating property values",
-      "Strong demand from young professionals",
-      "Premium pricing for unique spaces",
-      "Corporate housing demand"
-    ],
-    localRegulations: [
-      "Mixed-use development guidelines",
-      "Historic preservation requirements",
-      "Entertainment district regulations",
-      "Parking and transportation requirements"
-    ],
-    managementChallenges: [
-      "Managing high-end amenities",
-      "Meeting luxury service expectations",
-      "Balancing residential and commercial needs",
-      "Coordinating with restaurant and retail tenants"
-    ],
-    solutions: [
-      "Premium concierge services",
-      "Specialized amenity management",
-      "Commercial/residential coordination",
-      "High-end maintenance programs"
-    ]
-  }
-]
-
-export const suburbAreas: ServiceArea[] = [
-  // Suburbs
   {
     id: 4,
     name: "Naperville",
@@ -529,52 +387,6 @@ export const suburbAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 8,
-    name: "Wheaton",
-    slug: "wheaton",
-    county: "DuPage",
-    type: "suburb",
-    population: 53000,
-    description: "Family-oriented community with excellent schools and historic downtown charm. Manage369 is the #1 property management company in Wheaton.",
-    keyFeatures: [
-      "Top-rated school systems",
-      "Historic downtown district",
-      "Family-centered community",
-      "Religious institution presence",
-      "Conservative family values"
-    ],
-    propertyTypes: [
-      "Single-family subdivisions",
-      "Townhome communities",
-      "Small condominium complexes",
-      "Historic downtown residences"
-    ],
-    marketInsights: [
-      "Family-driven housing market",
-      "School district premium",
-      "Conservative demographic preferences",
-      "Long-term resident stability"
-    ],
-    localRegulations: [
-      "Family-oriented housing codes",
-      "Historic downtown preservation",
-      "School proximity requirements",
-      "Community standards enforcement"
-    ],
-    managementChallenges: [
-      "Meeting conservative community expectations",
-      "Managing family-focused amenities",
-      "Maintaining community standards",
-      "Coordinating with religious institutions"
-    ],
-    solutions: [
-      "Family-first management approach",
-      "Community values alignment",
-      "Conservative financial management",
-      "Long-term relationship building"
-    ]
-  },
-  {
     id: 9,
     name: "Arlington Heights",
     slug: "arlington-heights",
@@ -664,6 +476,148 @@ export const suburbAreas: ServiceArea[] = [
       "Diverse programming options",
       "Transportation advocacy",
       "Local business partnerships"
+    ]
+  }
+]
+
+export const suburbAreas: ServiceArea[] = [
+  // Suburbs - moved from chicagoAreas
+  {
+    id: 4,
+    name: "Naperville",
+    slug: "naperville",
+    county: "DuPage",
+    type: "suburb",
+    population: 149000,
+    description: "Highly-rated suburban community known for excellent schools, family neighborhoods, and planned developments. Manage369 is the #1 property management company in Naperville.",
+    keyFeatures: [
+      "Top-rated school districts",
+      "Master-planned communities",
+      "Family-oriented neighborhoods",
+      "Modern townhome developments",
+      "Corporate headquarters location"
+    ],
+    propertyTypes: [
+      "Single-family home subdivisions",
+      "Townhome communities",
+      "Luxury condominium complexes",
+      "Active adult communities"
+    ],
+    marketInsights: [
+      "High property values driven by schools",
+      "Strong family demographic",
+      "Corporate relocation market",
+      "Stable long-term residents"
+    ],
+    localRegulations: [
+      "HOA covenant enforcement",
+      "Municipal building codes",
+      "School district boundaries",
+      "Environmental protection ordinances"
+    ],
+    managementChallenges: [
+      "Meeting high homeowner expectations",
+      "Managing large-scale developments",
+      "Coordinating with multiple HOAs",
+      "Maintaining premium community standards"
+    ],
+    solutions: [
+      "Comprehensive HOA management services",
+      "Professional landscape and maintenance",
+      "Community amenity programming",
+      "Transparent financial reporting"
+    ]
+  },
+  {
+    id: 5,
+    name: "Schaumburg",
+    slug: "schaumburg",
+    county: "Cook",
+    type: "suburb",
+    population: 75000,
+    description: "Major suburban center with extensive shopping, business parks, and diverse housing communities. Manage369 provides premier property management services in Schaumburg.",
+    keyFeatures: [
+      "Major shopping and business center",
+      "Diverse housing options",
+      "Corporate office locations",
+      "Transportation hub access",
+      "Mixed residential and commercial areas"
+    ],
+    propertyTypes: [
+      "Condominium complexes",
+      "Townhome associations",
+      "Mixed-use developments",
+      "Corporate housing complexes"
+    ],
+    marketInsights: [
+      "Strong rental market from business travelers",
+      "Diverse demographic mix",
+      "Competitive pricing environment",
+      "Corporate relocation opportunities"
+    ],
+    localRegulations: [
+      "Commercial zoning requirements",
+      "Transportation corridor regulations",
+      "Municipal utility standards",
+      "Business park operational guidelines"
+    ],
+    managementChallenges: [
+      "Managing diverse tenant base",
+      "Coordinating commercial and residential needs",
+      "Transportation and parking management",
+      "Competing with numerous housing options"
+    ],
+    solutions: [
+      "Flexible leasing programs",
+      "Corporate housing services",
+      "Professional property marketing",
+      "Comprehensive maintenance services"
+    ]
+  },
+  {
+    id: 9,
+    name: "Arlington Heights",
+    slug: "arlington-heights",
+    county: "Cook",
+    type: "suburb",
+    population: 75000,
+    description: "Established suburban community with excellent transportation, shopping, and family amenities. Manage369 provides comprehensive property management in Arlington Heights.",
+    keyFeatures: [
+      "Metra train station access",
+      "Woodfield Mall proximity",
+      "Established neighborhoods",
+      "Family recreation facilities",
+      "Corporate business presence"
+    ],
+    propertyTypes: [
+      "Established subdivisions",
+      "Condominium complexes",
+      "Townhome developments",
+      "Senior living communities"
+    ],
+    marketInsights: [
+      "Commuter-friendly location",
+      "Stable property values",
+      "Multigenerational appeal",
+      "Corporate housing demand"
+    ],
+    localRegulations: [
+      "Municipal development standards",
+      "Transportation corridor planning",
+      "Senior housing requirements",
+      "Commercial area integration"
+    ],
+    managementChallenges: [
+      "Managing aging housing stock",
+      "Competing with newer developments",
+      "Transportation parking management",
+      "Multigenerational community needs"
+    ],
+    solutions: [
+      "Property modernization programs",
+      "Transportation-focused amenities",
+      "Intergenerational programming",
+      "Professional corporate services"
     ]
   }
 ]
