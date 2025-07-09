@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { ServiceArea, chicagoAreas, suburbAreas, additionalServiceAreas } from '../data/serviceAreas'
 
-const ServiceAreaDetail: React.FC = () => {
+const ServiceAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   
   useEffect(() => {
