@@ -107,10 +107,12 @@ export const chicagoAreas: ServiceArea[] = [
       "Community-focused management approach",
       "Family-friendly amenity programming"
     ]
-  },
+  }
+]
 
-  // Additional areas to reach 100+ pages
+export const suburbAreas: ServiceArea[] = [
   {
+    id: 3,
     name: "Oak Park",
     slug: "oak-park",
     county: "Cook",
@@ -156,7 +158,7 @@ export const chicagoAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 7,
+    id: 4,
     name: "Evanston",
     slug: "evanston",
     county: "Cook",
@@ -200,10 +202,6 @@ export const chicagoAreas: ServiceArea[] = [
       "University partnership programs",
       "Family-friendly community areas"
     ]
-  },
-  {
-    id: 9,
-    name: "Arlington Heights",
   },
   {
     id: 5,
@@ -250,7 +248,7 @@ export const chicagoAreas: ServiceArea[] = [
       "Professional property marketing",
       "Comprehensive maintenance services"
     ]
-  },
+  }
 ]
 
 // Additional service areas to reach 100+ total pages
@@ -263,7 +261,7 @@ export const additionalServiceAreas: string[] = [
   "West Town", "Wrigleyville",
   
   // Suburbs
-  "Oak Park", "Evanston", "Wheaton", "Palatine", "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield",
+  "Arlington Heights", "Wheaton", "Palatine", "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield",
   "Northbrook", "Glenview", "Skokie", "Niles", "Park Ridge", "Elmwood Park",
   "Riverside", "Brookfield", "La Grange", "Western Springs", "Hinsdale",
   "Clarendon Hills", "Westmont", "Downers Grove", "Lisle", "Glen Ellyn",
