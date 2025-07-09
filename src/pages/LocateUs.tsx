@@ -1,7 +1,103 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const LocateUs = () => {
+  useEffect(() => {
+    // Add Local Business Schema to page head
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Manage369",
+      "image": "https://www.manage369.com/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chicago",
+        "addressLocality": "Chicago",
+        "addressRegion": "IL",
+        "postalCode": "60601",
+        "addressCountry": "US"
+      },
+      "url": "https://www.manage369.com",
+      "telephone": "+1-773-728-0652",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.8781,
+        "longitude": -87.6298
+      },
+      "sameAs": [
+        "https://maps.app.goo.gl/gPy3kMGiv4bLnh4r7"
+      ],
+      "description": "Chicago's premier property management company specializing in condominiums, townhomes, and HOA associations. Professional, reliable, and comprehensive management solutions.",
+      "priceRange": "$$",
+      "openingHours": [
+        "Mo-Fr 08:00-18:00"
+      ],
+      "serviceArea": [
+        {
+          "@type": "City",
+          "name": "Chicago",
+          "addressRegion": "IL"
+        },
+        {
+          "@type": "State", 
+          "name": "Illinois"
+        }
+      ],
+      "areaServed": [
+        "Chicago",
+        "Lincoln Park",
+        "Lakeview", 
+        "Downtown Chicago",
+        "Naperville",
+        "Oak Park",
+        "Evanston",
+        "Wheaton",
+        "Schaumburg"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Property Management Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Condominium Management",
+              "description": "Professional condominium association management services"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HOA Management",
+              "description": "Comprehensive homeowners association management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Townhome Management",
+              "description": "Specialized townhome community management services"
+            }
+          }
+        ]
+      }
+    })
+    document.head.appendChild(script)
+
+    // Cleanup function to remove script when component unmounts
+    return () => {
+      if (document.head.contains(script)) {
+        document.head.removeChild(script)
+      }
+    }
+  }, [])
+
   return (
     <div>
       {/* Hero Section */}
