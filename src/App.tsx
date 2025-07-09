@@ -18,6 +18,7 @@ import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
 import Accessibility from './pages/Accessibility'
 import Sitemap from './pages/Sitemap'
+import LocateUs from './pages/LocateUs'
 
 function App() {
   const location = useLocation()
@@ -52,6 +53,7 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/locate-us" element={<LocateUs />} />
           
           {/* Dynamic service area route */}
           <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />
