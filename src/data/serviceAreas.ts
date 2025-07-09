@@ -204,6 +204,7 @@ export const chicagoAreas: ServiceArea[] = [
   {
     id: 9,
     name: "Arlington Heights",
+  }
   {
     id: 5,
     name: "Schaumburg",
