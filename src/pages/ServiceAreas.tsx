@@ -85,7 +85,7 @@ const ServiceAreas = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {suburbAreas.map((area) => (
-              <div key={area.id} className="card hover:scale-105 transition-transform duration-300 flex flex-col justify-between h-full">
+              <div key={area.id} className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
                 <div className="flex-grow">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold">{area.name}</h3>
@@ -106,12 +106,14 @@ const ServiceAreas = () => {
                     </ul>
                   </div>
                 </div>
-                <Link 
+                <div className="mt-auto pt-4">
+                  <Link 
                   to={`/service-areas/${area.slug}`} 
                   className="btn-secondary w-full text-center"
-                >
+                  >
                   View Market Details
-                </Link>
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
