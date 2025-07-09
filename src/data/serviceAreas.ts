@@ -107,12 +107,196 @@ export const chicagoAreas: ServiceArea[] = [
       "Community-focused management approach",
       "Family-friendly amenity programming"
     ]
+  },
+  {
+    id: 3,
+    name: "Lakeview",
+    slug: "lakeview",
+    county: "Cook",
+    type: "neighborhood",
+    population: 95000,
+    description: "Vibrant neighborhood with diverse housing, entertainment districts, and lakefront access. Manage369 is the #1 choice for property management in Lakeview.",
+    keyFeatures: [
+      "Diverse housing stock from vintage to modern",
+      "Entertainment and nightlife districts",
+      "Lakefront proximity",
+      "Young professional population",
+      "Transit-accessible location"
+    ],
+    propertyTypes: [
+      "Vintage walk-up apartments",
+      "Modern condominium developments",
+      "Mixed-use buildings",
+      "Small-scale townhome communities"
+    ],
+    marketInsights: [
+      "High demand from young professionals",
+      "Competitive rental market",
+      "Strong resale values",
+      "Seasonal tourism impact"
+    ],
+    localRegulations: [
+      "Entertainment district noise regulations",
+      "Parking enforcement policies",
+      "Building density restrictions",
+      "Lakefront development guidelines"
+    ],
+    managementChallenges: [
+      "High tenant turnover rates",
+      "Noise management in entertainment areas",
+      "Parking shortage issues",
+      "Balancing resident and visitor needs"
+    ],
+    solutions: [
+      "Efficient tenant screening and placement",
+      "Proactive noise control measures",
+      "Alternative transportation promotion",
+      "Community engagement programs"
+    ]
+  },
+  {
+    id: 4,
+    name: "Wicker Park",
+    slug: "wicker-park",
+    county: "Cook",
+    type: "neighborhood",
+    population: 26000,
+    description: "Trendy neighborhood known for its artistic vibe, historic homes, and vibrant dining and shopping scene. Manage369 provides expert property management in Wicker Park.",
+    keyFeatures: [
+      "Historic homes and converted lofts",
+      "Trendy dining and shopping districts",
+      "Artistic community atmosphere",
+      "Excellent public transportation",
+      "Mix of vintage and modern buildings"
+    ],
+    propertyTypes: [
+      "Converted loft buildings",
+      "Historic single-family homes",
+      "Modern condominium developments",
+      "Mixed-use properties"
+    ],
+    marketInsights: [
+      "Strong rental demand from young professionals",
+      "High property values with steady appreciation",
+      "Competitive market for unique properties",
+      "Strong interest in historic preservation"
+    ],
+    localRegulations: [
+      "Historic district guidelines",
+      "Mixed-use zoning requirements",
+      "Parking restrictions and permits",
+      "Entertainment venue regulations"
+    ],
+    managementChallenges: [
+      "Balancing historic preservation with modern amenities",
+      "Managing properties in high-traffic areas",
+      "Addressing noise concerns in entertainment districts",
+      "Navigating complex zoning requirements"
+    ],
+    solutions: [
+      "Specialized historic property maintenance",
+      "Proactive noise management strategies",
+      "Strong vendor relationships for unique properties",
+      "Community engagement initiatives"
+    ]
+  },
+  {
+    id: 5,
+    name: "Logan Square",
+    slug: "logan-square",
+    county: "Cook",
+    type: "neighborhood",
+    population: 73000,
+    description: "Dynamic neighborhood with beautiful boulevards, historic greystones, and a thriving arts scene. Manage369 is the leading property management company in Logan Square.",
+    keyFeatures: [
+      "Historic boulevard system",
+      "Greystone and brick buildings",
+      "Thriving arts and music scene",
+      "Diverse dining options",
+      "Community-focused atmosphere"
+    ],
+    propertyTypes: [
+      "Vintage apartment buildings",
+      "Historic greystones",
+      "New construction condominiums",
+      "Two-flat and three-flat buildings"
+    ],
+    marketInsights: [
+      "Rapidly appreciating property values",
+      "Strong rental demand from young professionals",
+      "Increasing interest in property investment",
+      "Transition from rental to ownership market"
+    ],
+    localRegulations: [
+      "Historic preservation guidelines",
+      "Affordable housing requirements",
+      "Zoning changes for development",
+      "Community input requirements"
+    ],
+    managementChallenges: [
+      "Balancing neighborhood character with development",
+      "Managing aging building infrastructure",
+      "Addressing gentrification concerns",
+      "Maintaining affordability while improving properties"
+    ],
+    solutions: [
+      "Community-focused management approach",
+      "Specialized vintage building maintenance",
+      "Transparent communication with residents",
+      "Local vendor partnerships"
+    ]
+  },
+  {
+    id: 6,
+    name: "Hyde Park",
+    slug: "hyde-park",
+    county: "Cook",
+    type: "neighborhood",
+    population: 25000,
+    description: "Historic lakefront neighborhood home to the University of Chicago with diverse architecture and strong community. Manage369 offers specialized property management in Hyde Park.",
+    keyFeatures: [
+      "University of Chicago campus",
+      "Historic architecture",
+      "Lakefront parks and beaches",
+      "Cultural institutions",
+      "Diverse community"
+    ],
+    propertyTypes: [
+      "Historic apartment buildings",
+      "University-adjacent housing",
+      "Single-family homes",
+      "Condominium conversions"
+    ],
+    marketInsights: [
+      "Stable market with university influence",
+      "Mix of student and professional residents",
+      "Year-round rental demand",
+      "Historic property premium"
+    ],
+    localRegulations: [
+      "University area development guidelines",
+      "Historic district requirements",
+      "Lakefront protection ordinances",
+      "Rental housing regulations"
+    ],
+    managementChallenges: [
+      "Balancing student and professional tenant needs",
+      "Maintaining historic properties",
+      "Academic calendar rental cycles",
+      "University relationship management"
+    ],
+    solutions: [
+      "Specialized student housing management",
+      "Historic property expertise",
+      "Academic calendar leasing strategies",
+      "University partnership programs"
+    ]
   }
 ]
 
 export const suburbAreas: ServiceArea[] = [
   {
-    id: 3,
+    id: 7,
     name: "Oak Park",
     slug: "oak-park",
     county: "Cook",
@@ -158,7 +342,7 @@ export const suburbAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 4,
+    id: 8,
     name: "Evanston",
     slug: "evanston",
     county: "Cook",
@@ -204,7 +388,7 @@ export const suburbAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 5,
+    id: 9,
     name: "Schaumburg",
     slug: "schaumburg",
     county: "Cook",
@@ -254,7 +438,7 @@ export const suburbAreas: ServiceArea[] = [
 // Additional service areas to reach 100+ total pages
 export const additionalServiceAreas: string[] = [
   // Chicago Neighborhoods
-  "Wicker Park", "Logan Square", "Hyde Park", "West Loop", "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater",
+  "West Loop", "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater",
   "Gold Coast", "Humboldt Park", "Irving Park", "Lincoln Square", "Little Italy",
   "North Center", "Old Town", "Pilsen", "Ravenswood", "River North",
   "Rogers Park", "South Loop", "Streeterville", "Ukrainian Village", "Uptown",
