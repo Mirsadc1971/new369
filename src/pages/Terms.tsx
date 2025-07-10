@@ -298,7 +298,7 @@ const Terms = () => {
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h3 className="text-lg font-semibold mb-4">Manage369</h3>
                 <div className="space-y-2 text-gray-600">
-                  <p><strong>Email:</strong> legal@manage369.com</p>
+                  <p><strong>Email:</strong> service@manage369.com</p>
                   <p><strong>Phone:</strong> (773) 728-0652</p>
                   <p><strong>Address:</strong> Chicago, IL</p>
                 </div>
@@ -318,8 +318,8 @@ const Terms = () => {
             or service agreements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:legal@manage369.com" className="btn-secondary text-lg px-8 py-4">
-              Email Legal Team
+            <a href="mailto:service@manage369.com" className="btn-secondary text-lg px-8 py-4">
+              Email Us
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Contact Us

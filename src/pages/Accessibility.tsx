@@ -248,7 +248,7 @@ const Accessibility = () => {
               <div className="bg-gray-50 p-6 rounded-xl mb-6">
                 <h4 className="text-lg font-semibold mb-4">Contact Information</h4>
                 <div className="space-y-2 text-gray-600">
-                  <p><strong>Email:</strong> accessibility@manage369.com</p>
+                  <p><strong>Email:</strong> service@manage369.com</p>
                   <p><strong>Phone:</strong> (773) 728-0652</p>
                   <p><strong>Address:</strong> Chicago, IL</p>
                 </div>
@@ -321,8 +321,8 @@ const Accessibility = () => {
             for everyone. Contact us with your suggestions or accessibility concerns.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:accessibility@manage369.com" className="btn-secondary text-lg px-8 py-4">
-              Email Accessibility Team
+            <a href="mailto:service@manage369.com" className="btn-secondary text-lg px-8 py-4">
+              Email Us
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Contact Us

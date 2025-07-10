@@ -157,18 +157,16 @@ const Blog = () => {
               Subscribe to our newsletter for the latest property management tips, 
               Chicago market updates, and expert advice delivered to your inbox.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
-              />
-              <button className="btn-secondary bg-white text-primary-500 hover:bg-gray-100 px-8 py-3">
-                Subscribe
-              </button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact" className="btn-secondary bg-white text-primary-500 hover:bg-gray-100 text-lg px-8 py-4">
+                Contact Us for Updates
+              </Link>
+              <a href="mailto:service@manage369.com" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+                Email service@manage369.com
+              </a>
             </div>
             <p className="text-blue-200 text-sm mt-4">
-              No spam, unsubscribe at any time. We respect your privacy.
+              Contact us to stay informed about property management insights and updates.
             </p>
           </div>
         </div>
