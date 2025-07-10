@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,9 @@ const Contact = () => {
     message: ''
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
@@ -18,11 +22,49 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your inquiry! We will contact you within 24 hours.')
+    setIsSubmitting(true)
+    setSubmitStatus('idle')
+
+    try {
+      const response = await fetch('https://formspree.io/f/xdkogkpw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          propertyType: formData.propertyType,
+          location: formData.location,
+          units: formData.units,
+          message: formData.message,
+          _replyto: formData.email,
+          _subject: `New Property Management Inquiry from ${formData.name}`,
+        }),
+      })
+
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          propertyType: '',
+          location: '',
+          units: '',
+          message: ''
+        })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -135,6 +177,37 @@ const Contact = () => {
                   Fill out the form below and we'll contact you within 24 hours to discuss 
                   your property management needs and provide a customized solution.
                 </p>
+
+                {submitStatus === 'success' && (
+                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <div className="flex items-center">
+                      <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-sm">✓</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-green-800">Thank you for your inquiry!</h4>
+                        <p className="text-green-700 text-sm">We will contact you within 24 hours to discuss your property management needs.</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                    <div className="flex items-center">
+                      <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-sm">!</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-red-800">Error sending message</h4>
+                        <p className="text-red-700 text-sm">
+                          Please try again or contact us directly at{' '}
+                          <a href="mailto:service@manage369.com" className="underline">service@manage369.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -279,9 +352,14 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="w-full btn-primary text-lg py-4"
+                    disabled={isSubmitting}
+                    className={`w-full text-lg py-4 rounded-lg font-semibold transition-colors duration-200 ${
+                      isSubmitting 
+                        ? 'bg-gray-400 text-gray-600 cursor-not-allowed' 
+                        : 'bg-primary-500 text-white hover:bg-primary-600'
+                    }`}
                   >
-                    Request Free Consultation
+                    {isSubmitting ? 'Sending...' : 'Request Free Consultation'}
                   </button>
                 </form>
               </div>
