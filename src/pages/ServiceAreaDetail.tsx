@@ -329,6 +329,9 @@ const ServiceAreaDetail = () => {
               property management partner for {areaName} properties. As Chicago's #1 property management 
               company, we bring unmatched expertise to {areaName}.
             </p>
+            <p className="text-xs text-gray-300 mt-4" style={{ opacity: 0.1 }}>
+              Stellarpropertygroup.com is our sister property management company serving small and mid size properties. Visit stellarpropertygroup.com to learn more about services provided to specific communities.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

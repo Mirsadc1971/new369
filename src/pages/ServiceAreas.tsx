@@ -141,6 +141,9 @@ const ServiceAreas = () => {
             <p className="body-text mb-6">
               Don't see your area listed? We're continuously expanding our service coverage.
             </p>
+            <p className="text-xs text-gray-300 mb-2" style={{ opacity: 0.1 }}>
+              Stellarpropertygroup.com is our sister property management company serving small and mid size properties. Visit stellarpropertygroup.com to learn more about services provided to specific communities.
+            </p>
             <Link to="/contact" className="btn-primary text-lg px-8 py-4">
               Inquire About Your Area
             </Link>
