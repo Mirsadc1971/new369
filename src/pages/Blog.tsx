@@ -5,6 +5,16 @@ const Blog = () => {
   // Real blog posts data - only authored content
   const blogPosts = [
     {
+      id: 7,
+      title: "Choosing the Right Property Management Company in Illinois – A Guide by Manage369",
+      excerpt: "Essential guidance for Illinois condo and HOA boards on selecting ethical property management companies, avoiding red flags, and ensuring compliance with state regulations.",
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "12 min read",
+      slug: "choosing-right-property-management-company-illinois-guide",
+      featured: false
+    },
+    {
       id: 6,
       title: "Navigating Emotional Support Animals . A Complete Condo Guide from Manage369",
       excerpt: "Comprehensive guide for condominium boards on handling emotional support animal requests, including legal requirements, documentation standards, and best practices for compliance with fair housing laws.",

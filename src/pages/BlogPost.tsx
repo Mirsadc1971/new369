@@ -6,6 +6,216 @@ const BlogPost = () => {
 
   // Blog posts data
   const blogPosts = {
+    "choosing-right-property-management-company-illinois-guide": {
+      id: 7,
+      title: "Choosing the Right Property Management Company in Illinois – A Guide by Manage369",
+      content: `
+        <div class="prose prose-lg max-w-none">
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
+            <p class="text-blue-700 font-medium">By Manage369 Property Management – Serving Chicago and Surrounding Communities</p>
+            <p class="text-blue-600 text-sm mt-2">Visit us at <a href="https://www.manage369.com" class="text-blue-700 hover:underline">www.manage369.com</a> for more information on how we protect associations.</p>
+          </div>
+
+          <p class="text-lg text-gray-700 mb-8">At Manage369 Property Management, we believe transparency, accountability, and compliance are essential when selecting a property management firm in Illinois. This guide outlines what every condo or HOA board should know before hiring or renewing a management contract.</p>
+
+          <h2>1. Why Licensing & Insurance Matter 🚨</h2>
+          
+          <p>Under Illinois law (via IDFPR), community association managers and management companies must hold current licenses, including Community Association Manager (CAM) or Managing Broker credentials, and maintain adequate insurance coverage. This prevents unqualified management, protects associations from liability, and ensures oversight & compliance.</p>
+          
+          <div class="bg-red-50 border-l-4 border-red-500 p-6 mb-6">
+            <h4 class="font-semibold text-red-800 mb-3">Key Licensing Requirements:</h4>
+            <ul class="text-red-700 space-y-2">
+              <li>• Community Association Manager (CAM) license</li>
+              <li>• Managing Broker credentials where applicable</li>
+              <li>• Current IDFPR registration and compliance</li>
+              <li>• Adequate professional liability insurance</li>
+              <li>• Errors & omissions coverage</li>
+            </ul>
+          </div>
+
+          <h2>2. Red Flags in Financial Control</h2>
+          
+          <p>Financial management is one of the most critical aspects of property management. Be extremely cautious of companies that:</p>
+          
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
+            <h4 class="font-semibold text-yellow-800 mb-3">Warning Signs to Avoid:</h4>
+            <ul class="text-yellow-700 space-y-2">
+              <li>• Open accounts without board oversight or signatories</li>
+              <li>• Hold onto association funds long after leaving a contract</li>
+              <li>• Fail to provide detailed, transparent financial statements—this is non‑compliant and risky</li>
+              <li>• Refuse to allow board members as co-signers on accounts</li>
+              <li>• Lack transparency in financial reporting and fund management</li>
+            </ul>
+          </div>
+          
+          <p><strong>Important:</strong> Board members must always be co-signers/monitored on banking activities. This is not just best practice—it's essential for proper fiduciary oversight.</p>
+
+          <h2>3. Conflicts from In‑House Services</h2>
+          
+          <p>Beware firms that bundle services (insurance, plumbing, electrical, janitorial) as this creates significant conflicts of interest:</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-red-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-red-700 mb-3">Problematic Practices:</h4>
+              <ul class="text-red-600 text-sm space-y-1">
+                <li>• "Double‑dip" — earn both vendor and manager markups</li>
+                <li>• Neglect competitive bidding or RFPs</li>
+                <li>• Reduce transparency in vendor selection</li>
+                <li>• Charge hidden fees for basic services</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-red-700 mb-3">Hidden Fees to Watch For:</h4>
+              <ul class="text-red-600 text-sm space-y-1">
+                <li>• Phone call charges</li>
+                <li>• Contractor discharge fees</li>
+                <li>• Project oversight markups</li>
+                <li>• Direct contractor percentage fees</li>
+              </ul>
+            </div>
+          </div>
+          
+          <p>Such practices undermine trust, professionalism, and fair governance. A reputable management company should maintain arm's-length relationships with vendors and always prioritize the association's best interests.</p>
+
+          <h2>4. The Impact: Integrity & Professionalism at Stake</h2>
+          
+          <p>Misconduct erodes community confidence and often reflects dishonesty & lack of ethics. The consequences extend far beyond financial losses—they damage community trust and board effectiveness.</p>
+          
+          <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
+            <h4 class="font-semibold text-green-800 mb-3">A Good Management Company Should:</h4>
+            <ul class="text-green-700 space-y-2">
+              <li>• Uphold honesty, integrity, and accountability in all dealings</li>
+              <li>• Be proactive with transparent billing and detailed financial reports</li>
+              <li>• Always solicit competitive bids for major contracts</li>
+              <li>• Maintain clear separation between management and vendor services</li>
+              <li>• Provide regular, detailed financial reporting</li>
+              <li>• Respond promptly to board inquiries and concerns</li>
+            </ul>
+          </div>
+
+          <h2>5. What You Can Do if You Suspect Misconduct</h2>
+          
+          <p>If you suspect your current management company is engaging in questionable practices, here's a step-by-step approach:</p>
+          
+          <div class="space-y-6 mb-8">
+            <div class="flex items-start space-x-4">
+              <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-white text-sm font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-2">Raise Concerns Informally</h4>
+                <p class="text-gray-600">Ask your manager directly for documents or clarification. Request detailed financial statements, vendor contracts, and explanations for any questionable charges.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-white text-sm font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-2">Escalate Internally</h4>
+                <p class="text-gray-600">Bring concerns to your board or association's leadership. Document all communications and maintain records of questionable practices.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-4">
+              <div class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="text-white text-sm font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-lg mb-2">File a Formal Complaint</h4>
+                <p class="text-gray-600">As a last resort, file a formal complaint with the Illinois Department of Financial and Professional Regulation (IDFPR).</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>✅ Filing a Complaint with IDFPR</h2>
+          
+          <p>IDFPR oversees licensing and enforcement for real estate and community association management. They have the authority to investigate misconduct and take disciplinary action against licensed professionals.</p>
+          
+          <div class="bg-blue-50 p-6 rounded-xl mb-6">
+            <h4 class="font-semibold text-blue-800 mb-4">You can file complaints in multiple ways:</h4>
+            <ul class="text-blue-700 space-y-3">
+              <li>• <strong>Online:</strong> Real Estate Complaint Portal (fastest method)</li>
+              <li>• <strong>PDF Forms:</strong> Community Association Manager Complaint forms</li>
+              <li>• <strong>Mail:</strong> IDFPR, Division of Real Estate – 555 W Monroe St, 5th Floor, Chicago, IL 60661</li>
+              <li>• <strong>Phone:</strong> 312‑793‑8724</li>
+            </ul>
+          </div>
+          
+          <p class="mb-6">Read detailed instructions and submit documentation at: <a href="https://idfpr.illinois.gov/admin/dre/drecomplaint.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">https://idfpr.illinois.gov/admin/dre/drecomplaint.html</a></p>
+
+          <h2>The Manage369 Difference</h2>
+          
+          <p>At Manage369, we work exclusively with licensed professionals, never take ownership of client accounts, and do not engage in self-dealing practices. Our commitment to ethical management includes:</p>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-green-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-green-700 mb-3">Our Ethical Standards:</h4>
+              <ul class="text-green-600 text-sm space-y-1">
+                <li>• Licensed professionals only</li>
+                <li>• No ownership of client accounts</li>
+                <li>• No self-dealing practices</li>
+                <li>• Transparent financial reporting</li>
+              </ul>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg">
+              <h4 class="font-semibold text-green-700 mb-3">Our Practices:</h4>
+              <ul class="text-green-600 text-sm space-y-1">
+                <li>• Monthly financials sent directly to boards</li>
+                <li>• Competitive bidding on all major contracts</li>
+                <li>• Board oversight on all financial decisions</li>
+                <li>• Complete transparency in vendor relationships</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2>Questions to Ask Potential Management Companies</h2>
+          
+          <p>Before hiring a property management company in Illinois, ask these critical questions:</p>
+          
+          <div class="bg-gray-50 p-6 rounded-xl mb-8">
+            <h4 class="font-semibold mb-4">Essential Questions:</h4>
+            <ol class="space-y-3 text-gray-700">
+              <li><strong>1.</strong> Are you licensed by IDFPR? Can you provide proof of current licensing?</li>
+              <li><strong>2.</strong> What insurance coverage do you maintain? Can we see certificates?</li>
+              <li><strong>3.</strong> Will board members be co-signers on association accounts?</li>
+              <li><strong>4.</strong> Do you have any financial interest in vendors you recommend?</li>
+              <li><strong>5.</strong> How do you handle competitive bidding for major contracts?</li>
+              <li><strong>6.</strong> What are ALL fees, including any hidden charges?</li>
+              <li><strong>7.</strong> Can you provide references from current clients?</li>
+              <li><strong>8.</strong> How do you handle the transition of funds if the relationship ends?</li>
+            </ol>
+          </div>
+
+          <h2>Final Thoughts</h2>
+          
+          <p>Choosing the right property management company is one of the most important decisions your association will make. Take the time to thoroughly vet potential companies, ask the right questions, and prioritize transparency and ethical practices over low fees.</p>
+          
+          <p>Remember: the cheapest option is rarely the best option when it comes to protecting your community's assets and maintaining resident satisfaction.</p>
+
+          <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-6 rounded-xl text-white mt-8">
+            <h3 class="text-xl font-semibold mb-4">Contact Manage369</h3>
+            <div class="space-y-2">
+              <p><strong>Learn more about our ethical management services:</strong></p>
+              <p>🌐 <a href="https://www.manage369.com" class="text-yellow-300 hover:underline">www.manage369.com</a></p>
+              <p>📞 <a href="tel:773-728-0652" class="text-yellow-300 hover:underline">(773) 728-0652</a></p>
+              <p>📍 Serving Chicago and surrounding suburbs</p>
+              <div class="mt-4 pt-4 border-t border-white border-opacity-30">
+                <p class="text-blue-100 text-sm"><strong>File a complaint with IDFPR:</strong></p>
+                <p class="text-blue-100 text-sm">🔗 <a href="https://idfpr.illinois.gov/admin/dre/drecomplaint.html" class="text-yellow-300 hover:underline">https://idfpr.illinois.gov/admin/dre/drecomplaint.html</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `,
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "12 min read",
+      excerpt: "Essential guidance for Illinois condo and HOA boards on selecting ethical property management companies, avoiding red flags, and ensuring compliance with state regulations.",
+      author: "Manage369 Team",
+      featured: false
+    },
     "emotional-support-animals-condominium-communities-guide": {
       id: 6,
       title: "Navigating Emotional Support Animals . A Complete Condo Guide from Manage369",
