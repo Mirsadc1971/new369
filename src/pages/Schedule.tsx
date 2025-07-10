@@ -53,7 +53,7 @@ const Schedule = () => {
             <div className="bg-gray-50 p-8 rounded-xl">
               <div 
                 className="calendly-inline-widget" 
-                data-url="https://calendly.com/your-calendly-username"
+                data-url="https://calendly.com/autho369/new-meeting"
                 style={{ minWidth: '320px', height: '700px' }}
               ></div>
             </div>
