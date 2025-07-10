@@ -71,13 +71,13 @@ This inquiry was submitted through the Manage369 website contact form.
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              Contact{' '}
+              Request Free{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Manage369
+                Consultation
               </span>
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-              Ready to experience professional property management? Contact us today 
+              Ready to experience professional property management? Request your free consultation today 
               for a free consultation and learn how we can help your property thrive.
             </p>
           </div>
@@ -164,14 +164,182 @@ This inquiry was submitted through the Manage369 website contact form.
                   </li>
                 </ul>
               </div>
+              
+              <div className="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-xl">
+                <h3 className="font-semibold text-lg mb-4">Have a General Question?</h3>
+                <p className="text-gray-600 mb-4">
+                  If you have a general inquiry or question that doesn't require a consultation, 
+                  you can use our general contact form.
+                </p>
+                <Link to="/general-contact" className="btn-outline">
+                  General Contact Form
+                </Link>
+              </div>
             </div>
 
-            {/* Contact Form */}
+            {/* Contact Forms */}
             <div className="lg:col-span-2">
-              <div className="bg-gray-50 p-8 rounded-xl">
-                <h2 className="heading-2 mb-6">Request Free Consultation</h2>
+              {/* General Contact Form */}
+              <div className="bg-blue-50 p-8 rounded-xl mb-8">
+                <h2 className="heading-2 mb-6">Contact Us</h2>
                 <p className="text-gray-600 mb-8">
-                  Fill out the form below and we'll contact you within 24 hours to discuss 
+                  Have a general question or need assistance? Send us a message and we'll get back to you promptly.
+                </p>
+
+                {submitStatus === 'success' && (
+                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <div className="flex items-center">
+                      <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-sm">✓</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-green-800">Thank you for your message!</h4>
+                        <p className="text-green-700 text-sm">We will contact you within 24 hours.</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                    <div className="flex items-center">
+                      <div className="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-3">
+                        <span className="text-white text-sm">!</span>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-red-800">Error sending message</h4>
+                        <p className="text-red-700 text-sm">
+                          Please try again or contact us directly at{' '}
+                          <a href="mailto:service@manage369.com" className="underline">service@manage369.com</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                <form onSubmit={(e) => {
+                  e.preventDefault()
+                  setIsSubmitting(true)
+                  setSubmitStatus('idle')
+
+                  const formData = new FormData(e.target as HTMLFormElement)
+                  const contactData = {
+                    name: formData.get('contactName') as string,
+                    email: formData.get('contactEmail') as string,
+                    subject: formData.get('contactSubject') as string,
+                    message: formData.get('contactMessage') as string
+                  }
+
+                  const emailSubject = `Contact Inquiry: ${contactData.subject} - from ${contactData.name}`
+                  const emailBody = `
+Name: ${contactData.name}
+Email: ${contactData.email}
+Subject: ${contactData.subject}
+
+Message:
+${contactData.message}
+
+---
+This message was submitted through the Manage369 website contact form.
+                  `.trim()
+
+                  const mailtoLink = `mailto:service@manage369.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+                  window.location.href = mailtoLink
+                  
+                  setSubmitStatus('success')
+                  ;(e.target as HTMLFormElement).reset()
+                  setIsSubmitting(false)
+                }} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label htmlFor="contactName" className="block text-sm font-medium text-gray-700 mb-2">
+                        Full Name *
+                      </label>
+                      <input
+                        type="text"
+                        id="contactName"
+                        name="contactName"
+                        required
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                        placeholder="Your full name"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="contactEmail" className="block text-sm font-medium text-gray-700 mb-2">
+                        Email Address *
+                      </label>
+                      <input
+                        type="email"
+                        id="contactEmail"
+                        name="contactEmail"
+                        required
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                        placeholder="your.email@example.com"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="contactSubject" className="block text-sm font-medium text-gray-700 mb-2">
+                      Subject *
+                    </label>
+                    <input
+                      type="text"
+                      id="contactSubject"
+                      name="contactSubject"
+                      required
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      placeholder="What can we help you with?"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="contactMessage" className="block text-sm font-medium text-gray-700 mb-2">
+                      Message *
+                    </label>
+                    <textarea
+                      id="contactMessage"
+                      name="contactMessage"
+                      rows={4}
+                      required
+                      className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                      placeholder="Please describe your inquiry or question..."
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className={`w-full text-lg py-4 rounded-lg font-semibold transition-colors duration-200 ${
+                      isSubmitting 
+                        ? 'bg-gray-400 text-gray-600 cursor-not-allowed' 
+                        : 'bg-secondary-500 text-white hover:bg-secondary-600'
+                    }`}
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </button>
+                  
+                  <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                    <div className="flex items-start space-x-2">
+                      <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-white text-xs">ℹ️</span>
+                      </div>
+                      <p className="text-blue-700 text-sm">
+                        <strong>Note:</strong> Clicking "Send Message" will open your default email client 
+                        with a pre-filled message to service@manage369.com containing your inquiry. 
+                        You can review and send the email from your email application.
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              {/* Property Management Consultation Form */}
+              <div className="bg-gray-50 p-8 rounded-xl">
+                <h2 className="heading-2 mb-6">Request Free Property Management Consultation</h2>
+                <p className="text-gray-600 mb-8">
+                  Interested in our property management services? Fill out this detailed form and we'll contact you within 24 hours to discuss 
                   your property management needs and provide a customized solution.
                 </p>
 

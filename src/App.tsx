@@ -12,6 +12,7 @@ import TownhomeManagement from './pages/services/TownhomeManagement'
 import HOAManagement from './pages/services/HOAManagement'
 import ServiceAreas from './pages/ServiceAreas'
 import Contact from './pages/Contact'
+import GeneralContact from './pages/GeneralContact'
 import Resources from './pages/Resources'
 import ServiceAreaDetail from './pages/ServiceAreaDetail'
 import Privacy from './pages/Privacy'
@@ -52,6 +53,7 @@ function App() {
           <Route path="/services/hoa-management" element={<HOAManagement />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/general-contact" element={<GeneralContact />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
