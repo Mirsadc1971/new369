@@ -6,7 +6,7 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 6,
-      title: "Emotional Support Animals in Condominium Communities: What Boards and Residents Need to Know",
+      title: "Navigating Emotional Support Animals . A Complete Condo Guide from Manage369",
       excerpt: "Comprehensive guide for condominium boards on handling emotional support animal requests, including legal requirements, documentation standards, and best practices for compliance with fair housing laws.",
       date: "January 27, 2025",
       category: "Legal & Compliance",

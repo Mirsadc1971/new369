@@ -8,7 +8,7 @@ const BlogPost = () => {
   const blogPosts = {
     "emotional-support-animals-condominium-communities-guide": {
       id: 6,
-      title: "Emotional Support Animals in Condominium Communities: What Boards and Residents Need to Know",
+      title: "Navigating Emotional Support Animals . A Complete Condo Guide from Manage369",
       content: `
         <div class="prose prose-lg max-w-none">
           <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
