@@ -481,22 +481,6 @@ const LocateUs = () => {
           {/* Review Summary */}
           <div className="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-xl text-white text-center">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div>
-                <div className="text-3xl font-bold mb-2">4.9/5</div>
-                <div className="text-sm text-blue-100">Average Rating</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold mb-2">150+</div>
-                <div className="text-sm text-blue-100">5-Star Reviews</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold mb-2">500+</div>
-                <div className="text-sm text-blue-100">Properties Managed</div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold mb-2">15+</div>
-                <div className="text-sm text-blue-100">Years Experience</div>
-              </div>
             </div>
             <div className="mt-6">
               <a 
