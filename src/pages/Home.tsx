@@ -125,23 +125,24 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {[
-              { name: "Downtown Chicago", type: "Urban Core", properties: "500+", slug: "downtown-chicago" },
-              { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+", slug: "lincoln-park" },
-              { name: "Naperville", type: "Suburban Community", properties: "400+", slug: "naperville" },
-              { name: "Oak Park", type: "Historic Suburb", properties: "200+", slug: "oak-park" },
-              { name: "Evanston", type: "University Town", properties: "300+", slug: "evanston" },
-              { name: "Wheaton", type: "Family Community", properties: "150+", slug: "wheaton" },
-              { name: "Arlington Heights", type: "Established Suburb", properties: "200+", slug: "arlington-heights" }
+              { name: "Downtown Chicago", type: "Urban Core", properties: "500+ Properties", slug: "downtown-chicago" },
+              { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+ Properties", slug: "lincoln-park" },
+              { name: "Naperville", type: "Suburban Community", properties: "400+ Properties", slug: "naperville" },
+              { name: "Oak Park", type: "Historic Suburb", properties: "200+ Properties", slug: "oak-park" },
+              { name: "Evanston", type: "University Town", properties: "300+ Properties", slug: "evanston" },
+              { name: "Wheaton", type: "Family Community", properties: "150+ Properties", slug: "wheaton" },
+              { name: "Arlington Heights", type: "Established Suburb", properties: "200+ Properties", slug: "arlington-heights" },
+              { name: "Palatine", type: "Northwest Suburb", properties: "180+ Properties", slug: "palatine" }
             ].map((area, index) => (
-              <div key={index} className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
+              <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                 <div>
                   <h4 className="font-semibold text-lg mb-2">
                     <Link to={`/service-areas/${area.slug}`} className="text-gray-900 hover:text-primary-500">
                       {area.name}
                     </Link>
                   </h4>
-                  <p className="text-sm text-gray-600 mb-2">{area.type}</p>
-                  <p className="text-primary-500 font-semibold">{area.properties}</p>
+                  <p className="text-sm text-gray-600 mb-3">{area.type}</p>
+                  <p className="text-primary-500 font-semibold text-sm">{area.properties}</p>
                 </div>
               </div>
             ))}
