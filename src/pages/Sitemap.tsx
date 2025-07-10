@@ -40,6 +40,7 @@ const Sitemap = () => {
                     <li><Link to="/about" className="text-gray-600 hover:text-primary-500 transition-colors">About Us</Link></li>
                     <li><Link to="/contact" className="text-gray-600 hover:text-primary-500 transition-colors">Contact</Link></li>
                     <li><Link to="/resources" className="text-gray-600 hover:text-primary-500 transition-colors">Resources</Link></li>
+                    <li><Link to="/blog" className="text-gray-600 hover:text-primary-500 transition-colors">Blog</Link></li>
                   </ul>
                 </div>
 

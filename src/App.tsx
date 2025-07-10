@@ -21,6 +21,7 @@ import Accessibility from './pages/Accessibility'
 import Sitemap from './pages/Sitemap'
 import LocateUs from './pages/LocateUs'
 import PaymentOptions from './pages/PaymentOptions'
+import Blog from './pages/Blog'
 
 function App() {
   const location = useLocation()
@@ -58,6 +59,7 @@ function App() {
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/locate-us" element={<LocateUs />} />
           <Route path="/payment-options" element={<PaymentOptions />} />
+          <Route path="/blog" element={<Blog />} />
           
           {/* Dynamic service area route */}
           <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />
