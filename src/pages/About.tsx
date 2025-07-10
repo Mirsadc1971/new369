@@ -251,27 +251,34 @@ const About = () => {
                   <p className="text-sm text-gray-600">Meeting facilitation, governance guidance, and strategic planning</p>
                 </div>
               </div>
-              
-              <div className="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-xl text-white">
-                <h4 className="font-semibold text-xl mb-4">Why Choose Manage369?</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-3">
-                    <span className="w-2 h-2 bg-white rounded-full"></span>
-                    <span className="text-sm">Local Chicago expertise</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="w-2 h-2 bg-white rounded-full"></span>
-                    <span className="text-sm">24/7 emergency response</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="w-2 h-2 bg-white rounded-full"></span>
-                    <span className="text-sm">Comprehensive services</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="w-2 h-2 bg-white rounded-full"></span>
-                    <span className="text-sm">Technology-driven solutions</span>
-                  </div>
-                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Manage369 - Full Width Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max">
+          <div className="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-xl text-white">
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-white mb-4">Why Choose Manage369?</h3>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="flex items-center space-x-3">
+                <span className="w-3 h-3 bg-white rounded-full flex-shrink-0"></span>
+                <span className="text-white font-medium">Local Chicago expertise</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="w-3 h-3 bg-white rounded-full flex-shrink-0"></span>
+                <span className="text-white font-medium">24/7 emergency response</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="w-3 h-3 bg-white rounded-full flex-shrink-0"></span>
+                <span className="text-white font-medium">Comprehensive services</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="w-3 h-3 bg-white rounded-full flex-shrink-0"></span>
+                <span className="text-white font-medium">Technology-driven solutions</span>
               </div>
             </div>
           </div>
