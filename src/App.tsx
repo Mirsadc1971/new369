@@ -24,7 +24,6 @@ import LocateUs from './pages/LocateUs'
 import PaymentOptions from './pages/PaymentOptions'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
-import Schedule from './pages/Schedule'
 
 function App() {
   const location = useLocation()
@@ -65,7 +64,6 @@ function App() {
           <Route path="/payment-options" element={<PaymentOptions />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
-          <Route path="/schedule" element={<Schedule />} />
           
           {/* Dynamic service area route */}
           <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />
