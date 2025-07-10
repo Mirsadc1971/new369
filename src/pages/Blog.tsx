@@ -6,7 +6,7 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 7,
-      title: "Choosing the Right Property Management Company in Illinois – A Guide by Manage369",
+      title: "Choosing the Right Property Management Company in Illinois – A Complete Condo Guide by Manage369",
       excerpt: "Essential guidance for Illinois condo and HOA boards on selecting ethical property management companies, avoiding red flags, and ensuring compliance with state regulations.",
       date: "January 27, 2025",
       category: "Legal & Compliance",

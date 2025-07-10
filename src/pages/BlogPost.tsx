@@ -8,7 +8,7 @@ const BlogPost = () => {
   const blogPosts = {
     "choosing-right-property-management-company-illinois-guide": {
       id: 7,
-      title: "Choosing the Right Property Management Company in Illinois – A Guide by Manage369",
+      title: "Choosing the Right Property Management Company in Illinois – A Complete Condo Guide by Manage369",
       content: `
         <div class="prose prose-lg max-w-none">
           <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
