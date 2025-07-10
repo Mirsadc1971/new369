@@ -5,6 +5,16 @@ const Blog = () => {
   // Real blog posts data - only authored content
   const blogPosts = [
     {
+      id: 5,
+      title: "Service Animals and Emotional Support Animals: A Complete Guide for Chicago Property Managers",
+      excerpt: "Essential guidance for Chicago property managers on handling service animals and emotional support animals, including legal requirements, verification procedures, and best practices for compliance.",
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "12 min read",
+      slug: "service-animals-emotional-support-chicago-property-management",
+      featured: false
+    },
+    {
       id: 4,
       title: "Updating Condo Bylaws in Illinois: A Complete Guide for Associations",
       excerpt: "Essential guidance for Illinois condominium associations on updating bylaws, including legal requirements, amendment procedures, and best practices for modernizing governance documents.",
