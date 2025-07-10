@@ -8,7 +8,7 @@ const BlogPost = () => {
   const blogPosts = {
     "service-animals-emotional-support-chicago-property-management": {
       id: 5,
-      title: "Service Animals and Emotional Support Animals: A Complete Guide for Chicago Property Managers",
+      title: "Navigating Service Animals . A Complete Condo Guide from Manage369",
       content: `
         <div class="prose prose-lg max-w-none">
           <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">

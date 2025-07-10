@@ -6,7 +6,7 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 5,
-      title: "Service Animals and Emotional Support Animals: A Complete Guide for Chicago Property Managers",
+      title: "Navigating Service Animals . A Complete Condo Guide from Manage369",
       excerpt: "Essential guidance for Chicago property managers on handling service animals and emotional support animals, including legal requirements, verification procedures, and best practices for compliance.",
       date: "January 27, 2025",
       category: "Legal & Compliance",
