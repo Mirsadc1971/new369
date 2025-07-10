@@ -22,6 +22,7 @@ import Sitemap from './pages/Sitemap'
 import LocateUs from './pages/LocateUs'
 import PaymentOptions from './pages/PaymentOptions'
 import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 
 function App() {
   const location = useLocation()
@@ -60,6 +61,7 @@ function App() {
           <Route path="/locate-us" element={<LocateUs />} />
           <Route path="/payment-options" element={<PaymentOptions />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           
           {/* Dynamic service area route */}
           <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />

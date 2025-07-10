@@ -6,6 +6,16 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
+      title: "Secondhand Smoke and Odor in Illinois Condominiums: A Guide by Manage369 Property Management",
+      excerpt: "Learn about the health impacts of secondhand smoke, Illinois laws, HOA authority, and practical solutions for managing smoke and odor in condo buildings.",
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "12 min read",
+      slug: "secondhand-smoke-odor-illinois-condominiums-guide",
+      featured: true
+    },
+    {
+      id: 2,
       title: "5 Essential Tips for Effective HOA Board Management in Chicago",
       excerpt: "Learn the key strategies that successful HOA boards use to manage their communities effectively while maintaining resident satisfaction.",
       date: "January 25, 2025",
@@ -14,7 +24,7 @@ const Blog = () => {
       slug: "effective-hoa-board-management-chicago"
     },
     {
-      id: 2,
+      id: 3,
       title: "Understanding Chicago Condominium Laws: A Property Owner's Guide",
       excerpt: "Navigate the complex landscape of Chicago condominium regulations with this comprehensive guide for property owners and board members.",
       date: "January 22, 2025",
@@ -23,7 +33,7 @@ const Blog = () => {
       slug: "chicago-condominium-laws-guide"
     },
     {
-      id: 3,
+      id: 4,
       title: "Winter Property Maintenance: Protecting Your Chicago Investment",
       excerpt: "Essential winter maintenance tips to protect your property from Chicago's harsh weather conditions and prevent costly repairs.",
       date: "January 18, 2025",
@@ -32,7 +42,7 @@ const Blog = () => {
       slug: "winter-property-maintenance-chicago"
     },
     {
-      id: 4,
+      id: 5,
       title: "Budget Planning for Property Associations: Best Practices for 2025",
       excerpt: "Strategic budget planning tips to help property associations maintain financial health while funding necessary improvements.",
       date: "January 15, 2025",
@@ -41,7 +51,7 @@ const Blog = () => {
       slug: "budget-planning-property-associations-2025"
     },
     {
-      id: 5,
+      id: 6,
       title: "The Benefits of Professional Property Management vs. Self-Management",
       excerpt: "Compare the advantages and challenges of professional property management versus self-management for Chicago area properties.",
       date: "January 12, 2025",
@@ -50,7 +60,7 @@ const Blog = () => {
       slug: "professional-vs-self-property-management"
     },
     {
-      id: 6,
+      id: 7,
       title: "Townhome Community Governance: Building Stronger Neighborhoods",
       excerpt: "Discover how effective governance can transform townhome communities and create more harmonious living environments.",
       date: "January 8, 2025",
@@ -119,22 +129,27 @@ const Blog = () => {
           {/* Blog Posts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              <article key={post.id} className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden ${post.featured ? 'md:col-span-2 lg:col-span-3' : ''}`}>
+                {post.featured && (
+                  <div className="bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-2">
+                    <span className="text-sm font-semibold">Featured Article</span>
+                  </div>
+                )}
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm font-medium">
+                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${post.featured ? 'bg-yellow-100 text-yellow-700' : 'bg-primary-100 text-primary-700'}`}>
                       {post.category}
                     </span>
                     <span className="text-gray-500 text-sm">{post.readTime}</span>
                   </div>
                   
-                  <h2 className="text-xl font-bold text-gray-900 mb-3 leading-tight hover:text-primary-600 transition-colors">
+                  <h2 className={`font-bold text-gray-900 mb-3 leading-tight hover:text-primary-600 transition-colors ${post.featured ? 'text-2xl md:text-3xl' : 'text-xl'}`}>
                     <Link to={`/blog/${post.slug}`}>
                       {post.title}
                     </Link>
                   </h2>
                   
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className={`text-gray-600 mb-4 leading-relaxed ${post.featured ? 'text-lg' : ''}`}>
                     {post.excerpt}
                   </p>
                   
