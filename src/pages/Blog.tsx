@@ -5,6 +5,16 @@ const Blog = () => {
   // Real blog posts data - only authored content
   const blogPosts = [
     {
+      id: 2,
+      title: "Loud Music and Chicago Noise Ordinance: A Property Management Guide",
+      excerpt: "Understanding Chicago's noise ordinance, tenant rights, and effective strategies for managing noise complaints in condominiums and multi-unit buildings.",
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "10 min read",
+      slug: "loud-music-chicago-noise-ordinance-guide",
+      featured: false
+    },
+    {
       id: 1,
       title: "Secondhand Smoke and Odor in Illinois Condominiums: A Guide by Manage369 Property Management",
       excerpt: "Learn about the health impacts of secondhand smoke, Illinois laws, HOA authority, and practical solutions for managing smoke and odor in condo buildings.",
