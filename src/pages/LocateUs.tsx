@@ -562,18 +562,18 @@ const LocateUs = () => {
             </div>
             
             <div className="bg-gray-100 p-4 rounded-xl">
-              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.8!2d-87.6298!3d41.8781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzQxLjIiTiA4N8KwMzcnNDcuMyJX!5e0!3m2!1sen!2sus!4v1642000000000!5m2!1sen!2sus"
-                  width="100%" 
-                  height="450" 
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Manage369 Chicago Property Management Office Location"
-                  className="w-full h-96 md:h-[450px] rounded-lg"
-                ></iframe>
+              <div className="rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center h-96 md:h-[450px]">
+                <div className="text-center p-8">
+                  <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-white text-2xl">📍</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Chicago, Illinois</h3>
+                  <p className="text-gray-600 mb-4">Serving all Chicago neighborhoods and suburbs</p>
+                  <div className="space-y-2 text-sm text-gray-600">
+                    <p><strong>Service Area:</strong> Chicago & Surrounding Suburbs</p>
+                    <p><strong>Counties:</strong> Cook, DuPage, Lake & Kane</p>
+                  </div>
+                </div>
               </div>
               <div className="text-center mt-4">
                 <a 
@@ -582,7 +582,7 @@ const LocateUs = () => {
                   rel="noopener noreferrer"
                   className="btn-primary inline-flex items-center"
                 >
-                  Open in Google Maps
+                  View Chicago on Google Maps
                   <span className="ml-2">↗</span>
                 </a>
               </div>
