@@ -262,6 +262,12 @@ const Resources = () => {
                   <h4 className="font-semibold mb-2">Roofing & Exterior</h4>
                   <p className="text-sm text-gray-600">Annual inspections, gutter cleaning, and weather damage prevention</p>
                 </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-6">Capital Improvement Planning</h3>
+              <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg border-l-4 border-accent-500">
                   <h4 className="font-semibold mb-2">Plumbing & Electrical</h4>
                   <p className="text-sm text-gray-600">Regular inspections, code compliance, and safety system testing</p>
@@ -272,49 +278,39 @@ const Resources = () => {
                 </div>
               </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Capital Improvement Planning</h3>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h4 className="font-semibold mb-4">Planning Timeline</h4>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">1</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Assessment</h5>
-                      <p className="text-sm text-gray-600">Evaluate current conditions and future needs</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">2</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Prioritization</h5>
-                      <p className="text-sm text-gray-600">Rank projects by urgency and impact</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">3</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Budgeting</h5>
-                      <p className="text-sm text-gray-600">Develop funding strategies and timelines</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">4</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Implementation</h5>
-                      <p className="text-sm text-gray-600">Execute projects with proper oversight</p>
-                    </div>
-                  </div>
+          </div>
+          
+          {/* Planning Process Section */}
+          <div className="mt-16">
+            <h3 className="text-xl font-semibold mb-8 text-center">Capital Improvement Planning Process</h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">1</span>
                 </div>
+                <h4 className="font-semibold mb-2">Assessment</h4>
+                <p className="text-sm text-gray-600">Evaluate current conditions and future needs</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">2</span>
+                </div>
+                <h4 className="font-semibold mb-2">Prioritization</h4>
+                <p className="text-sm text-gray-600">Rank projects by urgency and impact</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">3</span>
+                </div>
+                <h4 className="font-semibold mb-2">Budgeting</h4>
+                <p className="text-sm text-gray-600">Develop funding strategies and timelines</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">4</span>
+                </div>
+                <h4 className="font-semibold mb-2">Implementation</h4>
+                <p className="text-sm text-gray-600">Execute projects with proper oversight</p>
               </div>
             </div>
           </div>
