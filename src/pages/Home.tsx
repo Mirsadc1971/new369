@@ -25,6 +25,15 @@ const Home = () => {
               <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
                 Get Free Consultation
               </Link>
+              <a 
+                href="https://calendly.com/manage369" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4 inline-flex items-center justify-center"
+              >
+                Schedule Meeting
+                <span className="ml-2">📅</span>
+              </a>
               <Link to="/services" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
                 View Our Services
               </Link>

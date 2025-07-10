@@ -142,6 +142,22 @@ This message was submitted through the Manage369 general contact form.
                 <Link to="/contact" className="btn-primary">
                   Request Free Consultation
                 </Link>
+                
+                <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                  <h4 className="font-semibold mb-2">Schedule a Meeting</h4>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Book a specific time to discuss your needs
+                  </p>
+                  <a 
+                    href="https://calendly.com/manage369" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-outline text-sm inline-flex items-center"
+                  >
+                    Schedule Meeting
+                    <span className="ml-2">📅</span>
+                  </a>
+                </div>
               </div>
             </div>
 

@@ -176,14 +176,14 @@ This inquiry was submitted through the Manage369 website contact form.
                 </Link>
               </div>
               
-              <div className="mt-8 p-6 bg-green-50 border border-green-200 rounded-xl">
+              <div className="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-xl">
                 <h3 className="font-semibold text-lg mb-4">Schedule a Meeting</h3>
                 <p className="text-gray-600 mb-4">
                   Prefer to schedule a specific time to discuss your property management needs? 
                   Book a convenient time slot directly with our team.
                 </p>
                 <a 
-                  href="https://calendly.com/your-calendly-username" 
+                  href="https://calendly.com/manage369" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-primary inline-flex items-center"
@@ -390,7 +390,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   <div className="mt-4 text-center">
                     <p className="text-sm text-gray-600 mb-3">Or schedule a meeting directly:</p>
                     <a 
-                      href="https://calendly.com/your-calendly-username" 
+                      href="https://calendly.com/manage369" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="btn-outline inline-flex items-center"
