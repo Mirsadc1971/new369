@@ -67,7 +67,7 @@ const Home = () => {
                   <Link to="/service-areas/lincoln-park" className="text-primary-500 hover:underline"> Lincoln Park</Link> neighborhood buildings.
                 </p>
               </div>
-              <Link to="/services/condominium-management" className="btn-primary mt-auto">
+              <Link to="/services/condominium-management" className="btn-primary mt-auto w-full">
                 Learn More About Condo Management
               </Link>
             </div>
@@ -85,7 +85,7 @@ const Home = () => {
                   <Link to="/service-areas/wheaton" className="text-secondary-500 hover:underline"> Wheaton</Link>, and surrounding suburbs.
                 </p>
               </div>
-              <Link to="/services/townhome-management" className="btn-primary mt-auto">
+              <Link to="/services/townhome-management" className="btn-primary mt-auto w-full">
                 Learn More About Townhome Management
               </Link>
             </div>
@@ -103,7 +103,7 @@ const Home = () => {
                   <Link to="/service-areas/evanston" className="text-accent-500 hover:underline"> Evanston</Link>, and Chicago suburbs.
                 </p>
               </div>
-              <Link to="/services/hoa-management" className="btn-primary mt-auto">
+              <Link to="/services/hoa-management" className="btn-primary mt-auto w-full">
                 Learn More About HOA Management
               </Link>
             </div>
