@@ -5,6 +5,16 @@ const Blog = () => {
   // Real blog posts data - only authored content
   const blogPosts = [
     {
+      id: 6,
+      title: "Emotional Support Animals in Condominium Communities: What Boards and Residents Need to Know",
+      excerpt: "Comprehensive guide for condominium boards on handling emotional support animal requests, including legal requirements, documentation standards, and best practices for compliance with fair housing laws.",
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "14 min read",
+      slug: "emotional-support-animals-condominium-communities-guide",
+      featured: false
+    },
+    {
       id: 5,
       title: "Navigating Service Animals . A Complete Condo Guide from Manage369",
       excerpt: "Essential guidance for Chicago property managers on handling service animals and emotional support animals, including legal requirements, verification procedures, and best practices for compliance.",
