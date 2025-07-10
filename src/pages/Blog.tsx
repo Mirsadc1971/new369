@@ -5,6 +5,16 @@ const Blog = () => {
   // Real blog posts data - only authored content
   const blogPosts = [
     {
+      id: 4,
+      title: "Updating Condo Bylaws in Illinois: A Complete Guide for Associations",
+      excerpt: "Essential guidance for Illinois condominium associations on updating bylaws, including legal requirements, amendment procedures, and best practices for modernizing governance documents.",
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "15 min read",
+      slug: "updating-condo-bylaws-illinois-complete-guide",
+      featured: false
+    },
+    {
       id: 3,
       title: "Managing Association Funds in Illinois: Operating vs. Reserve Accounts",
       excerpt: "Essential guidelines for proper financial management of condominium and HOA funds in Illinois, including operating account management, reserve fund planning, and regulatory compliance.",
