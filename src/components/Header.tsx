@@ -15,6 +15,7 @@ const Header = () => {
     { name: 'Service Areas', href: '/service-areas' },
     { name: 'Resources', href: '/resources' },
     { name: 'Payments', href: '#', dropdown: true },
+    { name: 'Schedule', href: '/schedule' },
     { name: 'Contact', href: '/general-contact' },
   ]
 

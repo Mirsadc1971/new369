@@ -175,6 +175,23 @@ This inquiry was submitted through the Manage369 website contact form.
                   General Contact Form
                 </Link>
               </div>
+              
+              <div className="mt-8 p-6 bg-green-50 border border-green-200 rounded-xl">
+                <h3 className="font-semibold text-lg mb-4">Schedule a Meeting</h3>
+                <p className="text-gray-600 mb-4">
+                  Prefer to schedule a specific time to discuss your property management needs? 
+                  Book a convenient time slot directly with our team.
+                </p>
+                <a 
+                  href="https://calendly.com/your-calendly-username" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex items-center"
+                >
+                  Schedule Meeting
+                  <span className="ml-2">📅</span>
+                </a>
+              </div>
             </div>
 
             {/* Property Management Consultation Form */}
@@ -369,6 +386,19 @@ This inquiry was submitted through the Manage369 website contact form.
                   >
                     {isSubmitting ? 'Sending...' : 'Request Free Consultation'}
                   </button>
+                  
+                  <div className="mt-4 text-center">
+                    <p className="text-sm text-gray-600 mb-3">Or schedule a meeting directly:</p>
+                    <a 
+                      href="https://calendly.com/your-calendly-username" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="btn-outline inline-flex items-center"
+                    >
+                      Schedule Meeting
+                      <span className="ml-2">📅</span>
+                    </a>
+                  </div>
                   
                   <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
                     <div className="flex items-start space-x-2">
