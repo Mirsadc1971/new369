@@ -141,7 +141,7 @@ const Home = () => {
                     </Link>
                   </h4>
                   <p className="text-sm text-gray-600 mb-2">{area.type}</p>
-                  <p className="text-primary-500 font-semibold">{area.properties} Properties</p>
+                  <p className="text-primary-500 font-semibold">{area.properties}</p>
                 </div>
               </div>
             ))}
