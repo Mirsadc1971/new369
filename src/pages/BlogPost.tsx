@@ -409,7 +409,7 @@ const BlogPost = () => {
     },
     "secondhand-smoke-odor-illinois-condominiums-guide": {
       id: 1,
-      title: "Secondhand Smoke and Odor in Illinois Condominiums: A Guide by Manage369 Property Management",
+      title: "Secondhand Smoke and Odor in Illinois Condominiums: A Complete Guide by Manage369",
       content: `
         <div class="prose prose-lg max-w-none">
           <p>Secondhand smoke infiltration is a growing concern for condominium associations across Illinois. As a property management company serving Chicago and surrounding areas, Manage369 frequently helps associations navigate the complex legal and practical challenges of smoke-related issues.</p>

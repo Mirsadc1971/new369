@@ -56,7 +56,7 @@ const Blog = () => {
     },
     {
       id: 1,
-      title: "Secondhand Smoke and Odor in Illinois Condominiums: A Guide by Manage369 Property Management",
+      title: "Secondhand Smoke and Odor in Illinois Condominiums: A Complete Guide by Manage369",
       excerpt: "Learn about the health impacts of secondhand smoke, Illinois laws, HOA authority, and practical solutions for managing smoke and odor in condo buildings.",
       date: "January 27, 2025",
       category: "Legal & Compliance",
