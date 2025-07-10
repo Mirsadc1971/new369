@@ -27,44 +27,41 @@ const Contact = () => {
     setIsSubmitting(true)
     setSubmitStatus('idle')
 
-    try {
-      const response = await fetch('https://formspree.io/f/xdkogkpw', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          propertyType: formData.propertyType,
-          location: formData.location,
-          units: formData.units,
-          message: formData.message,
-          _replyto: formData.email,
-          _subject: `New Property Management Inquiry from ${formData.name}`,
-        }),
-      })
+    // Create email content
+    const emailSubject = `New Property Management Inquiry from ${formData.name}`
+    const emailBody = `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Property Type: ${formData.propertyType}
+Location: ${formData.location}
+Number of Units: ${formData.units}
 
-      if (response.ok) {
-        setSubmitStatus('success')
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          propertyType: '',
-          location: '',
-          units: '',
-          message: ''
-        })
-      } else {
-        setSubmitStatus('error')
-      }
-    } catch (error) {
-      setSubmitStatus('error')
-    } finally {
-      setIsSubmitting(false)
-    }
+Message:
+${formData.message}
+
+---
+This inquiry was submitted through the Manage369 website contact form.
+    `.trim()
+
+    // Create mailto link
+    const mailtoLink = `mailto:service@manage369.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+    
+    // Open email client
+    window.location.href = mailtoLink
+    
+    // Show success message
+    setSubmitStatus('success')
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      propertyType: '',
+      location: '',
+      units: '',
+      message: ''
+    })
+    setIsSubmitting(false)
   }
 
   return (
