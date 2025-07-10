@@ -6,6 +6,212 @@ const BlogPost = () => {
 
   // This would typically come from a CMS or API
   const getBlogPost = (slug: string) => {
+    if (slug === 'managing-association-funds-illinois-operating-reserve-accounts') {
+      return {
+        title: "Managing Association Funds in Illinois: Operating vs. Reserve Accounts",
+        date: "January 27, 2025",
+        category: "Financial Management",
+        readTime: "8 min read",
+        author: "Manage369 Team",
+        content: `
+          <p class="text-lg text-gray-700 mb-6">Proper financial management is crucial for any condominium or homeowners' association in Illinois. Clear guidelines about the handling of operating and reserve accounts help ensure fiscal responsibility, financial stability, and compliance with state regulations. At Manage369 Property Management, we emphasize transparent, prudent handling of association funds to protect both your community's assets and the trust of residents.</p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Operating Account: Managing Day-to-Day Expenses</h2>
+          <p class="text-gray-700 mb-4">Your operating account is used primarily for regular, recurring expenses such as:</p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-1">
+            <li>Utility bills</li>
+            <li>Landscaping</li>
+            <li>Insurance premiums</li>
+            <li>Regular maintenance and cleaning services</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Recommended Operating Balance</h3>
+          <p class="text-gray-700 mb-6">Maintain approximately 1½ months of average monthly operating expenses. This buffer ensures the association can pay incoming invoices promptly and maintain consistent operations even with occasional delays in assessments or unexpected costs.</p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Reserve Account: Long-Term Capital Planning</h2>
+          <p class="text-gray-700 mb-4">The reserve account is your association's safety net. It is strictly intended for capital improvements and unexpected repairs, including:</p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-1">
+            <li>Roof or boiler replacements</li>
+            <li>Elevator modernization</li>
+            <li>Structural repairs</li>
+            <li>Major HVAC overhauls</li>
+            <li>Emergency building system failures</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Recommended Reserve Balance</h3>
+          <p class="text-gray-700 mb-6">At a minimum, reserve accounts should hold the equivalent of three months of total monthly income. However, we recommend funding reserves more aggressively to align with the findings of your reserve study and to reduce reliance on special assessments.</p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">No Commingling: Keep Funds Separate</h2>
+          <p class="text-gray-700 mb-4">Illinois regulations and financial best practices prohibit the commingling of operating and reserve funds. Each account serves a clearly defined role, and mixing funds jeopardizes the association's financial integrity and may result in legal or accounting violations.</p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Do not use operating funds for capital improvements.</strong></li>
+            <li><strong>Do not tap into reserve funds for recurring operating costs.</strong></li>
+            <li><strong>Maintain completely separate bank accounts for each.</strong></li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Reserve Fund Access: Strictly Controlled</h2>
+          <p class="text-gray-700 mb-4">Property management companies should NEVER have direct access to reserve accounts. Doing so can pose a significant risk to the association's financial security.</p>
+          <p class="text-gray-700 mb-4">At Manage369, we uphold the highest standards of transparency:</p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>We never hold or transfer reserve funds.</strong></li>
+            <li><strong>We do not have signatory authority over reserve accounts.</strong></li>
+            <li><strong>We ensure that monthly bank statements for all association accounts are mailed directly to the board, not to our offices.</strong></li>
+          </ul>
+          <p class="text-gray-700 mb-6">This practice adds an important layer of security and accountability, reinforcing trust between the board, residents, and your management partner.</p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Additional Best Practices for Fund Management</h2>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Conduct an annual independent financial review or audit.</strong></li>
+            <li><strong>Review and update your reserve study every 3–5 years.</strong></li>
+            <li><strong>Establish a written investment policy for reserve funds</strong> (e.g., FDIC-insured accounts, low-risk CDs).</li>
+            <li><strong>Approve all reserve expenditures through formal board resolutions.</strong></li>
+            <li><strong>Educate new board members</strong> about the legal duties and financial roles of association directors.</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Illinois Regulatory Requirements</h2>
+          <p class="text-gray-700 mb-4">Illinois condominium associations must comply with specific financial management requirements under the Illinois Condominium Property Act:</p>
+          
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Reserve Fund Requirements</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Mandatory Reserve Studies:</strong> Associations with 30 or more units must conduct reserve studies</li>
+            <li><strong>Annual Funding:</strong> Boards must budget for reserve contributions annually</li>
+            <li><strong>Disclosure Requirements:</strong> Reserve fund status must be disclosed to potential buyers</li>
+            <li><strong>Board Fiduciary Duty:</strong> Board members have a legal obligation to protect association assets</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Financial Reporting Standards</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Monthly Statements:</strong> Provide detailed financial reports to the board</li>
+            <li><strong>Annual Budgets:</strong> Prepare and approve comprehensive annual budgets</li>
+            <li><strong>Assessment Collection:</strong> Maintain accurate records of all assessment payments</li>
+            <li><strong>Vendor Payments:</strong> Document all expenditures with proper authorization</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Common Financial Management Mistakes</h2>
+          <p class="text-gray-700 mb-4">Avoid these common pitfalls that can jeopardize your association's financial health:</p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Operating Account Errors</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Insufficient Cash Flow:</strong> Not maintaining adequate operating reserves for seasonal fluctuations</li>
+            <li><strong>Poor Budget Planning:</strong> Underestimating expenses or overestimating income</li>
+            <li><strong>Delayed Collections:</strong> Not promptly pursuing delinquent assessments</li>
+            <li><strong>Unauthorized Expenses:</strong> Making expenditures without proper board approval</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Reserve Account Mistakes</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Underfunding:</strong> Not contributing enough to reserves based on the reserve study</li>
+            <li><strong>Inappropriate Use:</strong> Using reserve funds for operating expenses</li>
+            <li><strong>Poor Investment Choices:</strong> Investing in high-risk or illiquid investments</li>
+            <li><strong>Lack of Planning:</strong> Not updating reserve studies regularly</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Investment Guidelines for Association Funds</h2>
+          <p class="text-gray-700 mb-4">Both operating and reserve funds should be invested conservatively to protect principal while earning reasonable returns:</p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Operating Account Investments</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>High-Yield Savings:</strong> FDIC-insured accounts with competitive interest rates</li>
+            <li><strong>Money Market Accounts:</strong> Higher yields with limited check-writing privileges</li>
+            <li><strong>Short-Term CDs:</strong> 3-6 month certificates for predictable returns</li>
+            <li><strong>Liquidity Priority:</strong> Ensure funds are accessible for monthly expenses</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Reserve Account Investments</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Laddered CDs:</strong> Staggered maturity dates to balance yield and liquidity</li>
+            <li><strong>Treasury Securities:</strong> Government-backed bonds for maximum security</li>
+            <li><strong>Conservative Bond Funds:</strong> Diversified fixed-income investments</li>
+            <li><strong>FDIC Insurance:</strong> Ensure all deposits are within insurance limits</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">The Manage369 Difference</h2>
+          <p class="text-gray-700 mb-4">At Manage369 Property Management, we believe in proactive and transparent financial stewardship. We work closely with boards to:</p>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Maintain strict segregation of funds</strong></li>
+            <li><strong>Monitor account balances</strong></li>
+            <li><strong>Provide timely financial reporting</strong></li>
+            <li><strong>Implement best practices in budgeting and forecasting</strong></li>
+          </ul>
+          <p class="text-gray-700 mb-6">We treat your community's finances with the same care and caution we would our own—because your trust is our business.</p>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Financial Transparency and Board Governance</h2>
+          <p class="text-gray-700 mb-4">Effective financial management requires strong governance and transparency:</p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Board Oversight Responsibilities</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Monthly Review:</strong> Examine financial statements and bank reconciliations</li>
+            <li><strong>Budget Approval:</strong> Formally approve annual budgets and major expenditures</li>
+            <li><strong>Audit Oversight:</strong> Ensure independent financial reviews are conducted</li>
+            <li><strong>Policy Development:</strong> Establish clear financial policies and procedures</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Resident Communication</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Annual Reports:</strong> Provide comprehensive financial summaries to residents</li>
+            <li><strong>Budget Meetings:</strong> Hold open meetings to discuss budget proposals</li>
+            <li><strong>Assessment Explanations:</strong> Clearly communicate reasons for assessment changes</li>
+            <li><strong>Reserve Planning:</strong> Educate residents about long-term capital needs</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Emergency Financial Planning</h2>
+          <p class="text-gray-700 mb-4">Associations should prepare for financial emergencies and unexpected expenses:</p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Contingency Planning</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Emergency Reserves:</strong> Maintain additional funds beyond normal operating reserves</li>
+            <li><strong>Line of Credit:</strong> Establish banking relationships for emergency borrowing</li>
+            <li><strong>Special Assessment Authority:</strong> Understand procedures for emergency assessments</li>
+            <li><strong>Insurance Claims:</strong> Maintain proper documentation for potential claims</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Crisis Management</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Rapid Response:</strong> Procedures for addressing urgent financial needs</li>
+            <li><strong>Communication Plans:</strong> Keeping residents informed during financial crises</li>
+            <li><strong>Professional Support:</strong> Access to legal and financial advisors</li>
+            <li><strong>Recovery Planning:</strong> Strategies for restoring financial stability</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Technology and Financial Management</h2>
+          <p class="text-gray-700 mb-4">Modern property management leverages technology for better financial oversight:</p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Digital Financial Tools</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Online Banking:</strong> Real-time account monitoring and transaction tracking</li>
+            <li><strong>Automated Reporting:</strong> Monthly financial statements generated automatically</li>
+            <li><strong>Budget Tracking:</strong> Software that monitors actual vs. budgeted expenses</li>
+            <li><strong>Assessment Collection:</strong> Online payment systems for resident convenience</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Security and Controls</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Dual Authorization:</strong> Require multiple approvals for large expenditures</li>
+            <li><strong>Audit Trails:</strong> Maintain complete records of all financial transactions</li>
+            <li><strong>Access Controls:</strong> Limit financial system access to authorized personnel</li>
+            <li><strong>Regular Backups:</strong> Protect financial data with secure backup systems</li>
+          </ul>
+
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 mt-8">Conclusion</h2>
+          <p class="text-gray-700 mb-4">Proper management of association funds is fundamental to the long-term success and financial health of any condominium or HOA community in Illinois. By maintaining strict separation between operating and reserve accounts, following best practices for financial oversight, and working with experienced property management professionals, associations can protect their assets and ensure sustainable operations.</p>
+
+          <p class="text-gray-700 mb-4">At Manage369 Property Management, we understand that financial stewardship is one of the most critical aspects of property management. Our commitment to transparency, accountability, and best practices helps ensure that your association's funds are managed with the highest level of care and professionalism.</p>
+
+          <h3 class="text-xl font-semibold text-gray-900 mb-3 mt-6">Key Takeaways</h3>
+          <ul class="list-disc pl-6 mb-6 text-gray-700 space-y-2">
+            <li><strong>Separate Accounts:</strong> Never commingle operating and reserve funds</li>
+            <li><strong>Adequate Reserves:</strong> Maintain proper funding levels based on reserve studies</li>
+            <li><strong>Professional Oversight:</strong> Work with qualified property management companies</li>
+            <li><strong>Regular Monitoring:</strong> Review financial statements and account balances monthly</li>
+            <li><strong>Transparent Reporting:</strong> Provide clear financial information to residents</li>
+            <li><strong>Conservative Investments:</strong> Prioritize capital preservation over high returns</li>
+          </ul>
+
+          <p class="text-gray-700 mb-6">Need support reviewing your association's financial controls? Visit us at <a href="https://www.manage369.com" class="text-primary-500 hover:underline">www.manage369.com</a> to learn how we can help your board navigate complex financial matters with confidence and clarity.</p>
+        `
+      }
+    }
+    
     if (slug === 'loud-music-chicago-noise-ordinance-guide') {
       return {
         title: "Loud Music and Chicago Noise Ordinance: A Property Management Guide",

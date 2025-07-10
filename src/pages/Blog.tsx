@@ -5,6 +5,16 @@ const Blog = () => {
   // Real blog posts data - only authored content
   const blogPosts = [
     {
+      id: 3,
+      title: "Managing Association Funds in Illinois: Operating vs. Reserve Accounts",
+      excerpt: "Essential guidelines for proper financial management of condominium and HOA funds in Illinois, including operating account management, reserve fund planning, and regulatory compliance.",
+      date: "January 27, 2025",
+      category: "Financial Management",
+      readTime: "8 min read",
+      slug: "managing-association-funds-illinois-operating-reserve-accounts",
+      featured: false
+    },
+    {
       id: 2,
       title: "Loud Music and Chicago Noise Ordinance: A Property Management Guide",
       excerpt: "Understanding Chicago's noise ordinance, tenant rights, and effective strategies for managing noise complaints in condominiums and multi-unit buildings.",
@@ -28,7 +38,8 @@ const Blog = () => {
 
   const categories = [
     "All Posts",
-    "Legal & Compliance"
+    "Legal & Compliance",
+    "Financial Management"
   ]
 
   const [selectedCategory, setSelectedCategory] = React.useState("All Posts")
