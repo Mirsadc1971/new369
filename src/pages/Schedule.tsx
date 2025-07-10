@@ -3,17 +3,26 @@ import { Link } from 'react-router-dom'
 
 const Schedule = () => {
   useEffect(() => {
-    // Load Calendly widget script
-    const script = document.createElement('script')
-    script.src = 'https://assets.calendly.com/assets/external/widget.js'
-    script.async = true
-    document.body.appendChild(script)
-
-    return () => {
-      // Cleanup script when component unmounts
-      if (document.body.contains(script)) {
-        document.body.removeChild(script)
+    // Load Calendly widget script if not already loaded
+    if (!document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]')) {
+      const script = document.createElement('script')
+      script.src = 'https://assets.calendly.com/assets/external/widget.js'
+      script.async = true
+      script.onload = () => {
+        // Force widget initialization after script loads
+        if (window.Calendly) {
+          window.Calendly.initInlineWidget({
+            url: 'https://calendly.com/autho369/new-meeting',
+            parentElement: document.querySelector('.calendly-inline-widget')
+          })
+        }
       }
+      document.head.appendChild(script)
+    }
+
+    // Cleanup function
+    return () => {
+      // Calendly handles its own cleanup
     }
   }, [])
 
@@ -51,6 +60,27 @@ const Schedule = () => {
 
             {/* Calendly Inline Widget */}
             <div className="bg-gray-50 p-8 rounded-xl">
+              {/* Fallback content while loading */}
+              <div className="calendly-loading-fallback text-center py-20">
+                <div className="animate-pulse">
+                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-2xl">📅</span>
+                  </div>
+                  <p className="text-gray-600 mb-4">Loading available time slots...</p>
+                  <p className="text-sm text-gray-500">
+                    If this takes too long, you can{' '}
+                    <a 
+                      href="https://calendly.com/autho369/new-meeting" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary-500 hover:underline"
+                    >
+                      book directly on Calendly
+                    </a>
+                  </p>
+                </div>
+              </div>
+              
               <div 
                 className="calendly-inline-widget" 
                 data-url="https://calendly.com/autho369/new-meeting"
