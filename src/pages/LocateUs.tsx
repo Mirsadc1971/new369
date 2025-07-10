@@ -219,7 +219,6 @@ const LocateUs = () => {
                   <Link to="/service-areas/oak-park" className="text-gray-600 hover:text-secondary-500">Oak Park</Link>
                   <Link to="/service-areas/evanston" className="text-gray-600 hover:text-secondary-500">Evanston</Link>
                   <Link to="/service-areas/wheaton" className="text-gray-600 hover:text-secondary-500">Wheaton</Link>
-                  <Link to="/service-areas/schaumburg" className="text-gray-600 hover:text-secondary-500">Schaumburg</Link>
                   <Link to="/service-areas/arlington-heights" className="text-gray-600 hover:text-secondary-500">Arlington Heights</Link>
                   <Link to="/service-areas/palatine" className="text-gray-600 hover:text-secondary-500">Palatine</Link>
                   <span className="text-gray-600">And 60+ more areas</span>
