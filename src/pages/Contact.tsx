@@ -358,6 +358,19 @@ This inquiry was submitted through the Manage369 website contact form.
                   >
                     {isSubmitting ? 'Sending...' : 'Request Free Consultation'}
                   </button>
+                  
+                  <div className="mt-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                    <div className="flex items-start space-x-2">
+                      <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-white text-xs">ℹ️</span>
+                      </div>
+                      <p className="text-blue-700 text-sm">
+                        <strong>Note:</strong> Clicking "Request Free Consultation" will open your default email client 
+                        with a pre-filled message to service@manage369.com containing your form information. 
+                        You can review and send the email from your email application.
+                      </p>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>
