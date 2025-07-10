@@ -189,13 +189,13 @@ const BlogPost = () => {
             <div className="mt-12">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Related Articles</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Link to="/blog/chicago-condominium-laws-guide" className="card hover:scale-105 transition-transform duration-300">
-                  <h4 className="text-lg font-semibold mb-2">Understanding Chicago Condominium Laws</h4>
-                  <p className="text-gray-600 text-sm">Navigate the complex landscape of Chicago condominium regulations...</p>
-                </Link>
                 <Link to="/resources" className="card hover:scale-105 transition-transform duration-300">
                   <h4 className="text-lg font-semibold mb-2">Property Management Resources</h4>
-                  <p className="text-gray-600 text-sm">Access our comprehensive library of property management guides...</p>
+                  <p className="text-gray-600 text-sm">Access our comprehensive library of property management guides and tools...</p>
+                </Link>
+                <Link to="/services" className="card hover:scale-105 transition-transform duration-300">
+                  <h4 className="text-lg font-semibold mb-2">Our Management Services</h4>
+                  <p className="text-gray-600 text-sm">Learn about our comprehensive property management solutions...</p>
                 </Link>
               </div>
             </div>

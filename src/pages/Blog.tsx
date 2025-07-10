@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Blog = () => {
-  // Sample blog posts data
+  // Real blog posts data - only authored content
   const blogPosts = [
     {
       id: 1,
@@ -14,70 +14,11 @@ const Blog = () => {
       slug: "secondhand-smoke-odor-illinois-condominiums-guide",
       featured: true
     },
-    {
-      id: 2,
-      title: "5 Essential Tips for Effective HOA Board Management in Chicago",
-      excerpt: "Learn the key strategies that successful HOA boards use to manage their communities effectively while maintaining resident satisfaction.",
-      date: "January 25, 2025",
-      category: "HOA Management",
-      readTime: "5 min read",
-      slug: "effective-hoa-board-management-chicago"
-    },
-    {
-      id: 3,
-      title: "Understanding Chicago Condominium Laws: A Property Owner's Guide",
-      excerpt: "Navigate the complex landscape of Chicago condominium regulations with this comprehensive guide for property owners and board members.",
-      date: "January 22, 2025",
-      category: "Legal & Compliance",
-      readTime: "8 min read",
-      slug: "chicago-condominium-laws-guide"
-    },
-    {
-      id: 4,
-      title: "Winter Property Maintenance: Protecting Your Chicago Investment",
-      excerpt: "Essential winter maintenance tips to protect your property from Chicago's harsh weather conditions and prevent costly repairs.",
-      date: "January 18, 2025",
-      category: "Maintenance",
-      readTime: "6 min read",
-      slug: "winter-property-maintenance-chicago"
-    },
-    {
-      id: 5,
-      title: "Budget Planning for Property Associations: Best Practices for 2025",
-      excerpt: "Strategic budget planning tips to help property associations maintain financial health while funding necessary improvements.",
-      date: "January 15, 2025",
-      category: "Financial Management",
-      readTime: "7 min read",
-      slug: "budget-planning-property-associations-2025"
-    },
-    {
-      id: 6,
-      title: "The Benefits of Professional Property Management vs. Self-Management",
-      excerpt: "Compare the advantages and challenges of professional property management versus self-management for Chicago area properties.",
-      date: "January 12, 2025",
-      category: "Property Management",
-      readTime: "9 min read",
-      slug: "professional-vs-self-property-management"
-    },
-    {
-      id: 7,
-      title: "Townhome Community Governance: Building Stronger Neighborhoods",
-      excerpt: "Discover how effective governance can transform townhome communities and create more harmonious living environments.",
-      date: "January 8, 2025",
-      category: "Community Management",
-      readTime: "6 min read",
-      slug: "townhome-community-governance"
-    }
   ]
 
   const categories = [
     "All Posts",
-    "HOA Management",
-    "Property Management", 
-    "Financial Management",
-    "Maintenance",
-    "Legal & Compliance",
-    "Community Management"
+    "Legal & Compliance"
   ]
 
   const [selectedCategory, setSelectedCategory] = React.useState("All Posts")
