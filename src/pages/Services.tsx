@@ -376,7 +376,6 @@ const Services = () => {
               { name: "Oak Park", slug: "oak-park" },
               { name: "Evanston", slug: "evanston" },
               { name: "Wheaton", slug: "wheaton" },
-              { name: "Schaumburg", slug: "schaumburg" },
               { name: "Arlington Heights", slug: "arlington-heights" },
               { name: "Palatine", slug: "palatine" },
               { name: "Wicker Park", slug: "wicker-park" },

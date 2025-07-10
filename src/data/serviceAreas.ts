@@ -571,52 +571,6 @@ export const suburbAreas: ServiceArea[] = [
       "Family-friendly community areas"
     ]
   },
-  {
-    id: 13,
-    name: "Schaumburg",
-    slug: "schaumburg",
-    county: "Cook",
-    type: "suburb",
-    population: 75000,
-    description: "Major suburban center with extensive shopping, business parks, and diverse housing communities. Manage369 provides premier property management services in Schaumburg.",
-    keyFeatures: [
-      "Major shopping and business center",
-      "Diverse housing options",
-      "Corporate office locations",
-      "Transportation hub access",
-      "Mixed residential and commercial areas"
-    ],
-    propertyTypes: [
-      "Condominium complexes",
-      "Townhome associations",
-      "Mixed-use developments",
-      "Corporate housing complexes"
-    ],
-    marketInsights: [
-      "Strong rental market from business travelers",
-      "Diverse demographic mix",
-      "Competitive pricing environment",
-      "Corporate relocation opportunities"
-    ],
-    localRegulations: [
-      "Commercial zoning requirements",
-      "Transportation corridor regulations",
-      "Municipal utility standards",
-      "Business park operational guidelines"
-    ],
-    managementChallenges: [
-      "Managing diverse tenant base",
-      "Coordinating commercial and residential needs",
-      "Transportation and parking management",
-      "Competing with numerous housing options"
-    ],
-    solutions: [
-      "Flexible leasing programs",
-      "Corporate housing services",
-      "Professional property marketing",
-      "Comprehensive maintenance services"
-    ]
-  }
 ]
 
 // Additional service areas to reach 100+ total pages

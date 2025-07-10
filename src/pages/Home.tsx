@@ -119,7 +119,6 @@ const Home = () => {
               { name: "Downtown Chicago", type: "Urban Core", properties: "500+", slug: "downtown-chicago" },
               { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+", slug: "lincoln-park" },
               { name: "Naperville", type: "Suburban Community", properties: "400+", slug: "naperville" },
-              { name: "Schaumburg", type: "Business Hub", properties: "250+", slug: "schaumburg" },
               { name: "Oak Park", type: "Historic Suburb", properties: "200+", slug: "oak-park" },
               { name: "Evanston", type: "University Town", properties: "300+", slug: "evanston" },
               { name: "Wheaton", type: "Family Community", properties: "150+", slug: "wheaton" },
