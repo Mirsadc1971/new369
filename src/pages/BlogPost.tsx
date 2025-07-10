@@ -6,6 +6,171 @@ const BlogPost = () => {
 
   // Blog posts data
   const blogPosts = {
+    "emotional-support-animals-condominium-communities-guide": {
+      id: 6,
+      title: "Emotional Support Animals in Condominium Communities: What Boards and Residents Need to Know",
+      content: `
+        <div class="prose prose-lg max-w-none">
+          <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8">
+            <p class="text-blue-700 font-medium">By Manage369 Property Management – Serving Chicago and Surrounding Communities</p>
+          </div>
+
+          <h2>Understanding Emotional Support Animals (ESAs)</h2>
+          
+          <p>As emotional support animals (ESAs) become more common in residential communities, condominium boards and residents often have questions about how these animals fit into "no-pet" policies, community rules, and legal obligations. Unlike service animals, ESAs are not trained to perform specific tasks — but they are still protected under federal housing law.</p>
+          
+          <p>At Manage369, we work closely with condominium associations throughout Chicago to ensure compliance with the law while preserving a harmonious living environment for all residents.</p>
+
+          <h2>What Is an Emotional Support Animal?</h2>
+          
+          <p>An ESA is an animal that provides comfort, companionship, or emotional support to an individual with a diagnosed mental or emotional condition. While ESAs are not considered service animals under the Americans with Disabilities Act (ADA), they are protected under the Fair Housing Act (FHA).</p>
+          
+          <p>This means that even in buildings with pet restrictions, qualified residents may request a reasonable accommodation to keep an emotional support animal in their unit.</p>
+
+          <h2>Key Differences: ESA vs. Service Animal</h2>
+          
+          <p>Service animals are trained to perform specific tasks related to a disability and are protected under both the ADA and FHA. ESAs do not require specific training and are only protected under housing laws.</p>
+          
+          <div class="bg-gray-50 p-6 rounded-lg mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <h4 class="font-semibold text-green-700 mb-3">Service Animals:</h4>
+                <ul class="text-sm space-y-1">
+                  <li>• Task-specific training</li>
+                  <li>• Covered under ADA and FHA</li>
+                  <li>• Allowed in common areas</li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="font-semibold text-blue-700 mb-3">Emotional Support Animals:</h4>
+                <ul class="text-sm space-y-1">
+                  <li>• No specific training</li>
+                  <li>• Covered under FHA only</li>
+                  <li>• Not automatically allowed in all common areas</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <h2>Reasonable Accommodation: What It Means</h2>
+          
+          <p>In Illinois and under federal housing law, a condominium board must consider a resident's request for reasonable accommodation to keep an ESA. This includes:</p>
+          
+          <ul>
+            <li>Waiving no-pet policies</li>
+            <li>Not charging pet rent, deposits, or fees</li>
+            <li>Allowing the ESA in the unit despite pet restrictions</li>
+          </ul>
+          
+          <p>However, the board is permitted to request appropriate documentation verifying the need for the ESA.</p>
+
+          <h2>What Kind of Documentation Can Be Requested?</h2>
+          
+          <p>Condominium associations may request a letter or completed form from a licensed healthcare professional confirming:</p>
+          
+          <ul>
+            <li>The resident has a mental or emotional disability</li>
+            <li>The ESA is necessary to help alleviate symptoms of that disability</li>
+          </ul>
+          
+          <p><strong>You cannot ask for:</strong></p>
+          
+          <ul>
+            <li>Detailed medical records</li>
+            <li>A diagnosis or treatment plan</li>
+            <li>Certification or training for the animal</li>
+          </ul>
+          
+          <p>The documentation must be kept confidential and reviewed without bias.</p>
+
+          <h2>Valid Documentation Must Reflect a Legitimate Doctor-Patient Relationship</h2>
+          
+          <p>As ESA requests have become more common, so have fraudulent or questionable claims — especially those involving online-only certificate mills. While residents are allowed to provide documentation from a licensed healthcare provider, that provider must have a legitimate, ongoing relationship with the resident.</p>
+          
+          <p>Boards should be cautious of documentation:</p>
+          
+          <ul>
+            <li>From out-of-state or unverified providers</li>
+            <li>Issued after a single brief virtual consultation</li>
+            <li>Purchased from "ESA registration" websites</li>
+          </ul>
+          
+          <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 mb-6">
+            <p class="text-yellow-800"><strong>Best Practice:</strong> Require that the documentation be from a provider who is actively involved in the resident's care. If there's any doubt, the association's attorney should review the request and supporting documents before approval or denial.</p>
+            <p class="text-yellow-700 text-sm mt-2">This approach ensures compliance with fair housing laws while protecting the community from fraudulent claims and legal risk.</p>
+          </div>
+
+          <h2>When Can an ESA Be Denied?</h2>
+          
+          <p>Condo boards can deny an ESA request if the animal:</p>
+          
+          <ul>
+            <li>Poses a direct threat to the health or safety of others</li>
+            <li>Causes significant damage to property that cannot be reasonably prevented</li>
+            <li>Is not under the control of the resident</li>
+          </ul>
+          
+          <p>However, denials must be based on specific behavior and documented incidents, not assumptions about breed, size, or species.</p>
+
+          <h2>Common Misconceptions</h2>
+          
+          <div class="bg-red-50 border-l-4 border-red-500 p-6 mb-6">
+            <ul class="text-red-700 space-y-2">
+              <li><strong>"We have a no-pet policy, so ESAs aren't allowed."</strong> — Incorrect. ESAs are not considered pets under the law.</li>
+              <li><strong>"We can charge a pet deposit just in case."</strong> — No. You may not charge any fees related to ESAs.</li>
+              <li><strong>"We can ask to see the animal's certification."</strong> — No certification is required for an ESA.</li>
+            </ul>
+          </div>
+
+          <h2>Best Practices for Condo Boards</h2>
+          
+          <p>To ensure fairness and legal compliance:</p>
+          
+          <ol>
+            <li>Establish a clear written policy for handling ESA requests</li>
+            <li>Require reasonable documentation using a standardized form</li>
+            <li>Apply the process consistently to all residents</li>
+            <li>Educate board members and staff on ESA vs. service animal distinctions</li>
+            <li>Consult legal counsel or your property management team for complex cases</li>
+          </ol>
+
+          <h2>Resident Responsibilities</h2>
+          
+          <p>Residents with ESAs must:</p>
+          
+          <ul>
+            <li>Keep the animal under control at all times</li>
+            <li>Prevent excessive noise, aggression, or damage</li>
+            <li>Follow all other community rules (e.g., leash requirements, waste disposal)</li>
+          </ul>
+          
+          <p>If these rules are violated, the board may take action — including fines or requests for removal — provided it's handled legally and fairly.</p>
+
+          <h2>Final Thoughts</h2>
+          
+          <p>Handling emotional support animal requests doesn't have to be difficult or contentious. With the right policies and professional guidance, condominium associations can remain in full legal compliance while maintaining a respectful, peaceful community.</p>
+          
+          <p>At Manage369 Property Management, we help Chicago-area condo boards implement fair policies, respond to ESA requests, and avoid legal pitfalls. If your board needs help creating or updating ESA accommodation procedures, reach out to us today.</p>
+
+          <div class="bg-gradient-to-r from-primary-500 to-secondary-500 p-6 rounded-xl text-white mt-8">
+            <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+            <div class="space-y-2">
+              <p><strong>Manage369 Property Management</strong></p>
+              <p>🌐 <a href="/" class="text-yellow-300 hover:underline">www.manage369.com</a></p>
+              <p>📍 Serving Chicago and surrounding suburbs</p>
+              <p>📞 <a href="tel:773-728-0652" class="text-yellow-300 hover:underline">(773) 728-0652</a></p>
+              <p class="text-blue-100 text-sm mt-4">✉️ Let us help you manage with confidence and compliance</p>
+            </div>
+          </div>
+        </div>
+      `,
+      date: "January 27, 2025",
+      category: "Legal & Compliance",
+      readTime: "14 min read",
+      excerpt: "Comprehensive guide for condominium boards on handling emotional support animal requests, including legal requirements, documentation standards, and best practices for compliance with fair housing laws.",
+      author: "Manage369 Team",
+      featured: false
+    },
     "service-animals-emotional-support-chicago-property-management": {
       id: 5,
       title: "Navigating Service Animals . A Complete Condo Guide from Manage369",
