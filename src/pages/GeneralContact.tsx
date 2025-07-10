@@ -149,7 +149,7 @@ This message was submitted through the Manage369 general contact form.
                     Book a specific time to discuss your needs
                   </p>
                   <a 
-                    href="https://calendly.com/manage369" 
+                    href="https://calendly.com/autho369/new-meeting" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="btn-outline text-sm inline-flex items-center"

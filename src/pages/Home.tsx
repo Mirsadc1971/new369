@@ -26,7 +26,7 @@ const Home = () => {
                 Get Free Consultation
               </Link>
               <a 
-                href="https://calendly.com/manage369" 
+                href="https://calendly.com/autho369/new-meeting" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4 inline-flex items-center justify-center"

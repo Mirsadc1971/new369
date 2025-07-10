@@ -183,7 +183,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   Book a convenient time slot directly with our team.
                 </p>
                 <a 
-                  href="https://calendly.com/manage369" 
+                  href="https://calendly.com/autho369/new-meeting" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-primary inline-flex items-center"
@@ -390,7 +390,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   <div className="mt-4 text-center">
                     <p className="text-sm text-gray-600 mb-3">Or schedule a meeting directly:</p>
                     <a 
-                      href="https://calendly.com/manage369" 
+                      href="https://calendly.com/autho369/new-meeting" 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="btn-outline inline-flex items-center"
