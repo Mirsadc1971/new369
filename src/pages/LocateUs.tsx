@@ -141,8 +141,9 @@ const LocateUs = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Chicago Office Location</h3>
-                    <p className="text-gray-600 mb-2">Chicago, Illinois</p>
-                    <p className="text-sm text-gray-500">Serving all Chicago neighborhoods and suburbs</p>
+                    <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
+                    <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
+                    <p className="text-sm text-gray-500">Professional property management office</p>
                   </div>
                 </div>
 
@@ -567,22 +568,22 @@ const LocateUs = () => {
                   <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">📍</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Chicago, Illinois</h3>
-                  <p className="text-gray-600 mb-4">Serving all Chicago neighborhoods and suburbs</p>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Manage369 Office</h3>
+                  <p className="text-gray-600 mb-4">5107 North Western Avenue, Suite 1S<br/>Chicago, IL 60625</p>
                   <div className="space-y-2 text-sm text-gray-600">
-                    <p><strong>Service Area:</strong> Chicago & Surrounding Suburbs</p>
-                    <p><strong>Counties:</strong> Cook, DuPage, Lake & Kane</p>
+                    <p><strong>Phone:</strong> (773) 728-0652</p>
+                    <p><strong>Email:</strong> service@manage369.com</p>
                   </div>
                 </div>
               </div>
               <div className="text-center mt-4">
                 <a 
-                  href="https://www.google.com/maps/search/Chicago+IL/@41.8781,-87.6298,15z" 
+                  href="https://www.google.com/maps/place/Manage369/@41.974506,-87.6887278,17z/data=!3m1!4b1!4m6!3m5!1s0x880fd3147ee9928d:0x801da873a09d1402!8m2!3d41.974506!4d-87.6887278!16s%2Fg%2F11xgwx9dwx?authuser=0&entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-primary inline-flex items-center"
                 >
-                  View Chicago on Google Maps
+                  View Our Office on Google Maps
                   <span className="ml-2">↗</span>
                 </a>
               </div>
