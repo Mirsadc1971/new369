@@ -92,8 +92,9 @@ const ServiceAreaDetail = () => {
               <div className="text-center mb-12">
                 <h2 className="heading-2 mb-4">Local {area.name} Property Management Services</h2>
                 <p className="body-large max-w-3xl mx-auto">
-                  Manage369 provides specialized property management services throughout {area.name} and surrounding areas. 
-                  Our local expertise ensures your {area.name} property receives the attention it deserves.
+                  Manage369 provides specialized property management services throughout {area.name} and surrounding areas, 
+                  currently managing <strong>{area.propertyCount} properties</strong> in this market. 
+                  Our <strong>{new Date().getFullYear() - (area.establishedYear || 2007)}+ years of local expertise</strong> ensures your {area.name} property receives the attention it deserves.
                 </p>
               </div>
               

@@ -30,6 +30,8 @@ export const chicagoAreas: ServiceArea[] = [
     population: 42000,
     propertyCount: "500+",
     establishedYear: 2007,
+    totalUnits: 2500,
+    averageAssessment: "$450/month",
     keyNeighborhoods: ["Loop", "River North", "Streeterville", "South Loop"],
     description: "The heart of Chicago's business district featuring luxury high-rise condominiums and modern residential towers. Manage369 is the #1 property management company in Downtown Chicago.",
     keyFeatures: [
@@ -87,6 +89,8 @@ export const chicagoAreas: ServiceArea[] = [
     population: 65000,
     propertyCount: "300+",
     establishedYear: 2008,
+    totalUnits: 1200,
+    averageAssessment: "$380/month",
     keyNeighborhoods: ["Old Town", "DePaul", "Lincoln Park Zoo Area"],
     description: "Historic neighborhood known for tree-lined streets, Victorian architecture, and diverse housing options. Manage369 is the premier property management company in Lincoln Park.",
     keyFeatures: [
@@ -144,6 +148,8 @@ export const chicagoAreas: ServiceArea[] = [
     population: 95000,
     propertyCount: "350+",
     establishedYear: 2009,
+    totalUnits: 1400,
+    averageAssessment: "$320/month",
     keyNeighborhoods: ["Wrigleyville", "Boystown", "Southport Corridor"],
     description: "Vibrant neighborhood with diverse housing, entertainment districts, and lakefront access. Manage369 is the #1 choice for property management in Lakeview.",
     keyFeatures: [

@@ -127,14 +127,14 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {[
-              { name: "Downtown Chicago", type: "Urban Core", properties: "500+ Properties", slug: "downtown-chicago", established: "Since 2007" },
-              { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+ Properties", slug: "lincoln-park", established: "Since 2008" },
-              { name: "Naperville", type: "Suburban Community", properties: "400+ Properties", slug: "naperville", established: "Since 2009" },
-              { name: "Oak Park", type: "Historic Suburb", properties: "200+ Properties", slug: "oak-park", established: "Since 2010" },
-              { name: "Evanston", type: "University Town", properties: "300+ Properties", slug: "evanston", established: "Since 2010" },
-              { name: "Wheaton", type: "Family Community", properties: "150+ Properties", slug: "wheaton", established: "Since 2011" },
-              { name: "Arlington Heights", type: "Established Suburb", properties: "200+ Properties", slug: "arlington-heights", established: "Since 2012" },
-              { name: "Palatine", type: "Northwest Suburb", properties: "180+ Properties", slug: "palatine", established: "Since 2012" }
+              { name: "Downtown Chicago", type: "Urban Core", properties: "500+ Properties", slug: "downtown-chicago", established: "Since 2007", description: "Chicago's business district with luxury high-rise condominiums" },
+              { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+ Properties", slug: "lincoln-park", established: "Since 2008", description: "Tree-lined streets with Victorian architecture and diverse housing" },
+              { name: "Naperville", type: "Suburban Community", properties: "400+ Properties", slug: "naperville", established: "Since 2009", description: "Top-rated schools and master-planned family communities" },
+              { name: "Oak Park", type: "Historic Suburb", properties: "200+ Properties", slug: "oak-park", established: "Since 2010", description: "Frank Lloyd Wright architecture and progressive community values" },
+              { name: "Evanston", type: "University Town", properties: "300+ Properties", slug: "evanston", established: "Since 2010", description: "Northwestern University area with diverse housing near Lake Michigan" },
+              { name: "Wheaton", type: "Family Community", properties: "150+ Properties", slug: "wheaton", established: "Since 2011", description: "Family-oriented community with excellent schools and downtown charm" },
+              { name: "Arlington Heights", type: "Established Suburb", properties: "200+ Properties", slug: "arlington-heights", established: "Since 2012", description: "Established community with Metra access and family amenities" },
+              { name: "Palatine", type: "Northwest Suburb", properties: "180+ Properties", slug: "palatine", established: "Since 2012", description: "Diverse housing options with strong local economy and transportation" }
             ].map((area, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                 <div>
@@ -147,6 +147,7 @@ const Home = () => {
                   <div className="space-y-1">
                     <p className="text-primary-500 font-semibold text-sm">{area.properties}</p>
                     <p className="text-gray-500 text-xs">{area.established}</p>
+                    <p className="text-gray-600 text-xs mt-2">{area.description}</p>
                   </div>
                 </div>
               </div>

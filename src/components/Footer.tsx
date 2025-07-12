@@ -20,9 +20,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Premier Chicago property management services for condominium management, townhome management, and HOA management 
-              throughout Chicago and surrounding suburbs. Professional, reliable, and comprehensive 
-              property management solutions. Chicago's premier property management company since 2007.
+              Premier Chicago property management services managing <strong>2,230+ properties</strong> across 100+ Chicago communities. 
+              Specializing in condominium management, townhome management, and HOA management throughout Chicago and surrounding suburbs. 
+              Professional, reliable, and comprehensive property management solutions since 2007.
             </p>
             <div className="space-y-2">
               <p className="flex items-center text-gray-300">
