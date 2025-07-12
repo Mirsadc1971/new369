@@ -102,7 +102,7 @@ This inquiry was submitted through the Manage369 website contact form.
                     <p className="text-gray-600 mb-2">
                       <a href="tel:+17737280652" className="text-primary-500 hover:underline">(773) 728-0652</a>
                     </p>
-                    <p className="text-sm text-gray-500">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
                   </div>
                 </div>
@@ -123,9 +123,21 @@ This inquiry was submitted through the Manage369 website contact form.
                     <span className="text-xl">📍</span>
                   </div>
                   <div>
+                    <h3 className="font-semibold text-lg mb-1">Office Address</h3>
+                    <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
+                    <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
+                    <p className="text-sm text-gray-500">Professional property management office</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">🗺️</span>
+                  </div>
+                  <div>
                     <h3 className="font-semibold text-lg mb-1">Service Area</h3>
                     <p className="text-gray-600 mb-2">Chicago & Surrounding Suburbs</p>
-                    <p className="text-sm text-gray-500">Chicago Property Management: Cook, DuPage, Lake & Kane Counties</p>
+                    <p className="text-sm text-gray-500">Cook, DuPage, Lake & Kane Counties</p>
                   </div>
                 </div>
 
