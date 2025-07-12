@@ -36,7 +36,7 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "LocalBusiness",
       "name": "Manage369",
       "description": "Chicago's #1 property management company providing professional condominium management, townhome management, and HOA management services throughout Chicago and suburbs since 2007",
       "url": "https://manage369.com",
@@ -44,9 +44,16 @@
       "email": "service@manage369.com",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "5107 North Western Avenue, Suite 1S",
         "addressLocality": "Chicago",
         "addressRegion": "IL",
+        "postalCode": "60625",
         "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.8781,
+        "longitude": -87.6298
       },
       "areaServed": [
         {
@@ -69,12 +76,41 @@
         "HOA Management",
         "Chicago HOA Management",
         "Property Management Services Chicago"
-      ]
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://manage369.com/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
+      ],
+      "priceRange": "$$",
+      "openingHours": [
+        "Mo-Fr 08:00-18:00"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Property Management Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Condominium Management",
+              "description": "Professional condominium association management services"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HOA Management",
+              "description": "Comprehensive homeowners association management"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Townhome Management",
+              "description": "Specialized townhome community management services"
+            }
+          }
+        ]
+      }
     }
     </script>
     <meta name="google-site-verification" content="JOtYFFoswU5EQOffvvd0tUD5jU8l0uBQEmc4yxAase8" />

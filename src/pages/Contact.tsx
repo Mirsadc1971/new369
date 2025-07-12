@@ -99,7 +99,9 @@ This inquiry was submitted through the Manage369 website contact form.
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                    <p className="text-gray-600 mb-2">(773) 728-0652</p>
+                    <p className="text-gray-600 mb-2">
+                      <a href="tel:+17737280652" className="text-primary-500 hover:underline">(773) 728-0652</a>
+                    </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 8:00 AM - 6:00 PM</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
                   </div>

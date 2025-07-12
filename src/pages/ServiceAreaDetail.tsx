@@ -7,6 +7,85 @@ const ServiceAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   
   useEffect(() => {
+    // Add LocalBusiness schema for this specific service area
+    const areaName = area ? area.name : additionalAreaName;
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": `https://manage369.com/service-areas/${slug}`,
+      "name": `Manage369 - ${areaName} Property Management`,
+      "description": `Professional property management services in ${areaName}. Condominium management, townhome management, and HOA management by Chicago's premier property management company.`,
+      "url": `https://manage369.com/service-areas/${slug}`,
+      "telephone": "+1-773-728-0652",
+      "email": "service@manage369.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5107 North Western Avenue, Suite 1S",
+        "addressLocality": "Chicago",
+        "addressRegion": "IL",
+        "postalCode": "60625",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.8781,
+        "longitude": -87.6298
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": areaName,
+        "addressRegion": "IL",
+        "addressCountry": "US"
+      },
+      "serviceType": [
+        "Property Management",
+        "Condominium Management",
+        "Townhome Management", 
+        "HOA Management",
+        `${areaName} Property Management`
+      ],
+      "priceRange": "$$",
+      "openingHours": [
+        "Mo-Fr 08:00-18:00"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": `${areaName} Property Management Services`,
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": `${areaName} Condominium Management`,
+              "description": `Professional condominium management services in ${areaName}`
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": `${areaName} HOA Management`,
+              "description": `Comprehensive HOA management services in ${areaName}`
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": `${areaName} Townhome Management`,
+              "description": `Specialized townhome management services in ${areaName}`
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://manage369.com"
+      ]
+    })
+    document.head.appendChild(script)
+
     // Ensure scroll to top when component mounts
     window.scrollTo(0, 0)
     
@@ -15,7 +94,13 @@ const ServiceAreaDetail = () => {
       window.scrollTo(0, 0)
     }, 200)
 
-    return () => clearTimeout(timer)
+    return () => {
+      clearTimeout(timer)
+      // Cleanup schema script
+      if (document.head.contains(script)) {
+        document.head.removeChild(script)
+      }
+    }
   }, [slug])
   
   // Find the area in our main service areas

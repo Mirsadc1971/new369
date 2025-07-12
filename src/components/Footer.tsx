@@ -27,11 +27,11 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">📞</span>
-                (773) 728-0652
+                <a href="tel:+17737280652" className="hover:text-white">(773) 728-0652</a>
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">✉️</span>
-                support@manage369.com
+                <a href="mailto:service@manage369.com" className="hover:text-white">service@manage369.com</a>
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">📍</span>
