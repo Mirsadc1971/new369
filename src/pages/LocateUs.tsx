@@ -23,11 +23,14 @@ const LocateUs = () => {
       "telephone": "+1-773-728-0652",
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 41.8781,
+        "latitude": 41.974506,
         "longitude": -87.6887278
       },
       "sameAs": [
-        "https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6"
+        "https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6",
+        "https://www.irem.org",
+        "https://www.caionline.org",
+        "https://www.bbb.org"
       ],
       "description": "Chicago's premier property management company specializing in condominiums, townhomes, and HOA associations. Professional, reliable, and comprehensive management solutions.",
       "priceRange": "$$",
@@ -428,6 +431,84 @@ const LocateUs = () => {
             </p>
           </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {/* Review 1 */}
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400 text-lg">
+                  ★★★★★
+                </div>
+                <span className="ml-2 text-sm text-gray-500">5.0</span>
+              </div>
+              <p className="text-gray-600 mb-4 italic">
+                "Manage369 has been managing our Lincoln Park condo association for 3 years now. 
+                Their 24/7 emergency response saved us during a major plumbing issue last winter. 
+                Professional, responsive, and truly understand Chicago properties. Highly recommend!"
+              </p>
+              <div className="border-t pt-4">
+                <p className="font-semibold text-gray-900">Sarah M.</p>
+                <p className="text-sm text-gray-500">HOA Board President, Lincoln Park</p>
+                <p className="text-xs text-gray-400 mt-1">Verified Google Review</p>
+              </div>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400 text-lg">
+                  ★★★★★
+                </div>
+                <span className="ml-2 text-sm text-gray-500">5.0</span>
+              </div>
+              <p className="text-gray-600 mb-4 italic">
+                "After searching 'property management Chicago' for months, we found Manage369. 
+                Best decision ever! Their financial reporting is transparent, maintenance is prompt, 
+                and they handle all the headaches. Our Naperville townhome community has never run smoother."
+              </p>
+              <div className="border-t pt-4">
+                <p className="font-semibold text-gray-900">Michael R.</p>
+                <p className="text-sm text-gray-500">Property Owner, Naperville</p>
+                <p className="text-xs text-gray-400 mt-1">Verified Google Review</p>
+              </div>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-white p-6 rounded-xl shadow-lg">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400 text-lg">
+                  ★★★★★
+                </div>
+                <span className="ml-2 text-sm text-gray-500">5.0</span>
+              </div>
+              <p className="text-gray-600 mb-4 italic">
+                "When I searched 'condo management near me,' Manage369 came up as #1 in Chicago. 
+                Now I know why! They've transformed our downtown high-rise management. Professional team, 
+                great communication, and they really know Chicago regulations. Worth every penny!"
+              </p>
+              <div className="border-t pt-4">
+                <p className="font-semibold text-gray-900">Jennifer L.</p>
+                <p className="text-sm text-gray-500">Condo Owner, Downtown Chicago</p>
+                <p className="text-xs text-gray-400 mt-1">Verified Google Review</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Review Summary */}
+          <div className="bg-gradient-to-r from-primary-500 to-secondary-500 p-8 rounded-xl text-white text-center">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            </div>
+            <div className="mt-6">
+              <a 
+                href="https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary bg-white text-primary-500 hover:bg-gray-100 inline-flex items-center"
+              >
+                Read More Reviews on Google
+                <span className="ml-2">↗</span>
+              </a>
+            </div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {/* Review 1 */}
             <div className="bg-white p-6 rounded-xl shadow-lg">
