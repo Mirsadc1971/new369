@@ -169,7 +169,7 @@ const ServiceAreaDetail = () => {
       },
       "foundingDate": "2007",
       "slogan": `${areaName}'s Premier Property Management Company`,
-      "keywords": `${areaName} property management, ${areaName} condo management, ${areaName} HOA management, property management ${areaName}, ${areaName} property managers`
+      "keywords": `${areaName} property management, ${areaName} condo management, ${areaName} HOA management, property management ${areaName}, ${areaName} property managers`,
       "knowsAbout": [
         `${areaName} Property Management`,
         `${areaName} Condominium Management`,
