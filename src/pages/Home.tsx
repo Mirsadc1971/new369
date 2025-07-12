@@ -127,14 +127,14 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {[
-              { name: "Downtown Chicago", type: "Urban Core", properties: "500+ Properties", slug: "downtown-chicago", established: "Since 2007", description: "Chicago's business district with luxury high-rise condominiums" },
-              { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+ Properties", slug: "lincoln-park", established: "Since 2008", description: "Tree-lined streets with Victorian architecture and diverse housing" },
-              { name: "Naperville", type: "Suburban Community", properties: "400+ Properties", slug: "naperville", established: "Since 2009", description: "Top-rated schools and master-planned family communities" },
-              { name: "Oak Park", type: "Historic Suburb", properties: "200+ Properties", slug: "oak-park", established: "Since 2010", description: "Frank Lloyd Wright architecture and progressive community values" },
-              { name: "Evanston", type: "University Town", properties: "300+ Properties", slug: "evanston", established: "Since 2010", description: "Northwestern University area with diverse housing near Lake Michigan" },
-              { name: "Wheaton", type: "Family Community", properties: "150+ Properties", slug: "wheaton", established: "Since 2011", description: "Family-oriented community with excellent schools and downtown charm" },
-              { name: "Arlington Heights", type: "Established Suburb", properties: "200+ Properties", slug: "arlington-heights", established: "Since 2012", description: "Established community with Metra access and family amenities" },
-              { name: "Palatine", type: "Northwest Suburb", properties: "180+ Properties", slug: "palatine", established: "Since 2012", description: "Diverse housing options with strong local economy and transportation" }
+              { name: "Downtown Chicago", type: "Urban Core", slug: "downtown-chicago", description: "Chicago's business district with luxury high-rise condominiums" },
+              { name: "Lincoln Park", type: "Historic Neighborhood", slug: "lincoln-park", description: "Tree-lined streets with Victorian architecture and diverse housing" },
+              { name: "Naperville", type: "Suburban Community", slug: "naperville", description: "Top-rated schools and master-planned family communities" },
+              { name: "Oak Park", type: "Historic Suburb", slug: "oak-park", description: "Frank Lloyd Wright architecture and progressive community values" },
+              { name: "Evanston", type: "University Town", slug: "evanston", description: "Northwestern University area with diverse housing near Lake Michigan" },
+              { name: "Wheaton", type: "Family Community", slug: "wheaton", description: "Family-oriented community with excellent schools and downtown charm" },
+              { name: "Arlington Heights", type: "Established Suburb", slug: "arlington-heights", description: "Established community with Metra access and family amenities" },
+              { name: "Palatine", type: "Northwest Suburb", slug: "palatine", description: "Diverse housing options with strong local economy and transportation" }
             ].map((area, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                 <div>
@@ -145,8 +145,6 @@ const Home = () => {
                   </h4>
                   <p className="text-sm text-gray-600 mb-3">{area.type}</p>
                   <div className="space-y-1">
-                    <p className="text-primary-500 font-semibold text-sm">{area.properties}</p>
-                    <p className="text-gray-500 text-xs">{area.established}</p>
                     <p className="text-gray-600 text-xs mt-2">{area.description}</p>
                   </div>
                 </div>
@@ -155,14 +153,6 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <div className="mb-6">
-              <p className="text-lg font-semibold text-gray-700 mb-2">
-                Total Properties Under Management: <span className="text-primary-500">2,230+</span>
-              </p>
-              <p className="text-gray-600">
-                Serving <span className="font-semibold">100+ Chicago communities</span> since 2007
-              </p>
-            </div>
             <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
               View All Chicago Service Areas
             </Link>

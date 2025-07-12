@@ -30,9 +30,9 @@ const ServiceAreas = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Chicago Property Management - City Neighborhoods</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Premier Chicago property management serving <strong>2,230+ properties</strong> across Chicago's diverse neighborhoods, 
+              Premier Chicago property management across Chicago's diverse neighborhoods, 
               from downtown high-rises to historic residential areas. Manage369 is Chicago's leading property management company 
-              with deep understanding of each Chicago neighborhood's unique character and <strong>18+ years of local expertise</strong>.
+              with deep understanding of each Chicago neighborhood's unique character.
             </p>
           </div>
 
@@ -42,14 +42,9 @@ const ServiceAreas = () => {
                 <div className="flex-grow">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold">{area.name}</h3>
-                    <div className="flex flex-col items-end space-y-1">
-                      <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs">
-                        {area.propertyCount} Properties
-                      </span>
-                      <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">
-                        {area.population?.toLocaleString()} residents
-                      </span>
-                    </div>
+                    <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs">
+                      {area.county} County
+                    </span>
                   </div>
                   <p className="body-text mb-4">{area.description}</p>
                   {area.keyNeighborhoods && (

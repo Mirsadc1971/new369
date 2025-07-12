@@ -60,19 +60,9 @@ const ServiceAreaDetail = () => {
                 <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
                   {area.county} County
                 </span>
-                {area.propertyCount && (
-                  <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
-                    {area.propertyCount} Properties Managed
-                  </span>
-                )}
                 {area.population && (
                   <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
                     {area.population.toLocaleString()} Residents
-                  </span>
-                )}
-                {area.establishedYear && (
-                  <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
-                    Serving Since {area.establishedYear}
                   </span>
                 )}
                 <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm capitalize">
