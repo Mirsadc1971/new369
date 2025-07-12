@@ -23,20 +23,20 @@ const About = () => {
             {/* Stats Cards */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">18+</div>
-                <div className="text-blue-100 text-sm">Years Experience</div>
-              </div>
-              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
                 <div className="text-3xl font-bold text-yellow-300 mb-2">2,230+</div>
                 <div className="text-blue-100 text-sm">Properties Managed</div>
               </div>
               <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">24/7</div>
-                <div className="text-blue-100 text-sm">Emergency Support</div>
+                <div className="text-3xl font-bold text-yellow-300 mb-2">100+</div>
+                <div className="text-blue-100 text-sm">Chicago Neighborhoods</div>
               </div>
               <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">#1</div>
-                <div className="text-blue-100 text-sm">Chicago Management</div>
+                <div className="text-3xl font-bold text-yellow-300 mb-2">18+</div>
+                <div className="text-blue-100 text-sm">Years Local Experience</div>
+              </div>
+              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-3xl font-bold text-yellow-300 mb-2">24/7</div>
+                <div className="text-blue-100 text-sm">Emergency Response</div>
               </div>
             </div>
           </div>

@@ -181,23 +181,62 @@ const Blog = () => {
       {/* Newsletter Signup */}
       <section className="section-padding bg-white">
         <div className="container-max">
-          <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 md:p-12 text-white text-center">
-            <h2 className="heading-2 mb-4 text-white">Stay Updated with Property Management Insights</h2>
-            <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest property management tips, 
-              Chicago market updates, and expert advice delivered to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-secondary bg-white text-primary-500 hover:bg-gray-100 text-lg px-8 py-4">
-                Contact Us for Updates
-              </Link>
-              <a href="mailto:service@manage369.com" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-                Email service@manage369.com
-              </a>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
+              <h2 className="text-2xl font-bold mb-4 text-white">Expert Property Management Insights</h2>
+              <p className="text-blue-100 mb-6">
+                Get exclusive insights from managing 2,230+ Chicago properties. 
+                Real-world solutions from experienced professionals.
+              </p>
+              <div className="space-y-3 text-sm">
+                <div className="flex items-center space-x-3">
+                  <span className="w-2 h-2 bg-white rounded-full"></span>
+                  <span>Chicago market trends and analysis</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="w-2 h-2 bg-white rounded-full"></span>
+                  <span>Legal compliance updates</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <span className="w-2 h-2 bg-white rounded-full"></span>
+                  <span>Best practices from 18+ years experience</span>
+                </div>
+              </div>
             </div>
-            <p className="text-blue-200 text-sm mt-4">
-              Contact us to stay informed about property management insights and updates.
-            </p>
+            
+            <div className="bg-gray-50 p-8 rounded-2xl">
+              <h3 className="text-xl font-semibold mb-4">Why Our Content Matters</h3>
+              <p className="text-gray-600 mb-6">
+                Unlike generic property management advice, our insights come from 
+                real experience managing thousands of Chicago properties.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <span className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </span>
+                  <span className="text-sm">Practical solutions tested across 2,230+ properties</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </span>
+                  <span className="text-sm">Chicago-specific regulations and requirements</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <span className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white text-xs">✓</span>
+                  </span>
+                  <span className="text-sm">Real case studies from neighborhood experts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link to="/contact" className="btn-primary text-lg px-8 py-4">
+              Get Expert Consultation
+            </Link>
           </div>
         </div>
       </section>

@@ -20,9 +20,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Premier Chicago property management services managing <strong>2,230+ properties</strong> across 100+ Chicago communities. 
+              Chicago's most trusted property management company with <strong>2,230+ properties under management</strong> across 100+ communities. 
               Specializing in condominium management, townhome management, and HOA management throughout Chicago and surrounding suburbs. 
-              Professional, reliable, and comprehensive property management solutions since 2007.
+              Unlike large corporate chains, we provide personalized service with proven results since 2007.
             </p>
             <div className="space-y-2">
               <p className="flex items-center text-gray-300">
@@ -76,20 +76,24 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white mb-4">Professional Certifications & Memberships</h3>
             <div className="flex justify-center items-center space-x-8">
               <div className="flex flex-col items-center">
-                <img 
-                  src="/CAI National.png" 
-                  alt="CAI National - Community Associations Institute Member" 
-                  className="h-16 w-auto object-contain mb-2"
-                />
-                <span className="text-xs text-gray-400">CAI National Member</span>
+                <a href="https://www.caionline.org" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:opacity-80 transition-opacity">
+                  <img 
+                    src="/CAI National.png" 
+                    alt="CAI National - Community Associations Institute Member" 
+                    className="h-16 w-auto object-contain mb-2"
+                  />
+                  <span className="text-xs text-gray-400">CAI National Member</span>
+                </a>
               </div>
               <div className="flex flex-col items-center">
-                <img 
-                  src="/IDFPR_circular_logo.png" 
-                  alt="Illinois Department of Financial and Professional Regulation Licensed" 
-                  className="h-16 w-auto object-contain mb-2"
-                />
-                <span className="text-xs text-gray-400">IDFPR Licensed</span>
+                <a href="https://www.idfpr.com" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center hover:opacity-80 transition-opacity">
+                  <img 
+                    src="/IDFPR_circular_logo.png" 
+                    alt="Illinois Department of Financial and Professional Regulation Licensed" 
+                    className="h-16 w-auto object-contain mb-2"
+                  />
+                  <span className="text-xs text-gray-400">IDFPR Licensed</span>
+                </a>
               </div>
             </div>
           </div>
