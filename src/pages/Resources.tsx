@@ -449,6 +449,13 @@ const Resources = () => {
             Contact our team for personalized guidance, additional resources, 
             or answers to specific questions about your property management needs.
           </p>
+          <div className="mb-8">
+            <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
+              <p className="text-white font-semibold">Manage369 Property Management</p>
+              <p className="text-blue-100">5107 N Western Ave, Suite 1S, Chicago, IL 60625</p>
+              <p className="text-blue-100">(773) 728-0652 | service@manage369.com</p>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
               Contact Our Team

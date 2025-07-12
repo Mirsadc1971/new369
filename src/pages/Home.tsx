@@ -296,6 +296,14 @@ const Home = () => {
             Chicago's #1 property management company, for comprehensive, reliable property management services 
             throughout <Link to="/service-areas" className="text-yellow-300 hover:underline">Chicago and suburbs</Link>.
           </p>
+          <div className="mb-8">
+            <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
+              <p className="text-white font-semibold">Manage369 - Chicago's #1 Property Management Company</p>
+              <p className="text-green-100">5107 N Western Ave, Suite 1S, Chicago, IL 60625 (X8F6+RG)</p>
+              <p className="text-green-100">(773) 728-0652 | service@manage369.com</p>
+              <p className="text-green-100 text-sm">Serving Cook, DuPage, Lake & Kane Counties</p>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary bg-white text-primary-500 hover:bg-gray-100 text-lg px-8 py-4">
               Get Free Quote from Chicago's #1

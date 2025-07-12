@@ -35,7 +35,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">📍</span>
-                5107 N Western Ave, Suite 1S, Chicago, IL 60625
+                5107 N Western Ave, Suite 1S, Chicago, IL 60625 (X8F6+RG)
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">🕒</span>

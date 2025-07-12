@@ -143,6 +143,7 @@ const LocateUs = () => {
                     <h3 className="font-semibold text-lg mb-1">Chicago Office Location</h3>
                     <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
                     <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
+                    <p className="text-gray-500 text-sm mb-2">Plus Code: X8F6+RG Chicago, Illinois</p>
                     <p className="text-sm text-gray-500">Professional property management office</p>
                   </div>
                 </div>

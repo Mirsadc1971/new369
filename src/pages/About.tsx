@@ -395,6 +395,13 @@ const About = () => {
             Contact us today to learn how our experienced team can help your property 
             achieve its full potential through professional, comprehensive management services.
           </p>
+          <div className="mb-8 text-center">
+            <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
+              <p className="text-white font-semibold">Manage369 - Chicago Property Management</p>
+              <p className="text-green-100">5107 N Western Ave, Suite 1S, Chicago, IL 60625</p>
+              <p className="text-green-100">(773) 728-0652 | service@manage369.com</p>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/contact" className="btn-primary bg-white text-primary-500 hover:bg-gray-100 text-lg px-10 py-4 font-semibold">
               Get Started Today
