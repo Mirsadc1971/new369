@@ -186,6 +186,7 @@ const Blog = () => {
               <h2 className="text-2xl font-bold mb-4 text-white">Expert Property Management Insights</h2>
               <p className="text-blue-100 mb-6">
                 Get exclusive insights from managing 2,230+ Chicago properties. 
+                Get exclusive insights from managing 50+ properties with 2450+ units in Chicago. 
                 Real-world solutions from experienced professionals.
               </p>
               <div className="space-y-3 text-sm">
@@ -216,6 +217,7 @@ const Blog = () => {
                     <span className="text-white text-xs">✓</span>
                   </span>
                   <span className="text-sm">Practical solutions tested across 2,230+ properties</span>
+                  <span className="text-sm">Practical solutions tested across 50+ properties, 2450+ units</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <span className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">

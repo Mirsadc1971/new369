@@ -11,11 +11,11 @@ const Home = () => {
             <h1 className="heading-1 mb-6 text-white">
               Chicago Property Management Company |{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Managing 2,230+ Properties Since 2007
+                Managing 50+ Properties, 2450+ Units Since 2007
               </span>
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-              Chicago's most trusted property management company with 2,230+ properties under management across 100+ neighborhoods. 
+              Chicago's most trusted property management company with 50+ properties managing 2450+ units across 100+ neighborhoods. 
               Expert <Link to="/services/condominium-management" className="text-yellow-300 hover:underline">Chicago condo management</Link>, 
               <Link to="/services/townhome-management" className="text-yellow-300 hover:underline"> HOA management</Link>, and 
               <Link to="/services/hoa-management" className="text-yellow-300 hover:underline"> townhome management</Link> with 

@@ -115,14 +115,14 @@ const LocateUs = () => {
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
               Manage369 is Chicago's premier property management company with 18+ years of experience 
-              serving 50+ HOA and condo associations across 70+ neighborhoods. We provide comprehensive 
+              serving 50+ properties managing 2450+ units across 100+ neighborhoods. We provide comprehensive 
               management solutions including 24/7 emergency response, financial management, maintenance 
               coordination, and legal compliance. Licensed, insured, and trusted since 2007.
             </p>
             <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm inline-block">
               <p className="text-blue-100 mb-2">
-                Managing 2,230+ properties across Lincoln Park (300+ properties), Downtown Chicago (500+ properties), 
-                Lakeview (350+ properties), Naperville (400+ properties), and 100+ other Chicago communities since 2007.
+                Managing 50+ properties with 2450+ units across Lincoln Park, Downtown Chicago, 
+                Lakeview, Naperville, and 100+ other Chicago communities since 2007.
               </p>
             </div>
           </div>

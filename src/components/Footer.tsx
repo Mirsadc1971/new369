@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Chicago's most trusted property management company with <strong>2,230+ properties under management</strong> across 100+ communities. 
+              Chicago's most trusted property management company with <strong>50+ properties managing 2450+ units</strong> across 100+ communities. 
               Specializing in condominium management, townhome management, and HOA management throughout Chicago and surrounding suburbs. 
               Unlike large corporate chains, we provide personalized service with proven results since 2007.
             </p>
