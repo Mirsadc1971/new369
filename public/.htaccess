@@ -20,9 +20,22 @@ Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains
 # Permissions Policy (formerly Feature Policy)
 Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
 
-# Cache Control for static assets
+# Optimized Cache Control for static assets
 <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
-    Header set Cache-Control "public, max-age=31536000"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+    Header set Vary "Accept-Encoding"
+</FilesMatch>
+
+# Cache Control for HTML files
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+    Header set Vary "Accept-Encoding"
+</FilesMatch>
+
+# Cache Control for API responses and dynamic content
+<FilesMatch "\.(json|xml)$">
+    Header set Cache-Control "public, max-age=300, must-revalidate"
+    Header set Vary "Accept-Encoding"
 </FilesMatch>
 
 # Gzip Compression
@@ -36,11 +49,17 @@ Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     AddOutputFilterByType DEFLATE application/rss+xml
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE font/woff
+    AddOutputFilterByType DEFLATE font/woff2
 </IfModule>
 
-# Browser Caching
+# Enhanced Browser Caching
 <IfModule mod_expires.c>
     ExpiresActive on
+    
+    # Static assets - 1 year
     ExpiresByType text/css "access plus 1 year"
     ExpiresByType application/javascript "access plus 1 year"
     ExpiresByType image/png "access plus 1 year"
@@ -51,4 +70,32 @@ Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     ExpiresByType image/svg+xml "access plus 1 year"
     ExpiresByType font/woff "access plus 1 year"
     ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/eot "access plus 1 year"
+    
+    # HTML files - 1 hour
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # JSON/XML - 5 minutes
+    ExpiresByType application/json "access plus 5 minutes"
+    ExpiresByType application/xml "access plus 5 minutes"
+    ExpiresByType text/xml "access plus 5 minutes"
+</IfModule>
+
+# Enable ETags for better caching
+<IfModule mod_headers.c>
+    # Remove ETags for static assets (we use immutable cache)
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
+        Header unset ETag
+        FileETag None
+    </FilesMatch>
+</IfModule>
+
+# Preload critical resources
+<IfModule mod_headers.c>
+    # Preload critical CSS and fonts
+    <FilesMatch "\.html$">
+        Header add Link "</assets/css/main.css>; rel=preload; as=style"
+        Header add Link "</assets/fonts/inter.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
+    </FilesMatch>
 </IfModule>
