@@ -9,16 +9,16 @@ const Home = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              Chicago's #1 Property Management Company for{' '}
+              Chicago Property Management Company |{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Condos, Townhomes & HOAs
+                #1 Condo, Townhome & HOA Management
               </span>
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-              Manage369 is Chicago's premier #1 property management company providing professional 
-              services throughout Chicago and suburbs. We specialize in <Link to="/services/condominium-management" className="text-yellow-300 hover:underline">condominium associations</Link>, 
+              Manage369 is Chicago's #1 property management company providing professional property management 
+              services throughout Chicago and suburbs since 2007. We specialize in <Link to="/services/condominium-management" className="text-yellow-300 hover:underline">Chicago condominium management</Link>, 
               <Link to="/services/townhome-management" className="text-yellow-300 hover:underline"> townhome communities</Link>, and 
-              <Link to="/services/hoa-management" className="text-yellow-300 hover:underline"> HOA management</Link> with 
+              <Link to="/services/hoa-management" className="text-yellow-300 hover:underline"> Chicago HOA management</Link> with 
               comprehensive, reliable solutions tailored to your property's unique needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -46,11 +46,11 @@ const Home = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Chicago's #1 Property Management Services</h2>
+            <h2 className="heading-2 mb-4">Chicago Property Management Services - #1 Rated Company</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Manage369 provides expert management for all types of residential communities throughout 
+              Manage369 provides expert property management for all types of residential communities throughout 
               Chicago and surrounding suburbs, with specialized expertise in each property type. As Chicago's 
-              #1 property management company, we serve <Link to="/service-areas" className="text-primary-500 hover:underline">100+ Chicago area communities</Link>.
+              #1 property management company, we serve <Link to="/service-areas" className="text-primary-500 hover:underline">100+ Chicago neighborhoods and suburbs</Link> with professional property management services.
             </p>
           </div>
           
@@ -60,15 +60,17 @@ const Home = () => {
                 <span className="text-2xl">🏢</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago Condominium Management</h3>
+                <h3 className="heading-3 mb-4">Chicago Condominium Management Services</h3>
                 <p className="body-text mb-6">
-                  Comprehensive management for high-rise buildings, mid-rise complexes, and 
-                  boutique condominium communities. From luxury <Link to="/service-areas/downtown-chicago" className="text-primary-500 hover:underline">downtown Chicago towers</Link> to 
-                  <Link to="/service-areas/lincoln-park" className="text-primary-500 hover:underline"> Lincoln Park</Link> neighborhood buildings.
+                  Specialized condominium management for high-rise buildings, mid-rise complexes, 
+                  and boutique condominium communities throughout Chicago including 
+                  <Link to="/service-areas/downtown-chicago" className="text-primary-500 hover:underline"> Downtown Chicago</Link>, 
+                  <Link to="/service-areas/lincoln-park" className="text-primary-500 hover:underline"> Lincoln Park</Link>, and 
+                  <Link to="/service-areas/lakeview" className="text-primary-500 hover:underline"> Lakeview</Link>.
                 </p>
               </div>
               <Link to="/services/condominium-management" className="btn-primary mt-auto w-full text-center block">
-                Learn More About Condo Management
+                Chicago Condominium Management Services
               </Link>
             </div>
 
@@ -77,16 +79,17 @@ const Home = () => {
                 <span className="text-2xl">🏘️</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago Townhome Management</h3>
+                <h3 className="heading-3 mb-4">Chicago Townhome Management Services</h3>
                 <p className="body-text mb-6">
-                  Specialized services for townhome communities, row houses, and attached home 
-                  developments. Expert management of shared amenities and community spaces in 
+                  Comprehensive townhome management for townhome communities, row houses, 
+                  and attached home developments across Chicago suburbs including 
                   <Link to="/service-areas/naperville" className="text-secondary-500 hover:underline"> Naperville</Link>, 
-                  <Link to="/service-areas/wheaton" className="text-secondary-500 hover:underline"> Wheaton</Link>, and surrounding suburbs.
+                  <Link to="/service-areas/wheaton" className="text-secondary-500 hover:underline"> Wheaton</Link>, and 
+                  <Link to="/service-areas/oak-park" className="text-secondary-500 hover:underline"> Oak Park</Link>.
                 </p>
               </div>
               <Link to="/services/townhome-management" className="btn-primary mt-auto w-full text-center block">
-                Learn More About Townhome Management
+                Chicago Townhome Management Services
               </Link>
             </div>
 
@@ -95,16 +98,17 @@ const Home = () => {
                 <span className="text-2xl">🏡</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago HOA Management</h3>
+                <h3 className="heading-3 mb-4">Chicago HOA Management Services</h3>
                 <p className="body-text mb-6">
-                  Full-service homeowners association management for single-family subdivisions, 
-                  master-planned communities, and mixed-use developments throughout 
-                  <Link to="/service-areas/oak-park" className="text-accent-500 hover:underline"> Oak Park</Link>, 
-                  <Link to="/service-areas/evanston" className="text-accent-500 hover:underline"> Evanston</Link>, and Chicago suburbs.
+                  Full-service HOA management for single-family 
+                  subdivisions and master-planned communities throughout Chicago suburbs including 
+                  <Link to="/service-areas/evanston" className="text-accent-500 hover:underline"> Evanston</Link>, 
+                  <Link to="/service-areas/schaumburg" className="text-accent-500 hover:underline"> Schaumburg</Link>, and 
+                  <Link to="/service-areas/arlington-heights" className="text-accent-500 hover:underline"> Arlington Heights</Link>.
                 </p>
               </div>
               <Link to="/services/hoa-management" className="btn-primary mt-auto w-full text-center block">
-                Learn More About HOA Management
+                Chicago HOA Management Services
               </Link>
             </div>
           </div>

@@ -20,9 +20,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Premier property management services for condominiums, townhomes, and HOA associations 
+              Premier Chicago property management services for condominium management, townhome management, and HOA management 
               throughout Chicago and surrounding suburbs. Professional, reliable, and comprehensive 
-              management solutions. Chicago's #1 property management company.
+              property management solutions. Chicago's #1 property management company since 2007.
             </p>
             <div className="space-y-2">
               <p className="flex items-center text-gray-300">
@@ -44,10 +44,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/services/condominium-management" className="text-gray-300 hover:text-white transition-colors">Condominium Management</Link></li>
-              <li><Link to="/services/townhome-management" className="text-gray-300 hover:text-white transition-colors">Townhome Management</Link></li>
-              <li><Link to="/services/hoa-management" className="text-gray-300 hover:text-white transition-colors">HOA Management</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">All Services</Link></li>
+              <li><Link to="/services/condominium-management" className="text-gray-300 hover:text-white transition-colors">Chicago Condominium Management</Link></li>
+              <li><Link to="/services/townhome-management" className="text-gray-300 hover:text-white transition-colors">Chicago Townhome Management</Link></li>
+              <li><Link to="/services/hoa-management" className="text-gray-300 hover:text-white transition-colors">Chicago HOA Management</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">All Chicago Property Management Services</Link></li>
             </ul>
           </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
                 © {currentYear} Manage369 - Chicago's #1 Property Management Company. All rights reserved.
               </p>
               <p className="text-xs">
-                Licensed Property Management Company | IDFPR Licensed | CAI Member | Serving Chicago Since 2007
+                Licensed Chicago Property Management Company | IDFPR Licensed | CAI Member | Serving Chicago Since 2007
               </p>
             </div>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">

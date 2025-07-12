@@ -14,15 +14,15 @@ const TownhomeManagement = () => {
               <span>Townhome Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Expert{' '}
+              Chicago{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Townhome Management
+                Townhome Management Services
               </span>
             </h1>
             <p className="body-large mb-8 text-green-100">
-              Comprehensive management services for townhome communities, row houses, 
+              Comprehensive Chicago townhome management services for townhome communities, row houses, 
               and attached home developments throughout Chicago suburbs. We understand 
-              the unique needs of townhome associations and provide tailored solutions 
+              the unique needs of Chicago townhome associations and provide tailored townhome management solutions 
               that enhance community living and property values.
             </p>
           </div>
@@ -33,10 +33,10 @@ const TownhomeManagement = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Townhome Communities We Serve</h2>
+            <h2 className="heading-2 mb-4">Chicago Townhome Communities We Serve</h2>
             <p className="body-large max-w-3xl mx-auto">
               From modern planned developments to historic row house communities, 
-              we provide specialized management for all types of townhome properties.
+              we provide specialized townhome management for all types of Chicago townhome properties.
             </p>
           </div>
 
@@ -47,8 +47,8 @@ const TownhomeManagement = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">Planned Communities</h3>
               <p className="text-sm text-gray-600">
-                Modern townhome developments with shared amenities, landscaping, 
-                and community facilities requiring comprehensive management.
+                Modern Chicago townhome developments with shared amenities, landscaping, 
+                and community facilities requiring comprehensive townhome management.
               </p>
             </div>
 
@@ -58,8 +58,8 @@ const TownhomeManagement = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">Row House Developments</h3>
               <p className="text-sm text-gray-600">
-                Traditional and contemporary row house communities with shared 
-                walls and common maintenance responsibilities.
+                Traditional and contemporary Chicago row house communities with shared 
+                walls and common townhome management responsibilities.
               </p>
             </div>
 

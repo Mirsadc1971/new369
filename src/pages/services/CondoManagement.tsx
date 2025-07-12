@@ -14,15 +14,15 @@ const CondoManagement = () => {
               <span>Condominium Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Professional{' '}
+              Chicago{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Condominium Management
+                Condominium Management Services
               </span>
             </h1>
             <p className="body-large mb-8 text-blue-100">
-              Specialized management services for high-rise buildings, mid-rise complexes, 
+              Specialized Chicago condominium management services for high-rise buildings, mid-rise complexes, 
               and boutique condominium communities throughout Chicago. Our expertise 
-              ensures your condominium association operates efficiently and maintains 
+              ensures your Chicago condominium association operates efficiently and maintains 
               its value while providing exceptional living experiences for residents.
             </p>
           </div>
@@ -33,10 +33,10 @@ const CondoManagement = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Condominium Types We Manage</h2>
+            <h2 className="heading-2 mb-4">Chicago Condominium Types We Manage</h2>
             <p className="body-large max-w-3xl mx-auto">
               From luxury high-rise towers to intimate boutique buildings, we provide 
-              tailored management solutions for all types of condominium properties.
+              tailored condominium management solutions for all types of Chicago condominium properties.
             </p>
           </div>
 
@@ -47,8 +47,8 @@ const CondoManagement = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">High-Rise Buildings</h3>
               <p className="text-sm text-gray-600">
-                Luxury towers with premium amenities, concierge services, and complex 
-                building systems requiring specialized management expertise.
+                Chicago luxury towers with premium amenities, concierge services, and complex 
+                building systems requiring specialized condominium management expertise.
               </p>
             </div>
 
@@ -58,8 +58,8 @@ const CondoManagement = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">Mid-Rise Complexes</h3>
               <p className="text-sm text-gray-600">
-                Multi-story residential buildings with shared amenities and common 
-                areas requiring comprehensive management and maintenance coordination.
+                Chicago multi-story residential buildings with shared amenities and common 
+                areas requiring comprehensive condominium management and maintenance coordination.
               </p>
             </div>
 
@@ -69,8 +69,8 @@ const CondoManagement = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">Boutique Buildings</h3>
               <p className="text-sm text-gray-600">
-                Smaller, intimate condominium communities with unique character 
-                and personalized service requirements.
+                Smaller, intimate Chicago condominium communities with unique character 
+                and personalized condominium management service requirements.
               </p>
             </div>
 

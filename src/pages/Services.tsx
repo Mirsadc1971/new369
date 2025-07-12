@@ -9,17 +9,17 @@ const Services = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              Chicago's #1 Property{' '}
+              Chicago Property{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Management Services
+                Management Services - #1 Company
               </span>
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
               Manage369 is Chicago's premier #1 property management company providing professional 
-              management solutions for <Link to="/services/condominium-management" className="text-yellow-300 hover:underline">condominiums</Link>, 
-              <Link to="/services/townhome-management" className="text-yellow-300 hover:underline"> townhomes</Link>, and 
-              <Link to="/services/hoa-management" className="text-yellow-300 hover:underline"> HOA associations</Link> throughout 
-              Chicago and suburbs. We provide comprehensive services tailored to each property type's unique needs.
+              property management solutions for <Link to="/services/condominium-management" className="text-yellow-300 hover:underline">Chicago condominium management</Link>, 
+              <Link to="/services/townhome-management" className="text-yellow-300 hover:underline"> Chicago townhome management</Link>, and 
+              <Link to="/services/hoa-management" className="text-yellow-300 hover:underline"> Chicago HOA management</Link> throughout 
+              Chicago and suburbs. We provide comprehensive property management services tailored to each property type's unique needs.
             </p>
           </div>
         </div>
@@ -29,11 +29,11 @@ const Services = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Our Specialized Chicago Property Management Services</h2>
+            <h2 className="heading-2 mb-4">Specialized Chicago Property Management Services</h2>
             <p className="body-large max-w-3xl mx-auto">
-              We offer three distinct service categories, each designed to address 
+              We offer three distinct property management service categories, each designed to address 
               the specific requirements and challenges of different property types throughout 
-              <Link to="/service-areas" className="text-primary-500 hover:underline">Chicago and surrounding areas</Link>.
+              <Link to="/service-areas" className="text-primary-500 hover:underline">Chicago neighborhoods and surrounding areas</Link>.
             </p>
           </div>
 
@@ -43,9 +43,9 @@ const Services = () => {
                 <span className="text-2xl text-white">🏢</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago Condominium Management</h3>
+                <h3 className="heading-3 mb-4">Chicago Condominium Management Services</h3>
                 <p className="body-text mb-6">
-                  Specialized management for high-rise buildings, mid-rise complexes, 
+                  Specialized condominium management for high-rise buildings, mid-rise complexes, 
                   and boutique condominium communities throughout Chicago including 
                   <Link to="/service-areas/downtown-chicago" className="text-primary-500 hover:underline"> Downtown Chicago</Link>, 
                   <Link to="/service-areas/lincoln-park" className="text-primary-500 hover:underline"> Lincoln Park</Link>, and 
@@ -59,7 +59,7 @@ const Services = () => {
                 </ul>
               </div>
               <Link to="/services/condominium-management" className="btn-primary w-full text-center mt-auto">
-                Learn More About Condo Management
+                Chicago Condominium Management
               </Link>
             </div>
 
@@ -68,9 +68,9 @@ const Services = () => {
                 <span className="text-2xl text-white">🏘️</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago Townhome Management</h3>
+                <h3 className="heading-3 mb-4">Chicago Townhome Management Services</h3>
                 <p className="body-text mb-6">
-                  Comprehensive management for townhome communities, row houses, 
+                  Comprehensive townhome management for townhome communities, row houses, 
                   and attached home developments across Chicago suburbs including 
                   <Link to="/service-areas/naperville" className="text-secondary-500 hover:underline"> Naperville</Link>, 
                   <Link to="/service-areas/wheaton" className="text-secondary-500 hover:underline"> Wheaton</Link>, and 
@@ -84,7 +84,7 @@ const Services = () => {
                 </ul>
               </div>
               <Link to="/services/townhome-management" className="btn-secondary w-full text-center mt-auto">
-                Learn More About Townhome Management
+                Chicago Townhome Management
               </Link>
             </div>
 
@@ -93,9 +93,9 @@ const Services = () => {
                 <span className="text-2xl text-white">🏡</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago HOA Management</h3>
+                <h3 className="heading-3 mb-4">Chicago HOA Management Services</h3>
                 <p className="body-text mb-6">
-                  Full-service homeowners association management for single-family 
+                  Full-service HOA management for single-family 
                   subdivisions and master-planned communities throughout Chicago suburbs including 
                   <Link to="/service-areas/evanston" className="text-accent-500 hover:underline"> Evanston</Link>, 
                   <Link to="/service-areas/schaumburg" className="text-accent-500 hover:underline"> Schaumburg</Link>, and 
@@ -109,7 +109,7 @@ const Services = () => {
                 </ul>
               </div>
               <Link to="/services/hoa-management" className="btn-primary w-full text-center mt-auto">
-                Learn More About HOA Management
+                Chicago HOA Management
               </Link>
             </div>
           </div>

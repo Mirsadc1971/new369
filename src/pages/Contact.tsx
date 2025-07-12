@@ -71,14 +71,14 @@ This inquiry was submitted through the Manage369 website contact form.
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              Request Free{' '}
+              Chicago Property Management{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Consultation
+                Free Consultation
               </span>
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-              Ready to experience professional property management? Request your free consultation today 
-              for a free consultation and learn how we can help your property thrive.
+              Ready to experience professional Chicago property management? Request your free property management consultation today 
+              and learn how Chicago's #1 property management company can help your Chicago property thrive.
             </p>
           </div>
         </div>
@@ -123,7 +123,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Service Area</h3>
                     <p className="text-gray-600 mb-2">Chicago & Surrounding Suburbs</p>
-                    <p className="text-sm text-gray-500">Cook, DuPage, Lake & Kane Counties</p>
+                    <p className="text-sm text-gray-500">Chicago Property Management: Cook, DuPage, Lake & Kane Counties</p>
                   </div>
                 </div>
 
@@ -199,8 +199,8 @@ This inquiry was submitted through the Manage369 website contact form.
               <div className="bg-gray-50 p-8 rounded-xl">
                 <h2 className="heading-2 mb-6">Request Free Property Management Consultation</h2>
                 <p className="text-gray-600 mb-8">
-                  Interested in our property management services? Fill out this detailed form and we'll contact you within 24 hours to discuss 
-                  your property management needs and provide a customized solution.
+                  Interested in our Chicago property management services? Fill out this detailed form and we'll contact you within 24 hours to discuss 
+                  your Chicago property management needs and provide a customized property management solution.
                 </p>
 
                 {submitStatus === 'success' && (

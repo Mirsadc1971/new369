@@ -9,15 +9,15 @@ const About = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              About{' '}
+              About Chicago's #1{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Manage369
+                Property Management Company
               </span>
             </h1>
             <p className="text-xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Chicago's premier property management company specializing in condominiums, 
-              townhomes, and HOA associations. We provide comprehensive, professional 
-              management services throughout Chicago and surrounding suburbs.
+              Chicago's premier property management company specializing in Chicago condominium management, 
+              Chicago townhome management, and Chicago HOA management. We provide comprehensive, professional 
+              property management services throughout Chicago and surrounding suburbs since 2007.
             </p>
             
             {/* Stats Cards */}
@@ -50,14 +50,14 @@ const About = () => {
             <div>
               <h2 className="heading-2 mb-6">Our Story & Mission</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Manage369 was founded with a simple mission: to provide exceptional property 
+                Manage369 was founded with a simple mission: to provide exceptional Chicago property 
                 management services that exceed expectations while building lasting relationships 
-                with property owners, boards, and residents throughout the Chicago area.
+                with Chicago property owners, boards, and residents throughout the Chicago area.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                With years of experience in the Chicago real estate market, our team understands 
-                the unique challenges and opportunities that come with managing residential 
-                properties in this dynamic metropolitan area.
+                With years of experience in the Chicago real estate market, our property management team understands 
+                the unique challenges and opportunities that come with managing Chicago residential 
+                properties in this dynamic Chicago metropolitan area.
               </p>
               
               {/* Mission Points */}
