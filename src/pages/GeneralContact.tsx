@@ -41,7 +41,7 @@ This message was submitted through the Manage369 general contact form.
     `.trim()
 
     // Create mailto link
-    const mailtoLink = `mailto:support@manage369.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+    const mailtoLink = `mailto:service@manage369.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
     
     // Open email client
     window.location.href = mailtoLink
@@ -310,7 +310,7 @@ This message was submitted through the Manage369 general contact form.
                       </div>
                       <p className="text-blue-700 text-sm">
                         <strong>Note:</strong> Clicking "Send Message" will open your default email client 
-                        with a pre-filled message to service@manage369.com containing your form information. 
+                        with a pre-filled message to support@manage369.com containing your form information. 
                         You can review and send the email from your email application.
                       </p>
                     </div>
