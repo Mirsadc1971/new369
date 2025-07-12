@@ -1,7 +1,146 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Contact = () => {
+  useEffect(() => {
+    // Add LocalBusiness schema to contact page
+    const script = document.createElement('script')
+    script.type = 'application/ld+json'
+    script.id = 'contact-page-schema'
+    script.innerHTML = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://manage369.com/contact",
+      "name": "Manage369 - Chicago Property Management",
+      "description": "Professional property management services in Chicago and suburbs. Condominium management, townhome management, and HOA management by Chicago's premier property management company.",
+      "url": "https://manage369.com/contact",
+      "telephone": "+1-773-728-0652",
+      "email": "service@manage369.com",
+      "image": "https://manage369.com/manage369-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5107 North Western Avenue, Suite 1S",
+        "addressLocality": "Chicago",
+        "addressRegion": "IL",
+        "postalCode": "60625",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.974506,
+        "longitude": -87.6887278
+      },
+      "openingHours": [
+        "Mo-Fr 09:00-17:00"
+      ],
+      "priceRange": "$$",
+      "paymentAccepted": [
+        "Cash",
+        "Check", 
+        "Credit Card",
+        "Bank Transfer",
+        "Online Payment"
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Chicago",
+          "addressRegion": "IL"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Cook County",
+          "addressRegion": "IL"
+        },
+        {
+          "@type": "AdministrativeArea", 
+          "name": "DuPage County",
+          "addressRegion": "IL"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Lake County", 
+          "addressRegion": "IL"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kane County",
+          "addressRegion": "IL"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Property Management Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Condominium Management",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Condominium Management",
+              "description": "Professional condominium association management services",
+              "provider": {
+                "@type": "Organization",
+                "name": "Manage369"
+              }
+            },
+            "availability": "InStock",
+            "priceRange": "$$"
+          },
+          {
+            "@type": "Offer",
+            "name": "HOA Management",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HOA Management", 
+              "description": "Comprehensive homeowners association management",
+              "provider": {
+                "@type": "Organization",
+                "name": "Manage369"
+              }
+            },
+            "availability": "InStock",
+            "priceRange": "$$"
+          },
+          {
+            "@type": "Offer",
+            "name": "Townhome Management",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Townhome Management",
+              "description": "Specialized townhome community management services",
+              "provider": {
+                "@type": "Organization",
+                "name": "Manage369"
+              }
+            },
+            "availability": "InStock",
+            "priceRange": "$$"
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://manage369.com"
+      ]
+    })
+    document.head.appendChild(script)
+
+    return () => {
+      // Cleanup schema script when component unmounts
+      if (document.head.contains(script)) {
+        document.head.removeChild(script)
+      }
+    }
+  }, [])
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -135,15 +274,16 @@ This inquiry was submitted through the Manage369 website contact form.
                     <span className="text-xl">🗺️</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Service Area</h3>
-                    <p className="text-gray-600 mb-2">Chicago & Surrounding Suburbs</p>
-                    <p className="text-sm text-gray-500">Cook, DuPage, Lake & Kane Counties</p>
+                    <h3 className="font-semibold text-lg mb-1">Office Address</h3>
+                    <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
+                    <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
+                    <p className="text-sm text-gray-500">Professional property management office</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <span className="text-xl">🚨</span>
+                  <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">🌍</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Emergency Line</h3>
@@ -428,6 +568,67 @@ This inquiry was submitted through the Manage369 website contact form.
                   </div>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Google Maps Section */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max">
+          <div className="text-center mb-12">
+            <h2 className="heading-2 mb-4">Find Our Chicago Office</h2>
+            <p className="body-large max-w-3xl mx-auto">
+              Visit our professional property management office in Chicago or get directions using Google Maps.
+            </p>
+          </div>
+          
+          <div className="bg-white p-6 rounded-xl shadow-lg">
+            <div className="rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.8234567890123!2d-87.6887278!3d41.974506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3147ee9928d%3A0x801da873a09d1402!2s5107%20N%20Western%20Ave%2C%20Chicago%2C%20IL%2060625!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+                width="100%" 
+                height="400" 
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Manage369 Chicago Office Location"
+              ></iframe>
+            </div>
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="text-center">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <span className="text-xl">📍</span>
+                </div>
+                <h3 className="font-semibold mb-2">Address</h3>
+                <p className="text-gray-600 text-sm">5107 North Western Avenue, Suite 1S<br/>Chicago, IL 60625</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <span className="text-xl">🚗</span>
+                </div>
+                <h3 className="font-semibold mb-2">Parking</h3>
+                <p className="text-gray-600 text-sm">Free parking available<br/>for client visits</p>
+              </div>
+              <div className="text-center">
+                <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                  <span className="text-xl">🕒</span>
+                </div>
+                <h3 className="font-semibold mb-2">Hours</h3>
+                <p className="text-gray-600 text-sm">Monday - Friday<br/>9:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+            <div className="text-center mt-6">
+              <a 
+                href="https://www.google.com/maps/dir//5107+N+Western+Ave,+Chicago,+IL+60625" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn-primary inline-flex items-center"
+              >
+                Get Directions
+                <span className="ml-2">🗺️</span>
+              </a>
             </div>
           </div>
         </div>

@@ -39,7 +39,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">🕒</span>
-                Monday - Friday: 8:00 AM - 6:00 PM
+                Monday - Friday: 9:00 AM - 5:00 PM
               </p>
             </div>
           </div>

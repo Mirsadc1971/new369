@@ -158,7 +158,7 @@ const LocateUs = () => {
                         (773) 728-0652
                       </a>
                     </p>
-                    <p className="text-sm text-gray-500">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ const LocateUs = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Business Hours</h3>
-                    <p className="text-gray-600 mb-2">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p className="text-gray-600 mb-2">Monday - Friday: 9:00 AM - 5:00 PM</p>
                     <p className="text-sm text-gray-500">Saturday & Sunday: Emergency Service Only</p>
                   </div>
                 </div>

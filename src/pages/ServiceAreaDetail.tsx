@@ -64,7 +64,7 @@ const ServiceAreaDetail = () => {
       ],
       "priceRange": "$$",
       "openingHours": [
-        "Mo-Fr 08:00-18:00",
+        "Mo-Fr 09:00-17:00",
         "Sa-Su 00:00-23:59"
       ],
       "paymentAccepted": [
