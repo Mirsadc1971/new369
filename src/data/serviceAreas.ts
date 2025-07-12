@@ -14,6 +14,7 @@ export interface ServiceArea {
   solutions: string[]
   localSEOKeywords: string[]
   nearbyAreas: string[]
+  schemaMarkup?: any
 }
 
 export const chicagoAreas: ServiceArea[] = [
@@ -70,9 +71,17 @@ export const chicagoAreas: ServiceArea[] = [
       "loop condo management",
       "river north property management",
       "streeterville hoa management",
-      "south loop property management company"
+      "south loop property management company",
+      "downtown chicago property managers",
+      "chicago loop property management",
+      "downtown condo management chicago"
     ],
-    nearbyAreas: ["River North", "Lincoln Park", "Lakeview", "Gold Coast"]
+    nearbyAreas: ["River North", "Lincoln Park", "Lakeview", "Gold Coast"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany",
+      specialties: ["High-rise Management", "Luxury Condominiums", "Mixed-use Properties"],
+      serviceRadius: "5 miles"
+    }
   },
   {
     id: 2,
@@ -126,9 +135,17 @@ export const chicagoAreas: ServiceArea[] = [
       "lincoln park condo management",
       "old town property management",
       "depaul area property management",
-      "lincoln park hoa management"
+      "lincoln park hoa management",
+      "lincoln park property managers",
+      "old town condo management",
+      "lincoln park chicago property management"
     ],
-    nearbyAreas: ["Old Town", "Lakeview", "Downtown Chicago", "Gold Coast"]
+    nearbyAreas: ["Old Town", "Lakeview", "Downtown Chicago", "Gold Coast"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany", 
+      specialties: ["Historic Properties", "Victorian Buildings", "Family Communities"],
+      serviceRadius: "3 miles"
+    }
   },
   {
     id: 3,
@@ -182,9 +199,17 @@ export const chicagoAreas: ServiceArea[] = [
       "wrigleyville property management",
       "boystown condo management",
       "southport corridor property management",
-      "lakeview hoa management"
+      "lakeview hoa management",
+      "lakeview property managers",
+      "wrigleyville condo management",
+      "lakeview chicago property management"
     ],
-    nearbyAreas: ["Lincoln Park", "Uptown", "North Center", "Roscoe Village"]
+    nearbyAreas: ["Lincoln Park", "Uptown", "North Center", "Roscoe Village"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany",
+      specialties: ["Entertainment District Properties", "Young Professional Housing", "Transit-Oriented Development"],
+      serviceRadius: "4 miles"
+    }
   },
   {
     id: 4,

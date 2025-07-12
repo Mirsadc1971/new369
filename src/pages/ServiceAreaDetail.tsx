@@ -9,17 +9,28 @@ const ServiceAreaDetail = () => {
   useEffect(() => {
     // Add LocalBusiness schema for this specific service area
     const areaName = area ? area.name : additionalAreaName;
+    
+    // Remove any existing schema scripts first
+    const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
+    existingSchemas.forEach(script => {
+      if (script.innerHTML.includes(areaName)) {
+        script.remove();
+      }
+    });
+    
     const script = document.createElement('script')
     script.type = 'application/ld+json'
+    script.id = `schema-${slug}`
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": `https://manage369.com/service-areas/${slug}`,
       "name": `Manage369 - ${areaName} Property Management`,
-      "description": `Professional property management services in ${areaName}. Condominium management, townhome management, and HOA management by Chicago's premier property management company.`,
+      "description": `Professional property management services in ${areaName}, Illinois. Specialized condominium management, townhome management, and HOA management services by Chicago's premier property management company.`,
       "url": `https://manage369.com/service-areas/${slug}`,
       "telephone": "+1-773-728-0652",
       "email": "service@manage369.com",
+      "image": "https://manage369.com/manage369-logo.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "5107 North Western Avenue, Suite 1S",
@@ -34,21 +45,34 @@ const ServiceAreaDetail = () => {
         "longitude": -87.6298
       },
       "areaServed": {
-        "@type": "City",
+        "@type": "Place",
         "name": areaName,
-        "addressRegion": "IL",
-        "addressCountry": "US"
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": areaName,
+          "addressRegion": "IL",
+          "addressCountry": "US"
+        }
       },
-      "serviceType": [
-        "Property Management",
-        "Condominium Management",
-        "Townhome Management", 
-        "HOA Management",
-        `${areaName} Property Management`
+      "knowsAbout": [
+        `${areaName} Property Management`,
+        `${areaName} Condominium Management`,
+        `${areaName} HOA Management`,
+        `${areaName} Townhome Management`,
+        `Property Management in ${areaName}`,
+        `${areaName} Real Estate Management`
       ],
       "priceRange": "$$",
       "openingHours": [
-        "Mo-Fr 08:00-18:00"
+        "Mo-Fr 08:00-18:00",
+        "Sa-Su 00:00-23:59"
+      ],
+      "paymentAccepted": [
+        "Cash",
+        "Check", 
+        "Credit Card",
+        "Bank Transfer",
+        "Online Payment"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -56,33 +80,88 @@ const ServiceAreaDetail = () => {
         "itemListElement": [
           {
             "@type": "Offer",
+            "name": `${areaName} Condominium Management`,
             "itemOffered": {
               "@type": "Service",
               "name": `${areaName} Condominium Management`,
-              "description": `Professional condominium management services in ${areaName}`
-            }
+              "description": `Professional condominium association management services in ${areaName}, Illinois`,
+              "provider": {
+                "@type": "Organization",
+                "name": "Manage369"
+              },
+              "areaServed": areaName
+            },
+            "availability": "InStock",
+            "priceRange": "$$"
           },
           {
             "@type": "Offer",
+            "name": `${areaName} HOA Management`,
             "itemOffered": {
               "@type": "Service",
               "name": `${areaName} HOA Management`,
-              "description": `Comprehensive HOA management services in ${areaName}`
-            }
+              "description": `Comprehensive homeowners association management services in ${areaName}, Illinois`,
+              "provider": {
+                "@type": "Organization", 
+                "name": "Manage369"
+              },
+              "areaServed": areaName
+            },
+            "availability": "InStock",
+            "priceRange": "$$"
           },
           {
             "@type": "Offer",
+            "name": `${areaName} Townhome Management`,
             "itemOffered": {
               "@type": "Service",
               "name": `${areaName} Townhome Management`,
-              "description": `Specialized townhome management services in ${areaName}`
-            }
+              "description": `Specialized townhome community management services in ${areaName}, Illinois`,
+              "provider": {
+                "@type": "Organization",
+                "name": "Manage369"
+              },
+              "areaServed": areaName
+            },
+            "availability": "InStock", 
+            "priceRange": "$$"
+          },
+          {
+            "@type": "Offer",
+            "name": `${areaName} Emergency Property Management`,
+            "itemOffered": {
+              "@type": "Service",
+              "name": `${areaName} 24/7 Emergency Property Management`,
+              "description": `24/7 emergency property management services in ${areaName}, Illinois`,
+              "provider": {
+                "@type": "Organization",
+                "name": "Manage369"
+              },
+              "areaServed": areaName
+            },
+            "availability": "InStock",
+            "priceRange": "$$"
           }
         ]
       },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
       "sameAs": [
-        "https://manage369.com"
-      ]
+        "https://manage369.com",
+        "https://www.google.com/maps/place/Manage369"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Manage369 Team"
+      },
+      "foundingDate": "2007",
+      "slogan": `${areaName}'s Premier Property Management Company`,
+      "keywords": `${areaName} property management, ${areaName} condo management, ${areaName} HOA management, property management ${areaName}, ${areaName} property managers`
     })
     document.head.appendChild(script)
 

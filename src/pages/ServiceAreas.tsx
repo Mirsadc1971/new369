@@ -5,38 +5,6 @@ import { chicagoAreas, suburbAreas, additionalServiceAreas } from '../data/servi
 const ServiceAreas = () => {
   return (
     <div>
-      {/* Local Business Schema for Service Areas Page */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          "name": "Manage369 - Chicago Property Management",
-          "description": "Professional property management services throughout Chicago and suburbs. Condominium management, townhome management, and HOA management.",
-          "url": "https://manage369.com/service-areas",
-          "telephone": "+1-773-728-0652",
-          "email": "service@manage369.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "5107 North Western Avenue, Suite 1S",
-            "addressLocality": "Chicago",
-            "addressRegion": "IL",
-            "postalCode": "60625",
-            "addressCountry": "US"
-          },
-          "areaServed": [
-            ...chicagoAreas.map(area => ({
-              "@type": "City",
-              "name": area.name,
-              "addressRegion": "IL"
-            })),
-            ...suburbAreas.map(area => ({
-              "@type": "City", 
-              "name": area.name,
-              "addressRegion": "IL"
-            }))
-          ]
-        })}
-      </script>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-500 to-primary-700 text-white section-padding">
         <div className="container-max">
@@ -55,6 +23,71 @@ const ServiceAreas = () => {
           </div>
         </div>
       </section>
+      
+      {/* Service Areas Schema Markup */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Manage369",
+          "description": "Chicago's premier property management company serving 100+ communities throughout Chicago and suburbs.",
+          "url": "https://manage369.com/service-areas",
+          "telephone": "+1-773-728-0652",
+          "email": "service@manage369.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "5107 North Western Avenue, Suite 1S",
+            "addressLocality": "Chicago",
+            "addressRegion": "IL",
+            "postalCode": "60625",
+            "addressCountry": "US"
+          },
+          "areaServed": [
+            ...chicagoAreas.map(area => ({
+              "@type": "Place",
+              "name": area.name,
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": area.name,
+                "addressRegion": "IL",
+                "addressCountry": "US"
+              }
+            })),
+            ...suburbAreas.map(area => ({
+              "@type": "Place",
+              "name": area.name,
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": area.name,
+                "addressRegion": "IL", 
+                "addressCountry": "US"
+              }
+            }))
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Chicago Area Property Management Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Chicago Property Management",
+                  "description": "Comprehensive property management services throughout Chicago"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Suburban Property Management",
+                  "description": "Professional property management for Chicago suburban communities"
+                }
+              }
+            ]
+          }
+        })}
+      </script>
 
       {/* Chicago Neighborhoods */}
       <section className="section-padding bg-white">
