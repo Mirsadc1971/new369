@@ -118,8 +118,8 @@ const LocateUs = () => {
             </p>
             <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm inline-block">
               <p className="text-blue-100 mb-2">
-                Serving Lincoln Park, Lakeview, River North, Gold Coast, Logan Square, Hyde Park, 
-                and surrounding suburbs. Contact us for professional, reliable property management services.
+                Managing 2,230+ properties across Lincoln Park (300+ properties), Downtown Chicago (500+ properties), 
+                Lakeview (350+ properties), Naperville (400+ properties), and 100+ other Chicago communities since 2007.
               </p>
             </div>
           </div>
