@@ -2,28 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Enhanced Mobile Optimization */
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden;
   }
   
   body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
+    /* Prevent horizontal scrolling */
+    overflow-x: hidden;
+    /* Improve text rendering on mobile */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Optimize touch interactions */
+    touch-action: manipulation;
+  }
+  
+  /* Improve mobile touch targets */
+  button, a, input, select, textarea {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent zoom on input focus (iOS) */
+  input, select, textarea {
+    font-size: 16px;
+  }
+  
+  /* Improve mobile scrolling */
+  * {
+    -webkit-overflow-scrolling: touch;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-primary-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap;
+    @apply bg-primary-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation;
   }
   
   .btn-secondary {
-    @apply bg-secondary-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap;
+    @apply bg-secondary-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation;
   }
   
   .btn-outline {
-    @apply border-2 border-primary-500 text-primary-500 px-6 py-3 rounded-lg font-semibold hover:bg-primary-500 hover:text-white transition-all duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap;
+    @apply border-2 border-primary-500 text-primary-500 px-6 py-3 rounded-lg font-semibold hover:bg-primary-500 hover:text-white transition-all duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation;
   }
   
   .section-padding {
@@ -70,5 +96,57 @@
   
   .bg-gradient-secondary {
     @apply bg-gradient-to-r from-secondary-500 to-secondary-600;
+  }
+  
+  /* Enhanced Mobile Responsive Utilities */
+  .mobile-safe-area {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  
+  .mobile-scroll-container {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+  }
+  
+  /* Improved mobile form styling */
+  .mobile-form-input {
+    @apply text-base; /* Prevents zoom on iOS */
+  }
+}
+
+/* Enhanced Mobile Media Queries */
+@media (max-width: 640px) {
+  .heading-1 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  .heading-2 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  .section-padding {
+    @apply py-12 px-4;
+  }
+  
+  /* Improve mobile spacing */
+  .container-max {
+    @apply px-4;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section-padding {
+    @apply py-14 px-6;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Optimize for retina displays */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 }
