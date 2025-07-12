@@ -60,9 +60,19 @@ const ServiceAreaDetail = () => {
                 <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
                   {area.county} County
                 </span>
+                {area.propertyCount && (
+                  <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                    {area.propertyCount} Properties Managed
+                  </span>
+                )}
                 {area.population && (
                   <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
                     {area.population.toLocaleString()} Residents
+                  </span>
+                )}
+                {area.establishedYear && (
+                  <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm">
+                    Serving Since {area.establishedYear}
                   </span>
                 )}
                 <span className="bg-white bg-opacity-20 px-4 py-2 rounded-full text-sm capitalize">
@@ -76,6 +86,43 @@ const ServiceAreaDetail = () => {
 
       {area ? (
         <>
+          {/* Local SEO Keywords Section */}
+          <section className="section-padding bg-blue-50">
+            <div className="container-max">
+              <div className="text-center mb-12">
+                <h2 className="heading-2 mb-4">Local {area.name} Property Management Services</h2>
+                <p className="body-large max-w-3xl mx-auto">
+                  Manage369 provides specialized property management services throughout {area.name} and surrounding areas. 
+                  Our local expertise ensures your {area.name} property receives the attention it deserves.
+                </p>
+              </div>
+              
+              {area.keyNeighborhoods && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                  {area.keyNeighborhoods.map((neighborhood, index) => (
+                    <div key={index} className="bg-white p-4 rounded-lg shadow-md text-center">
+                      <h3 className="font-semibold text-lg mb-2">{neighborhood}</h3>
+                      <p className="text-sm text-gray-600">Professional property management services</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+              
+              {area.localSEOKeywords && (
+                <div className="bg-white p-6 rounded-xl shadow-lg">
+                  <h3 className="text-xl font-semibold mb-4">We Specialize In:</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {area.localSEOKeywords.map((keyword, index) => (
+                      <div key={index} className="flex items-center space-x-3">
+                        <span className="w-2 h-2 bg-primary-500 rounded-full"></span>
+                        <span className="text-gray-700 capitalize">{keyword}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </section>
           {/* Key Features */}
           <section className="section-padding bg-white">
             <div className="container-max">

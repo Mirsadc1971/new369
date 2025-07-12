@@ -129,14 +129,14 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {[
-              { name: "Downtown Chicago", type: "Urban Core", properties: "500+ Properties", slug: "downtown-chicago" },
-              { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+ Properties", slug: "lincoln-park" },
-              { name: "Naperville", type: "Suburban Community", properties: "400+ Properties", slug: "naperville" },
-              { name: "Oak Park", type: "Historic Suburb", properties: "200+ Properties", slug: "oak-park" },
-              { name: "Evanston", type: "University Town", properties: "300+ Properties", slug: "evanston" },
-              { name: "Wheaton", type: "Family Community", properties: "150+ Properties", slug: "wheaton" },
-              { name: "Arlington Heights", type: "Established Suburb", properties: "200+ Properties", slug: "arlington-heights" },
-              { name: "Palatine", type: "Northwest Suburb", properties: "180+ Properties", slug: "palatine" }
+              { name: "Downtown Chicago", type: "Urban Core", properties: "500+ Properties", slug: "downtown-chicago", established: "Since 2007" },
+              { name: "Lincoln Park", type: "Historic Neighborhood", properties: "300+ Properties", slug: "lincoln-park", established: "Since 2008" },
+              { name: "Naperville", type: "Suburban Community", properties: "400+ Properties", slug: "naperville", established: "Since 2009" },
+              { name: "Oak Park", type: "Historic Suburb", properties: "200+ Properties", slug: "oak-park", established: "Since 2010" },
+              { name: "Evanston", type: "University Town", properties: "300+ Properties", slug: "evanston", established: "Since 2010" },
+              { name: "Wheaton", type: "Family Community", properties: "150+ Properties", slug: "wheaton", established: "Since 2011" },
+              { name: "Arlington Heights", type: "Established Suburb", properties: "200+ Properties", slug: "arlington-heights", established: "Since 2012" },
+              { name: "Palatine", type: "Northwest Suburb", properties: "180+ Properties", slug: "palatine", established: "Since 2012" }
             ].map((area, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col h-full">
                 <div>
@@ -146,13 +146,24 @@ const Home = () => {
                     </Link>
                   </h4>
                   <p className="text-sm text-gray-600 mb-3">{area.type}</p>
-                  <p className="text-primary-500 font-semibold text-sm">{area.properties}</p>
+                  <div className="space-y-1">
+                    <p className="text-primary-500 font-semibold text-sm">{area.properties}</p>
+                    <p className="text-gray-500 text-xs">{area.established}</p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="text-center">
+            <div className="mb-6">
+              <p className="text-lg font-semibold text-gray-700 mb-2">
+                Total Properties Under Management: <span className="text-primary-500">2,230+</span>
+              </p>
+              <p className="text-gray-600">
+                Serving <span className="font-semibold">100+ Chicago communities</span> since 2007
+              </p>
+            </div>
             <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
               View All Chicago Service Areas
             </Link>

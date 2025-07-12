@@ -5,6 +5,9 @@ export interface ServiceArea {
   county: string
   type: 'city' | 'suburb' | 'neighborhood'
   population?: number
+  propertyCount?: string
+  establishedYear?: number
+  keyNeighborhoods?: string[]
   description: string
   keyFeatures: string[]
   propertyTypes: string[]
@@ -12,6 +15,8 @@ export interface ServiceArea {
   localRegulations: string[]
   managementChallenges: string[]
   solutions: string[]
+  localSEOKeywords: string[]
+  nearbyAreas: string[]
 }
 
 export const chicagoAreas: ServiceArea[] = [
@@ -23,6 +28,9 @@ export const chicagoAreas: ServiceArea[] = [
     county: "Cook",
     type: "neighborhood",
     population: 42000,
+    propertyCount: "500+",
+    establishedYear: 2007,
+    keyNeighborhoods: ["Loop", "River North", "Streeterville", "South Loop"],
     description: "The heart of Chicago's business district featuring luxury high-rise condominiums and modern residential towers. Manage369 is the #1 property management company in Downtown Chicago.",
     keyFeatures: [
       "High-rise luxury condominiums",
@@ -60,7 +68,15 @@ export const chicagoAreas: ServiceArea[] = [
       "Preventive maintenance programs",
       "Professional concierge coordination",
       "Advanced security system management"
-    ]
+    ],
+    localSEOKeywords: [
+      "downtown chicago property management",
+      "loop condo management",
+      "river north property management",
+      "streeterville hoa management",
+      "south loop property management company"
+    ],
+    nearbyAreas: ["River North", "Lincoln Park", "Lakeview", "Gold Coast"]
   },
   {
     id: 2,
@@ -69,6 +85,9 @@ export const chicagoAreas: ServiceArea[] = [
     county: "Cook",
     type: "neighborhood",
     population: 65000,
+    propertyCount: "300+",
+    establishedYear: 2008,
+    keyNeighborhoods: ["Old Town", "DePaul", "Lincoln Park Zoo Area"],
     description: "Historic neighborhood known for tree-lined streets, Victorian architecture, and diverse housing options. Manage369 is the premier property management company in Lincoln Park.",
     keyFeatures: [
       "Historic brownstones and vintage buildings",
@@ -106,7 +125,15 @@ export const chicagoAreas: ServiceArea[] = [
       "Creative parking solutions",
       "Community-focused management approach",
       "Family-friendly amenity programming"
-    ]
+    ],
+    localSEOKeywords: [
+      "lincoln park property management",
+      "lincoln park condo management",
+      "old town property management",
+      "depaul area property management",
+      "lincoln park hoa management"
+    ],
+    nearbyAreas: ["Old Town", "Lakeview", "Downtown Chicago", "Gold Coast"]
   },
   {
     id: 3,
@@ -115,6 +142,9 @@ export const chicagoAreas: ServiceArea[] = [
     county: "Cook",
     type: "neighborhood",
     population: 95000,
+    propertyCount: "350+",
+    establishedYear: 2009,
+    keyNeighborhoods: ["Wrigleyville", "Boystown", "Southport Corridor"],
     description: "Vibrant neighborhood with diverse housing, entertainment districts, and lakefront access. Manage369 is the #1 choice for property management in Lakeview.",
     keyFeatures: [
       "Diverse housing stock from vintage to modern",
@@ -152,7 +182,15 @@ export const chicagoAreas: ServiceArea[] = [
       "Proactive noise control measures",
       "Alternative transportation promotion",
       "Community engagement programs"
-    ]
+    ],
+    localSEOKeywords: [
+      "lakeview property management",
+      "wrigleyville property management",
+      "boystown condo management",
+      "southport corridor property management",
+      "lakeview hoa management"
+    ],
+    nearbyAreas: ["Lincoln Park", "Uptown", "North Center", "Roscoe Village"]
   },
   {
     id: 4,

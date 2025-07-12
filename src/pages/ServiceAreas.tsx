@@ -42,11 +42,28 @@ const ServiceAreas = () => {
                 <div className="flex-grow">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold">{area.name}</h3>
-                    <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-sm">
-                      {area.population?.toLocaleString()} residents
-                    </span>
+                    <div className="flex flex-col items-end space-y-1">
+                      <span className="bg-primary-100 text-primary-700 px-3 py-1 rounded-full text-xs">
+                        {area.propertyCount} Properties
+                      </span>
+                      <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs">
+                        {area.population?.toLocaleString()} residents
+                      </span>
+                    </div>
                   </div>
                   <p className="body-text mb-4">{area.description}</p>
+                  {area.keyNeighborhoods && (
+                    <div className="mb-4">
+                      <h4 className="font-semibold mb-2 text-sm">Key Areas:</h4>
+                      <div className="flex flex-wrap gap-1">
+                        {area.keyNeighborhoods.map((neighborhood, index) => (
+                          <span key={index} className="bg-blue-50 text-blue-700 px-2 py-1 rounded text-xs">
+                            {neighborhood}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   <div className="mb-4">
                     <h4 className="font-semibold mb-2">Key Features:</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
@@ -63,7 +80,7 @@ const ServiceAreas = () => {
                   to={`/service-areas/${area.slug}`} 
                   className="btn-primary w-full text-center"
                 >
-                  View Detailed Information
+                  View {area.name} Property Management
                 </Link>
               </div>
             ))}
