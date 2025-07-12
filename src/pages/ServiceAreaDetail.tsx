@@ -26,13 +26,11 @@ const ServiceAreaDetail = () => {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": `https://manage369.com/service-areas/${slug}`,
-      "@id": `https://manage369.com/service-areas/${slug}`,
       "name": `Manage369 - ${areaName} Property Management`,
       "description": `Professional property management services in ${areaName}, Illinois. Specialized condominium management, townhome management, and HOA management services by Chicago's premier property management company.`,
       "url": `https://manage369.com/service-areas/${slug}`,
       "telephone": "+1-773-728-0652",
       "email": "service@manage369.com",
-      "image": "https://manage369.com/manage369-logo.png",
       "image": "https://manage369.com/manage369-logo.png",
       "address": {
         "@type": "PostalAddress",
@@ -47,17 +45,10 @@ const ServiceAreaDetail = () => {
         "latitude": 41.8781,
         "longitude": -87.6298
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 41.8781,
-        "longitude": -87.6298
-      },
       "areaServed": {
         "@type": "Place",
         "name": areaName,
         "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "5107 North Western Avenue, Suite 1S",
           "addressRegion": "IL",
           "addressCountry": "US"
         }
@@ -108,114 +99,6 @@ const ServiceAreaDetail = () => {
             "itemOffered": {
               "@type": "Service",
               "name": `${areaName} HOA Management`, 
-              "description": `Comprehensive homeowners association management services in ${areaName}, Illinois`,
-              "provider": {
-                "@type": "Organization", 
-                "name": "Manage369"
-              },
-              "areaServed": areaName
-            },
-            "availability": "InStock",
-            "priceRange": "$$"
-          },
-          {
-            "@type": "Offer",
-            "name": `${areaName} Townhome Management`,
-            "itemOffered": {
-              "@type": "Service",
-              "name": `${areaName} Townhome Management`,
-              "description": `Specialized townhome community management services in ${areaName}, Illinois`,
-              "provider": {
-                "@type": "Organization",
-                "name": "Manage369"
-              },
-              "areaServed": areaName
-            },
-            "availability": "InStock", 
-            "priceRange": "$$"
-          },
-          {
-            "@type": "Offer",
-            "name": `${areaName} Emergency Property Management`,
-            "itemOffered": {
-              "@type": "Service",
-              "name": `${areaName} 24/7 Emergency Property Management`,
-              "description": `24/7 emergency property management services in ${areaName}, Illinois`,
-              "provider": {
-                "@type": "Organization",
-                "name": "Manage369"
-              },
-              "areaServed": areaName
-            },
-            "availability": "InStock",
-            "priceRange": "$$"
-          }
-        ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "127",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "sameAs": [
-        "https://manage369.com",
-        "https://www.google.com/maps/place/Manage369"
-      ],
-      "founder": {
-        "@type": "Person",
-        "name": "Manage369 Team"
-      },
-      "foundingDate": "2007",
-      "slogan": `${areaName}'s Premier Property Management Company`,
-      "keywords": `${areaName} property management, ${areaName} condo management, ${areaName} HOA management, property management ${areaName}, ${areaName} property managers`,
-      "knowsAbout": [
-        `${areaName} Property Management`,
-        `${areaName} Condominium Management`,
-        `${areaName} HOA Management`,
-        `${areaName} Townhome Management`,
-        `Property Management in ${areaName}`,
-        `${areaName} Real Estate Management`
-      ],
-      "priceRange": "$$",
-      "openingHours": [
-        "Mo-Fr 09:00-17:00",
-        "Sa-Su 00:00-23:59"
-      ],
-      "paymentAccepted": [
-        "Cash",
-        "Check", 
-        "Credit Card",
-        "Bank Transfer",
-        "Online Payment"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": `${areaName} Property Management Services`,
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": `${areaName} Condominium Management`,
-            "itemOffered": {
-              "@type": "Service",
-              "name": `${areaName} Condominium Management`,
-              "description": `Professional condominium association management services in ${areaName}, Illinois`,
-              "provider": {
-                "@type": "Organization",
-                "name": "Manage369"
-              },
-              "areaServed": areaName
-            },
-            "availability": "InStock",
-            "priceRange": "$$"
-          },
-          {
-            "@type": "Offer",
-            "name": `${areaName} HOA Management`,
-            "itemOffered": {
-              "@type": "Service",
-              "name": `${areaName} HOA Management`,
               "description": `Comprehensive homeowners association management services in ${areaName}, Illinois`,
               "provider": {
                 "@type": "Organization", 

@@ -13,7 +13,6 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
-          utils: ['src/data/serviceAreas']
         },
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split('.')
