@@ -9,15 +9,14 @@ const LocateUs = () => {
     script.type = 'application/ld+json'
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "RealEstateAgent",
       "name": "Manage369",
-      "image": "https://www.manage369.com/logo.png",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Chicago",
+        "streetAddress": "5107 N Western Ave, Suite 1S",
         "addressLocality": "Chicago",
         "addressRegion": "IL",
-        "postalCode": "60601",
+        "postalCode": "60625",
         "addressCountry": "US"
       },
       "url": "https://www.manage369.com",
@@ -25,7 +24,7 @@ const LocateUs = () => {
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 41.8781,
-        "longitude": -87.6298
+        "longitude": -87.6887278
       },
       "sameAs": [
         "https://maps.app.goo.gl/gPy3kMGiv4bLnh4r7"
@@ -33,17 +32,14 @@ const LocateUs = () => {
       "description": "Chicago's premier property management company specializing in condominiums, townhomes, and HOA associations. Professional, reliable, and comprehensive management solutions.",
       "priceRange": "$$",
       "openingHours": [
-        "Mo-Fr 08:00-18:00"
+        "Mo-Fr 08:00-18:00",
+        "Sa-Su 00:00-23:59" // For 24/7 emergency service
       ],
       "serviceArea": [
         {
           "@type": "City",
           "name": "Chicago",
           "addressRegion": "IL"
-        },
-        {
-          "@type": "State", 
-          "name": "Illinois"
         }
       ],
       "areaServed": [
@@ -51,11 +47,15 @@ const LocateUs = () => {
         "Lincoln Park",
         "Lakeview", 
         "Downtown Chicago",
+        "Wicker Park",
+        "Logan Square",
+        "Hyde Park",
         "Naperville",
         "Oak Park",
         "Evanston",
         "Wheaton",
-        "Schaumburg"
+        "Arlington Heights",
+        "Palatine"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -574,7 +574,10 @@ const LocateUs = () => {
             
             <div className="bg-gray-100 p-4 rounded-xl">
               <div className="rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center h-96 md:h-[450px]">
-                <div className="text-center p-8">
+                {/* Placeholder for Google Map Embed */}
+                {/* To embed your Google Map, go to Google Maps, search for your address, click "Share" -> "Embed a map", copy the iframe code, and paste it here. */}
+                {/* Example: <iframe src="YOUR_GOOGLE_MAP_EMBED_URL" width="100%" height="100%" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
+                <div className="text-center p-8"> 
                   <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-white text-2xl">📍</span>
                   </div>
