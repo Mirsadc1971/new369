@@ -1,6 +1,6 @@
 # Security Headers for Manage369 Website
 # Prevent clickjacking attacks
-Header always set X-Frame-Options "DENY"
+# Header always set X-Frame-Options "DENY"
 
 # Prevent MIME type sniffing
 Header always set X-Content-Type-Options "nosniff"
