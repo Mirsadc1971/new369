@@ -13,7 +13,7 @@ const LocateUs = () => {
       "name": "Manage369",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "5107 N Western Ave, Suite 1S",
+        "streetAddress": "5107 North Western Avenue, Suite 1S",
         "addressLocality": "Chicago",
         "addressRegion": "IL",
         "postalCode": "60625",

@@ -49,7 +49,7 @@ const ServiceAreaDetail = () => {
         "name": areaName,
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": areaName,
+          "streetAddress": "5107 North Western Avenue, Suite 1S",
           "addressRegion": "IL",
           "addressCountry": "US"
         }
