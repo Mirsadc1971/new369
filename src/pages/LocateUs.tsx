@@ -170,14 +170,24 @@ const LocateUs = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="mailto:service@manage369.com" className="text-primary-500 hover:underline">
-                        service@manage369.com
+                      <a href="mailto:support@manage369.com" className="text-primary-500 hover:underline">
+                        support@manage369.com
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">We respond within 24 hours</p>
                   </div>
                 </div>
 
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <span className="text-xl">🕒</span>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">Business Hours</h3>
+                    <p className="text-gray-600 mb-2">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p className="text-sm text-gray-500">Saturday & Sunday: Emergency Service Only</p>
+                  </div>
+                </div>
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <span className="text-xl">🚨</span>

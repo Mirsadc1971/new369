@@ -31,11 +31,15 @@ const Footer = () => {
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">✉️</span>
-                service@manage369.com
+                support@manage369.com
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">📍</span>
-                Chicago, IL & Suburbs
+                5107 N Western Ave, Suite 1S, Chicago, IL 60625
+              </p>
+              <p className="flex items-center text-gray-300">
+                <span className="w-5 h-5 mr-2">🕒</span>
+                Monday - Friday: 8:00 AM - 6:00 PM
               </p>
             </div>
           </div>
