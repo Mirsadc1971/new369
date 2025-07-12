@@ -285,28 +285,12 @@ const ServiceAreaDetail = () => {
     window.scrollTo(0, 0)
     
     // Additional scroll to top after content loads
-    const timer = setTimeout(() => {
+    const scrollTimer = setTimeout(() => {
       window.scrollTo(0, 0)
     }, 200)
 
     return () => {
-      clearTimeout(timer)
-      // Cleanup schema script
-      if (document.head.contains(script)) {
-        document.head.removeChild(script)
-      }
-    }
-
-    // Ensure scroll to top when component mounts
-    window.scrollTo(0, 0)
-    
-    // Additional scroll to top after content loads
-    const timer = setTimeout(() => {
-      window.scrollTo(0, 0)
-    }, 200)
-
-    return () => {
-      clearTimeout(timer)
+      clearTimeout(scrollTimer)
       // Cleanup schema script
       if (document.head.contains(script)) {
         document.head.removeChild(script)
