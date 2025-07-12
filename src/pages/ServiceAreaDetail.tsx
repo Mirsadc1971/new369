@@ -18,14 +18,6 @@ const ServiceAreaDetail = () => {
       }
     });
     
-    // Remove any existing schema scripts first
-    const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
-    existingSchemas.forEach(script => {
-      if (script.innerHTML.includes(areaName)) {
-        script.remove();
-      }
-    });
-    
     const script = document.createElement('script')
     script.type = 'application/ld+json'
     script.id = `schema-${slug}`
