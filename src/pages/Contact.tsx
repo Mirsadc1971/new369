@@ -585,15 +585,15 @@ This inquiry was submitted through the Manage369 website contact form.
           
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="rounded-lg overflow-hidden">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.8234567890123!2d-87.6887278!3d41.974506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3147ee9928d%3A0x801da873a09d1402!2sX8F6%2BRG%20Chicago%2C%20IL!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                width="100%" 
-                height="400" 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.823!2d-87.6887278!3d41.974506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3147ee9928d%3A0x801da873a09d1402!2s5107%20N%20Western%20Ave%2C%20Chicago%2C%20IL%2060625!5e0!3m2!1sen!2sus!4v1642000000000!5m2!1sen!2sus"
+                width="100%"
+                height="400"
                 style={{ border: 0 }}
                 allowFullScreen
-                loading="lazy" 
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Manage369 Chicago Office Location"
+                title="Manage369 Chicago Office Location - 5107 N Western Ave, Chicago, IL 60625"
               ></iframe>
             </div>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
