@@ -621,7 +621,7 @@ This inquiry was submitted through the Manage369 website contact form.
             </div>
             <div className="text-center mt-6">
               <a 
-                href="https://www.google.com/maps/dir//5107+N+Western+Ave,+Chicago,+IL+60625" 
+                href="https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center"

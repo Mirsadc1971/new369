@@ -27,7 +27,7 @@ const LocateUs = () => {
         "longitude": -87.6887278
       },
       "sameAs": [
-        "https://maps.app.goo.gl/gPy3kMGiv4bLnh4r7"
+        "https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6"
       ],
       "description": "Chicago's premier property management company specializing in condominiums, townhomes, and HOA associations. Professional, reliable, and comprehensive management solutions.",
       "priceRange": "$$",
@@ -495,7 +495,7 @@ const LocateUs = () => {
             </div>
             <div className="mt-6">
               <a 
-                href="https://maps.app.goo.gl/gPy3kMGiv4bLnh4r7" 
+                href="https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-primary bg-white text-primary-500 hover:bg-gray-100 inline-flex items-center"
@@ -591,7 +591,7 @@ const LocateUs = () => {
               </div>
               <div className="text-center mt-4">
                 <a 
-                  href="https://www.google.com/maps/place/Manage369/@41.974506,-87.6887278,17z/data=!3m1!4b1!4m6!3m5!1s0x880fd3147ee9928d:0x801da873a09d1402!8m2!3d41.974506!4d-87.6887278!16s%2Fg%2F11xgwx9dwx?authuser=0&entry=ttu&g_ep=EgoyMDI1MDcwNy4wIKXMDSoASAFQAw%3D%3D" 
+                  href="https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-primary inline-flex items-center"
