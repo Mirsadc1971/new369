@@ -9,13 +9,13 @@ const Home = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              Chicago Property Management Company |{' '}
+              Chicago's #1 Property Management Company |{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                #1 Condo, Townhome & HOA Management
+                Condo, Townhome & HOA Management
               </span>
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-              Manage369 is Chicago's #1 property management company providing professional property management 
+              Manage369 is Chicago's premier property management company providing professional property management 
               services throughout Chicago and suburbs since 2007. We specialize in <Link to="/services/condominium-management" className="text-yellow-300 hover:underline">Chicago condominium management</Link>, 
               <Link to="/services/townhome-management" className="text-yellow-300 hover:underline"> townhome communities</Link>, and 
               <Link to="/services/hoa-management" className="text-yellow-300 hover:underline"> Chicago HOA management</Link> with 
@@ -48,9 +48,7 @@ const Home = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Chicago Property Management Services - #1 Rated Company</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Manage369 provides expert property management for all types of residential communities throughout 
-              Chicago and surrounding suburbs, with specialized expertise in each property type. As Chicago's 
-              #1 property management company, we serve <Link to="/service-areas" className="text-primary-500 hover:underline">100+ Chicago neighborhoods and suburbs</Link> with professional property management services.
+              Manage369 provides expert property management for all types of residential communities throughout Chicago and surrounding suburbs, with specialized expertise in each property type. As Chicago's premier property management company, we serve <Link to="/service-areas" className="text-primary-500 hover:underline">Chicago neighborhoods and suburbs</Link> including Lincoln Park, Naperville, Oak Park, Evanston, and many more with professional property management services.
             </p>
           </div>
           

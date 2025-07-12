@@ -78,7 +78,7 @@ This inquiry was submitted through the Manage369 website contact form.
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
               Ready to experience professional Chicago property management? Request your free property management consultation today 
-              and learn how Chicago's #1 property management company can help your Chicago property thrive.
+              and learn how Chicago's premier property management company can help your Chicago property thrive.
             </p>
           </div>
         </div>

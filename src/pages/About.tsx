@@ -9,13 +9,13 @@ const About = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              About Chicago's #1{' '}
+              About Chicago's Premier{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
                 Property Management Company
               </span>
             </h1>
             <p className="text-xl mb-12 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-              Chicago's premier property management company specializing in Chicago condominium management, 
+              Chicago's leading property management company specializing in Chicago condominium management, 
               Chicago townhome management, and Chicago HOA management. We provide comprehensive, professional 
               property management services throughout Chicago and surrounding suburbs since 2007.
             </p>

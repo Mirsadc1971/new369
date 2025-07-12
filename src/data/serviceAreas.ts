@@ -630,6 +630,3 @@ export const additionalServiceAreas: string[] = [
   "Orland Park", "Tinley Park", "Oak Forest", "Palos Heights", "Palos Hills",
   "Worth", "Alsip", "Crestwood", "Midlothian", "Oak Lawn",
   "Burbank", "Bridgeview", "Justice", "Willow Springs", "Indian Head Park",
-  "Countryside", "Summit", "Bedford Park", "Lyons", "Berwyn",
-  "Cicero", "Stickney", "Forest View", "Hodgkins", "McCook"
-]

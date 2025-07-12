@@ -30,8 +30,7 @@ const ServiceAreas = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Chicago Property Management - City Neighborhoods</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Premier Chicago property management in Chicago's diverse neighborhoods, from downtown 
-              high-rises to historic residential areas. Manage369 is the #1 Chicago property management company 
+              Premier Chicago property management in Chicago's diverse neighborhoods, from downtown high-rises to historic residential areas. Manage369 is Chicago's leading property management company 
               with deep understanding of each Chicago neighborhood's unique character.
             </p>
           </div>
@@ -94,7 +93,7 @@ const ServiceAreas = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Chicago Property Management - Suburban Communities</h2>
             <p className="body-large max-w-3xl mx-auto">
-              #1 Chicago property management throughout Chicago's suburban communities. 
+              Leading Chicago property management throughout Chicago's suburban communities. 
               From established family neighborhoods to modern planned developments, Manage369
               provides tailored property management services for every Chicago suburban market with unmatched expertise.
             </p>
@@ -141,7 +140,7 @@ const ServiceAreas = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Additional Chicagoland Service Areas</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Manage369 is the #1 property management company serving these additional
+              Manage369 is Chicago's premier property management company serving these additional
               Chicago-area communities. Contact us to learn about our specialized services in your specific area.
             </p>
           </div>
@@ -174,7 +173,7 @@ const ServiceAreas = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Manage369 Service Coverage</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Chicago's #1 property management company serving property owners and associations throughout the greater Chicago metropolitan area.
+              Chicago's premier property management company serving property owners and associations throughout the greater Chicago metropolitan area.
             </p>
           </div>
 
