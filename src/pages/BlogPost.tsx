@@ -200,6 +200,7 @@ const BlogPost = () => {
               <p><strong>Learn more about our ethical management services:</strong></p>
               <p>🌐 <a href="https://www.manage369.com" class="text-yellow-300 hover:underline">www.manage369.com</a></p>
               <p>📞 <a href="tel:773-728-0652" class="text-yellow-300 hover:underline">(773) 728-0652</a></p>
+              <p>📞 <a href="tel:312-402-7002" class="text-yellow-300 hover:underline">(312) 402-7002</a></p>
               <p>📍 Serving Chicago and surrounding suburbs</p>
               <div class="mt-4 pt-4 border-t border-white border-opacity-30">
                 <p class="text-blue-100 text-sm"><strong>File a complaint with IDFPR:</strong></p>
@@ -368,7 +369,7 @@ const BlogPost = () => {
               <p><strong>Manage369 Property Management</strong></p>
               <p>🌐 <a href="/" class="text-yellow-300 hover:underline">www.manage369.com</a></p>
               <p>📍 Serving Chicago and surrounding suburbs</p>
-              <p>📞 <a href="tel:773-728-0652" class="text-yellow-300 hover:underline">(773) 728-0652</a></p>
+              <p>📞 <a href="tel:312-402-7002" class="text-yellow-300 hover:underline">(312) 402-7002</a></p>
               <p class="text-blue-100 text-sm mt-4">✉️ Let us help you manage with confidence and compliance</p>
             </div>
           </div>
@@ -510,7 +511,7 @@ const BlogPost = () => {
             <div class="space-y-2">
               <p>📍 Serving Chicago and surrounding suburbs</p>
               <p>🌐 <a href="/" class="text-yellow-300 hover:underline">www.manage369.com</a></p>
-              <p>📞 <a href="tel:773-728-0652" class="text-yellow-300 hover:underline">(773) 728-0652</a></p>
+              <p>📞 <a href="tel:312-402-7002" class="text-yellow-300 hover:underline">(312) 402-7002</a></p>
               <p class="text-blue-100 text-sm mt-4">Let us protect your investment — so you can focus on growth.</p>
             </div>
           </div>
@@ -775,7 +776,7 @@ const BlogPost = () => {
             <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
               Get Free Consultation
             </Link>
-            <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+            <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Call (312) 402-7002
             </a>
           </div>

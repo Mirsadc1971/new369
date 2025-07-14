@@ -402,15 +402,15 @@ const About = () => {
           <div className="mb-8 text-center">
             <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
               <p className="text-white font-semibold">Manage369 - Chicago Property Management</p>
-              <p className="text-green-100">5107 N Western Ave, Suite 1S, Chicago, IL 60625</p>
-              <p className="text-green-100">(773) 728-0652 | service@manage369.com</p>
+              <p className="text-green-100">1400 Patriot Boulevard 357, Glenview, IL 60026</p>
+              <p className="text-green-100">(312) 402-7002 | service@manage369.com</p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link to="/contact" className="btn-primary bg-white text-primary-500 hover:bg-gray-100 text-lg px-10 py-4 font-semibold">
               Get Started Today
             </Link>
-            <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-secondary-500 text-lg px-10 py-4 font-semibold">
+            <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-secondary-500 text-lg px-10 py-4 font-semibold">
               Call (312) 402-7002
             </a>
           </div>
