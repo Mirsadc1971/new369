@@ -94,7 +94,7 @@ This message was submitted through the Manage369 general contact form.
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="tel:+17737280652" className="text-primary-500 hover:underline">(773) 728-0652</a>
+                      <a href="tel:+13124027002" className="text-primary-500 hover:underline">(312) 402-7002</a>
                     </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
@@ -118,8 +118,8 @@ This message was submitted through the Manage369 general contact form.
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Office Address</h3>
-                    <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
-                    <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
+                    <p className="text-gray-600 mb-2">1400 Patriot Boulevard 357</p>
+                    <p className="text-gray-600 mb-2">Glenview, IL 60026</p>
                     <p className="text-sm text-gray-500">Professional property management office</p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ This message was submitted through the Manage369 general contact form.
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Emergency Line</h3>
-                    <p className="text-gray-600 mb-2">(773) 728-0652</p>
+                    <p className="text-gray-600 mb-2">(312) 402-7002</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Response</p>
                   </div>
                 </div>
@@ -262,7 +262,7 @@ This message was submitted through the Manage369 general contact form.
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                        placeholder="(773) 728-0652"
+                        placeholder="(312) 402-7002"
                       />
                     </div>
 
@@ -394,7 +394,7 @@ This message was submitted through the Manage369 general contact form.
                 <h3 className="font-semibold text-lg mb-2">Do you provide emergency services?</h3>
                 <p className="text-gray-600 text-sm">
                   Yes, we provide 24/7 emergency response for all managed properties. 
-                  Call (773) 728-0652 for emergency assistance.
+                  Call (312) 402-7002 for emergency assistance.
                 </p>
               </div>
             </div>
@@ -411,8 +411,8 @@ This message was submitted through the Manage369 general contact form.
             we can help your property thrive.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:773-728-0652" className="btn-secondary text-lg px-8 py-4">
-              Call (773) 728-0652
+            <a href="tel:312-402-7002" className="btn-secondary text-lg px-8 py-4">
+              Call (312) 402-7002
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Request Free Consultation

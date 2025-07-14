@@ -15,21 +15,21 @@ const Contact = () => {
       "name": "Manage369 - Chicago Property Management",
       "description": "Professional property management services in Chicago and suburbs. Condominium management, townhome management, and HOA management by Chicago's premier property management company.",
       "url": "https://manage369.com/contact",
-      "telephone": "+1-773-728-0652",
+      "telephone": "+1-312-402-7002",
       "email": "service@manage369.com",
       "image": "https://manage369.com/manage369-logo.png",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "5107 North Western Avenue, Suite 1S",
-        "addressLocality": "Chicago",
+        "streetAddress": "1400 Patriot Boulevard 357",
+        "addressLocality": "Glenview",
         "addressRegion": "IL",
-        "postalCode": "60625",
+        "postalCode": "60026",
         "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 41.974506,
-        "longitude": -87.6887278
+        "latitude": 42.080154,
+        "longitude": -87.81858
       },
       "openingHours": [
         "Mo-Fr 09:00-17:00"
@@ -239,7 +239,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="tel:+17737280652" className="text-primary-500 hover:underline">(773) 728-0652</a>
+                      <a href="tel:+13124027002" className="text-primary-500 hover:underline">(312) 402-7002</a>
                     </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
@@ -263,8 +263,8 @@ This inquiry was submitted through the Manage369 website contact form.
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Office Address</h3>
-                    <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
-                    <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
+                    <p className="text-gray-600 mb-2">1400 Patriot Boulevard 357</p>
+                    <p className="text-gray-600 mb-2">Glenview, IL 60026</p>
                     <p className="text-sm text-gray-500">Professional property management office</p>
                   </div>
                 </div>
@@ -275,8 +275,8 @@ This inquiry was submitted through the Manage369 website contact form.
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Office Address</h3>
-                    <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
-                    <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
+                    <p className="text-gray-600 mb-2">1400 Patriot Boulevard 357</p>
+                    <p className="text-gray-600 mb-2">Glenview, IL 60026</p>
                     <p className="text-sm text-gray-500">Professional property management office</p>
                   </div>
                 </div>
@@ -287,7 +287,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Emergency Line</h3>
-                    <p className="text-gray-600 mb-2">(773) 728-0652</p>
+                    <p className="text-gray-600 mb-2">(312) 402-7002</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Response</p>
                   </div>
                 </div>
@@ -436,7 +436,7 @@ This inquiry was submitted through the Manage369 website contact form.
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                        placeholder="(773) 728-0652"
+                        placeholder="(312) 402-7002"
                       />
                     </div>
 
@@ -586,14 +586,14 @@ This inquiry was submitted through the Manage369 website contact form.
           <div className="bg-white p-6 rounded-xl shadow-lg">
             <div className="rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center h-96 md:h-[450px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.8!2d-87.6887278!3d41.974506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3147ee9928d%3A0x801da873a09d1402!2sManage369%20Property%20Management!5e0!3m2!1sen!2sus!4v1720000000000!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.999999999999!2d-87.81858!3d42.080154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd00000000000%3A0x0000000000000000!2s1400%20Patriot%20Blvd%2C%20Glenview%2C%20IL%2060026%2C%20USA!5e0!3m2!1sen!2sus!4v1721000000000!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Manage369 Property Management - Chicago Office Location"
+                title="Manage369 Property Management - Glenview Office Location"
               ></iframe>
             </div>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -602,7 +602,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   <span className="text-xl">📍</span>
                 </div>
                 <h3 className="font-semibold mb-2">Address</h3>
-                <p className="text-gray-600 text-sm">5107 North Western Avenue, Suite 1S<br/>Chicago, IL 60625</p>
+                <p className="text-gray-600 text-sm">1400 Patriot Boulevard 357<br/>Glenview, IL 60026</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-3">
@@ -621,7 +621,7 @@ This inquiry was submitted through the Manage369 website contact form.
             </div>
             <div className="text-center mt-6">
               <a 
-                href="https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6" 
+                href="https://maps.google.com/?q=1400+Patriot+Boulevard+357,+Glenview,+IL+60026" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center"
@@ -684,8 +684,8 @@ This inquiry was submitted through the Manage369 website contact form.
               Don't see your area listed? We're continuously expanding our service coverage.
             </p>
             <div className="text-center">
-              <p className="text-2xl font-bold text-primary-500 mb-2">(773) 728-0652</p>
-              <a href="tel:773-728-0652" className="btn-outline">
+              <p className="text-2xl font-bold text-primary-500 mb-2">(312) 402-7002</p>
+              <a href="tel:312-402-7002" className="btn-outline">
                 Call to Inquire About Your Area
               </a>
             </div>
@@ -768,8 +768,8 @@ This inquiry was submitted through the Manage369 website contact form.
             can transform your property management experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:773-728-0652" className="btn-secondary text-lg px-8 py-4">
-              Call (773) 728-0652
+            <a href="tel:312-402-7002" className="btn-secondary text-lg px-8 py-4">
+              Call (312) 402-7002
             </a>
             <a href="mailto:service@manage369.com" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Email Us
