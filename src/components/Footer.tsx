@@ -20,14 +20,14 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Chicago's most trusted property management company with <strong>50+ properties managing 2450+ units</strong> across 100+ communities. 
+              Chicago's most trusted property management company with <strong>50+ properties managing 2450+ units</strong> across 100+ communities.
               Specializing in condominium management, townhome management, and HOA management throughout Chicago and surrounding suburbs. 
               Unlike large corporate chains, we provide personalized service with proven results since 2007.
             </p>
             <div className="space-y-2">
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">📞</span>
-                <a href="tel:+17737280652" className="hover:text-white">(773) 728-0652</a>
+                <a href="tel:+13124027002" className="hover:text-white">(312) 402-7002</a>
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">✉️</span>
@@ -35,7 +35,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">📍</span>
-                5107 N Western Ave, Suite 1S, Chicago, IL 60625 (X8F6+RG)
+                1400 Patriot Boulevard 357, Glenview, IL 60026
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">🕒</span>
@@ -139,8 +139,8 @@ const Footer = () => {
                 🚨 24/7 EMERGENCY PROPERTY MANAGEMENT HOTLINE 🚨
               </p>
               <p className="text-red-100 text-lg font-bold">
-                <a href="tel:773-728-0652" className="hover:text-white transition-colors">
-                  (773) 728-0652
+                <a href="tel:312-402-7002" className="hover:text-white transition-colors">
+                  (312) 402-7002
                 </a>
               </p>
               <p className="text-red-200 text-xs mt-1">
