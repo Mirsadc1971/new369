@@ -185,7 +185,6 @@ const Blog = () => {
             <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-2xl p-8 text-white">
               <h2 className="text-2xl font-bold mb-4 text-white">Expert Property Management Insights</h2>
               <p className="text-blue-100 mb-6">
-                Get exclusive insights from managing 2,230+ Chicago properties. 
                 Get exclusive insights from managing 50+ properties with 2450+ units in Chicago. 
                 Real-world solutions from experienced professionals.
               </p>
@@ -216,7 +215,6 @@ const Blog = () => {
                   <span className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-white text-xs">✓</span>
                   </span>
-                  <span className="text-sm">Practical solutions tested across 2,230+ properties</span>
                   <span className="text-sm">Practical solutions tested across 50+ properties, 2450+ units</span>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -298,16 +296,16 @@ const Blog = () => {
           <div className="mb-8">
             <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
               <p className="text-white font-semibold">Manage369 - Chicago Property Management Experts</p>
-              <p className="text-blue-100">5107 N Western Ave, Suite 1S, Chicago, IL 60625</p>
-              <p className="text-blue-100">(773) 728-0652 | service@manage369.com</p>
+              <p className="text-blue-100">1400 Patriot Boulevard 357, Glenview, IL 60026</p>
+              <p className="text-blue-100">(312) 402-7002 | service@manage369.com</p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
               Get Free Consultation
             </Link>
-            <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (773) 728-0652
+            <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (312) 402-7002
             </a>
           </div>
         </div>
