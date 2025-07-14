@@ -322,7 +322,7 @@ const Accessibility = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:service@manage369.com" className="btn-secondary text-lg px-8 py-4">
-              Email Us
+              Call (312) 402-7002
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Contact Us

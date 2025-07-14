@@ -13,18 +13,18 @@ const LocateUs = () => {
       "name": "Manage369",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "5107 North Western Avenue, Suite 1S",
-        "addressLocality": "Chicago",
+        "streetAddress": "1400 Patriot Boulevard 357",
+        "addressLocality": "Glenview",
         "addressRegion": "IL",
-        "postalCode": "60625",
+        "postalCode": "60026",
         "addressCountry": "US"
       },
       "url": "https://www.manage369.com",
-      "telephone": "+1-773-728-0652",
+      "telephone": "+1-312-402-7002",
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 41.974506,
-        "longitude": -87.6887278
+        "latitude": 42.080154,
+        "longitude": -87.81858
       },
       "sameAs": [
         "https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6",
@@ -121,7 +121,7 @@ const LocateUs = () => {
             </p>
             <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm inline-block">
               <p className="text-blue-100 mb-2">
-                Managing 50+ properties with 2450+ units across Lincoln Park, Downtown Chicago, 
+                Managing 50+ properties with 2450+ units across Lincoln Park, Downtown Chicago,
                 Lakeview, Naperville, and 100+ other Chicago communities since 2007.
               </p>
             </div>
@@ -144,9 +144,8 @@ const LocateUs = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Chicago Office Location</h3>
-                    <p className="text-gray-600 mb-2">5107 North Western Avenue, Suite 1S</p>
-                    <p className="text-gray-600 mb-2">Chicago, IL 60625</p>
-                    <p className="text-gray-500 text-sm mb-2">Plus Code: X8F6+RG Chicago, Illinois</p>
+                    <p className="text-gray-600 mb-2">1400 Patriot Boulevard 357</p>
+                    <p className="text-gray-600 mb-2">Glenview, IL 60026</p>
                     <p className="text-sm text-gray-500">Professional property management office</p>
                   </div>
                 </div>
@@ -158,8 +157,8 @@ const LocateUs = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="tel:773-728-0652" className="text-primary-500 hover:underline text-xl font-semibold">
-                        (773) 728-0652
+                      <a href="tel:312-402-7002" className="text-primary-500 hover:underline text-xl font-semibold">
+                        (312) 402-7002
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
@@ -199,8 +198,8 @@ const LocateUs = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Emergency Line</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="tel:773-728-0652" className="text-red-600 hover:underline font-semibold">
-                        (773) 728-0652
+                      <a href="tel:312-402-7002" className="text-red-600 hover:underline font-semibold">
+                        (312) 402-7002
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">24/7 Emergency Response for Chicago Properties</p>
@@ -656,24 +655,20 @@ const LocateUs = () => {
             
             <div className="bg-gray-100 p-4 rounded-xl">
               <div className="rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center h-96 md:h-[450px]">
-                {/* Placeholder for Google Map Embed */}
-                {/* To embed your Google Map, go to Google Maps, search for your address, click "Share" -> "Embed a map", copy the iframe code, and paste it here. */}
-                {/* Example: <iframe src="YOUR_GOOGLE_MAP_EMBED_URL" width="100%" height="100%" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe> */}
-                <div className="text-center p-8"> 
-                  <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl">📍</span>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">Manage369 Office</h3>
-                  <p className="text-gray-600 mb-4">5107 North Western Avenue, Suite 1S<br/>Chicago, IL 60625</p>
-                  <div className="space-y-2 text-sm text-gray-600">
-                    <p><strong>Phone:</strong> (773) 728-0652</p>
-                    <p><strong>Email:</strong> service@manage369.com</p>
-                  </div>
-                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2964.999999999999!2d-87.81858!3d42.080154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd00000000000%3A0x0000000000000000!2s1400%20Patriot%20Blvd%2C%20Glenview%2C%20IL%2060026%2C%20USA!5e0!3m2!1sen!2sus!4v1721000000000!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Manage369 Property Management - Glenview Office Location"
+                ></iframe>
               </div>
               <div className="text-center mt-4">
                 <a 
-                  href="https://maps.app.goo.gl/KKA8e9R42U4mw7Vg6" 
+                  href="https://maps.google.com/?q=1400+Patriot+Boulevard+357,+Glenview,+IL+60026" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn-primary inline-flex items-center"
@@ -739,8 +734,8 @@ const LocateUs = () => {
             Visit Manage369 today and discover why we're Chicago's premier property management company.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:773-728-0652" className="btn-secondary text-lg px-8 py-4">
-              Call (773) 728-0652
+            <a href="tel:312-402-7002" className="btn-secondary text-lg px-8 py-4">
+              Call (312) 402-7002
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Schedule Visit

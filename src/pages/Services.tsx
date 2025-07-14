@@ -406,8 +406,8 @@ const Services = () => {
           <div className="mb-8">
             <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
               <p className="text-white font-semibold">Manage369 - Chicago's Premier Property Management</p>
-              <p className="text-blue-100">5107 N Western Ave, Suite 1S, Chicago, IL 60625 (X8F6+RG)</p>
-              <p className="text-blue-100">(773) 728-0652 | service@manage369.com</p>
+              <p className="text-blue-100">1400 Patriot Boulevard 357, Glenview, IL 60026</p>
+              <p className="text-blue-100">(312) 402-7002 | service@manage369.com</p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -415,7 +415,7 @@ const Services = () => {
               Get Free Chicago Consultation
             </Link>
             <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call Chicago's #1: (773) 728-0652
+              Call Chicago's #1: (312) 402-7002
             </a>
           </div>
         </div>

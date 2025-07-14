@@ -194,7 +194,7 @@ const Sitemap = () => {
                 <span className="text-2xl">📞</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-              <p className="text-gray-600 mb-2">(773) 728-0652</p>
+              <p className="text-gray-600 mb-2">(312) 402-7002</p>
               <p className="text-sm text-gray-500">Monday - Friday: 8:00 AM - 6:00 PM</p>
             </div>
 
@@ -234,7 +234,7 @@ const Sitemap = () => {
               Get Free Quote
             </Link>
             <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (773) 728-0652
+              Call (312) 402-7002
             </a>
           </div>
         </div>

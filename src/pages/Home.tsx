@@ -451,7 +451,7 @@ const Home = () => {
               Get Free Quote from Chicago's #1
             </Link>
             <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-secondary-500 text-lg px-8 py-4">
-              Call Chicago's #1: (773) 728-0652
+              Call Chicago's #1: (312) 402-7002
             </a>
           </div>
         </div>

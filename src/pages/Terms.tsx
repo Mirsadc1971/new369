@@ -299,8 +299,8 @@ const Terms = () => {
                 <h3 className="text-lg font-semibold mb-4">Manage369</h3>
                 <div className="space-y-2 text-gray-600">
                   <p><strong>Email:</strong> service@manage369.com</p>
-                  <p><strong>Phone:</strong> (773) 728-0652</p>
-                  <p><strong>Address:</strong> Chicago, IL</p>
+                  <p><strong>Phone:</strong> (312) 402-7002</p>
+                  <p><strong>Address:</strong> Glenview, IL</p>
                 </div>
               </div>
             </div>

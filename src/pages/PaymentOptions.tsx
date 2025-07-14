@@ -192,8 +192,8 @@ const PaymentOptions = () => {
             <h3 className="text-xl font-semibold mb-4">Mailing Address</h3>
             <div className="space-y-2 text-gray-700">
               <p className="font-semibold">Manage369</p>
-              <p>5107 North Western Avenue, Suite 1S</p>
-              <p>Chicago, IL 60625</p>
+              <p>1400 Patriot Boulevard 357</p>
+              <p>Glenview, IL 60026</p>
             </div>
             
             <div className="mt-6 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
@@ -283,8 +283,8 @@ const PaymentOptions = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Mailing Address:</label>
                   <div className="text-gray-900">
-                    <p>5107 North Western Avenue, Suite 1S</p>
-                    <p>Chicago, IL 60625</p>
+                    <p>1400 Patriot Boulevard 357</p>
+                    <p>Glenview, IL 60026</p>
                   </div>
                 </div>
                 <div>
@@ -368,7 +368,7 @@ const PaymentOptions = () => {
               </div>
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
               <p className="text-2xl font-bold text-primary-500 mb-2">
-                <a href="tel:773-728-0652" className="hover:underline">773.728.0652</a>
+                <a href="tel:312-402-7002" className="hover:underline">312.402.7002</a>
               </p>
               <p className="text-sm text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
             </div>
@@ -404,7 +404,7 @@ const PaymentOptions = () => {
               Access Online Portal
             </a>
             <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (773) 728-0652
+              Call (312) 402-7002
             </a>
           </div>
         </div>

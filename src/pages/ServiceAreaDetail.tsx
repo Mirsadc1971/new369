@@ -29,21 +29,21 @@ const ServiceAreaDetail = () => {
       "name": `Manage369 - ${areaName} Property Management`,
       "description": `Professional property management services in ${areaName}, Illinois. Specialized condominium management, townhome management, and HOA management services by Chicago's premier property management company.`,
       "url": `https://manage369.com/service-areas/${slug}`,
-      "telephone": "+1-773-728-0652",
+      "telephone": "+1-312-402-7002",
       "email": "service@manage369.com",
       "image": "https://manage369.com/manage369-logo.png",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "5107 North Western Avenue, Suite 1S",
-        "addressLocality": "Chicago",
+        "streetAddress": "1400 Patriot Boulevard 357",
+        "addressLocality": "Glenview",
         "addressRegion": "IL",
-        "postalCode": "60625",
+        "postalCode": "60026",
         "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 41.8781,
-        "longitude": -87.6298
+        "latitude": 42.080154,
+        "longitude": -87.81858
       },
       "areaServed": {
         "@type": "Place",
@@ -608,7 +608,7 @@ const ServiceAreaDetail = () => {
               Get {areaName} Quote
             </Link>
             <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (773) 728-0652
+              Call (312) 402-7002
             </a>
           </div>
         </div>
