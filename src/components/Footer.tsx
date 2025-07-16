@@ -33,11 +33,23 @@ const Footer = () => {
                 <span className="w-5 h-5 mr-2">✉️</span>
                 <a href="mailto:service@manage369.com" className="hover:text-white">service@manage369.com</a>
               </p>
-              <p className="flex items-center text-gray-300">
-                <span className="w-5 h-5 mr-2">📍</span>
-                1400 Patriot Boulevard 357, Glenview, IL 60026
-              </p>
-              <p className="flex items-center text-gray-300">
+              <div className="space-y-2">
+                <p className="flex items-center text-gray-300">
+                  <span className="w-5 h-5 mr-2">📍</span>
+                  <span className="font-semibold">Chicago Office:</span>
+                </p>
+                <p className="text-gray-300 ml-7">
+                  5107 N Western Ave, Suite 1S, Chicago, IL 60625
+                </p>
+                <p className="flex items-center text-gray-300">
+                  <span className="w-5 h-5 mr-2">📍</span>
+                  <span className="font-semibold">Glenview Office:</span>
+                </p>
+                <p className="text-gray-300 ml-7">
+                  1400 Patriot Boulevard 357, Glenview, IL 60026
+                </p>
+              </div>
+              <p className="flex items-center text-gray-300 mt-3">
                 <span className="w-5 h-5 mr-2">🕒</span>
                 Monday - Friday: 9:00 AM - 5:00 PM
               </p>
