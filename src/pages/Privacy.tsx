@@ -338,7 +338,6 @@ const Privacy = () => {
             have any questions or concerns about how we handle your information.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:312-402-7002" className="btn-secondary text-lg px-8 py-4">
             <a href="tel:847-834-4131" className="btn-secondary text-lg px-8 py-4">
               Call (847) 834-4131
             </a>
