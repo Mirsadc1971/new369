@@ -290,6 +290,7 @@ This inquiry was submitted through the Manage369 website contact form.
                     <p className="text-gray-600 mb-2">(312) 402-7002</p>
                       <a href="tel:847-834-4131" className="text-red-600 hover:underline font-semibold">
                         (847) 834-4131
+                      </a>
                 </div>
               </div>
 
