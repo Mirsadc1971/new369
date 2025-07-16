@@ -300,6 +300,7 @@ const Terms = () => {
                 <div className="space-y-2 text-gray-600">
                   <p><strong>Email:</strong> service@manage369.com</p>
                   <p><strong>Phone:</strong> (312) 402-7002</p>
+                  <p><strong>Phone:</strong> (847) 834-4131</p>
                   <p><strong>Address:</strong> Glenview, IL</p>
                 </div>
               </div>
@@ -319,7 +320,8 @@ const Terms = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="mailto:service@manage369.com" className="btn-secondary text-lg px-8 py-4">
-              Email Us
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Contact Us

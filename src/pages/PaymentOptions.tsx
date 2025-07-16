@@ -368,7 +368,7 @@ const PaymentOptions = () => {
               </div>
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
               <p className="text-2xl font-bold text-primary-500 mb-2">
-                <a href="tel:312-402-7002" className="hover:underline">312.402.7002</a>
+                <a href="tel:847-834-4131" className="hover:underline">847.834.4131</a>
               </p>
               <p className="text-sm text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
             </div>
@@ -404,7 +404,8 @@ const PaymentOptions = () => {
               Access Online Portal
             </a>
             <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (312) 402-7002
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
           </div>
         </div>

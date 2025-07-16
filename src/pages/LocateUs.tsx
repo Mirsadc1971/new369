@@ -20,7 +20,7 @@ const LocateUs = () => {
         "addressCountry": "US"
       },
       "url": "https://www.manage369.com",
-      "telephone": "+1-312-402-7002",
+      "telephone": "+1-847-834-4131",
       "geo": {
         "@type": "GeoCoordinates",
         "latitude": 42.080154,
@@ -157,8 +157,8 @@ const LocateUs = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="tel:312-402-7002" className="text-primary-500 hover:underline text-xl font-semibold">
-                        (312) 402-7002
+                      <a href="tel:847-834-4131" className="text-primary-500 hover:underline text-xl font-semibold">
+                        (847) 834-4131
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
@@ -198,8 +198,8 @@ const LocateUs = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Emergency Line</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="tel:312-402-7002" className="text-red-600 hover:underline font-semibold">
-                        (312) 402-7002
+                      <a href="tel:847-834-4131" className="text-red-600 hover:underline font-semibold">
+                        (847) 834-4131
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">24/7 Emergency Response for Chicago Properties</p>
@@ -384,8 +384,8 @@ const LocateUs = () => {
                   </span>
                   <div>
                     <p className="font-semibold">Call to Schedule</p>
-                    <a href="tel:773-728-0652" className="text-yellow-300 hover:underline">
-                      (773) 728-0652
+                    <a href="tel:847-834-4131" className="text-yellow-300 hover:underline">
+                      (847) 834-4131
                     </a>
                   </div>
                 </div>
@@ -734,8 +734,8 @@ const LocateUs = () => {
             Visit Manage369 today and discover why we're Chicago's premier property management company.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:312-402-7002" className="btn-secondary text-lg px-8 py-4">
-              Call (312) 402-7002
+            <a href="tel:847-834-4131" className="btn-secondary text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Schedule Visit

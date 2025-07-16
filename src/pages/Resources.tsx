@@ -435,6 +435,7 @@ const Resources = () => {
             <div className="bg-white p-6 rounded-xl shadow-lg max-w-md mx-auto">
               <h3 className="font-semibold text-lg mb-4">24/7 Emergency Contact</h3>
               <p className="text-2xl font-bold text-primary-500 mb-2">(312) 402-7002</p>
+              <p className="text-2xl font-bold text-primary-500 mb-2">(847) 834-4131</p>
               <p className="text-sm text-gray-600">Available 24 hours a day, 7 days a week for all property emergencies</p>
             </div>
           </div>
@@ -454,6 +455,7 @@ const Resources = () => {
               <p className="text-white font-semibold">Manage369 Property Management</p>
               <p className="text-blue-100">1400 Patriot Boulevard 357, Glenview, IL 60026</p>
               <p className="text-blue-100">(312) 402-7002 | service@manage369.com</p>
+              <p className="text-blue-100">(847) 834-4131 | service@manage369.com</p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -461,7 +463,8 @@ const Resources = () => {
               Contact Our Team
             </Link>
             <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (312) 402-7002
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
           </div>
         </div>
