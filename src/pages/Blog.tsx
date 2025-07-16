@@ -306,6 +306,8 @@ const Blog = () => {
               Get Free Consultation
             </Link>
             <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (312) 402-7002
+            </a>
             <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Call (847) 834-4131
             </a>
