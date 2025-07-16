@@ -262,7 +262,6 @@ This message was submitted through the Manage369 general contact form.
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                        placeholder="(312) 402-7002"
                         placeholder="(847) 834-4131"
                       />
                     </div>
@@ -412,7 +411,6 @@ This message was submitted through the Manage369 general contact form.
             we can help your property thrive.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:312-402-7002" className="btn-secondary text-lg px-8 py-4">
             <a href="tel:847-834-4131" className="btn-secondary text-lg px-8 py-4">
               Call (847) 834-4131
             </a>
