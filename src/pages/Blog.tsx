@@ -298,6 +298,7 @@ const Blog = () => {
               <p className="text-white font-semibold">Manage369 - Chicago Property Management Experts</p>
               <p className="text-blue-100">1400 Patriot Boulevard 357, Glenview, IL 60026</p>
               <p className="text-blue-100">(312) 402-7002 | service@manage369.com</p>
+              <p className="text-blue-100">(847) 834-4131 | service@manage369.com</p>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -305,7 +306,8 @@ const Blog = () => {
               Get Free Consultation
             </Link>
             <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (312) 402-7002
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
           </div>
         </div>

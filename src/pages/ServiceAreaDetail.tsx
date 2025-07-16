@@ -29,7 +29,7 @@ const ServiceAreaDetail = () => {
       "name": `Manage369 - ${areaName} Property Management`,
       "description": `Professional property management services in ${areaName}, Illinois. Specialized condominium management, townhome management, and HOA management services by Chicago's premier property management company.`,
       "url": `https://manage369.com/service-areas/${slug}`,
-      "telephone": "+1-312-402-7002",
+      "telephone": "+1-847-834-4131",
       "email": "service@manage369.com",
       "image": "https://manage369.com/manage369-logo.png",
       "address": {
@@ -608,7 +608,8 @@ const ServiceAreaDetail = () => {
               Get {areaName} Quote
             </Link>
             <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (312) 402-7002
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
           </div>
         </div>

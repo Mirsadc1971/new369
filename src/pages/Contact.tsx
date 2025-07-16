@@ -784,3 +784,5 @@ This inquiry was submitted through the Manage369 website contact form.
 }
 
 export default Contact
+  )
+}
