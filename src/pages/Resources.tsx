@@ -469,6 +469,8 @@ const Resources = () => {
         </div>
       </section>
     </div>
+  )
+}
 
 
 export default Resources
