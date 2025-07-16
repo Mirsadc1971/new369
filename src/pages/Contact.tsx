@@ -15,7 +15,7 @@ const Contact = () => {
       "name": "Manage369 - Chicago Property Management",
       "description": "Professional property management services in Chicago and suburbs. Condominium management, townhome management, and HOA management by Chicago's premier property management company.",
       "url": "https://manage369.com/contact",
-      "telephone": "+1-312-402-7002",
+      "telephone": "+1-847-834-4131",
       "email": "service@manage369.com",
       "image": "https://manage369.com/manage369-logo.png",
       "address": {
@@ -239,7 +239,7 @@ This inquiry was submitted through the Manage369 website contact form.
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-gray-600 mb-2">
-                      <a href="tel:+13124027002" className="text-primary-500 hover:underline">(312) 402-7002</a>
+                      <a href="tel:+18478344131" className="text-primary-500 hover:underline">(847) 834-4131</a>
                     </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
                     <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
@@ -288,8 +288,8 @@ This inquiry was submitted through the Manage369 website contact form.
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Emergency Line</h3>
                     <p className="text-gray-600 mb-2">(312) 402-7002</p>
-                    <p className="text-sm text-gray-500">24/7 Emergency Response</p>
-                  </div>
+                      <a href="tel:847-834-4131" className="text-red-600 hover:underline font-semibold">
+                        (847) 834-4131
                 </div>
               </div>
 
@@ -437,6 +437,7 @@ This inquiry was submitted through the Manage369 website contact form.
                         onChange={handleChange}
                         className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                         placeholder="(312) 402-7002"
+                        placeholder="(847) 834-4131"
                       />
                     </div>
 
@@ -769,7 +770,8 @@ This inquiry was submitted through the Manage369 website contact form.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:312-402-7002" className="btn-secondary text-lg px-8 py-4">
-              Call (312) 402-7002
+            <a href="tel:847-834-4131" className="btn-secondary text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
             <a href="mailto:service@manage369.com" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Email Us
