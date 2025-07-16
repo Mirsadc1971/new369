@@ -462,7 +462,6 @@ const Resources = () => {
             <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
               Contact Our Team
             </Link>
-            <a href="tel:312-402-7002" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
             <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Call (847) 834-4131
             </a>
