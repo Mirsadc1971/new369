@@ -336,5 +336,3 @@ const Accessibility = () => {
 }
 
 export default Accessibility
-  )
-}
