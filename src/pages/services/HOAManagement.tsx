@@ -437,5 +437,4 @@ const HOAManagement = () => {
 }
 
 export default HOAManagement
-  )
-}
+  
