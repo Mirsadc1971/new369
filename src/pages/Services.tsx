@@ -312,10 +312,10 @@ const Services = () => {
               <div className="w-16 h-16 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">1</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Initial Chicago Consultation</h3>
+              <h3 className="text-lg font-semibold mb-3">Initial Consultation</h3>
               <p className="text-sm text-gray-600">
                 Comprehensive property assessment and needs analysis to understand 
-                your specific Chicago property requirements and challenges.
+                your specific property requirements and challenges.
               </p>
             </div>
 
@@ -323,7 +323,7 @@ const Services = () => {
               <div className="w-16 h-16 bg-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">2</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Chicago Transition Planning</h3>
+              <h3 className="text-lg font-semibold mb-3">Transition Planning</h3>
               <p className="text-sm text-gray-600">
                 Detailed transition plan development with timelines, responsibilities, 
                 and communication strategies for seamless handover.
@@ -334,7 +334,7 @@ const Services = () => {
               <div className="w-16 h-16 bg-accent-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">3</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Chicago Implementation</h3>
+              <h3 className="text-lg font-semibold mb-3">Implementation</h3>
               <p className="text-sm text-gray-600">
                 Systematic implementation of management systems, vendor relationships, 
                 and resident communication protocols.
@@ -345,7 +345,7 @@ const Services = () => {
               <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white font-bold text-xl">4</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Ongoing Chicago Management</h3>
+              <h3 className="text-lg font-semibold mb-3">Ongoing Management</h3>
               <p className="text-sm text-gray-600">
                 Continuous monitoring, regular reporting, and proactive management 
                 to ensure optimal property performance and resident satisfaction.
