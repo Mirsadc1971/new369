@@ -20,7 +20,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              The most trusted property management company with <strong>50+ properties managing 2450+ units</strong> across 100+ communities.
+              Chicago's most trusted property management company with <strong>50+ properties managing 2450+ units</strong> across 100+ communities.
               Specializing in condominium management, townhome management, and HOA management throughout Chicago and surrounding suburbs. 
               Unlike large corporate chains, we provide personalized service with proven results since 2007.
             </p>
@@ -114,10 +114,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               <p className="mb-2">
-                © {currentYear} Manage369 - Premier Property Management Company. All rights reserved.
+                © {currentYear} Manage369 - Chicago's Premier Property Management Company. All rights reserved.
               </p>
               <p className="text-xs">
-                Licensed Property Management Company | IDFPR Licensed | CAI Member | Serving Since 2007
+                Licensed Chicago Property Management Company | IDFPR Licensed | CAI Member | Serving Chicago Since 2007
               </p>
             </div>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
