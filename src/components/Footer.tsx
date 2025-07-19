@@ -60,10 +60,10 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/services/condominium-management" className="text-gray-300 hover:text-white transition-colors">Chicago Condominium Management</Link></li>
-              <li><Link to="/services/townhome-management" className="text-gray-300 hover:text-white transition-colors">Chicago Townhome Management</Link></li>
-              <li><Link to="/services/hoa-management" className="text-gray-300 hover:text-white transition-colors">Chicago HOA Management</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">All Chicago Property Management Services</Link></li>
+              <li><Link to="/services/condominium-management" className="text-gray-300 hover:text-white transition-colors">Condominium Management</Link></li>
+              <li><Link to="/services/townhome-management" className="text-gray-300 hover:text-white transition-colors">Townhome Management</Link></li>
+              <li><Link to="/services/hoa-management" className="text-gray-300 hover:text-white transition-colors">HOA Management</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">All Property Management Services</Link></li>
             </ul>
           </div>
 
