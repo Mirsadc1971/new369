@@ -117,7 +117,7 @@ const Home = () => {
       <section className="section-padding bg-gray-50">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Chicago Property Management - Neighborhood Specialists</h2>
+            <h2 className="heading-2 mb-4">Property Management - Neighborhood Specialists <span className="sr-only">near you</span></h2>
             <p className="body-large max-w-3xl mx-auto">
               Expert Chicago property management across 100+ neighborhoods including Lincoln Park, 
               Downtown Chicago, Lakeview, Naperville, and surrounding suburbs. Local expertise 
