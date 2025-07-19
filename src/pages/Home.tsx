@@ -127,31 +127,6 @@ const Home = () => {
           
           {/* Neighborhood-Specific Keywords */}
           <div className="mb-12">
-            <h3 className="text-xl font-semibold text-center mb-8">Local Property Management by Neighborhood</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              <Link to="/service-areas/lincoln-park" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
-                <span className="text-sm font-medium">Lincoln Park Property Management</span>
-              </Link>
-              <Link to="/service-areas/downtown-chicago" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
-                <span className="text-sm font-medium">Downtown Condo Management</span>
-              </Link>
-              <Link to="/service-areas/lakeview" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
-                <span className="text-sm font-medium">Lakeview Property Management</span>
-              </Link>
-              <Link to="/service-areas/naperville" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
-                <span className="text-sm font-medium">Naperville HOA Management</span>
-              </Link>
-              <Link to="/service-areas/oak-park" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
-                <span className="text-sm font-medium">Oak Park Property Management</span>
-              </Link>
-              <Link to="/service-areas/evanston" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
-                <span className="text-sm font-medium">Evanston Property Management</span>
-              </Link>
-            </div>
-          </div>
-
-          {/* Neighborhood-Specific Keywords */}
-          <div className="mb-12">
             <h3 className="text-xl font-semibold text-center mb-8">Property Management by Neighborhood</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
               <Link to="/service-areas/lincoln-park" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
