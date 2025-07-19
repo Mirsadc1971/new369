@@ -58,7 +58,7 @@ const Home = () => {
                 <span className="text-2xl">🏢</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago Condominium Management Services</h3>
+                <h3 className="heading-3 mb-4">Condominium Management Services</h3>
                 <p className="body-text mb-6">
                   Specialized condominium management for high-rise buildings, mid-rise complexes, 
                   and boutique condominium communities throughout Chicago including 
@@ -68,7 +68,7 @@ const Home = () => {
                 </p>
               </div>
               <Link to="/services/condominium-management" className="btn-primary mt-auto w-full text-center block">
-                Chicago Condominium Management Services
+                Condominium Management Services
               </Link>
             </div>
 
@@ -77,7 +77,7 @@ const Home = () => {
                 <span className="text-2xl">🏘️</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago Townhome Management Services</h3>
+                <h3 className="heading-3 mb-4">Townhome Management Services</h3>
                 <p className="body-text mb-6">
                   Comprehensive townhome management for townhome communities, row houses, 
                   and attached home developments across Chicago suburbs including 
@@ -87,7 +87,7 @@ const Home = () => {
                 </p>
               </div>
               <Link to="/services/townhome-management" className="btn-primary mt-auto w-full text-center block">
-                Chicago Townhome Management Services
+                Townhome Management Services
               </Link>
             </div>
 
@@ -96,7 +96,7 @@ const Home = () => {
                 <span className="text-2xl">🏡</span>
               </div>
               <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Chicago HOA Management Services</h3>
+                <h3 className="heading-3 mb-4">HOA Management Services</h3>
                 <p className="body-text mb-6">
                   Full-service HOA management for single-family 
                   subdivisions and master-planned communities throughout Chicago suburbs including 
@@ -106,7 +106,7 @@ const Home = () => {
                 </p>
               </div>
               <Link to="/services/hoa-management" className="btn-primary mt-auto w-full text-center block">
-                Chicago HOA Management Services
+                HOA Management Services
               </Link>
             </div>
           </div>
