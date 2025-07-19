@@ -568,30 +568,6 @@ const ServiceAreaDetail = () => {
           </div>
 
           {/* Related Service Areas */}
-          <div className="mt-16">
-            <h3 className="text-xl font-semibold mb-8 text-center">Other Chicago Areas We Serve</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {[...chicagoAreas, ...suburbAreas]
-                .filter(relatedArea => relatedArea.slug !== slug)
-                .slice(0, 12)
-                .map((relatedArea) => (
-                <Link 
-                  key={relatedArea.id}
-                  to={`/service-areas/${relatedArea.slug}`}
-                  className="bg-gray-50 p-3 rounded-lg text-center hover:bg-primary-50 transition-colors duration-200"
-                >
-                  <span className="text-sm font-medium text-gray-700 hover:text-primary-600">
-                    {relatedArea.name}
-                  </span>
-                </Link>
-              ))}
-            </div>
-            <div className="text-center mt-6">
-              <Link to="/service-areas" className="text-primary-500 hover:underline">
-                View All Chicago Service Areas →
-              </Link>
-            </div>
-          </div>
         </div>
       </section>
 
