@@ -127,7 +127,7 @@ const Home = () => {
           
           {/* Neighborhood-Specific Keywords */}
           <div className="mb-12">
-            <h3 className="text-xl font-semibold text-center mb-8">Chicago Property Management by Neighborhood</h3>
+            <h3 className="text-xl font-semibold text-center mb-8">Property Management by Neighborhood</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
               <Link to="/service-areas/lincoln-park" className="bg-white p-3 rounded-lg text-center hover:bg-primary-50 transition-colors">
                 <span className="text-sm font-medium">Lincoln Park Property Management</span>
@@ -204,7 +204,7 @@ const Home = () => {
 
           <div className="text-center">
             <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
-              View All Service Areas
+              View All Chicago Service Areas
             </Link>
           </div>
         </div>
