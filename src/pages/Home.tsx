@@ -204,7 +204,7 @@ const Home = () => {
 
           <div className="text-center">
             <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
-              View All Chicago Service Areas
+              View All Service Areas
             </Link>
           </div>
         </div>
