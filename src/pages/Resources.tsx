@@ -26,55 +26,61 @@ const Resources = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">📋</span>
               </div>
-              <h3 className="heading-3 mb-4">Board Resources</h3>
-              <p className="body-text mb-6">
-                Essential guides and tools for HOA and condominium board members 
-                to effectively govern their communities.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Board member responsibilities</li>
-                <li>• Meeting management guides</li>
-                <li>• Financial oversight best practices</li>
-                <li>• Legal compliance checklists</li>
-              </ul>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Board Resources</h3>
+                <p className="body-text mb-6">
+                  Essential guides and tools for HOA and condominium board members 
+                  to effectively govern their communities.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Board member responsibilities</li>
+                  <li>• Meeting management guides</li>
+                  <li>• Financial oversight best practices</li>
+                  <li>• Legal compliance checklists</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">🏠</span>
               </div>
-              <h3 className="heading-3 mb-4">Owner Resources</h3>
-              <p className="body-text mb-6">
-                Information and guidance for property owners to understand 
-                their rights, responsibilities, and community involvement.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Owner rights and responsibilities</li>
-                <li>• Assessment and fee information</li>
-                <li>• Architectural review processes</li>
-                <li>• Community involvement opportunities</li>
-              </ul>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Owner Resources</h3>
+                <p className="body-text mb-6">
+                  Information and guidance for property owners to understand 
+                  their rights, responsibilities, and community involvement.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Owner rights and responsibilities</li>
+                  <li>• Assessment and fee information</li>
+                  <li>• Architectural review processes</li>
+                  <li>• Community involvement opportunities</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="card hover:scale-105 transition-transform duration-300">
+            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
               <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-red-600 rounded-full flex items-center justify-center mb-6">
                 <span className="text-2xl text-white">⚖️</span>
               </div>
-              <h3 className="heading-3 mb-4">Legal & Compliance</h3>
-              <p className="body-text mb-6">
-                Important legal information and compliance requirements 
-                for Chicago area property associations.
-              </p>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Chicago ordinances and regulations</li>
-                <li>• Illinois condominium law</li>
-                <li>• HOA governance requirements</li>
-                <li>• Insurance and liability guidelines</li>
-              </ul>
+              <div className="flex-grow">
+                <h3 className="heading-3 mb-4">Legal & Compliance</h3>
+                <p className="body-text mb-6">
+                  Important legal information and compliance requirements 
+                  for Chicago area property associations.
+                </p>
+                <ul className="text-sm text-gray-600 space-y-2">
+                  <li>• Chicago ordinances and regulations</li>
+                  <li>• Illinois condominium law</li>
+                  <li>• HOA governance requirements</li>
+                  <li>• Insurance and liability guidelines</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -256,6 +262,12 @@ const Resources = () => {
                   <h4 className="font-semibold mb-2">Roofing & Exterior</h4>
                   <p className="text-sm text-gray-600">Annual inspections, gutter cleaning, and weather damage prevention</p>
                 </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-semibold mb-6">Capital Improvement Planning</h3>
+              <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg border-l-4 border-accent-500">
                   <h4 className="font-semibold mb-2">Plumbing & Electrical</h4>
                   <p className="text-sm text-gray-600">Regular inspections, code compliance, and safety system testing</p>
@@ -266,49 +278,39 @@ const Resources = () => {
                 </div>
               </div>
             </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Capital Improvement Planning</h3>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <h4 className="font-semibold mb-4">Planning Timeline</h4>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">1</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Assessment</h5>
-                      <p className="text-sm text-gray-600">Evaluate current conditions and future needs</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">2</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Prioritization</h5>
-                      <p className="text-sm text-gray-600">Rank projects by urgency and impact</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">3</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Budgeting</h5>
-                      <p className="text-sm text-gray-600">Develop funding strategies and timelines</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">4</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold">Implementation</h5>
-                      <p className="text-sm text-gray-600">Execute projects with proper oversight</p>
-                    </div>
-                  </div>
+          </div>
+          
+          {/* Planning Process Section */}
+          <div className="mt-16">
+            <h3 className="text-xl font-semibold mb-8 text-center">Capital Improvement Planning Process</h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">1</span>
                 </div>
+                <h4 className="font-semibold mb-2">Assessment</h4>
+                <p className="text-sm text-gray-600">Evaluate current conditions and future needs</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">2</span>
+                </div>
+                <h4 className="font-semibold mb-2">Prioritization</h4>
+                <p className="text-sm text-gray-600">Rank projects by urgency and impact</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">3</span>
+                </div>
+                <h4 className="font-semibold mb-2">Budgeting</h4>
+                <p className="text-sm text-gray-600">Develop funding strategies and timelines</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-white font-bold text-xl">4</span>
+                </div>
+                <h4 className="font-semibold mb-2">Implementation</h4>
+                <p className="text-sm text-gray-600">Execute projects with proper oversight</p>
               </div>
             </div>
           </div>
@@ -432,7 +434,8 @@ const Resources = () => {
           <div className="text-center mt-12">
             <div className="bg-white p-6 rounded-xl shadow-lg max-w-md mx-auto">
               <h3 className="font-semibold text-lg mb-4">24/7 Emergency Contact</h3>
-              <p className="text-2xl font-bold text-primary-500 mb-2">(773) 728-0652</p>
+              <p className="text-2xl font-bold text-primary-500 mb-2">(312) 402-7002</p>
+              <p className="text-2xl font-bold text-primary-500 mb-2">(847) 834-4131</p>
               <p className="text-sm text-gray-600">Available 24 hours a day, 7 days a week for all property emergencies</p>
             </div>
           </div>
@@ -447,12 +450,20 @@ const Resources = () => {
             Contact our team for personalized guidance, additional resources, 
             or answers to specific questions about your property management needs.
           </p>
+          <div className="mb-8">
+            <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
+              <p className="text-white font-semibold">Manage369 Property Management</p>
+              <p className="text-blue-100">1400 Patriot Boulevard 357, Glenview, IL 60026</p>
+              <p className="text-blue-100">(312) 402-7002 | service@manage369.com</p>
+              <p className="text-blue-100">(847) 834-4131 | service@manage369.com</p>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
               Contact Our Team
             </Link>
-            <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (773) 728-0652
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
           </div>
         </div>
@@ -460,5 +471,6 @@ const Resources = () => {
     </div>
   )
 }
+
 
 export default Resources

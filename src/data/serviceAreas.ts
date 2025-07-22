@@ -5,13 +5,16 @@ export interface ServiceArea {
   county: string
   type: 'city' | 'suburb' | 'neighborhood'
   population?: number
-  description: string
+  establishedYear?: number
   keyFeatures: string[]
   propertyTypes: string[]
   marketInsights: string[]
   localRegulations: string[]
   managementChallenges: string[]
   solutions: string[]
+  localSEOKeywords: string[]
+  nearbyAreas: string[]
+  schemaMarkup?: any
 }
 
 export const chicagoAreas: ServiceArea[] = [
@@ -23,7 +26,9 @@ export const chicagoAreas: ServiceArea[] = [
     county: "Cook",
     type: "neighborhood",
     population: 42000,
-    description: "The heart of Chicago's business district featuring luxury high-rise condominiums and modern residential towers. Manage369 is the #1 property management company in Downtown Chicago.",
+    propertyCount: "500+",
+    establishedYear: 2007,
+    averageAssessment: "$450/month",
     keyFeatures: [
       "High-rise luxury condominiums",
       "Premium amenities and concierge services",
@@ -60,7 +65,23 @@ export const chicagoAreas: ServiceArea[] = [
       "Preventive maintenance programs",
       "Professional concierge coordination",
       "Advanced security system management"
-    ]
+    ],
+    localSEOKeywords: [
+      "downtown chicago property management",
+      "loop condo management",
+      "river north property management",
+      "streeterville hoa management",
+      "south loop property management company",
+      "downtown chicago property managers",
+      "chicago loop property management",
+      "downtown condo management chicago"
+    ],
+    nearbyAreas: ["River North", "Lincoln Park", "Lakeview", "Gold Coast"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany",
+      specialties: ["High-rise Management", "Luxury Condominiums", "Mixed-use Properties"],
+      serviceRadius: "5 miles"
+    }
   },
   {
     id: 2,
@@ -69,6 +90,8 @@ export const chicagoAreas: ServiceArea[] = [
     county: "Cook",
     type: "neighborhood",
     population: 65000,
+    establishedYear: 2008,
+    keyNeighborhoods: ["Old Town", "DePaul", "Lincoln Park Zoo Area"],
     description: "Historic neighborhood known for tree-lined streets, Victorian architecture, and diverse housing options. Manage369 is the premier property management company in Lincoln Park.",
     keyFeatures: [
       "Historic brownstones and vintage buildings",
@@ -106,7 +129,23 @@ export const chicagoAreas: ServiceArea[] = [
       "Creative parking solutions",
       "Community-focused management approach",
       "Family-friendly amenity programming"
-    ]
+    ],
+    localSEOKeywords: [
+      "lincoln park property management",
+      "lincoln park condo management",
+      "old town property management",
+      "depaul area property management",
+      "lincoln park hoa management",
+      "lincoln park property managers",
+      "old town condo management",
+      "lincoln park chicago property management"
+    ],
+    nearbyAreas: ["Old Town", "Lakeview", "Downtown Chicago", "Gold Coast"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany", 
+      specialties: ["Historic Properties", "Victorian Buildings", "Family Communities"],
+      serviceRadius: "3 miles"
+    }
   },
   {
     id: 3,
@@ -115,6 +154,8 @@ export const chicagoAreas: ServiceArea[] = [
     county: "Cook",
     type: "neighborhood",
     population: 95000,
+    establishedYear: 2009,
+    keyNeighborhoods: ["Wrigleyville", "Boystown", "Southport Corridor"],
     description: "Vibrant neighborhood with diverse housing, entertainment districts, and lakefront access. Manage369 is the #1 choice for property management in Lakeview.",
     keyFeatures: [
       "Diverse housing stock from vintage to modern",
@@ -152,10 +193,26 @@ export const chicagoAreas: ServiceArea[] = [
       "Proactive noise control measures",
       "Alternative transportation promotion",
       "Community engagement programs"
-    ]
+    ],
+    localSEOKeywords: [
+      "lakeview property management",
+      "wrigleyville property management",
+      "boystown condo management",
+      "southport corridor property management",
+      "lakeview hoa management",
+      "lakeview property managers",
+      "wrigleyville condo management",
+      "lakeview chicago property management"
+    ],
+    nearbyAreas: ["Lincoln Park", "Uptown", "North Center", "Roscoe Village"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany",
+      specialties: ["Entertainment District Properties", "Young Professional Housing", "Transit-Oriented Development"],
+      serviceRadius: "4 miles"
+    }
   },
   {
-    id: 11,
+    id: 4,
     name: "Wicker Park",
     slug: "wicker-park",
     county: "Cook",
@@ -201,7 +258,7 @@ export const chicagoAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 12,
+    id: 5,
     name: "Logan Square",
     slug: "logan-square",
     county: "Cook",
@@ -247,7 +304,7 @@ export const chicagoAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 13,
+    id: 6,
     name: "Hyde Park",
     slug: "hyde-park",
     county: "Cook",
@@ -291,59 +348,12 @@ export const chicagoAreas: ServiceArea[] = [
       "Academic calendar leasing strategies",
       "University partnership programs"
     ]
-  },
-  {
-    id: 14,
-    name: "West Loop",
-    slug: "west-loop",
-    county: "Cook",
-    type: "neighborhood",
-    population: 28000,
-    description: "Former industrial area transformed into a trendy neighborhood with converted lofts, high-end dining, and modern condos. Manage369 is the #1 property management company in West Loop.",
-    keyFeatures: [
-      "Converted warehouse lofts",
-      "Award-winning restaurant scene",
-      "Modern luxury developments",
-      "Proximity to downtown",
-      "Tech company offices"
-    ],
-    propertyTypes: [
-      "Luxury loft conversions",
-      "High-rise condominiums",
-      "Mixed-use developments",
-      "Boutique apartment buildings"
-    ],
-    marketInsights: [
-      "Rapidly appreciating property values",
-      "Strong demand from young professionals",
-      "Premium pricing for unique spaces",
-      "Corporate housing demand"
-    ],
-    localRegulations: [
-      "Mixed-use development guidelines",
-      "Historic preservation requirements",
-      "Entertainment district regulations",
-      "Parking and transportation requirements"
-    ],
-    managementChallenges: [
-      "Managing high-end amenities",
-      "Meeting luxury service expectations",
-      "Balancing residential and commercial needs",
-      "Coordinating with restaurant and retail tenants"
-    ],
-    solutions: [
-      "Premium concierge services",
-      "Specialized amenity management",
-      "Commercial/residential coordination",
-      "High-end maintenance programs"
-    ]
   }
 ]
 
 export const suburbAreas: ServiceArea[] = [
-  // Suburbs
   {
-    id: 4,
+    id: 7,
     name: "Naperville",
     slug: "naperville",
     county: "DuPage",
@@ -386,146 +396,6 @@ export const suburbAreas: ServiceArea[] = [
       "Professional landscape and maintenance",
       "Community amenity programming",
       "Transparent financial reporting"
-    ]
-  },
-  {
-    id: 5,
-    name: "Schaumburg",
-    slug: "schaumburg",
-    county: "Cook",
-    type: "suburb",
-    population: 75000,
-    description: "Major suburban center with extensive shopping, business parks, and diverse housing communities. Manage369 provides premier property management services in Schaumburg.",
-    keyFeatures: [
-      "Major shopping and business center",
-      "Diverse housing options",
-      "Corporate office locations",
-      "Transportation hub access",
-      "Mixed residential and commercial areas"
-    ],
-    propertyTypes: [
-      "Condominium complexes",
-      "Townhome associations",
-      "Mixed-use developments",
-      "Corporate housing complexes"
-    ],
-    marketInsights: [
-      "Strong rental market from business travelers",
-      "Diverse demographic mix",
-      "Competitive pricing environment",
-      "Corporate relocation opportunities"
-    ],
-    localRegulations: [
-      "Commercial zoning requirements",
-      "Transportation corridor regulations",
-      "Municipal utility standards",
-      "Business park operational guidelines"
-    ],
-    managementChallenges: [
-      "Managing diverse tenant base",
-      "Coordinating commercial and residential needs",
-      "Transportation and parking management",
-      "Competing with numerous housing options"
-    ],
-    solutions: [
-      "Flexible leasing programs",
-      "Corporate housing services",
-      "Professional property marketing",
-      "Comprehensive maintenance services"
-    ]
-  },
-
-  // Additional areas to reach 100+ pages
-  {
-    id: 6,
-    name: "Oak Park",
-    slug: "oak-park",
-    county: "Cook",
-    type: "suburb",
-    population: 54000,
-    description: "Historic community famous for Frank Lloyd Wright architecture and progressive values. Manage369 is the leading property management company in Oak Park.",
-    keyFeatures: [
-      "Frank Lloyd Wright historic homes",
-      "Diverse architectural styles",
-      "Progressive community values",
-      "Transit accessibility to Chicago",
-      "Arts and culture focus"
-    ],
-    propertyTypes: [
-      "Historic single-family homes",
-      "Vintage apartment buildings",
-      "Condominium conversions",
-      "Small-scale developments"
-    ],
-    marketInsights: [
-      "Historic property premium pricing",
-      "Socially conscious tenant base",
-      "Strong community involvement",
-      "Arts-focused demographics"
-    ],
-    localRegulations: [
-      "Historic preservation requirements",
-      "Diversity and inclusion ordinances",
-      "Environmental sustainability standards",
-      "Community garden regulations"
-    ],
-    managementChallenges: [
-      "Preserving historic property character",
-      "Meeting progressive community standards",
-      "Managing older building systems",
-      "Balancing preservation with modernization"
-    ],
-    solutions: [
-      "Historic property expertise",
-      "Sustainable management practices",
-      "Community-engaged approach",
-      "Specialized vintage building maintenance"
-    ]
-  },
-  {
-    id: 7,
-    name: "Evanston",
-    slug: "evanston",
-    county: "Cook",
-    type: "suburb",
-    population: 75000,
-    description: "University town with diverse housing near Northwestern University and Lake Michigan. Manage369 offers specialized property management in Evanston.",
-    keyFeatures: [
-      "Northwestern University proximity",
-      "Lakefront location",
-      "Diverse housing stock",
-      "Academic community",
-      "Public transportation access"
-    ],
-    propertyTypes: [
-      "University-area apartments",
-      "Family residential neighborhoods",
-      "Lakefront condominiums",
-      "Student housing complexes"
-    ],
-    marketInsights: [
-      "Student housing demand",
-      "Academic calendar market cycles",
-      "Faculty and staff housing needs",
-      "Lakefront property premiums"
-    ],
-    localRegulations: [
-      "University area rental regulations",
-      "Student housing occupancy limits",
-      "Lakefront development restrictions",
-      "Academic year lease requirements"
-    ],
-    managementChallenges: [
-      "Managing student tenant transitions",
-      "Seasonal occupancy fluctuations",
-      "University community relations",
-      "Balancing student and family housing"
-    ],
-    solutions: [
-      "Academic year lease management",
-      "Student-focused services",
-      "University partnership programs",
-      "Family-friendly community areas"
     ]
   },
   {
@@ -665,7 +535,99 @@ export const suburbAreas: ServiceArea[] = [
       "Transportation advocacy",
       "Local business partnerships"
     ]
-  }
+  },
+  {
+    id: 11,
+    name: "Oak Park",
+    slug: "oak-park",
+    county: "Cook",
+    type: "suburb",
+    population: 54000,
+    description: "Historic community famous for Frank Lloyd Wright architecture and progressive values. Manage369 is the leading property management company in Oak Park.",
+    keyFeatures: [
+      "Frank Lloyd Wright historic homes",
+      "Diverse architectural styles",
+      "Progressive community values",
+      "Transit accessibility to Chicago",
+      "Arts and culture focus"
+    ],
+    propertyTypes: [
+      "Historic single-family homes",
+      "Vintage apartment buildings",
+      "Condominium conversions",
+      "Small-scale developments"
+    ],
+    marketInsights: [
+      "Historic property premium pricing",
+      "Socially conscious tenant base",
+      "Strong community involvement",
+      "Arts-focused demographics"
+    ],
+    localRegulations: [
+      "Historic preservation requirements",
+      "Diversity and inclusion ordinances",
+      "Environmental sustainability standards",
+      "Community garden regulations"
+    ],
+    managementChallenges: [
+      "Preserving historic property character",
+      "Meeting progressive community standards",
+      "Managing older building systems",
+      "Balancing preservation with modernization"
+    ],
+    solutions: [
+      "Historic property expertise",
+      "Sustainable management practices",
+      "Community-engaged approach",
+      "Specialized vintage building maintenance"
+    ]
+  },
+  {
+    id: 12,
+    name: "Evanston",
+    slug: "evanston",
+    county: "Cook",
+    type: "suburb",
+    population: 75000,
+    description: "University town with diverse housing near Northwestern University and Lake Michigan. Manage369 offers specialized property management in Evanston.",
+    keyFeatures: [
+      "Northwestern University proximity",
+      "Lakefront location",
+      "Diverse housing stock",
+      "Academic community",
+      "Public transportation access"
+    ],
+    propertyTypes: [
+      "University-area apartments",
+      "Family residential neighborhoods",
+      "Lakefront condominiums",
+      "Student housing complexes"
+    ],
+    marketInsights: [
+      "Student housing demand",
+      "Academic calendar market cycles",
+      "Faculty and staff housing needs",
+      "Lakefront property premiums"
+    ],
+    localRegulations: [
+      "University area rental regulations",
+      "Student housing occupancy limits",
+      "Lakefront development restrictions",
+      "Academic year lease requirements"
+    ],
+    managementChallenges: [
+      "Managing student tenant transitions",
+      "Seasonal occupancy fluctuations",
+      "University community relations",
+      "Balancing student and family housing"
+    ],
+    solutions: [
+      "Academic year lease management",
+      "Student-focused services",
+      "University partnership programs",
+      "Family-friendly community areas"
+    ]
+  },
 ]
 
 // Additional service areas to reach 100+ total pages
@@ -687,6 +649,4 @@ export const additionalServiceAreas: string[] = [
   "Orland Park", "Tinley Park", "Oak Forest", "Palos Heights", "Palos Hills",
   "Worth", "Alsip", "Crestwood", "Midlothian", "Oak Lawn",
   "Burbank", "Bridgeview", "Justice", "Willow Springs", "Indian Head Park",
-  "Countryside", "Summit", "Bedford Park", "Lyons", "Berwyn",
-  "Cicero", "Stickney", "Forest View", "Hodgkins", "McCook"
 ]

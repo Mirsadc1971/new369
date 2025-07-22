@@ -14,15 +14,15 @@ const HOAManagement = () => {
               <span>HOA Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Professional{' '}
+              Chicago{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                HOA Management
+                HOA Management Services
               </span>
             </h1>
             <p className="body-large mb-8 text-red-100">
-              Comprehensive homeowners association management for single-family 
+              Comprehensive Chicago HOA management for single-family 
               subdivisions, master-planned communities, and gated developments 
-              throughout Chicago suburbs. We provide the expertise and resources 
+              throughout Chicago suburbs. We provide the HOA management expertise and resources 
               needed to maintain thriving residential communities.
             </p>
           </div>
@@ -33,10 +33,10 @@ const HOAManagement = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">HOA Communities We Manage</h2>
+            <h2 className="heading-2 mb-4">Chicago HOA Communities We Manage</h2>
             <p className="body-large max-w-3xl mx-auto">
               From intimate neighborhoods to large master-planned communities, 
-              we provide tailored HOA management services for all types of residential developments.
+              we provide tailored Chicago HOA management services for all types of residential developments.
             </p>
           </div>
 
@@ -47,8 +47,8 @@ const HOAManagement = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">Single-Family Subdivisions</h3>
               <p className="text-sm text-gray-600">
-                Traditional neighborhood developments with detached homes, 
-                common areas, and shared amenities requiring coordinated management.
+                Traditional Chicago neighborhood developments with detached homes, 
+                common areas, and shared amenities requiring coordinated HOA management.
               </p>
             </div>
 
@@ -58,8 +58,8 @@ const HOAManagement = () => {
               </div>
               <h3 className="text-lg font-semibold mb-3">Master-Planned Communities</h3>
               <p className="text-sm text-gray-600">
-                Large-scale developments with multiple phases, extensive amenities, 
-                and complex governance structures requiring professional oversight.
+                Large-scale Chicago developments with multiple phases, extensive amenities, 
+                and complex governance structures requiring professional HOA management oversight.
               </p>
             </div>
 
@@ -425,8 +425,9 @@ const HOAManagement = () => {
             <Link to="/contact" className="btn-primary bg-white text-accent-500 hover:bg-gray-100 text-lg px-8 py-4">
               Get Free Assessment
             </Link>
-            <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-accent-500 text-lg px-8 py-4">
-              Call (773) 728-0652
+
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-accent-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
           </div>
         </div>
@@ -436,3 +437,4 @@ const HOAManagement = () => {
 }
 
 export default HOAManagement
+  

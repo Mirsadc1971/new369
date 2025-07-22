@@ -40,6 +40,7 @@ const Sitemap = () => {
                     <li><Link to="/about" className="text-gray-600 hover:text-primary-500 transition-colors">About Us</Link></li>
                     <li><Link to="/contact" className="text-gray-600 hover:text-primary-500 transition-colors">Contact</Link></li>
                     <li><Link to="/resources" className="text-gray-600 hover:text-primary-500 transition-colors">Resources</Link></li>
+                    <li><Link to="/blog" className="text-gray-600 hover:text-primary-500 transition-colors">Blog</Link></li>
                   </ul>
                 </div>
 
@@ -141,7 +142,7 @@ const Sitemap = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Link to="/contact" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/contact" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">📞</span>
               </div>
@@ -149,7 +150,7 @@ const Sitemap = () => {
               <p className="text-sm text-gray-600">Contact us for a free consultation</p>
             </Link>
 
-            <Link to="/services" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/services" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">🏢</span>
               </div>
@@ -157,7 +158,7 @@ const Sitemap = () => {
               <p className="text-sm text-gray-600">Explore our management services</p>
             </Link>
 
-            <Link to="/service-areas" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/service-areas" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">📍</span>
               </div>
@@ -165,7 +166,7 @@ const Sitemap = () => {
               <p className="text-sm text-gray-600">Find your Chicago area</p>
             </Link>
 
-            <Link to="/about" className="card text-center hover:scale-105 transition-transform duration-300">
+            <Link to="/about" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <span className="text-xl">ℹ️</span>
               </div>
@@ -193,7 +194,7 @@ const Sitemap = () => {
                 <span className="text-2xl">📞</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-              <p className="text-gray-600 mb-2">(773) 728-0652</p>
+              <p className="text-gray-600 mb-2">(847) 834-4131</p>
               <p className="text-sm text-gray-500">Monday - Friday: 8:00 AM - 6:00 PM</p>
             </div>
 
@@ -232,8 +233,8 @@ const Sitemap = () => {
             <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
               Get Free Quote
             </Link>
-            <a href="tel:773-728-0652" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (773) 728-0652
+            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
           </div>
         </div>

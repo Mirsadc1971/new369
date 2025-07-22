@@ -1,0 +1,101 @@
+# Security Headers for Manage369 Website
+# Prevent clickjacking attacks
+# Header always set X-Frame-Options "DENY"
+
+# Prevent MIME type sniffing
+Header always set X-Content-Type-Options "nosniff"
+
+# Enable XSS protection
+Header always set X-XSS-Protection "1; mode=block"
+
+# Referrer Policy
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Content Security Policy (adjust as needed for your specific requirements)
+Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com https://maps.googleapis.com https://www.googletagmanager.com https://calendly.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'self' https://www.google.com https://maps.google.com https://www.google.com/maps/ https://maps.googleapis.com https://calendly.com;"
+
+# Strict Transport Security (HTTPS only)
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+# Permissions Policy (formerly Feature Policy)
+Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+# Optimized Cache Control for static assets
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+    Header set Vary "Accept-Encoding"
+</FilesMatch>
+
+# Cache Control for HTML files
+<FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+    Header set Vary "Accept-Encoding"
+</FilesMatch>
+
+# Cache Control for API responses and dynamic content
+<FilesMatch "\.(json|xml)$">
+    Header set Cache-Control "public, max-age=300, must-revalidate"
+    Header set Vary "Accept-Encoding"
+</FilesMatch>
+
+# Gzip Compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE font/woff
+    AddOutputFilterByType DEFLATE font/woff2
+</IfModule>
+
+# Enhanced Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive on
+    
+    # Static assets - 1 year
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/ico "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/eot "access plus 1 year"
+    
+    # HTML files - 1 hour
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # JSON/XML - 5 minutes
+    ExpiresByType application/json "access plus 5 minutes"
+    ExpiresByType application/xml "access plus 5 minutes"
+    ExpiresByType text/xml "access plus 5 minutes"
+</IfModule>
+
+# Enable ETags for better caching
+<IfModule mod_headers.c>
+    # Remove ETags for static assets (we use immutable cache)
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$">
+        Header unset ETag
+        FileETag None
+    </FilesMatch>
+</IfModule>
+
+# Preload critical resources
+<IfModule mod_headers.c>
+    # Preload critical CSS and fonts
+    <FilesMatch "\.html$">
+        Header add Link "</assets/css/main.css>; rel=preload; as=style"
+        Header add Link "</assets/fonts/inter.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
+    </FilesMatch>
+</IfModule>

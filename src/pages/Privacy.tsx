@@ -295,9 +295,10 @@ const Privacy = () => {
               <div className="bg-gray-50 p-6 rounded-xl">
                 <h3 className="text-lg font-semibold mb-4">Manage369</h3>
                 <div className="space-y-2 text-gray-600">
-                  <p><strong>Email:</strong> privacy@manage369.com</p>
-                  <p><strong>Phone:</strong> (773) 728-0652</p>
-                  <p><strong>Address:</strong> Chicago, IL</p>
+                  <p><strong>Email:</strong> service@manage369.com</p>
+                  <p><strong>Phone:</strong> (312) 402-7002</p>
+                  <p><strong>Phone:</strong> (847) 834-4131</p>
+                  <p><strong>Address:</strong> Glenview, IL</p>
                 </div>
                 <p className="text-sm text-gray-500 mt-4">
                   We will respond to your inquiry within 30 days of receipt.
@@ -337,8 +338,8 @@ const Privacy = () => {
             have any questions or concerns about how we handle your information.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="mailto:privacy@manage369.com" className="btn-secondary text-lg px-8 py-4">
-              Email Privacy Team
+            <a href="tel:847-834-4131" className="btn-secondary text-lg px-8 py-4">
+              Call (847) 834-4131
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Contact Us

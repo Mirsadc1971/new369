@@ -12,12 +12,18 @@ import TownhomeManagement from './pages/services/TownhomeManagement'
 import HOAManagement from './pages/services/HOAManagement'
 import ServiceAreas from './pages/ServiceAreas'
 import Contact from './pages/Contact'
+import GeneralContact from './pages/GeneralContact'
 import Resources from './pages/Resources'
 import ServiceAreaDetail from './pages/ServiceAreaDetail'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'
+import LegalDisclaimers from './pages/LegalDisclaimers'
 import Accessibility from './pages/Accessibility'
 import Sitemap from './pages/Sitemap'
+import LocateUs from './pages/LocateUs'
+import PaymentOptions from './pages/PaymentOptions'
+import Blog from './pages/Blog'
+import BlogPost from './pages/BlogPost'
 
 function App() {
   const location = useLocation()
@@ -47,11 +53,17 @@ function App() {
           <Route path="/services/hoa-management" element={<HOAManagement />} />
           <Route path="/service-areas" element={<ServiceAreas />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/general-contact" element={<GeneralContact />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/legal-disclaimers" element={<LegalDisclaimers />} />
           <Route path="/accessibility" element={<Accessibility />} />
           <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/locate-us" element={<LocateUs />} />
+          <Route path="/payment-options" element={<PaymentOptions />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           
           {/* Dynamic service area route */}
           <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />
