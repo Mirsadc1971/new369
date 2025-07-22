@@ -1,15 +1,11 @@
 {
+ 
   "compilerOptions": {
-   "noImplicitAny": false,
     "target": "ES2020",
     "noImplicitAny": false,
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    HEAD
-    "module": "NodeNext",
-
     "module": "EsNext",
-    18add0c1a3ce5e1f863586962d429ef1c01c3f08
     "skipLibCheck": true,
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -21,7 +17,9 @@
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     "allowImportingTsExtensions": true
-  },
+  }
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
+
+
