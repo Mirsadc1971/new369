@@ -6,9 +6,30 @@ import { ServiceArea, chicagoAreas, suburbAreas, additionalServiceAreas } from '
 const ServiceAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   
+  // Handle direct area names (without /service-areas/ prefix)
+  const directAreaNames = ['loop', 'highwood', 'edgewater', 'old-town', 'gold-coast', 'barrington', 'wheeling'];
+  const isDirectArea = directAreaNames.includes(slug || '');
+  
+  // Convert direct area names to proper format
+  const convertedSlug = isDirectArea ? slug : slug;
+  
   useEffect(() => {
     // Add LocalBusiness schema for this specific service area
-    const areaName = area ? area.name : additionalAreaName;
+    let areaName = area ? area.name : additionalAreaName;
+    
+    // Handle direct area mappings
+    if (isDirectArea && !areaName) {
+      const directAreaMap: { [key: string]: string } = {
+        'loop': 'The Loop',
+        'highwood': 'Highwood',
+        'edgewater': 'Edgewater',
+        'old-town': 'Old Town',
+        'gold-coast': 'Gold Coast',
+        'barrington': 'Barrington',
+        'wheeling': 'Wheeling'
+      };
+      areaName = directAreaMap[slug || ''] || '';
+    }
     
     // If no area found, redirect to service areas page
     if (!areaName) {

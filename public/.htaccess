@@ -96,6 +96,9 @@ Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     RewriteCond %{QUERY_STRING} (^|&)(wow|login|pc)= [NC]
     RewriteRule .* /? [R=301,L]
     
+    # Redirect old WordPress category URLs to noindex
+    RewriteRule ^category/(.*)$ /404.html [R=301,L]
+    
     # Handle Angular and React Router requests
     RewriteBase /
     RewriteRule ^index\.html$ - [L]

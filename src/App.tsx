@@ -98,6 +98,18 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           
+          {/* Additional missing routes */}
+          <Route path="/loop" element={<ServiceAreaDetail />} />
+          <Route path="/highwood" element={<ServiceAreaDetail />} />
+          <Route path="/request-proposal" element={<Contact />} />
+          <Route path="/edgewater" element={<ServiceAreaDetail />} />
+          <Route path="/old-town" element={<ServiceAreaDetail />} />
+          <Route path="/gold-coast" element={<ServiceAreaDetail />} />
+          <Route path="/barrington" element={<ServiceAreaDetail />} />
+          <Route path="/wheeling" element={<ServiceAreaDetail />} />
+          <Route path="/category/uncategorized/" element={<NoIndexPage />} />
+          <Route path="/category/*" element={<NoIndexPage />} />
+          
           {/* Handle fake/spam URLs with noindex */}
           <Route path="/tinggi/*" element={<NoIndexPage />} />
           <Route path="/tinggi" element={<NoIndexPage />} />

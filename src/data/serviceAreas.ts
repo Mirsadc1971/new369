@@ -633,14 +633,14 @@ export const suburbAreas: ServiceArea[] = [
 // Additional service areas to reach 100+ total pages
 export const additionalServiceAreas: string[] = [
   // Chicago Neighborhoods
-  "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater",
-  "Gold Coast", "Humboldt Park", "Irving Park", "Lincoln Square", "Little Italy",
+  "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater", "Loop",
+  "Gold Coast", "Old Town", "Humboldt Park", "Irving Park", "Lincoln Square", "Little Italy",
   "North Center", "Old Town", "Pilsen", "Ravenswood", "River North",
   "Rogers Park", "South Loop", "Streeterville", "Ukrainian Village", "Uptown",
   "West Town", "Wrigleyville",
   
   // Suburbs
-  "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield",
+  "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield", "Highwood", "Wheeling",
   "Northbrook", "Glenview", "Skokie", "Niles", "Park Ridge", "Elmwood Park",
   "Riverside", "Brookfield", "La Grange", "Western Springs", "Hinsdale",
   "Clarendon Hills", "Westmont", "Downers Grove", "Lisle", "Glen Ellyn",
