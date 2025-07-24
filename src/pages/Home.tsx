@@ -21,7 +21,7 @@ const Home = () => {
               Expert <Link to="/services/condominium-management" className="text-yellow-300 hover:underline">condo management</Link>, 
               <Link to="/services/townhome-management" className="text-yellow-300 hover:underline"> HOA management</Link>, and 
               <Link to="/services/hoa-management" className="text-yellow-300 hover:underline"> townhome management</Link> with 
-              24/7 emergency response, licensed professionals, and proven results that larger corporate companies can't match.
+              emergency response, licensed professionals, and proven results that larger corporate companies can't match.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
@@ -318,9 +318,9 @@ const Home = () => {
                     <span className="text-white text-sm">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-lg mb-2">24/7 Emergency Response</h4>
+                    <h4 className="font-semibold text-lg mb-2">Emergency Response</h4>
                     <p className="body-text">
-                      Round-the-clock emergency services ensure your property and residents 
+                      Emergency services ensure your property and residents 
                       are always protected and supported with immediate response.
                     </p>
                   </div>
@@ -400,7 +400,7 @@ const Home = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <span className="w-3 h-3 bg-white rounded-full flex-shrink-0"></span>
-                <span className="text-white font-medium"><strong>24/7</strong> Emergency Response</span>
+                <span className="text-white font-medium">Emergency Response</span>
               </div>
             </div>
           </div>

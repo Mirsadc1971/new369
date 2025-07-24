@@ -41,8 +41,8 @@ const About = () => {
                 <div className="text-blue-100 text-sm">Years Local Experience</div>
               </div>
               <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl font-bold text-yellow-300 mb-2">24/7</div>
-                <div className="text-blue-100 text-sm">Emergency Response</div>
+                <div className="text-3xl font-bold text-yellow-300 mb-2">Fast</div>
+                <div className="text-blue-100 text-sm">Response Times</div>
               </div>
             </div>
           </div>
@@ -276,7 +276,7 @@ const About = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <span className="w-3 h-3 bg-white rounded-full flex-shrink-0"></span>
-                <span className="text-white font-medium">24/7 emergency response</span>
+                <span className="text-white font-medium">Emergency response</span>
               </div>
               <div className="flex items-center space-x-3">
                 <span className="w-3 h-3 bg-white rounded-full flex-shrink-0"></span>
