@@ -1,10 +1,39 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isPaymentsDropdownOpen, setIsPaymentsDropdownOpen] = useState(false)
   const location = useLocation()
+
+  // Add noindex meta tag for fake URLs
+  useEffect(() => {
+    const isFakeUrl = location.pathname.includes('/tinggi') || 
+                     location.search.includes('wow=') ||
+                     location.search.includes('login=') ||
+                     location.search.includes('pc=')
+    
+    if (isFakeUrl) {
+      const metaRobots = document.createElement('meta')
+      metaRobots.name = 'robots'
+      metaRobots.content = 'noindex, nofollow'
+      metaRobots.id = 'noindex-meta'
+      
+      // Remove existing robots meta if present
+      const existingMeta = document.getElementById('noindex-meta')
+      if (existingMeta) {
+        existingMeta.remove()
+      }
+      
+      document.head.appendChild(metaRobots)
+      
+      // Redirect to home after brief delay
+      setTimeout(() => {
+        window.location.href = '/'
+      }, 500)
+    }
+  }, [location])
 
   const isActive = (path: string) => location.pathname === path
 

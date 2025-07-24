@@ -193,6 +193,21 @@
     </script>
     <meta name="google-site-verification" content="JOtYFFoswU5EQOffvvd0tUD5jU8l0uBQEmc4yxAase8" />
   
+  <!-- Conditional noindex for fake pages -->
+  <script>
+    // Add noindex for fake URLs immediately
+    if (window.location.pathname.includes('/tinggi') || 
+        window.location.search.includes('wow=') ||
+        window.location.search.includes('login=') ||
+        window.location.search.includes('pc=')) {
+      document.write('<meta name="robots" content="noindex, nofollow">');
+      // Redirect to home
+      setTimeout(function() {
+        window.location.href = '/';
+      }, 100);
+    }
+  </script>
+  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCX4DTB57C"></script>
   <script>

@@ -25,6 +25,39 @@ import PaymentOptions from './pages/PaymentOptions'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 
+// Component for handling fake/spam URLs with noindex
+const NoIndexPage = () => {
+  useEffect(() => {
+    // Add noindex meta tag for fake pages
+    const metaRobots = document.createElement('meta')
+    metaRobots.name = 'robots'
+    metaRobots.content = 'noindex, nofollow'
+    document.head.appendChild(metaRobots)
+
+    // Redirect to home after a brief delay
+    const timer = setTimeout(() => {
+      window.location.href = '/'
+    }, 1000)
+
+    return () => {
+      clearTimeout(timer)
+      // Clean up meta tag
+      if (document.head.contains(metaRobots)) {
+        document.head.removeChild(metaRobots)
+      }
+    }
+  }, [])
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">Redirecting...</h1>
+        <p className="text-gray-600">Taking you to our homepage</p>
+      </div>
+    </div>
+  )
+}
+
 function App() {
   const location = useLocation()
 
@@ -65,11 +98,15 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           
+          {/* Handle fake/spam URLs with noindex */}
+          <Route path="/tinggi/*" element={<NoIndexPage />} />
+          <Route path="/tinggi" element={<NoIndexPage />} />
+          
           {/* Dynamic service area route */}
           <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />
           
-          {/* Catch-all route for 404s - redirect to home */}
-          <Route path="*" element={<Home />} />
+          {/* Catch-all route for 404s with noindex */}
+          <Route path="*" element={<NoIndexPage />} />
         </Routes>
       </main>
       <Footer />

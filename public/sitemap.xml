@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- NOTE: This sitemap excludes /tinggi/ and other spam/fake URLs -->
+  <!-- Only legitimate business pages are included -->
+  
   <!-- Main Pages -->
   <url>
     <loc>https://www.manage369.com/</loc>
