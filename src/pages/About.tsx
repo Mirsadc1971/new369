@@ -1,660 +1,203 @@
-export interface ServiceArea {
-  id: number
-  name: string
-  slug: string
-  county: string
-  type: 'city' | 'suburb' | 'neighborhood'
-  population?: number
-  establishedYear?: number
-  keyFeatures: string[]
-  propertyTypes: string[]
-  marketInsights: string[]
-  localRegulations: string[]
-  managementChallenges: string[]
-  solutions: string[]
-  localSEOKeywords: string[]
-  nearbyAreas: string[]
-  schemaMarkup?: any
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Building2, Users, Award, Clock, CheckCircle, Star, MapPin, Phone, Mail } from 'lucide-react';
+
+export default function About() {
+  return (
+    <>
+      <Helmet>
+        <title>About Manage369 - Chicago's Premier Property Management Company</title>
+        <meta name="description" content="Learn about Manage369's 18+ years of experience managing condos, townhomes, and HOAs across Chicago and suburbs. Professional property management services." />
+        <link rel="canonical" href="https://www.manage369.com/about" />
+      </Helmet>
+
+      <div className="min-h-screen bg-gray-50">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                About Manage369
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+                Chicago's trusted property management partner for over 18 years
+              </p>
+            </div>
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">50+</div>
+                <div className="text-blue-100">Properties Managed</div>
+              </div>
+              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">2450+</div>
+                <div className="text-blue-100">Units Under Management</div>
+              </div>
+              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">100+</div>
+                <div className="text-blue-100">Chicago Neighborhoods</div>
+              </div>
+              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">18+</div>
+                <div className="text-blue-100">Years Local Experience</div>
+              </div>
+              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm md:col-span-4">
+                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">Fast</div>
+                <div className="text-blue-100">Emergency Response</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Story Section */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                <p className="text-lg text-gray-600 mb-6">
+                  Founded in 2006, Manage369 has grown from a small local operation to Chicago's most trusted property management company. We've built our reputation on delivering exceptional service, maintaining transparent communication, and treating every property as if it were our own.
+                </p>
+                <p className="text-lg text-gray-600 mb-6">
+                  Our team combines deep local market knowledge with cutting-edge technology to provide comprehensive management solutions for condominiums, townhomes, and homeowner associations throughout Chicago and the surrounding suburbs.
+                </p>
+                <div className="flex items-center space-x-4">
+                  <Award className="w-8 h-8 text-blue-600" />
+                  <span className="text-lg font-semibold text-gray-900">Licensed & Insured</span>
+                </div>
+              </div>
+              <div className="bg-blue-50 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Manage369?</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Local expertise in Chicago's unique property market</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Transparent financial reporting and communication</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">24/7 emergency response and maintenance coordination</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Comprehensive insurance and legal compliance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Overview */}
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Comprehensive property management solutions tailored to Chicago's diverse real estate market
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+                <Building2 className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Condominium Management</h3>
+                <p className="text-gray-600">
+                  Full-service management for high-rise and mid-rise condominium buildings throughout Chicago
+                </p>
+              </div>
+              <div className="text-center p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+                <Users className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">HOA Management</h3>
+                <p className="text-gray-600">
+                  Professional homeowner association management for suburban communities and developments
+                </p>
+              </div>
+              <div className="text-center p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+                <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Townhome Management</h3>
+                <p className="text-gray-600">
+                  Specialized management services for townhome communities and mixed-use developments
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Team Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Team</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Experienced professionals dedicated to exceptional property management
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="w-10 h-10 text-blue-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Management Team</h3>
+                  <p className="text-gray-600">
+                    Licensed property managers with decades of combined experience in Chicago real estate
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Clock className="w-10 h-10 text-green-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Maintenance Coordinators</h3>
+                  <p className="text-gray-600">
+                    Skilled professionals managing vendor relationships and emergency response protocols
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Star className="w-10 h-10 text-purple-600" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">Customer Service</h3>
+                  <p className="text-gray-600">
+                    Dedicated support staff ensuring clear communication and resident satisfaction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact CTA */}
+        <section className="py-16 bg-blue-600">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl font-bold text-white mb-4">Ready to Get Started?</h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Contact us today to learn how Manage369 can help your property thrive
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <a
+                href="/contact"
+                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              >
+                Get Free Consultation
+              </a>
+              <div className="flex items-center space-x-2 text-blue-100">
+                <Phone className="w-5 h-5" />
+                <span>(312) 369-MGMT</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
 }
-
-export const chicagoAreas: ServiceArea[] = [
-  // Chicago Neighborhoods
-  {
-    id: 1,
-    name: "Downtown Chicago",
-    slug: "downtown-chicago",
-    county: "Cook",
-    type: "neighborhood",
-    population: 42000,
-    propertyCount: "500+",
-    establishedYear: 2007,
-    averageAssessment: "$450/month",
-    keyFeatures: [
-      "High-rise luxury condominiums",
-      "Premium amenities and concierge services",
-      "Mixed-use developments",
-      "24/7 doorman and security",
-      "Parking deck management"
-    ],
-    propertyTypes: [
-      "Luxury high-rise condominiums",
-      "Mixed-use residential/commercial buildings",
-      "Loft conversions",
-      "Modern apartment complexes"
-    ],
-    marketInsights: [
-      "High property values with strong appreciation",
-      "Rental market driven by young professionals",
-      "Premium pricing for amenity-rich buildings",
-      "High occupancy rates year-round"
-    ],
-    localRegulations: [
-      "Chicago Residential Landlord Tenant Ordinance (RLTO)",
-      "Building permit requirements for modifications",
-      "Accessibility compliance standards",
-      "Fire safety and emergency protocols"
-    ],
-    managementChallenges: [
-      "High tenant expectations for service",
-      "Complex building systems requiring specialized maintenance",
-      "Security management in high-traffic areas",
-      "Coordination with building engineers"
-    ],
-    solutions: [
-      "24/7 emergency response systems",
-      "Preventive maintenance programs",
-      "Professional concierge coordination",
-      "Advanced security system management"
-    ],
-    localSEOKeywords: [
-      "downtown chicago property management",
-      "loop condo management",
-      "river north property management",
-      "streeterville hoa management",
-      "south loop property management company",
-      "downtown chicago property managers",
-      "chicago loop property management",
-      "downtown condo management chicago"
-    ],
-    nearbyAreas: ["River North", "Lincoln Park", "Lakeview", "Gold Coast"],
-    schemaMarkup: {
-      additionalType: "PropertyManagementCompany",
-      specialties: ["High-rise Management", "Luxury Condominiums", "Mixed-use Properties"],
-      serviceRadius: "5 miles"
-    }
-  },
-  {
-    id: 2,
-    name: "Lincoln Park",
-    slug: "lincoln-park",
-    county: "Cook",
-    type: "neighborhood",
-    population: 65000,
-    establishedYear: 2008,
-    keyNeighborhoods: ["Old Town", "DePaul", "Lincoln Park Zoo Area"],
-    description: "Historic neighborhood known for tree-lined streets, Victorian architecture, and diverse housing options. Manage369 is the premier property management company in Lincoln Park.",
-    keyFeatures: [
-      "Historic brownstones and vintage buildings",
-      "Tree-lined residential streets",
-      "Mix of condos and single-family homes",
-      "Close to parks and lakefront",
-      "Family-friendly community"
-    ],
-    propertyTypes: [
-      "Victorian brownstone condominiums",
-      "Modern mid-rise buildings",
-      "Converted single-family homes",
-      "Small boutique developments"
-    ],
-    marketInsights: [
-      "Strong family-oriented rental market",
-      "Premium pricing for character properties",
-      "Seasonal market fluctuations",
-      "High demand for pet-friendly units"
-    ],
-    localRegulations: [
-      "Historic district preservation guidelines",
-      "Parking permit requirements",
-      "Tree preservation ordinances",
-      "Noise ordinances for family neighborhoods"
-    ],
-    managementChallenges: [
-      "Maintaining historic building character",
-      "Limited parking availability",
-      "Balancing modernization with preservation",
-      "Managing diverse tenant demographics"
-    ],
-    solutions: [
-      "Specialized historic building maintenance",
-      "Creative parking solutions",
-      "Community-focused management approach",
-      "Family-friendly amenity programming"
-    ],
-    localSEOKeywords: [
-      "lincoln park property management",
-      "lincoln park condo management",
-      "old town property management",
-      "depaul area property management",
-      "lincoln park hoa management",
-      "lincoln park property managers",
-      "old town condo management",
-      "lincoln park chicago property management"
-    ],
-    nearbyAreas: ["Old Town", "Lakeview", "Downtown Chicago", "Gold Coast"],
-    schemaMarkup: {
-      additionalType: "PropertyManagementCompany", 
-      specialties: ["Historic Properties", "Victorian Buildings", "Family Communities"],
-      serviceRadius: "3 miles"
-    }
-  },
-  {
-    id: 3,
-    name: "Lakeview",
-    slug: "lakeview",
-    county: "Cook",
-    type: "neighborhood",
-    population: 95000,
-    establishedYear: 2009,
-    keyNeighborhoods: ["Wrigleyville", "Boystown", "Southport Corridor"],
-    description: "Vibrant neighborhood with diverse housing, entertainment districts, and lakefront access. Manage369 is the #1 choice for property management in Lakeview.",
-    keyFeatures: [
-      "Diverse housing stock from vintage to modern",
-      "Entertainment and nightlife districts",
-      "Lakefront proximity",
-      "Young professional population",
-      "Transit-accessible location"
-    ],
-    propertyTypes: [
-      "Vintage walk-up apartments",
-      "Modern condominium developments",
-      "Mixed-use buildings",
-      "Small-scale townhome communities"
-    ],
-    marketInsights: [
-      "High demand from young professionals",
-      "Competitive rental market",
-      "Strong resale values",
-      "Seasonal tourism impact"
-    ],
-    localRegulations: [
-      "Entertainment district noise regulations",
-      "Parking enforcement policies",
-      "Building density restrictions",
-      "Lakefront development guidelines"
-    ],
-    managementChallenges: [
-      "High tenant turnover rates",
-      "Noise management in entertainment areas",
-      "Parking shortage issues",
-      "Balancing resident and visitor needs"
-    ],
-    solutions: [
-      "Efficient tenant screening and placement",
-      "Proactive noise control measures",
-      "Alternative transportation promotion",
-      "Community engagement programs"
-    ],
-    localSEOKeywords: [
-      "lakeview property management",
-      "wrigleyville property management",
-      "boystown condo management",
-      "southport corridor property management",
-      "lakeview hoa management",
-      "lakeview property managers",
-      "wrigleyville condo management",
-      "lakeview chicago property management"
-    ],
-    nearbyAreas: ["Lincoln Park", "Uptown", "North Center", "Roscoe Village"],
-    schemaMarkup: {
-      additionalType: "PropertyManagementCompany",
-      specialties: ["Entertainment District Properties", "Young Professional Housing", "Transit-Oriented Development"],
-      serviceRadius: "4 miles"
-    }
-  },
-  {
-    id: 4,
-    name: "Wicker Park",
-    slug: "wicker-park",
-    county: "Cook",
-    type: "neighborhood",
-    population: 26000,
-    description: "Trendy neighborhood known for its artistic vibe, historic homes, and vibrant dining and shopping scene. Manage369 provides expert property management in Wicker Park.",
-    keyFeatures: [
-      "Historic homes and converted lofts",
-      "Trendy dining and shopping districts",
-      "Artistic community atmosphere",
-      "Excellent public transportation",
-      "Mix of vintage and modern buildings"
-    ],
-    propertyTypes: [
-      "Converted loft buildings",
-      "Historic single-family homes",
-      "Modern condominium developments",
-      "Mixed-use properties"
-    ],
-    marketInsights: [
-      "Strong rental demand from young professionals",
-      "High property values with steady appreciation",
-      "Competitive market for unique properties",
-      "Strong interest in historic preservation"
-    ],
-    localRegulations: [
-      "Historic district guidelines",
-      "Mixed-use zoning requirements",
-      "Parking restrictions and permits",
-      "Entertainment venue regulations"
-    ],
-    managementChallenges: [
-      "Balancing historic preservation with modern amenities",
-      "Managing properties in high-traffic areas",
-      "Addressing noise concerns in entertainment districts",
-      "Navigating complex zoning requirements"
-    ],
-    solutions: [
-      "Specialized historic property maintenance",
-      "Proactive noise management strategies",
-      "Strong vendor relationships for unique properties",
-      "Community engagement initiatives"
-    ]
-  },
-  {
-    id: 5,
-    name: "Logan Square",
-    slug: "logan-square",
-    county: "Cook",
-    type: "neighborhood",
-    population: 73000,
-    description: "Dynamic neighborhood with beautiful boulevards, historic greystones, and a thriving arts scene. Manage369 is the leading property management company in Logan Square.",
-    keyFeatures: [
-      "Historic boulevard system",
-      "Greystone and brick buildings",
-      "Thriving arts and music scene",
-      "Diverse dining options",
-      "Community-focused atmosphere"
-    ],
-    propertyTypes: [
-      "Vintage apartment buildings",
-      "Historic greystones",
-      "New construction condominiums",
-      "Two-flat and three-flat buildings"
-    ],
-    marketInsights: [
-      "Rapidly appreciating property values",
-      "Strong rental demand from young professionals",
-      "Increasing interest in property investment",
-      "Transition from rental to ownership market"
-    ],
-    localRegulations: [
-      "Historic preservation guidelines",
-      "Affordable housing requirements",
-      "Zoning changes for development",
-      "Community input requirements"
-    ],
-    managementChallenges: [
-      "Balancing neighborhood character with development",
-      "Managing aging building infrastructure",
-      "Addressing gentrification concerns",
-      "Maintaining affordability while improving properties"
-    ],
-    solutions: [
-      "Community-focused management approach",
-      "Specialized vintage building maintenance",
-      "Transparent communication with residents",
-      "Local vendor partnerships"
-    ]
-  },
-  {
-    id: 6,
-    name: "Hyde Park",
-    slug: "hyde-park",
-    county: "Cook",
-    type: "neighborhood",
-    population: 25000,
-    description: "Historic lakefront neighborhood home to the University of Chicago with diverse architecture and strong community. Manage369 offers specialized property management in Hyde Park.",
-    keyFeatures: [
-      "University of Chicago campus",
-      "Historic architecture",
-      "Lakefront parks and beaches",
-      "Cultural institutions",
-      "Diverse community"
-    ],
-    propertyTypes: [
-      "Historic apartment buildings",
-      "University-adjacent housing",
-      "Single-family homes",
-      "Condominium conversions"
-    ],
-    marketInsights: [
-      "Stable market with university influence",
-      "Mix of student and professional residents",
-      "Year-round rental demand",
-      "Historic property premium"
-    ],
-    localRegulations: [
-      "University area development guidelines",
-      "Historic district requirements",
-      "Lakefront protection ordinances",
-      "Rental housing regulations"
-    ],
-    managementChallenges: [
-      "Balancing student and professional tenant needs",
-      "Maintaining historic properties",
-      "Academic calendar rental cycles",
-      "University relationship management"
-    ],
-    solutions: [
-      "Specialized student housing management",
-      "Historic property expertise",
-      "Academic calendar leasing strategies",
-      "University partnership programs"
-    ]
-  }
-]
-
-export const suburbAreas: ServiceArea[] = [
-  {
-    id: 7,
-    name: "Naperville",
-    slug: "naperville",
-    county: "DuPage",
-    type: "suburb",
-    population: 149000,
-    description: "Highly-rated suburban community known for excellent schools, family neighborhoods, and planned developments. Manage369 is the #1 property management company in Naperville.",
-    keyFeatures: [
-      "Top-rated school districts",
-      "Master-planned communities",
-      "Family-oriented neighborhoods",
-      "Modern townhome developments",
-      "Corporate headquarters location"
-    ],
-    propertyTypes: [
-      "Single-family home subdivisions",
-      "Townhome communities",
-      "Luxury condominium complexes",
-      "Active adult communities"
-    ],
-    marketInsights: [
-      "High property values driven by schools",
-      "Strong family demographic",
-      "Corporate relocation market",
-      "Stable long-term residents"
-    ],
-    localRegulations: [
-      "HOA covenant enforcement",
-      "Municipal building codes",
-      "School district boundaries",
-      "Environmental protection ordinances"
-    ],
-    managementChallenges: [
-      "Meeting high homeowner expectations",
-      "Managing large-scale developments",
-      "Coordinating with multiple HOAs",
-      "Maintaining premium community standards"
-    ],
-    solutions: [
-      "Comprehensive HOA management services",
-      "Professional landscape and maintenance",
-      "Community amenity programming",
-      "Transparent financial reporting"
-    ]
-  },
-  {
-    id: 8,
-    name: "Wheaton",
-    slug: "wheaton",
-    county: "DuPage",
-    type: "suburb",
-    population: 53000,
-    description: "Family-oriented community with excellent schools and historic downtown charm. Manage369 is the #1 property management company in Wheaton.",
-    keyFeatures: [
-      "Top-rated school systems",
-      "Historic downtown district",
-      "Family-centered community",
-      "Religious institution presence",
-      "Conservative family values"
-    ],
-    propertyTypes: [
-      "Single-family subdivisions",
-      "Townhome communities",
-      "Small condominium complexes",
-      "Historic downtown residences"
-    ],
-    marketInsights: [
-      "Family-driven housing market",
-      "School district premium",
-      "Conservative demographic preferences",
-      "Long-term resident stability"
-    ],
-    localRegulations: [
-      "Family-oriented housing codes",
-      "Historic downtown preservation",
-      "School proximity requirements",
-      "Community standards enforcement"
-    ],
-    managementChallenges: [
-      "Meeting conservative community expectations",
-      "Managing family-focused amenities",
-      "Maintaining community standards",
-      "Coordinating with religious institutions"
-    ],
-    solutions: [
-      "Family-first management approach",
-      "Community values alignment",
-      "Conservative financial management",
-      "Long-term relationship building"
-    ]
-  },
-  {
-    id: 9,
-    name: "Arlington Heights",
-    slug: "arlington-heights",
-    county: "Cook",
-    type: "suburb",
-    population: 75000,
-    description: "Established suburban community with excellent transportation, shopping, and family amenities. Manage369 provides comprehensive property management in Arlington Heights.",
-    keyFeatures: [
-      "Metra train station access",
-      "Woodfield Mall proximity",
-      "Established neighborhoods",
-      "Family recreation facilities",
-      "Corporate business presence"
-    ],
-    propertyTypes: [
-      "Established subdivisions",
-      "Condominium complexes",
-      "Townhome developments",
-      "Senior living communities"
-    ],
-    marketInsights: [
-      "Commuter-friendly location",
-      "Stable property values",
-      "Multigenerational appeal",
-      "Corporate housing demand"
-    ],
-    localRegulations: [
-      "Municipal development standards",
-      "Transportation corridor planning",
-      "Senior housing requirements",
-      "Commercial area integration"
-    ],
-    managementChallenges: [
-      "Managing aging housing stock",
-      "Competing with newer developments",
-      "Transportation parking management",
-      "Multigenerational community needs"
-    ],
-    solutions: [
-      "Property modernization programs",
-      "Transportation-focused amenities",
-      "Intergenerational programming",
-      "Professional corporate services"
-    ]
-  },
-  {
-    id: 10,
-    name: "Palatine",
-    slug: "palatine",
-    county: "Cook",
-    type: "suburb",
-    population: 69000,
-    description: "Northwest suburban community with diverse housing options and strong local economy. Manage369 is the premier property management company in Palatine.",
-    keyFeatures: [
-      "Diverse housing developments",
-      "Strong local business district",
-      "Family recreation programs",
-      "Transportation accessibility",
-      "Corporate headquarters presence"
-    ],
-    propertyTypes: [
-      "Mixed housing developments",
-      "Townhome associations",
-      "Condominium communities",
-      "Active adult developments"
-    ],
-    marketInsights: [
-      "Diverse demographic appeal",
-      "Competitive market pricing",
-      "Corporate relocation market",
-      "Transportation convenience premium"
-    ],
-    localRegulations: [
-      "Diverse housing integration requirements",
-      "Local business support ordinances",
-      "Transportation planning coordination",
-      "Municipal utility standards"
-    ],
-    managementChallenges: [
-      "Managing diverse community needs",
-      "Balancing development types",
-      "Transportation infrastructure coordination",
-      "Local business relationship management"
-    ],
-    solutions: [
-      "Inclusive community management",
-      "Diverse programming options",
-      "Transportation advocacy",
-      "Local business partnerships"
-    ]
-  },
-  {
-    id: 11,
-    name: "Oak Park",
-    slug: "oak-park",
-    county: "Cook",
-    type: "suburb",
-    population: 54000,
-    description: "Historic community famous for Frank Lloyd Wright architecture and progressive values. Manage369 is the leading property management company in Oak Park.",
-    keyFeatures: [
-      "Frank Lloyd Wright historic homes",
-      "Diverse architectural styles",
-      "Progressive community values",
-      "Transit accessibility to Chicago",
-      "Arts and culture focus"
-    ],
-    propertyTypes: [
-      "Historic single-family homes",
-      "Vintage apartment buildings",
-      "Condominium conversions",
-      "Small-scale developments"
-    ],
-    marketInsights: [
-      "Historic property premium pricing",
-      "Socially conscious tenant base",
-      "Strong community involvement",
-      "Arts-focused demographics"
-    ],
-    localRegulations: [
-      "Historic preservation requirements",
-      "Diversity and inclusion ordinances",
-      "Environmental sustainability standards",
-      "Community garden regulations"
-    ],
-    managementChallenges: [
-      "Preserving historic property character",
-      "Meeting progressive community standards",
-      "Managing older building systems",
-      "Balancing preservation with modernization"
-    ],
-    solutions: [
-      "Historic property expertise",
-      "Sustainable management practices",
-      "Community-engaged approach",
-      "Specialized vintage building maintenance"
-    ]
-  },
-  {
-    id: 12,
-    name: "Evanston",
-    slug: "evanston",
-    county: "Cook",
-    type: "suburb",
-    population: 75000,
-    description: "University town with diverse housing near Northwestern University and Lake Michigan. Manage369 offers specialized property management in Evanston.",
-    keyFeatures: [
-      "Northwestern University proximity",
-      "Lakefront location",
-      "Diverse housing stock",
-      "Academic community",
-      "Public transportation access"
-    ],
-    propertyTypes: [
-      "University-area apartments",
-      "Family residential neighborhoods",
-      "Lakefront condominiums",
-      "Student housing complexes"
-    ],
-    marketInsights: [
-      "Student housing demand",
-      "Academic calendar market cycles",
-      "Faculty and staff housing needs",
-      "Lakefront property premiums"
-    ],
-    localRegulations: [
-      "University area rental regulations",
-      "Student housing occupancy limits",
-      "Lakefront development restrictions",
-      "Academic year lease requirements"
-    ],
-    managementChallenges: [
-      "Managing student tenant transitions",
-      "Seasonal occupancy fluctuations",
-      "University community relations",
-      "Balancing student and family housing"
-    ],
-    solutions: [
-      "Academic year lease management",
-      "Student-focused services",
-      "University partnership programs",
-      "Family-friendly community areas"
-    ]
-  },
-]
-
-// Additional service areas to reach 100+ total pages
-export const additionalServiceAreas: string[] = [
-  // Chicago Neighborhoods
-  "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater", "Loop",
-  "Gold Coast", "Old Town", "Humboldt Park", "Irving Park", "Lincoln Square", "Little Italy",
-  "North Center", "Old Town", "Pilsen", "Ravenswood", "River North",
-  "Rogers Park", "South Loop", "Streeterville", "Ukrainian Village", "Uptown",
-  "West Town", "Wrigleyville",
-  
-  // Suburbs
-  "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield", "Highwood", "Wheeling",
-  "Northbrook", "Glenview", "Skokie", "Niles", "Park Ridge", "Elmwood Park",
-  "Riverside", "Brookfield", "La Grange", "Western Springs", "Hinsdale",
-  "Clarendon Hills", "Westmont", "Downers Grove", "Lisle", "Glen Ellyn",
-  "Lombard", "Villa Park", "Elmhurst", "Oak Brook", "Burr Ridge",
-  "Darien", "Woodridge", "Bolingbrook", "Romeoville", "Lemont",
-  "Orland Park", "Tinley Park", "Oak Forest", "Palos Heights", "Palos Hills",
-  "Worth", "Alsip", "Crestwood", "Midlothian", "Oak Lawn",
-  "Burbank", "Bridgeview", "Justice", "Willow Springs", "Indian Head Park",
-  "Schaumburg", "Hoffman Estates", "Streamwood", "Bartlett", "Hanover Park",
-  "Carol Stream", "Bloomingdale", "Roselle", "Itasca", "Wood Dale",
-  "Addison", "Bensenville", "Elk Grove Village", "Rolling Meadows", "Inverness",
-  "Barrington", "Lake Zurich", "Mundelein", "Vernon Hills", "Libertyville",
-  "Highland Park", "Lake Forest", "Wilmette", "Winnetka", "Glencoe",
-  "Morton Grove", "Lincolnwood", "Harwood Heights", "Norridge", "Rosemont",
-  "Franklin Park", "Melrose Park", "Bellwood", "Maywood", "Forest Park",
-  "River Forest", "Berwyn", "Cicero", "Stickney", "Lyons"
-]
