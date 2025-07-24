@@ -1,478 +1,660 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import CanonicalLink from '../components/CanonicalLink'
-
-const Resources = () => {
-  return (
-    <div>
-      <CanonicalLink href="https://www.manage369.com/resources" />
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-500 to-primary-700 text-white section-padding">
-        <div className="container-max">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="heading-1 mb-6 text-white">
-              Property Management{' '}
-              <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Resources
-              </span>
-            </h1>
-            <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-              Helpful resources, guides, and information for property owners, 
-              board members, and residents in Chicago area communities.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Resource Categories */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
-              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6">
-                <span className="text-2xl text-white">📋</span>
-              </div>
-              <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Board Resources</h3>
-                <p className="body-text mb-6">
-                  Essential guides and tools for HOA and condominium board members 
-                  to effectively govern their communities.
-                </p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>• Board member responsibilities</li>
-                  <li>• Meeting management guides</li>
-                  <li>• Financial oversight best practices</li>
-                  <li>• Legal compliance checklists</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
-              <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mb-6">
-                <span className="text-2xl text-white">🏠</span>
-              </div>
-              <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Owner Resources</h3>
-                <p className="body-text mb-6">
-                  Information and guidance for property owners to understand 
-                  their rights, responsibilities, and community involvement.
-                </p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>• Owner rights and responsibilities</li>
-                  <li>• Assessment and fee information</li>
-                  <li>• Architectural review processes</li>
-                  <li>• Community involvement opportunities</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="card hover:scale-105 transition-transform duration-300 flex flex-col h-full">
-              <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-red-600 rounded-full flex items-center justify-center mb-6">
-                <span className="text-2xl text-white">⚖️</span>
-              </div>
-              <div className="flex-grow">
-                <h3 className="heading-3 mb-4">Legal & Compliance</h3>
-                <p className="body-text mb-6">
-                  Important legal information and compliance requirements 
-                  for Chicago area property associations.
-                </p>
-                <ul className="text-sm text-gray-600 space-y-2">
-                  <li>• Chicago ordinances and regulations</li>
-                  <li>• Illinois condominium law</li>
-                  <li>• HOA governance requirements</li>
-                  <li>• Insurance and liability guidelines</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Board Member Guide */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Board Member Guide</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Essential information for effective board governance and community leadership.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Key Responsibilities</h3>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">💰</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Financial Oversight</h4>
-                    <p className="text-sm text-gray-600">Monitor budgets, approve expenditures, and ensure financial transparency</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">⚖️</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Legal Compliance</h4>
-                    <p className="text-sm text-gray-600">Ensure adherence to governing documents and applicable laws</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">🔧</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Property Maintenance</h4>
-                    <p className="text-sm text-gray-600">Oversee maintenance and capital improvement projects</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-6 h-6 bg-primary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">👥</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold mb-1">Community Leadership</h4>
-                    <p className="text-sm text-gray-600">Represent owner interests and foster community engagement</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Best Practices</h3>
-              <div className="bg-white p-6 rounded-xl shadow-lg">
-                <ul className="space-y-3 text-sm text-gray-600">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3 mt-2"></span>
-                    <span>Attend all board meetings and come prepared</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3 mt-2"></span>
-                    <span>Review financial reports and ask questions</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3 mt-2"></span>
-                    <span>Communicate openly with residents</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3 mt-2"></span>
-                    <span>Stay informed about industry best practices</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3 mt-2"></span>
-                    <span>Work collaboratively with property management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3 mt-2"></span>
-                    <span>Plan for long-term community needs</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Financial Planning */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Financial Planning & Budgeting</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Essential financial management principles for healthy community associations.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">📊</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Annual Budgeting</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Operating expense planning</li>
-                <li>• Reserve fund contributions</li>
-                <li>• Assessment level setting</li>
-                <li>• Variance analysis</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">🏦</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Reserve Planning</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Reserve study requirements</li>
-                <li>• Capital improvement planning</li>
-                <li>• Funding strategies</li>
-                <li>• Investment guidelines</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">📈</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Financial Reporting</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Monthly financial statements</li>
-                <li>• Budget vs. actual analysis</li>
-                <li>• Cash flow management</li>
-                <li>• Annual audit preparation</li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-xl">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">⚠️</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Risk Management</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Insurance coverage review</li>
-                <li>• Liability protection</li>
-                <li>• Emergency fund planning</li>
-                <li>• Financial controls</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Maintenance Guidelines */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Maintenance & Capital Planning</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Proactive maintenance strategies to preserve property values and minimize costs.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Preventive Maintenance</h3>
-              <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg border-l-4 border-primary-500">
-                  <h4 className="font-semibold mb-2">HVAC Systems</h4>
-                  <p className="text-sm text-gray-600">Regular filter changes, seasonal tune-ups, and system inspections</p>
-                </div>
-                <div className="bg-white p-4 rounded-lg border-l-4 border-secondary-500">
-                  <h4 className="font-semibold mb-2">Roofing & Exterior</h4>
-                  <p className="text-sm text-gray-600">Annual inspections, gutter cleaning, and weather damage prevention</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-6">Capital Improvement Planning</h3>
-              <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg border-l-4 border-accent-500">
-                  <h4 className="font-semibold mb-2">Plumbing & Electrical</h4>
-                  <p className="text-sm text-gray-600">Regular inspections, code compliance, and safety system testing</p>
-                </div>
-                <div className="bg-white p-4 rounded-lg border-l-4 border-primary-500">
-                  <h4 className="font-semibold mb-2">Landscaping</h4>
-                  <p className="text-sm text-gray-600">Seasonal care, irrigation maintenance, and grounds beautification</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Planning Process Section */}
-          <div className="mt-16">
-            <h3 className="text-xl font-semibold mb-8 text-center">Capital Improvement Planning Process</h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">1</span>
-                </div>
-                <h4 className="font-semibold mb-2">Assessment</h4>
-                <p className="text-sm text-gray-600">Evaluate current conditions and future needs</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">2</span>
-                </div>
-                <h4 className="font-semibold mb-2">Prioritization</h4>
-                <p className="text-sm text-gray-600">Rank projects by urgency and impact</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">3</span>
-                </div>
-                <h4 className="font-semibold mb-2">Budgeting</h4>
-                <p className="text-sm text-gray-600">Develop funding strategies and timelines</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-white font-bold text-xl">4</span>
-                </div>
-                <h4 className="font-semibold mb-2">Implementation</h4>
-                <p className="text-sm text-gray-600">Execute projects with proper oversight</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Legal & Compliance */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Legal & Compliance Information</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Important legal requirements and compliance guidelines for Chicago area associations.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="card">
-              <h3 className="text-lg font-semibold mb-4">Illinois Condominium Law</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Condominium Property Act requirements</li>
-                <li>• Board election procedures</li>
-                <li>• Financial disclosure obligations</li>
-                <li>• Owner rights and remedies</li>
-                <li>• Meeting notice requirements</li>
-                <li>• Record keeping obligations</li>
-              </ul>
-            </div>
-
-            <div className="card">
-              <h3 className="text-lg font-semibold mb-4">Chicago Ordinances</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Building code compliance</li>
-                <li>• Fire safety regulations</li>
-                <li>• Accessibility requirements</li>
-                <li>• Environmental regulations</li>
-                <li>• Licensing and permits</li>
-                <li>• Inspection requirements</li>
-              </ul>
-            </div>
-
-            <div className="card">
-              <h3 className="text-lg font-semibold mb-4">HOA Governance</h3>
-              <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Declaration and bylaw enforcement</li>
-                <li>• Architectural review processes</li>
-                <li>• Assessment collection procedures</li>
-                <li>• Dispute resolution mechanisms</li>
-                <li>• Insurance requirements</li>
-                <li>• Reserve fund regulations</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Emergency Procedures */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Emergency Procedures</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Essential emergency response procedures for property associations and residents.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
-              <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">🚨</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-red-800">Fire Emergency</h3>
-              <ul className="text-sm text-red-700 space-y-1">
-                <li>• Call 911 immediately</li>
-                <li>• Evacuate building safely</li>
-                <li>• Meet at designated area</li>
-                <li>• Contact property management</li>
-              </ul>
-            </div>
-
-            <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">💧</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-blue-800">Water Emergency</h3>
-              <ul className="text-sm text-blue-700 space-y-1">
-                <li>• Shut off water source if possible</li>
-                <li>• Call emergency line</li>
-                <li>• Document damage with photos</li>
-                <li>• Contact insurance if needed</li>
-              </ul>
-            </div>
-
-            <div className="bg-yellow-50 p-6 rounded-xl border-l-4 border-yellow-500">
-              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">⚡</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-yellow-800">Power Outage</h3>
-              <ul className="text-sm text-yellow-700 space-y-1">
-                <li>• Check circuit breakers</li>
-                <li>• Report to utility company</li>
-                <li>• Use flashlights, not candles</li>
-                <li>• Notify property management</li>
-              </ul>
-            </div>
-
-            <div className="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-xl">🔒</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-green-800">Security Issue</h3>
-              <ul className="text-sm text-green-700 space-y-1">
-                <li>• Call 911 if immediate danger</li>
-                <li>• Report to security/management</li>
-                <li>• Document incident details</li>
-                <li>• Follow up with board</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <div className="bg-white p-6 rounded-xl shadow-lg max-w-md mx-auto">
-              <h3 className="font-semibold text-lg mb-4">Emergency Contact</h3>
-              <p className="text-2xl font-bold text-primary-500 mb-2">(312) 402-7002</p>
-              <p className="text-2xl font-bold text-primary-500 mb-2">(847) 834-4131</p>
-              <p className="text-sm text-gray-600">Available for all property emergencies</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="section-padding bg-gradient-primary text-white">
-        <div className="container-max text-center">
-          <h2 className="heading-2 mb-4 text-white">Need Additional Resources or Support?</h2>
-          <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
-            Contact our team for personalized guidance, additional resources, 
-            or answers to specific questions about your property management needs.
-          </p>
-          <div className="mb-8">
-            <div className="bg-white bg-opacity-10 p-4 rounded-lg inline-block">
-              <p className="text-white font-semibold">Manage369 Property Management</p>
-              <p className="text-blue-100">1400 Patriot Boulevard 357, Glenview, IL 60026</p>
-              <p className="text-blue-100">(312) 402-7002 | service@manage369.com</p>
-              <p className="text-blue-100">(847) 834-4131 | service@manage369.com</p>
-            </div>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
-              Contact Our Team
-            </Link>
-            <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (847) 834-4131
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
-  )
+export interface ServiceArea {
+  id: number
+  name: string
+  slug: string
+  county: string
+  type: 'city' | 'suburb' | 'neighborhood'
+  population?: number
+  establishedYear?: number
+  keyFeatures: string[]
+  propertyTypes: string[]
+  marketInsights: string[]
+  localRegulations: string[]
+  managementChallenges: string[]
+  solutions: string[]
+  localSEOKeywords: string[]
+  nearbyAreas: string[]
+  schemaMarkup?: any
 }
 
+export const chicagoAreas: ServiceArea[] = [
+  // Chicago Neighborhoods
+  {
+    id: 1,
+    name: "Downtown Chicago",
+    slug: "downtown-chicago",
+    county: "Cook",
+    type: "neighborhood",
+    population: 42000,
+    propertyCount: "500+",
+    establishedYear: 2007,
+    averageAssessment: "$450/month",
+    keyFeatures: [
+      "High-rise luxury condominiums",
+      "Premium amenities and concierge services",
+      "Mixed-use developments",
+      "24/7 doorman and security",
+      "Parking deck management"
+    ],
+    propertyTypes: [
+      "Luxury high-rise condominiums",
+      "Mixed-use residential/commercial buildings",
+      "Loft conversions",
+      "Modern apartment complexes"
+    ],
+    marketInsights: [
+      "High property values with strong appreciation",
+      "Rental market driven by young professionals",
+      "Premium pricing for amenity-rich buildings",
+      "High occupancy rates year-round"
+    ],
+    localRegulations: [
+      "Chicago Residential Landlord Tenant Ordinance (RLTO)",
+      "Building permit requirements for modifications",
+      "Accessibility compliance standards",
+      "Fire safety and emergency protocols"
+    ],
+    managementChallenges: [
+      "High tenant expectations for service",
+      "Complex building systems requiring specialized maintenance",
+      "Security management in high-traffic areas",
+      "Coordination with building engineers"
+    ],
+    solutions: [
+      "24/7 emergency response systems",
+      "Preventive maintenance programs",
+      "Professional concierge coordination",
+      "Advanced security system management"
+    ],
+    localSEOKeywords: [
+      "downtown chicago property management",
+      "loop condo management",
+      "river north property management",
+      "streeterville hoa management",
+      "south loop property management company",
+      "downtown chicago property managers",
+      "chicago loop property management",
+      "downtown condo management chicago"
+    ],
+    nearbyAreas: ["River North", "Lincoln Park", "Lakeview", "Gold Coast"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany",
+      specialties: ["High-rise Management", "Luxury Condominiums", "Mixed-use Properties"],
+      serviceRadius: "5 miles"
+    }
+  },
+  {
+    id: 2,
+    name: "Lincoln Park",
+    slug: "lincoln-park",
+    county: "Cook",
+    type: "neighborhood",
+    population: 65000,
+    establishedYear: 2008,
+    keyNeighborhoods: ["Old Town", "DePaul", "Lincoln Park Zoo Area"],
+    description: "Historic neighborhood known for tree-lined streets, Victorian architecture, and diverse housing options. Manage369 is the premier property management company in Lincoln Park.",
+    keyFeatures: [
+      "Historic brownstones and vintage buildings",
+      "Tree-lined residential streets",
+      "Mix of condos and single-family homes",
+      "Close to parks and lakefront",
+      "Family-friendly community"
+    ],
+    propertyTypes: [
+      "Victorian brownstone condominiums",
+      "Modern mid-rise buildings",
+      "Converted single-family homes",
+      "Small boutique developments"
+    ],
+    marketInsights: [
+      "Strong family-oriented rental market",
+      "Premium pricing for character properties",
+      "Seasonal market fluctuations",
+      "High demand for pet-friendly units"
+    ],
+    localRegulations: [
+      "Historic district preservation guidelines",
+      "Parking permit requirements",
+      "Tree preservation ordinances",
+      "Noise ordinances for family neighborhoods"
+    ],
+    managementChallenges: [
+      "Maintaining historic building character",
+      "Limited parking availability",
+      "Balancing modernization with preservation",
+      "Managing diverse tenant demographics"
+    ],
+    solutions: [
+      "Specialized historic building maintenance",
+      "Creative parking solutions",
+      "Community-focused management approach",
+      "Family-friendly amenity programming"
+    ],
+    localSEOKeywords: [
+      "lincoln park property management",
+      "lincoln park condo management",
+      "old town property management",
+      "depaul area property management",
+      "lincoln park hoa management",
+      "lincoln park property managers",
+      "old town condo management",
+      "lincoln park chicago property management"
+    ],
+    nearbyAreas: ["Old Town", "Lakeview", "Downtown Chicago", "Gold Coast"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany", 
+      specialties: ["Historic Properties", "Victorian Buildings", "Family Communities"],
+      serviceRadius: "3 miles"
+    }
+  },
+  {
+    id: 3,
+    name: "Lakeview",
+    slug: "lakeview",
+    county: "Cook",
+    type: "neighborhood",
+    population: 95000,
+    establishedYear: 2009,
+    keyNeighborhoods: ["Wrigleyville", "Boystown", "Southport Corridor"],
+    description: "Vibrant neighborhood with diverse housing, entertainment districts, and lakefront access. Manage369 is the #1 choice for property management in Lakeview.",
+    keyFeatures: [
+      "Diverse housing stock from vintage to modern",
+      "Entertainment and nightlife districts",
+      "Lakefront proximity",
+      "Young professional population",
+      "Transit-accessible location"
+    ],
+    propertyTypes: [
+      "Vintage walk-up apartments",
+      "Modern condominium developments",
+      "Mixed-use buildings",
+      "Small-scale townhome communities"
+    ],
+    marketInsights: [
+      "High demand from young professionals",
+      "Competitive rental market",
+      "Strong resale values",
+      "Seasonal tourism impact"
+    ],
+    localRegulations: [
+      "Entertainment district noise regulations",
+      "Parking enforcement policies",
+      "Building density restrictions",
+      "Lakefront development guidelines"
+    ],
+    managementChallenges: [
+      "High tenant turnover rates",
+      "Noise management in entertainment areas",
+      "Parking shortage issues",
+      "Balancing resident and visitor needs"
+    ],
+    solutions: [
+      "Efficient tenant screening and placement",
+      "Proactive noise control measures",
+      "Alternative transportation promotion",
+      "Community engagement programs"
+    ],
+    localSEOKeywords: [
+      "lakeview property management",
+      "wrigleyville property management",
+      "boystown condo management",
+      "southport corridor property management",
+      "lakeview hoa management",
+      "lakeview property managers",
+      "wrigleyville condo management",
+      "lakeview chicago property management"
+    ],
+    nearbyAreas: ["Lincoln Park", "Uptown", "North Center", "Roscoe Village"],
+    schemaMarkup: {
+      additionalType: "PropertyManagementCompany",
+      specialties: ["Entertainment District Properties", "Young Professional Housing", "Transit-Oriented Development"],
+      serviceRadius: "4 miles"
+    }
+  },
+  {
+    id: 4,
+    name: "Wicker Park",
+    slug: "wicker-park",
+    county: "Cook",
+    type: "neighborhood",
+    population: 26000,
+    description: "Trendy neighborhood known for its artistic vibe, historic homes, and vibrant dining and shopping scene. Manage369 provides expert property management in Wicker Park.",
+    keyFeatures: [
+      "Historic homes and converted lofts",
+      "Trendy dining and shopping districts",
+      "Artistic community atmosphere",
+      "Excellent public transportation",
+      "Mix of vintage and modern buildings"
+    ],
+    propertyTypes: [
+      "Converted loft buildings",
+      "Historic single-family homes",
+      "Modern condominium developments",
+      "Mixed-use properties"
+    ],
+    marketInsights: [
+      "Strong rental demand from young professionals",
+      "High property values with steady appreciation",
+      "Competitive market for unique properties",
+      "Strong interest in historic preservation"
+    ],
+    localRegulations: [
+      "Historic district guidelines",
+      "Mixed-use zoning requirements",
+      "Parking restrictions and permits",
+      "Entertainment venue regulations"
+    ],
+    managementChallenges: [
+      "Balancing historic preservation with modern amenities",
+      "Managing properties in high-traffic areas",
+      "Addressing noise concerns in entertainment districts",
+      "Navigating complex zoning requirements"
+    ],
+    solutions: [
+      "Specialized historic property maintenance",
+      "Proactive noise management strategies",
+      "Strong vendor relationships for unique properties",
+      "Community engagement initiatives"
+    ]
+  },
+  {
+    id: 5,
+    name: "Logan Square",
+    slug: "logan-square",
+    county: "Cook",
+    type: "neighborhood",
+    population: 73000,
+    description: "Dynamic neighborhood with beautiful boulevards, historic greystones, and a thriving arts scene. Manage369 is the leading property management company in Logan Square.",
+    keyFeatures: [
+      "Historic boulevard system",
+      "Greystone and brick buildings",
+      "Thriving arts and music scene",
+      "Diverse dining options",
+      "Community-focused atmosphere"
+    ],
+    propertyTypes: [
+      "Vintage apartment buildings",
+      "Historic greystones",
+      "New construction condominiums",
+      "Two-flat and three-flat buildings"
+    ],
+    marketInsights: [
+      "Rapidly appreciating property values",
+      "Strong rental demand from young professionals",
+      "Increasing interest in property investment",
+      "Transition from rental to ownership market"
+    ],
+    localRegulations: [
+      "Historic preservation guidelines",
+      "Affordable housing requirements",
+      "Zoning changes for development",
+      "Community input requirements"
+    ],
+    managementChallenges: [
+      "Balancing neighborhood character with development",
+      "Managing aging building infrastructure",
+      "Addressing gentrification concerns",
+      "Maintaining affordability while improving properties"
+    ],
+    solutions: [
+      "Community-focused management approach",
+      "Specialized vintage building maintenance",
+      "Transparent communication with residents",
+      "Local vendor partnerships"
+    ]
+  },
+  {
+    id: 6,
+    name: "Hyde Park",
+    slug: "hyde-park",
+    county: "Cook",
+    type: "neighborhood",
+    population: 25000,
+    description: "Historic lakefront neighborhood home to the University of Chicago with diverse architecture and strong community. Manage369 offers specialized property management in Hyde Park.",
+    keyFeatures: [
+      "University of Chicago campus",
+      "Historic architecture",
+      "Lakefront parks and beaches",
+      "Cultural institutions",
+      "Diverse community"
+    ],
+    propertyTypes: [
+      "Historic apartment buildings",
+      "University-adjacent housing",
+      "Single-family homes",
+      "Condominium conversions"
+    ],
+    marketInsights: [
+      "Stable market with university influence",
+      "Mix of student and professional residents",
+      "Year-round rental demand",
+      "Historic property premium"
+    ],
+    localRegulations: [
+      "University area development guidelines",
+      "Historic district requirements",
+      "Lakefront protection ordinances",
+      "Rental housing regulations"
+    ],
+    managementChallenges: [
+      "Balancing student and professional tenant needs",
+      "Maintaining historic properties",
+      "Academic calendar rental cycles",
+      "University relationship management"
+    ],
+    solutions: [
+      "Specialized student housing management",
+      "Historic property expertise",
+      "Academic calendar leasing strategies",
+      "University partnership programs"
+    ]
+  }
+]
 
-export default Resources
+export const suburbAreas: ServiceArea[] = [
+  {
+    id: 7,
+    name: "Naperville",
+    slug: "naperville",
+    county: "DuPage",
+    type: "suburb",
+    population: 149000,
+    description: "Highly-rated suburban community known for excellent schools, family neighborhoods, and planned developments. Manage369 is the #1 property management company in Naperville.",
+    keyFeatures: [
+      "Top-rated school districts",
+      "Master-planned communities",
+      "Family-oriented neighborhoods",
+      "Modern townhome developments",
+      "Corporate headquarters location"
+    ],
+    propertyTypes: [
+      "Single-family home subdivisions",
+      "Townhome communities",
+      "Luxury condominium complexes",
+      "Active adult communities"
+    ],
+    marketInsights: [
+      "High property values driven by schools",
+      "Strong family demographic",
+      "Corporate relocation market",
+      "Stable long-term residents"
+    ],
+    localRegulations: [
+      "HOA covenant enforcement",
+      "Municipal building codes",
+      "School district boundaries",
+      "Environmental protection ordinances"
+    ],
+    managementChallenges: [
+      "Meeting high homeowner expectations",
+      "Managing large-scale developments",
+      "Coordinating with multiple HOAs",
+      "Maintaining premium community standards"
+    ],
+    solutions: [
+      "Comprehensive HOA management services",
+      "Professional landscape and maintenance",
+      "Community amenity programming",
+      "Transparent financial reporting"
+    ]
+  },
+  {
+    id: 8,
+    name: "Wheaton",
+    slug: "wheaton",
+    county: "DuPage",
+    type: "suburb",
+    population: 53000,
+    description: "Family-oriented community with excellent schools and historic downtown charm. Manage369 is the #1 property management company in Wheaton.",
+    keyFeatures: [
+      "Top-rated school systems",
+      "Historic downtown district",
+      "Family-centered community",
+      "Religious institution presence",
+      "Conservative family values"
+    ],
+    propertyTypes: [
+      "Single-family subdivisions",
+      "Townhome communities",
+      "Small condominium complexes",
+      "Historic downtown residences"
+    ],
+    marketInsights: [
+      "Family-driven housing market",
+      "School district premium",
+      "Conservative demographic preferences",
+      "Long-term resident stability"
+    ],
+    localRegulations: [
+      "Family-oriented housing codes",
+      "Historic downtown preservation",
+      "School proximity requirements",
+      "Community standards enforcement"
+    ],
+    managementChallenges: [
+      "Meeting conservative community expectations",
+      "Managing family-focused amenities",
+      "Maintaining community standards",
+      "Coordinating with religious institutions"
+    ],
+    solutions: [
+      "Family-first management approach",
+      "Community values alignment",
+      "Conservative financial management",
+      "Long-term relationship building"
+    ]
+  },
+  {
+    id: 9,
+    name: "Arlington Heights",
+    slug: "arlington-heights",
+    county: "Cook",
+    type: "suburb",
+    population: 75000,
+    description: "Established suburban community with excellent transportation, shopping, and family amenities. Manage369 provides comprehensive property management in Arlington Heights.",
+    keyFeatures: [
+      "Metra train station access",
+      "Woodfield Mall proximity",
+      "Established neighborhoods",
+      "Family recreation facilities",
+      "Corporate business presence"
+    ],
+    propertyTypes: [
+      "Established subdivisions",
+      "Condominium complexes",
+      "Townhome developments",
+      "Senior living communities"
+    ],
+    marketInsights: [
+      "Commuter-friendly location",
+      "Stable property values",
+      "Multigenerational appeal",
+      "Corporate housing demand"
+    ],
+    localRegulations: [
+      "Municipal development standards",
+      "Transportation corridor planning",
+      "Senior housing requirements",
+      "Commercial area integration"
+    ],
+    managementChallenges: [
+      "Managing aging housing stock",
+      "Competing with newer developments",
+      "Transportation parking management",
+      "Multigenerational community needs"
+    ],
+    solutions: [
+      "Property modernization programs",
+      "Transportation-focused amenities",
+      "Intergenerational programming",
+      "Professional corporate services"
+    ]
+  },
+  {
+    id: 10,
+    name: "Palatine",
+    slug: "palatine",
+    county: "Cook",
+    type: "suburb",
+    population: 69000,
+    description: "Northwest suburban community with diverse housing options and strong local economy. Manage369 is the premier property management company in Palatine.",
+    keyFeatures: [
+      "Diverse housing developments",
+      "Strong local business district",
+      "Family recreation programs",
+      "Transportation accessibility",
+      "Corporate headquarters presence"
+    ],
+    propertyTypes: [
+      "Mixed housing developments",
+      "Townhome associations",
+      "Condominium communities",
+      "Active adult developments"
+    ],
+    marketInsights: [
+      "Diverse demographic appeal",
+      "Competitive market pricing",
+      "Corporate relocation market",
+      "Transportation convenience premium"
+    ],
+    localRegulations: [
+      "Diverse housing integration requirements",
+      "Local business support ordinances",
+      "Transportation planning coordination",
+      "Municipal utility standards"
+    ],
+    managementChallenges: [
+      "Managing diverse community needs",
+      "Balancing development types",
+      "Transportation infrastructure coordination",
+      "Local business relationship management"
+    ],
+    solutions: [
+      "Inclusive community management",
+      "Diverse programming options",
+      "Transportation advocacy",
+      "Local business partnerships"
+    ]
+  },
+  {
+    id: 11,
+    name: "Oak Park",
+    slug: "oak-park",
+    county: "Cook",
+    type: "suburb",
+    population: 54000,
+    description: "Historic community famous for Frank Lloyd Wright architecture and progressive values. Manage369 is the leading property management company in Oak Park.",
+    keyFeatures: [
+      "Frank Lloyd Wright historic homes",
+      "Diverse architectural styles",
+      "Progressive community values",
+      "Transit accessibility to Chicago",
+      "Arts and culture focus"
+    ],
+    propertyTypes: [
+      "Historic single-family homes",
+      "Vintage apartment buildings",
+      "Condominium conversions",
+      "Small-scale developments"
+    ],
+    marketInsights: [
+      "Historic property premium pricing",
+      "Socially conscious tenant base",
+      "Strong community involvement",
+      "Arts-focused demographics"
+    ],
+    localRegulations: [
+      "Historic preservation requirements",
+      "Diversity and inclusion ordinances",
+      "Environmental sustainability standards",
+      "Community garden regulations"
+    ],
+    managementChallenges: [
+      "Preserving historic property character",
+      "Meeting progressive community standards",
+      "Managing older building systems",
+      "Balancing preservation with modernization"
+    ],
+    solutions: [
+      "Historic property expertise",
+      "Sustainable management practices",
+      "Community-engaged approach",
+      "Specialized vintage building maintenance"
+    ]
+  },
+  {
+    id: 12,
+    name: "Evanston",
+    slug: "evanston",
+    county: "Cook",
+    type: "suburb",
+    population: 75000,
+    description: "University town with diverse housing near Northwestern University and Lake Michigan. Manage369 offers specialized property management in Evanston.",
+    keyFeatures: [
+      "Northwestern University proximity",
+      "Lakefront location",
+      "Diverse housing stock",
+      "Academic community",
+      "Public transportation access"
+    ],
+    propertyTypes: [
+      "University-area apartments",
+      "Family residential neighborhoods",
+      "Lakefront condominiums",
+      "Student housing complexes"
+    ],
+    marketInsights: [
+      "Student housing demand",
+      "Academic calendar market cycles",
+      "Faculty and staff housing needs",
+      "Lakefront property premiums"
+    ],
+    localRegulations: [
+      "University area rental regulations",
+      "Student housing occupancy limits",
+      "Lakefront development restrictions",
+      "Academic year lease requirements"
+    ],
+    managementChallenges: [
+      "Managing student tenant transitions",
+      "Seasonal occupancy fluctuations",
+      "University community relations",
+      "Balancing student and family housing"
+    ],
+    solutions: [
+      "Academic year lease management",
+      "Student-focused services",
+      "University partnership programs",
+      "Family-friendly community areas"
+    ]
+  },
+]
+
+// Additional service areas to reach 100+ total pages
+export const additionalServiceAreas: string[] = [
+  // Chicago Neighborhoods
+  "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater", "Loop",
+  "Gold Coast", "Old Town", "Humboldt Park", "Irving Park", "Lincoln Square", "Little Italy",
+  "North Center", "Old Town", "Pilsen", "Ravenswood", "River North",
+  "Rogers Park", "South Loop", "Streeterville", "Ukrainian Village", "Uptown",
+  "West Town", "Wrigleyville",
+  
+  // Suburbs
+  "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield", "Highwood", "Wheeling",
+  "Northbrook", "Glenview", "Skokie", "Niles", "Park Ridge", "Elmwood Park",
+  "Riverside", "Brookfield", "La Grange", "Western Springs", "Hinsdale",
+  "Clarendon Hills", "Westmont", "Downers Grove", "Lisle", "Glen Ellyn",
+  "Lombard", "Villa Park", "Elmhurst", "Oak Brook", "Burr Ridge",
+  "Darien", "Woodridge", "Bolingbrook", "Romeoville", "Lemont",
+  "Orland Park", "Tinley Park", "Oak Forest", "Palos Heights", "Palos Hills",
+  "Worth", "Alsip", "Crestwood", "Midlothian", "Oak Lawn",
+  "Burbank", "Bridgeview", "Justice", "Willow Springs", "Indian Head Park",
+  "Schaumburg", "Hoffman Estates", "Streamwood", "Bartlett", "Hanover Park",
+  "Carol Stream", "Bloomingdale", "Roselle", "Itasca", "Wood Dale",
+  "Addison", "Bensenville", "Elk Grove Village", "Rolling Meadows", "Inverness",
+  "Barrington", "Lake Zurich", "Mundelein", "Vernon Hills", "Libertyville",
+  "Highland Park", "Lake Forest", "Wilmette", "Winnetka", "Glencoe",
+  "Morton Grove", "Lincolnwood", "Harwood Heights", "Norridge", "Rosemont",
+  "Franklin Park", "Melrose Park", "Bellwood", "Maywood", "Forest Park",
+  "River Forest", "Berwyn", "Cicero", "Stickney", "Lyons"
+]
