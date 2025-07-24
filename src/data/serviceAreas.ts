@@ -649,4 +649,12 @@ export const additionalServiceAreas: string[] = [
   "Orland Park", "Tinley Park", "Oak Forest", "Palos Heights", "Palos Hills",
   "Worth", "Alsip", "Crestwood", "Midlothian", "Oak Lawn",
   "Burbank", "Bridgeview", "Justice", "Willow Springs", "Indian Head Park",
+  "Schaumburg", "Hoffman Estates", "Streamwood", "Bartlett", "Hanover Park",
+  "Carol Stream", "Bloomingdale", "Roselle", "Itasca", "Wood Dale",
+  "Addison", "Bensenville", "Elk Grove Village", "Rolling Meadows", "Inverness",
+  "Barrington", "Lake Zurich", "Mundelein", "Vernon Hills", "Libertyville",
+  "Highland Park", "Lake Forest", "Wilmette", "Winnetka", "Glencoe",
+  "Morton Grove", "Lincolnwood", "Harwood Heights", "Norridge", "Rosemont",
+  "Franklin Park", "Melrose Park", "Bellwood", "Maywood", "Forest Park",
+  "River Forest", "Berwyn", "Cicero", "Stickney", "Lyons"
 ]

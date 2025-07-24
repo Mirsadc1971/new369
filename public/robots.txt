@@ -7,6 +7,16 @@ Sitemap: https://manage369.com/sitemap.xml
 # Crawl-delay for respectful crawling
 Crawl-delay: 1
 
+# Block crawling of non-existent pages
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /*.php$
+Disallow: /*.asp$
+Disallow: /*.aspx$
+Disallow: /cgi-bin/
+
 # Disallow admin or sensitive areas (if any)
 # Disallow: /admin/
 # Disallow: /private/

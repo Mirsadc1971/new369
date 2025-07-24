@@ -10,6 +10,12 @@ const ServiceAreaDetail = () => {
     // Add LocalBusiness schema for this specific service area
     const areaName = area ? area.name : additionalAreaName;
     
+    // If no area found, redirect to service areas page
+    if (!areaName) {
+      window.location.href = '/service-areas';
+      return;
+    }
+    
     // Remove any existing schema scripts first
     const existingSchemas = document.querySelectorAll('script[type="application/ld+json"]');
     existingSchemas.forEach(script => {
@@ -20,7 +26,6 @@ const ServiceAreaDetail = () => {
     
     const script = document.createElement('script')
     script.type = 'application/ld+json'
-    script.id = `schema-${slug}`
     script.id = `schema-${slug}`
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",

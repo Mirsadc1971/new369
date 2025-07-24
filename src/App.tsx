@@ -67,6 +67,9 @@ function App() {
           
           {/* Dynamic service area route */}
           <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />
+          
+          {/* Catch-all route for 404s - redirect to home */}
+          <Route path="*" element={<Home />} />
         </Routes>
       </main>
       <Footer />

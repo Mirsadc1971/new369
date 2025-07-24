@@ -82,6 +82,18 @@ Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
     ExpiresByType text/xml "access plus 5 minutes"
 </IfModule>
 
+# Handle React Router - redirect all requests to index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Handle Angular and React Router requests
+    RewriteBase /
+    RewriteRule ^index\.html$ - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.html [L]
+</IfModule>
+
 # Enable ETags for better caching
 <IfModule mod_headers.c>
     # Remove ETags for static assets (we use immutable cache)

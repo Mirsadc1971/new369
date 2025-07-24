@@ -659,11 +659,15 @@ const BlogPost = () => {
 
   if (!post) {
     return (
-      <div className="min-h-screen bg-gray-50 py-20">
+      <div className="min-h-screen bg-gray-50">
+        {/* Redirect to blog page for invalid slugs */}
+        <script>
+          {`window.location.href = '/blog';`}
+        </script>
         <div className="container-max">
-          <div className="text-center">
+          <div className="text-center py-20">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Post Not Found</h1>
-            <p className="text-gray-600 mb-8">The blog post you're looking for doesn't exist.</p>
+            <p className="text-gray-600 mb-8">Redirecting to blog...</p>
             <Link to="/blog" className="btn-primary">
               Back to Blog
             </Link>
