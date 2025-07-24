@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /tinggi/
 
 # Sitemap location
 Sitemap: https://manage369.com/sitemap.xml
