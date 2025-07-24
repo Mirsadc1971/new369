@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import CanonicalLink from '../components/CanonicalLink'
 
 const Contact = () => {
   useEffect(() => {
@@ -205,6 +206,7 @@ This inquiry was submitted through the Manage369 website contact form.
 
   return (
     <div>
+      <CanonicalLink href="https://www.manage369.com/contact" />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-500 to-primary-700 text-white section-padding">
         <div className="container-max">

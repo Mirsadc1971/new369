@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import CanonicalLink from '../components/CanonicalLink'
 import { chicagoAreas, suburbAreas, additionalServiceAreas } from '../data/serviceAreas'
 
 const ServiceAreas = () => {
   return (
     <div>
+      <CanonicalLink href="https://www.manage369.com/service-areas" />
       {/* Local Business Schema for Service Areas Page */}
       <script type="application/ld+json">
         {JSON.stringify({

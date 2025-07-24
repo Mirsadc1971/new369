@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import CanonicalLink from '../../components/CanonicalLink'
 
 const TownhomeManagement = () => {
   return (
     <div>
+      <CanonicalLink href="https://www.manage369.com/services/townhome-management" />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-secondary-500 to-secondary-700 text-white section-padding">
         <div className="container-max">

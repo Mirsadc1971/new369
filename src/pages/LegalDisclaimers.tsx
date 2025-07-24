@@ -1,8 +1,11 @@
 import React from 'react';
+import CanonicalLink from '../components/CanonicalLink';
 
 const LegalDisclaimers: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div>
+      <CanonicalLink href="https://www.manage369.com/legal-disclaimers" />
+      <div className="min-h-screen bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-8 text-center">Legal Disclaimers</h1>
@@ -70,6 +73,7 @@ const LegalDisclaimers: React.FC = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

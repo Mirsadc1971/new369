@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import CanonicalLink from '../components/CanonicalLink'
 import { ServiceArea, chicagoAreas, suburbAreas, additionalServiceAreas } from '../data/serviceAreas'
 
 const ServiceAreaDetail = () => {
@@ -10,8 +11,20 @@ const ServiceAreaDetail = () => {
   const directAreaNames = ['loop', 'highwood', 'edgewater', 'old-town', 'gold-coast', 'barrington', 'wheeling'];
   const isDirectArea = directAreaNames.includes(slug || '');
   
-  // Convert direct area names to proper format
-  const convertedSlug = isDirectArea ? slug : slug;
+  // Map direct area names to proper service area slugs
+  const directAreaMap: { [key: string]: string } = {
+    'loop': 'downtown-chicago',
+    'highwood': 'highwood',
+    'edgewater': 'edgewater',
+    'old-town': 'old-town',
+    'gold-coast': 'gold-coast',
+    'barrington': 'barrington',
+    'wheeling': 'wheeling'
+  };
+  
+  // Determine canonical slug - always use /service-areas/ format
+  const canonicalSlug = isDirectArea ? directAreaMap[slug || ''] : slug;
+  const canonicalUrl = `https://www.manage369.com/service-areas/${canonicalSlug}`;
   
   useEffect(() => {
     // Add LocalBusiness schema for this specific service area
@@ -226,6 +239,7 @@ const ServiceAreaDetail = () => {
 
   return (
     <div>
+      <CanonicalLink href={canonicalUrl} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-500 to-primary-700 text-white section-padding">
         <div className="container-max">

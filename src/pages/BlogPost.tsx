@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
+import CanonicalLink from '../components/CanonicalLink'
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>()
@@ -660,6 +661,7 @@ const BlogPost = () => {
   if (!post) {
     return (
       <div className="min-h-screen bg-gray-50">
+        <CanonicalLink href="https://www.manage369.com/blog" />
         {/* Redirect to blog page for invalid slugs */}
         <script>
           {`window.location.href = '/blog';`}
@@ -679,6 +681,7 @@ const BlogPost = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <CanonicalLink href={`https://www.manage369.com/blog/${slug}`} />
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary-500 to-primary-700 text-white section-padding">
         <div className="container-max">
