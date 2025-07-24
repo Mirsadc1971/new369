@@ -99,7 +99,7 @@ This message was submitted through the Manage369 general contact form.
                       <a href="tel:+18478344131" className="text-primary-500 hover:underline">(847) 834-4131</a>
                     </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
+                    <p className="text-sm text-gray-500">Emergency Service Available</p>
                   </div>
                 </div>
 
@@ -144,7 +144,7 @@ This message was submitted through the Manage369 general contact form.
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Emergency Line</h3>
                     <p className="text-gray-600 mb-2">(847) 834-4131</p>
-                    <p className="text-sm text-gray-500">24/7 Emergency Response</p>
+                    <p className="text-sm text-gray-500">Emergency Response</p>
                   </div>
                 </div>
               </div>

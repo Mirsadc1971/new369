@@ -435,10 +435,10 @@ const Resources = () => {
 
           <div className="text-center mt-12">
             <div className="bg-white p-6 rounded-xl shadow-lg max-w-md mx-auto">
-              <h3 className="font-semibold text-lg mb-4">24/7 Emergency Contact</h3>
+              <h3 className="font-semibold text-lg mb-4">Emergency Contact</h3>
               <p className="text-2xl font-bold text-primary-500 mb-2">(312) 402-7002</p>
               <p className="text-2xl font-bold text-primary-500 mb-2">(847) 834-4131</p>
-              <p className="text-sm text-gray-600">Available 24 hours a day, 7 days a week for all property emergencies</p>
+              <p className="text-sm text-gray-600">Available for all property emergencies</p>
             </div>
           </div>
         </div>

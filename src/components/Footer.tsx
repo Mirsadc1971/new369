@@ -148,7 +148,7 @@ const Footer = () => {
           <div className="bg-red-900 bg-opacity-30 border border-red-700 rounded-lg p-4 mt-6">
             <div className="text-center">
               <p className="text-red-200 text-sm font-semibold mb-1">
-                🚨 24/7 EMERGENCY PROPERTY MANAGEMENT HOTLINE 🚨
+                🚨 EMERGENCY PROPERTY MANAGEMENT HOTLINE 🚨
               </p>
               <p className="text-red-100 text-lg font-bold">
                 <a href="tel:847-834-4131" className="hover:text-white transition-colors">

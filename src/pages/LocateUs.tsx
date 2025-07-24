@@ -118,7 +118,7 @@ const LocateUs = () => {
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
               Manage369 is Chicago's premier property management company with 18+ years of experience 
               serving 50+ properties managing 2450+ units across 100+ neighborhoods. We provide comprehensive 
-              management solutions including 24/7 emergency response, financial management, maintenance 
+              We provide comprehensive management solutions including emergency response, financial management, maintenance 
               coordination, and legal compliance. Licensed, insured, and trusted since 2007.
             </p>
             <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm inline-block">
@@ -164,7 +164,7 @@ const LocateUs = () => {
                       </a>
                     </p>
                     <p className="text-sm text-gray-500">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p className="text-sm text-gray-500">24/7 Emergency Service Available</p>
+                    <p className="text-sm text-gray-500">Emergency Service Available</p>
                   </div>
                 </div>
 
@@ -204,7 +204,7 @@ const LocateUs = () => {
                         (847) 834-4131
                       </a>
                     </p>
-                    <p className="text-sm text-gray-500">24/7 Emergency Response for Chicago Properties</p>
+                    <p className="text-sm text-gray-500">Emergency Response for Chicago Properties</p>
                   </div>
                 </div>
               </div>

@@ -282,7 +282,7 @@ const CondoManagement = () => {
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">24/7 emergency response and support</span>
+                  <span className="text-sm">Emergency response and support</span>
                 </div>
               </div>
             </div>
