@@ -4,19 +4,19 @@
   "description": "Chicago's premier property management company managing 2,230+ properties across 100+ communities. Expert condo, HOA & townhome management since 2007.",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/369favicon.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/369favicon.png",
       "sizes": "512x512",
       "type": "image/png"
     },
     {
-      "src": "/manage369-favicon.svg",
+      "src": "/369favicon.png",
       "sizes": "any",
-      "type": "image/svg+xml"
+      "type": "image/png"
     }
   ],
   "theme_color": "#2563EB",
