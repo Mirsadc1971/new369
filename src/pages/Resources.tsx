@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface ServiceArea {
   id: number
   name: string
@@ -658,3 +660,48 @@ export const additionalServiceAreas: string[] = [
   "Franklin Park", "Melrose Park", "Bellwood", "Maywood", "Forest Park",
   "River Forest", "Berwyn", "Cicero", "Stickney", "Lyons"
 ]
+
+const Resources: React.FC = () => {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-gray-900 mb-6">Resources</h1>
+      <p className="text-gray-600 mb-8">
+        Access helpful resources and information about our property management services.
+      </p>
+      
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">Service Areas</h2>
+          <p className="text-gray-600 mb-4">
+            We serve {chicagoAreas.length + suburbAreas.length} neighborhoods and suburbs across the Chicago area.
+          </p>
+          <a href="/service-areas" className="text-blue-600 hover:text-blue-800 font-medium">
+            View All Areas →
+          </a>
+        </div>
+        
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">Property Types</h2>
+          <p className="text-gray-600 mb-4">
+            Learn about the different types of properties we manage, from condos to townhomes.
+          </p>
+          <a href="/services" className="text-blue-600 hover:text-blue-800 font-medium">
+            Our Services →
+          </a>
+        </div>
+        
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-xl font-semibold text-gray-900 mb-3">Contact Information</h2>
+          <p className="text-gray-600 mb-4">
+            Get in touch with our team for personalized property management solutions.
+          </p>
+          <a href="/contact" className="text-blue-600 hover:text-blue-800 font-medium">
+            Contact Us →
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Resources;
