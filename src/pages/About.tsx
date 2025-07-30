@@ -23,30 +23,6 @@ export default function About() {
                 Chicago's trusted property management partner for over 18 years
               </p>
             </div>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
-              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">50+</div>
-                <div className="text-blue-100">Properties Managed</div>
-              </div>
-              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">2450+</div>
-                <div className="text-blue-100">Units Under Management</div>
-              </div>
-              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">100+</div>
-                <div className="text-blue-100">Chicago Neighborhoods</div>
-              </div>
-              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">18+</div>
-                <div className="text-blue-100">Years Local Experience</div>
-              </div>
-              <div className="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm md:col-span-4">
-                <div className="text-3xl md:text-4xl font-bold text-yellow-300 mb-2">Fast</div>
-                <div className="text-blue-100">Emergency Response</div>
-              </div>
-            </div>
           </div>
         </section>
 
