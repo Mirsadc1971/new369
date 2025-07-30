@@ -35,6 +35,53 @@ const Home: React.FC = () => {
           </div>
         </section>
 
+        {/* Why Boards Switch to Manage369 */}
+        <section className="section-padding bg-gray-50">
+          <div className="container-max text-center">
+            <h2 className="heading-2 mb-6">Why Boards Switch to Manage369</h2>
+            <p className="body-large text-gray-600 mb-10 max-w-3xl mx-auto">
+              Most condominium, townhome, and HOA boards turn to Manage369 after facing the same frustrations:
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8 text-left">
+              {/* Pain Points */}
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-semibold mb-4 text-red-600">❌ Common Frustrations</h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li>• Unanswered emails and calls leaving boards in the dark</li>
+                  <li>• Emergencies like broken elevators mishandled or delayed</li>
+                  <li>• Managers distracted by rental work instead of your community</li>
+                  <li>• Confusing financial reports and surprise invoices</li>
+                  <li>• Unlicensed or uninsured providers risking legal issues</li>
+                  <li>• Weeks-long delays in decision-making and approvals</li>
+                </ul>
+              </div>
+
+              {/* Manage369 Difference */}
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-semibold mb-4 text-green-600">✅ The Manage369 Difference</h3>
+                <ul className="space-y-4 text-gray-700">
+                  <li>• Fully licensed & insured under Illinois State law</li>
+                  <li>• 100% focus on association management — no rentals</li>
+                  <li>• 24/7 emergency response with direct access to decision-makers</li>
+                  <li>• Transparent, easy-to-read monthly financials</li>
+                  <li>• Prompt, proactive communication you can count on</li>
+                  <li>• Board-centered service: your priorities guide every decision</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-12">
+              <Link 
+                to="/contact" 
+                className="bg-primary-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:bg-primary-700 transition-colors duration-200 inline-flex items-center"
+              >
+                See If We're the Right Fit → Request a Proposal
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Our Story Section */}
         <section className="section-padding bg-white">
           <div className="container-max">
@@ -203,53 +250,6 @@ const Home: React.FC = () => {
             <div className="text-center mt-12">
               <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
                 View All Service Areas
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Boards Switch to Manage369 */}
-        <section className="section-padding bg-gray-50">
-          <div className="container-max text-center">
-            <h2 className="heading-2 mb-6">Why Boards Switch to Manage369</h2>
-            <p className="body-large text-gray-600 mb-10 max-w-3xl mx-auto">
-              Most condominium, townhome, and HOA boards turn to Manage369 after facing the same frustrations:
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-              {/* Pain Points */}
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4 text-red-600">❌ Common Frustrations</h3>
-                <ul className="space-y-4 text-gray-700">
-                  <li>• Unanswered emails and calls leaving boards in the dark</li>
-                  <li>• Emergencies like broken elevators mishandled or delayed</li>
-                  <li>• Managers distracted by rental work instead of your community</li>
-                  <li>• Confusing financial reports and surprise invoices</li>
-                  <li>• Unlicensed or uninsured providers risking legal issues</li>
-                  <li>• Weeks-long delays in decision-making and approvals</li>
-                </ul>
-              </div>
-
-              {/* Manage369 Difference */}
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-semibold mb-4 text-green-600">✅ The Manage369 Difference</h3>
-                <ul className="space-y-4 text-gray-700">
-                  <li>• Fully licensed & insured under Illinois State law</li>
-                  <li>• 100% focus on association management — no rentals</li>
-                  <li>• 24/7 emergency response with direct access to decision-makers</li>
-                  <li>• Transparent, easy-to-read monthly financials</li>
-                  <li>• Prompt, proactive communication you can count on</li>
-                  <li>• Board-centered service: your priorities guide every decision</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="mt-12">
-              <Link 
-                to="/contact" 
-                className="bg-primary-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg hover:bg-primary-700 transition-colors duration-200 inline-flex items-center"
-              >
-                See If We're the Right Fit → Request a Proposal
               </Link>
             </div>
           </div>
