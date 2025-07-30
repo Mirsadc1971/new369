@@ -85,7 +85,7 @@ const Sitemap = () => {
                     {chicagoAreas.map((area) => (
                       <Link 
                         key={area.id}
-                        to={`/service-areas/${area.slug}`} 
+                        to={`/property-management-${area.slug}`} 
                         className="text-gray-600 hover:text-primary-500 transition-colors text-sm"
                       >
                         {area.name}
@@ -100,7 +100,7 @@ const Sitemap = () => {
                     {suburbAreas.map((area) => (
                       <Link 
                         key={area.id}
-                        to={`/service-areas/${area.slug}`} 
+                        to={`/property-management-${area.slug}`} 
                         className="text-gray-600 hover:text-secondary-500 transition-colors text-sm"
                       >
                         {area.name}
@@ -115,7 +115,7 @@ const Sitemap = () => {
                     {additionalServiceAreas.slice(0, 18).map((area, index) => (
                       <Link 
                         key={index}
-                        to={`/service-areas/${area.toLowerCase().replace(/\s+/g, '-')}`} 
+                        to={`/property-management-${area.toLowerCase().replace(/\s+/g, '-')}`} 
                         className="text-gray-600 hover:text-accent-500 transition-colors text-sm"
                       >
                         {area}

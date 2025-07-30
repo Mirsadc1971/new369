@@ -7,42 +7,12 @@ import { ServiceArea, chicagoAreas, suburbAreas, additionalServiceAreas } from '
 const ServiceAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>();
   
-  // Handle direct area names (without /service-areas/ prefix)
-  const directAreaNames = ['loop', 'highwood', 'edgewater', 'old-town', 'gold-coast', 'barrington', 'wheeling'];
-  const isDirectArea = directAreaNames.includes(slug || '');
-  
-  // Map direct area names to proper service area slugs
-  const directAreaMap: { [key: string]: string } = {
-    'loop': 'downtown-chicago',
-    'highwood': 'highwood',
-    'edgewater': 'edgewater',
-    'old-town': 'old-town',
-    'gold-coast': 'gold-coast',
-    'barrington': 'barrington',
-    'wheeling': 'wheeling'
-  };
-  
-  // Determine canonical slug - always use /service-areas/ format
-  const canonicalSlug = isDirectArea ? directAreaMap[slug || ''] : slug;
-  const canonicalUrl = `https://www.manage369.com/service-areas/${canonicalSlug}`;
+  // Canonical URL with new structure
+  const canonicalUrl = `https://www.manage369.com/property-management-${slug}`;
   
   useEffect(() => {
     // Add LocalBusiness schema for this specific service area
     let areaName = area ? area.name : additionalAreaName;
-    
-    // Handle direct area mappings
-    if (isDirectArea && !areaName) {
-      const directAreaMap: { [key: string]: string } = {
-        'loop': 'The Loop',
-        'highwood': 'Highwood',
-        'edgewater': 'Edgewater',
-        'old-town': 'Old Town',
-        'gold-coast': 'Gold Coast',
-        'barrington': 'Barrington',
-        'wheeling': 'Wheeling'
-      };
-      areaName = directAreaMap[slug || ''] || '';
-    }
     
     // If no area found, redirect to service areas page
     if (!areaName) {
@@ -64,10 +34,10 @@ const ServiceAreaDetail = () => {
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "@id": `https://manage369.com/service-areas/${slug}`,
+      "@id": `https://manage369.com/property-management-${slug}`,
       "name": `Manage369 - ${areaName} Property Management`,
       "description": `Professional property management services in ${areaName}, Illinois. Specialized condominium management, townhome management, and HOA management services by Chicago's premier property management company.`,
-      "url": `https://manage369.com/service-areas/${slug}`,
+      "url": `https://manage369.com/property-management-${slug}`,
       "telephone": "+1-847-834-4131",
       "email": "service@manage369.com",
       "image": "https://manage369.com/manage369-logo.png",
