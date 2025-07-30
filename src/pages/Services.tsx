@@ -113,14 +113,6 @@ const Services: React.FC = () => {
         {/* Property Type Selection */}
         <section className="section-padding bg-white">
           <div className="container-max">
-            <div className="text-center mb-16">
-              <h2 className="heading-2 mb-4">Choose Your Property Management Service</h2>
-              <p className="body-large max-w-3xl mx-auto">
-                Each property type has unique management needs. Select your property type below 
-                to discover our specialized services and expertise.
-              </p>
-            </div>
-
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {propertyTypes.map((propertyType) => {
                 const colors = getColorClasses(propertyType.color);
