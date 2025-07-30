@@ -5,7 +5,6 @@ import { useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import About from './pages/About'
 import Services from './pages/Services'
 import CondoManagement from './pages/services/CondoManagement'
 import TownhomeManagement from './pages/services/TownhomeManagement'
@@ -79,7 +78,6 @@ function App() {
       <main className="pt-20">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/condominium-management" element={<CondoManagement />} />
           <Route path="/services/townhome-management" element={<TownhomeManagement />} />

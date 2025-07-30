@@ -39,7 +39,6 @@ const Sitemap = () => {
                   <h3 className="text-xl font-semibold mb-4 text-primary-600">Core Pages</h3>
                   <ul className="space-y-2">
                     <li><Link to="/" className="text-gray-600 hover:text-primary-500 transition-colors">Home</Link></li>
-                    <li><Link to="/about" className="text-gray-600 hover:text-primary-500 transition-colors">About Us</Link></li>
                     <li><Link to="/contact" className="text-gray-600 hover:text-primary-500 transition-colors">Contact</Link></li>
                     <li><Link to="/resources" className="text-gray-600 hover:text-primary-500 transition-colors">Resources</Link></li>
                     <li><Link to="/blog" className="text-gray-600 hover:text-primary-500 transition-colors">Blog</Link></li>
@@ -168,12 +167,12 @@ const Sitemap = () => {
               <p className="text-sm text-gray-600">Find your Chicago area</p>
             </Link>
 
-            <Link to="/about" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
+            <Link to="/blog" className="card text-center hover:scale-105 transition-transform duration-300 flex flex-col h-full justify-between">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">ℹ️</span>
+                <span className="text-xl">📝</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">About Us</h3>
-              <p className="text-sm text-gray-600">Learn about our company</p>
+              <h3 className="text-lg font-semibold mb-2">Blog</h3>
+              <p className="text-sm text-gray-600">Property management insights</p>
             </Link>
           </div>
         </div>
