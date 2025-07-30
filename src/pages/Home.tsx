@@ -42,7 +42,7 @@ const Home: React.FC = () => {
               <div>
                 <h2 className="heading-2 mb-6">Our Story</h2>
                 <p className="body-text mb-6">
-                  Founded in 2006, Manage369 has grown from a small local operation to Chicago's most trusted property management company. We've built our reputation on delivering exceptional service, maintaining transparent communication, and treating every property as if it were our own.
+                  Founded in 2007, Manage369 has grown from a small local operation to Chicago's most trusted property management company. We've built our reputation on delivering exceptional service, maintaining transparent communication, and treating every property as if it were our own.
                 </p>
                 <p className="body-text mb-6">
                   Our team combines deep local market knowledge with cutting-edge technology to provide comprehensive management solutions for condominiums, townhomes, and homeowner associations throughout Chicago and the surrounding suburbs.
