@@ -24,6 +24,30 @@ import PaymentOptions from './pages/PaymentOptions'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 
+// Component to handle redirects from old service area URLs
+const ServiceAreaRedirect = () => {
+  const { slug } = useParams<{ slug: string }>()
+  
+  useEffect(() => {
+    if (slug) {
+      // Redirect to new URL structure
+      window.location.replace(`/property-management-${slug}`)
+    } else {
+      // Fallback to service areas page
+      window.location.replace('/service-areas')
+    }
+  }, [slug])
+
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">Redirecting...</h1>
+        <p className="text-gray-600">Taking you to the updated page</p>
+      </div>
+    </div>
+  )
+}
+
 // Component for handling fake/spam URLs with noindex
 const NoIndexPage = () => {
   useEffect(() => {
@@ -99,6 +123,9 @@ function App() {
           <Route path="/request-proposal" element={<Contact />} />
           <Route path="/category/uncategorized/" element={<NoIndexPage />} />
           <Route path="/category/*" element={<NoIndexPage />} />
+          
+          {/* Redirects from old service area URLs to new structure */}
+          <Route path="/service-areas/:slug" element={<ServiceAreaRedirect />} />
           
           {/* Handle fake/spam URLs with noindex */}
           <Route path="/tinggi/*" element={<NoIndexPage />} />
