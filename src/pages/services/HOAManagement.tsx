@@ -16,16 +16,13 @@ const HOAManagement = () => {
               <span>HOA Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Chicago{' '}
-              <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                HOA Management Services
-              </span>
+              Chicago HOA Management Services by Manage369
             </h1>
             <p className="body-large mb-8 text-red-100">
-              Comprehensive Chicago HOA management for single-family 
-              subdivisions, master-planned communities, and gated developments 
-              throughout Chicago suburbs. We provide the HOA management expertise and resources 
-              needed to maintain thriving residential communities.
+              Manage369 provides comprehensive HOA management services specifically designed for Chicago homeowner association boards. 
+              With over 18 years of experience managing suburban communities throughout Chicago's surrounding areas, we understand 
+              the unique challenges of maintaining community standards, managing amenities, and preserving property values. 
+              Our board-focused approach helps HOA boards govern effectively while reducing liability and workload.
             </p>
           </div>
         </div>
@@ -35,10 +32,10 @@ const HOAManagement = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Chicago HOA Communities We Manage</h2>
+            <h2 className="heading-2 mb-4">HOA Communities Manage369 Serves</h2>
             <p className="body-large max-w-3xl mx-auto">
               From intimate neighborhoods to large master-planned communities, 
-              we provide tailored Chicago HOA management services for all types of residential developments.
+              Manage369 provides tailored HOA management services for all types of residential developments.
             </p>
           </div>
 
@@ -61,7 +58,7 @@ const HOAManagement = () => {
               <h3 className="text-lg font-semibold mb-3">Master-Planned Communities</h3>
               <p className="text-sm text-gray-600">
                 Large-scale Chicago developments with multiple phases, extensive amenities, 
-                and complex governance structures requiring professional HOA management oversight.
+                and complex governance structures requiring professional oversight.
               </p>
             </div>
 
@@ -90,14 +87,14 @@ const HOAManagement = () => {
         </div>
       </section>
 
-      {/* Core HOA Services */}
+      {/* Comprehensive Services */}
       <section className="section-padding bg-gray-50">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Comprehensive HOA Management Services</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Our HOA management services cover all aspects of community governance, 
-              maintenance, and administration to ensure smooth operations and happy residents.
+              Manage369's HOA management services cover all aspects of community governance, 
+              maintenance, and administration to ensure smooth operations and satisfied residents.
             </p>
           </div>
 
@@ -106,14 +103,16 @@ const HOAManagement = () => {
               <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">⚖️</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Governance & Compliance</h3>
+              <h3 className="text-lg font-semibold mb-3">Governance & Legal Compliance</h3>
               <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Board meeting facilitation and support</li>
-                <li>• Covenant and bylaw enforcement</li>
-                <li>• Legal compliance monitoring</li>
+                <li>• Board meeting facilitation and professional minutes</li>
+                <li>• Covenant and CC&R enforcement procedures</li>
+                <li>• Legal compliance monitoring and updates</li>
                 <li>• Policy development and implementation</li>
                 <li>• Election coordination and oversight</li>
-                <li>• Document management and filing</li>
+                <li>• Document management and record keeping</li>
+                <li>• Annual disclosure statement preparation</li>
+                <li>• Regulatory filing and compliance reporting</li>
               </ul>
             </div>
 
@@ -121,14 +120,16 @@ const HOAManagement = () => {
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">💰</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Financial Management</h3>
+              <h3 className="text-lg font-semibold mb-3">Financial Management & Reporting</h3>
               <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Annual budget preparation and monitoring</li>
-                <li>• Assessment collection and management</li>
+                <li>• Annual budget preparation and board approval</li>
+                <li>• Assessment collection and delinquency management</li>
                 <li>• Reserve fund planning and oversight</li>
-                <li>• Financial reporting and analysis</li>
-                <li>• Audit coordination and support</li>
-                <li>• Special assessment planning</li>
+                <li>• Monthly financial reporting and analysis</li>
+                <li>• Annual audit coordination and support</li>
+                <li>• Special assessment planning and implementation</li>
+                <li>• Banking relationship management</li>
+                <li>• Investment oversight and recommendations</li>
               </ul>
             </div>
 
@@ -139,11 +140,13 @@ const HOAManagement = () => {
               <h3 className="text-lg font-semibold mb-3">Common Area Maintenance</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Landscaping and grounds maintenance</li>
-                <li>• Amenity facility management</li>
+                <li>• Amenity facility management and oversight</li>
                 <li>• Street and sidewalk maintenance</li>
-                <li>• Lighting system management</li>
+                <li>• Lighting system management and repairs</li>
                 <li>• Signage maintenance and updates</li>
                 <li>• Seasonal decoration coordination</li>
+                <li>• Snow removal and ice management</li>
+                <li>• Common area cleaning and upkeep</li>
               </ul>
             </div>
 
@@ -151,14 +154,16 @@ const HOAManagement = () => {
               <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">🏗️</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Architectural Review</h3>
+              <h3 className="text-lg font-semibold mb-3">Architectural Review & Compliance</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Home improvement application review</li>
                 <li>• Design guideline enforcement</li>
                 <li>• Construction oversight and coordination</li>
-                <li>• Landscape plan approval</li>
-                <li>• Color and material compliance</li>
+                <li>• Landscape plan approval and monitoring</li>
+                <li>• Color and material compliance verification</li>
                 <li>• Completion inspections and approvals</li>
+                <li>• Violation notices and follow-up</li>
+                <li>• Architectural standards development</li>
               </ul>
             </div>
 
@@ -166,14 +171,16 @@ const HOAManagement = () => {
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">📞</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Communication Services</h3>
+              <h3 className="text-lg font-semibold mb-3">Communication & Resident Services</h3>
               <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Resident communication portals</li>
+                <li>• Resident communication portals and websites</li>
                 <li>• Newsletter and announcement distribution</li>
                 <li>• Website management and updates</li>
                 <li>• Meeting minutes and documentation</li>
-                <li>• Violation notices and follow-up</li>
-                <li>• Community event coordination</li>
+                <li>• Violation notices and enforcement follow-up</li>
+                <li>• Community event coordination and planning</li>
+                <li>• New resident welcome and orientation</li>
+                <li>• Resident feedback collection and response</li>
               </ul>
             </div>
 
@@ -181,235 +188,113 @@ const HOAManagement = () => {
               <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">🔧</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Vendor Management</h3>
+              <h3 className="text-lg font-semibold mb-3">Vendor Management & Maintenance</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Contractor selection and oversight</li>
-                <li>• Service agreement negotiation</li>
-                <li>• Quality control and inspections</li>
+                <li>• Service agreement negotiation and management</li>
+                <li>• Quality control and performance monitoring</li>
                 <li>• Emergency service coordination</li>
                 <li>• Preventive maintenance scheduling</li>
                 <li>• Capital improvement project management</li>
+                <li>• Warranty management and follow-up</li>
+                <li>• Cost analysis and budget optimization</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Amenity Management */}
+      {/* Why Choose Manage369 */}
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="heading-2 mb-6">Community Amenity Management</h2>
+              <h2 className="heading-2 mb-6">Why HOA Boards Choose Manage369</h2>
               <p className="body-text mb-6">
-                Many HOA communities feature extensive amenities that require 
-                professional management to maintain their value and ensure 
-                resident satisfaction. We provide comprehensive amenity oversight.
+                Managing a homeowners association requires balancing community standards with individual rights, 
+                maintaining extensive amenities, and ensuring legal compliance. Manage369 has been serving 
+                Chicago-area HOA boards since 2007, providing the expertise and resources needed to govern 
+                effectively while protecting property values and enhancing community life.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">🏊</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Pool & Recreation Facilities</h4>
-                    <p className="text-sm text-gray-600">Complete pool management, fitness center operations, and recreational facility oversight</p>
+                    <h4 className="font-semibold mb-1">Suburban Community Expertise</h4>
+                    <p className="text-sm text-gray-600">Specialized knowledge of suburban HOA governance and amenity management</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">🏛️</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Clubhouse Management</h4>
-                    <p className="text-sm text-gray-600">Event scheduling, facility maintenance, and resident reservation systems</p>
+                    <h4 className="font-semibold mb-1">Professional Covenant Enforcement</h4>
+                    <p className="text-sm text-gray-600">Fair and consistent enforcement that maintains standards while respecting homeowner rights</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">🌳</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Parks & Open Spaces</h4>
-                    <p className="text-sm text-gray-600">Playground maintenance, park upkeep, and natural area preservation</p>
+                    <h4 className="font-semibold mb-1">Amenity Management Excellence</h4>
+                    <p className="text-sm text-gray-600">Professional oversight of pools, clubhouses, and recreational facilities</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">🚗</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Parking & Transportation</h4>
-                    <p className="text-sm text-gray-600">Parking enforcement, guest parking management, and transportation coordination</p>
+                    <h4 className="font-semibold mb-1">Board Education & Support</h4>
+                    <p className="text-sm text-gray-600">Ongoing training and guidance to help boards fulfill their fiduciary duties</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-semibold mb-6">Amenity Benefits</h3>
+              <h3 className="text-xl font-semibold mb-6">Manage369 HOA Management Benefits</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Increased property values through well-maintained amenities</span>
+                  <span className="text-sm">Enhanced property values through professional management</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Enhanced resident satisfaction and community pride</span>
+                  <span className="text-sm">Reduced board liability and volunteer workload</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Professional safety and liability management</span>
+                  <span className="text-sm">Professional vendor relationships and cost savings</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Cost-effective maintenance and operations</span>
+                  <span className="text-sm">Improved community harmony and resident satisfaction</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Coordinated programming and community events</span>
+                  <span className="text-sm">Legal compliance and risk mitigation</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Regulatory compliance and risk mitigation</span>
+                  <span className="text-sm">Professional amenity management and maintenance</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enforcement & Compliance */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Covenant Enforcement & Compliance</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Maintaining community standards while treating residents fairly requires 
-              a balanced approach to covenant enforcement and compliance management.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">👁️</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Property Inspections</h3>
-              <p className="text-sm text-gray-600">
-                Regular community inspections to identify compliance issues 
-                and maintenance needs before they become problems.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">📋</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Violation Management</h3>
-              <p className="text-sm text-gray-600">
-                Professional handling of covenant violations with clear 
-                communication and fair resolution processes.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">🤝</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Mediation Services</h3>
-              <p className="text-sm text-gray-600">
-                Professional mediation to resolve disputes between neighbors 
-                and maintain community harmony.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">📚</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Education & Guidance</h3>
-              <p className="text-sm text-gray-600">
-                Resident education about community standards and assistance 
-                with compliance requirements.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Board Support */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">HOA Board Support & Training</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              We provide comprehensive support to HOA boards, helping them fulfill 
-              their fiduciary duties while making informed decisions for their communities.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">📊</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Meeting Management</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Professional meeting facilitation, agenda preparation, and 
-                comprehensive minute-taking services.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>• Agenda development and distribution</li>
-                <li>• Meeting facilitation and moderation</li>
-                <li>• Detailed minute preparation</li>
-                <li>• Action item tracking and follow-up</li>
-              </ul>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🎓</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Board Education</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Ongoing education and training to help board members understand 
-                their roles, responsibilities, and legal obligations.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>• Fiduciary duty training</li>
-                <li>• Legal compliance education</li>
-                <li>• Financial oversight guidance</li>
-                <li>• Best practices workshops</li>
-              </ul>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🎯</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Strategic Planning</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Long-term planning assistance to help boards make strategic 
-                decisions that benefit the entire community.
-              </p>
-              <ul className="text-xs text-gray-500 space-y-1">
-                <li>• Capital improvement planning</li>
-                <li>• Reserve fund strategy</li>
-                <li>• Community enhancement projects</li>
-                <li>• Policy development guidance</li>
-              </ul>
             </div>
           </div>
         </div>
@@ -418,16 +303,15 @@ const HOAManagement = () => {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-to-r from-accent-500 to-red-700 text-white">
         <div className="container-max text-center">
-          <h2 className="heading-2 mb-4 text-white">Elevate Your HOA Community</h2>
+          <h2 className="heading-2 mb-4 text-white">Ready to Partner with Manage369?</h2>
           <p className="body-large mb-8 text-red-100 max-w-2xl mx-auto">
-            Contact us today to learn how our comprehensive HOA management services 
-            can enhance your community's governance, operations, and resident satisfaction.
+            Contact Manage369 today to learn how our comprehensive HOA management services 
+            can enhance your community's governance, reduce board workload, and protect property values.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary bg-white text-accent-500 hover:bg-gray-100 text-lg px-8 py-4">
-              Get Free Assessment
+              Get Free Consultation
             </Link>
-
             <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-accent-500 text-lg px-8 py-4">
               Call (847) 834-4131
             </a>
@@ -439,4 +323,3 @@ const HOAManagement = () => {
 }
 
 export default HOAManagement
-  

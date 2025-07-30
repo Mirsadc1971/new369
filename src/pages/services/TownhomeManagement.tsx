@@ -16,16 +16,13 @@ const TownhomeManagement = () => {
               <span>Townhome Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Chicago{' '}
-              <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Townhome Management Services
-              </span>
+              Chicago Townhome Management Services by Manage369
             </h1>
             <p className="body-large mb-8 text-green-100">
-              Comprehensive Chicago townhome management services for townhome communities, row houses, 
-              and attached home developments throughout Chicago suburbs. We understand 
-              the unique needs of Chicago townhome associations and provide tailored townhome management solutions 
-              that enhance community living and property values.
+              Manage369 provides comprehensive townhome management services specifically designed for Chicago townhome association boards. 
+              With over 18 years of experience managing attached housing communities throughout Chicago suburbs, we understand 
+              the unique challenges of shared ownership and maintenance responsibilities. Our specialized approach helps townhome 
+              boards maintain property values while fostering strong community relationships.
             </p>
           </div>
         </div>
@@ -35,10 +32,10 @@ const TownhomeManagement = () => {
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Chicago Townhome Communities We Serve</h2>
+            <h2 className="heading-2 mb-4">Townhome Communities Manage369 Serves</h2>
             <p className="body-large max-w-3xl mx-auto">
               From modern planned developments to historic row house communities, 
-              we provide specialized townhome management for all types of Chicago townhome properties.
+              Manage369 provides specialized townhome management for all types of attached housing properties.
             </p>
           </div>
 
@@ -50,7 +47,7 @@ const TownhomeManagement = () => {
               <h3 className="text-lg font-semibold mb-3">Planned Communities</h3>
               <p className="text-sm text-gray-600">
                 Modern Chicago townhome developments with shared amenities, landscaping, 
-                and community facilities requiring comprehensive townhome management.
+                and community facilities requiring comprehensive management.
               </p>
             </div>
 
@@ -61,7 +58,7 @@ const TownhomeManagement = () => {
               <h3 className="text-lg font-semibold mb-3">Row House Developments</h3>
               <p className="text-sm text-gray-600">
                 Traditional and contemporary Chicago row house communities with shared 
-                walls and common townhome management responsibilities.
+                walls and common maintenance responsibilities.
               </p>
             </div>
 
@@ -90,13 +87,13 @@ const TownhomeManagement = () => {
         </div>
       </section>
 
-      {/* Specialized Services */}
+      {/* Comprehensive Services */}
       <section className="section-padding bg-gray-50">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Townhome Management Services</h2>
+            <h2 className="heading-2 mb-4">Comprehensive Townhome Management Services</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Our townhome management services address the unique challenges of 
+              Manage369's townhome management services address the unique challenges of 
               attached housing communities while maximizing the benefits of shared ownership.
             </p>
           </div>
@@ -106,14 +103,16 @@ const TownhomeManagement = () => {
               <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">🏗️</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Exterior Maintenance</h3>
+              <h3 className="text-lg font-semibold mb-3">Exterior Maintenance & Repairs</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Roof maintenance and repair coordination</li>
                 <li>• Exterior painting and siding maintenance</li>
-                <li>• Window and door maintenance</li>
+                <li>• Window and door maintenance programs</li>
                 <li>• Driveway and walkway upkeep</li>
                 <li>• Gutter cleaning and maintenance</li>
                 <li>• Foundation and structural inspections</li>
+                <li>• Shared wall maintenance and repairs</li>
+                <li>• Weatherproofing and insulation services</li>
               </ul>
             </div>
 
@@ -121,14 +120,16 @@ const TownhomeManagement = () => {
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">🌿</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Landscaping & Grounds</h3>
+              <h3 className="text-lg font-semibold mb-3">Landscaping & Grounds Management</h3>
               <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Lawn care and maintenance</li>
-                <li>• Seasonal landscaping services</li>
-                <li>• Tree and shrub care</li>
-                <li>• Irrigation system management</li>
+                <li>• Professional lawn care and maintenance</li>
+                <li>• Seasonal landscaping design and installation</li>
+                <li>• Tree and shrub care and pruning</li>
+                <li>• Irrigation system management and repairs</li>
                 <li>• Snow removal and ice management</li>
-                <li>• Common area beautification</li>
+                <li>• Common area beautification projects</li>
+                <li>• Mulching and seasonal cleanup</li>
+                <li>• Pest control and weed management</li>
               </ul>
             </div>
 
@@ -136,14 +137,16 @@ const TownhomeManagement = () => {
               <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">🚗</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Parking & Access</h3>
+              <h3 className="text-lg font-semibold mb-3">Parking & Access Management</h3>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Parking area maintenance and striping</li>
                 <li>• Garage door system management</li>
-                <li>• Access control and security</li>
-                <li>• Street and pathway lighting</li>
+                <li>• Access control and security systems</li>
+                <li>• Street and pathway lighting maintenance</li>
                 <li>• Traffic flow optimization</li>
                 <li>• Visitor parking coordination</li>
+                <li>• Driveway sealing and repair</li>
+                <li>• Parking enforcement and violations</li>
               </ul>
             </div>
 
@@ -151,14 +154,16 @@ const TownhomeManagement = () => {
               <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">💰</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Financial Management</h3>
+              <h3 className="text-lg font-semibold mb-3">Financial Management & Budgeting</h3>
               <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Monthly assessment collection</li>
-                <li>• Operating budget development</li>
-                <li>• Reserve fund planning</li>
-                <li>• Financial reporting and analysis</li>
+                <li>• Monthly assessment collection and management</li>
+                <li>• Annual operating budget development</li>
+                <li>• Reserve fund planning and oversight</li>
+                <li>• Financial reporting and variance analysis</li>
                 <li>• Special assessment coordination</li>
                 <li>• Insurance management and claims</li>
+                <li>• Vendor payment and expense tracking</li>
+                <li>• Annual audit coordination and support</li>
               </ul>
             </div>
 
@@ -166,14 +171,16 @@ const TownhomeManagement = () => {
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">👥</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Community Management</h3>
+              <h3 className="text-lg font-semibold mb-3">Community Management & Governance</h3>
               <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Board meeting facilitation</li>
-                <li>• Covenant enforcement</li>
+                <li>• Board meeting facilitation and minutes</li>
+                <li>• Covenant enforcement and compliance</li>
                 <li>• Architectural review coordination</li>
-                <li>• Neighbor dispute resolution</li>
-                <li>• Community event planning</li>
-                <li>• New resident orientation</li>
+                <li>• Neighbor dispute resolution and mediation</li>
+                <li>• Community event planning and coordination</li>
+                <li>• New resident orientation and welcome</li>
+                <li>• Communication portal management</li>
+                <li>• Policy development and implementation</li>
               </ul>
             </div>
 
@@ -181,102 +188,99 @@ const TownhomeManagement = () => {
               <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-xl">🔧</span>
               </div>
-              <h3 className="text-lg font-semibold mb-3">Maintenance Coordination</h3>
+              <h3 className="text-lg font-semibold mb-3">Maintenance Coordination & Emergency Response</h3>
               <ul className="text-sm text-gray-600 space-y-2">
-                <li>• Preventive maintenance scheduling</li>
-                <li>• Emergency repair coordination</li>
-                <li>• Vendor management and oversight</li>
-                <li>• Capital improvement planning</li>
+                <li>• Preventive maintenance scheduling and oversight</li>
+                <li>• 24/7 emergency repair coordination</li>
+                <li>• Vendor management and quality control</li>
+                <li>• Capital improvement planning and execution</li>
                 <li>• Utility management and monitoring</li>
                 <li>• Seasonal maintenance programs</li>
+                <li>• Safety inspections and compliance</li>
+                <li>• Warranty management and follow-up</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Unique Challenges */}
+      {/* Why Choose Manage369 */}
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="heading-2 mb-6">Townhome Management Challenges</h2>
+              <h2 className="heading-2 mb-6">Why Townhome Boards Choose Manage369</h2>
               <p className="body-text mb-6">
-                Townhome communities face unique challenges that require specialized 
-                management expertise. Our team understands these complexities and 
-                provides solutions that work for attached housing communities.
+                Townhome communities face unique challenges that require specialized management expertise. 
+                Manage369 understands the complexities of shared ownership, maintenance coordination, and 
+                community governance that make townhome management distinct from other property types. 
+                Our board-focused approach helps reduce liability while enhancing property values.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-secondary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">🏠</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Shared Structure Maintenance</h4>
-                    <p className="text-sm text-gray-600">Coordinating maintenance of shared walls, roofs, and building systems</p>
+                    <h4 className="font-semibold mb-1">Specialized Townhome Expertise</h4>
+                    <p className="text-sm text-gray-600">Deep understanding of shared structure maintenance and cost allocation</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-secondary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">⚖️</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Covenant Enforcement</h4>
-                    <p className="text-sm text-gray-600">Balancing individual property rights with community standards</p>
+                    <h4 className="font-semibold mb-1">Proactive Maintenance Approach</h4>
+                    <p className="text-sm text-gray-600">Preventive programs that protect shared investments and reduce emergency costs</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-secondary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">💰</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Cost Allocation</h4>
-                    <p className="text-sm text-gray-600">Fair distribution of maintenance costs among unit owners</p>
+                    <h4 className="font-semibold mb-1">Community-Focused Management</h4>
+                    <p className="text-sm text-gray-600">Building stronger neighborhoods through effective communication and conflict resolution</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-secondary-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                    <span className="text-white text-xs">🤝</span>
+                    <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold mb-1">Neighbor Relations</h4>
-                    <p className="text-sm text-gray-600">Managing close-proximity living and shared responsibilities</p>
+                    <h4 className="font-semibold mb-1">Transparent Financial Management</h4>
+                    <p className="text-sm text-gray-600">Clear reporting and fair cost allocation that builds trust among homeowners</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-xl font-semibold mb-6">Our Solutions</h3>
+              <h3 className="text-xl font-semibold mb-6">Manage369 Townhome Management Benefits</h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Proactive maintenance planning and coordination</span>
+                  <span className="text-sm">Enhanced property values through professional maintenance</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Clear communication and transparent processes</span>
+                  <span className="text-sm">Reduced board liability and workload</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Fair and equitable cost allocation methods</span>
+                  <span className="text-sm">Professional vendor relationships and cost savings</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
                     <span className="text-white text-sm">✓</span>
                   </div>
-                  <span className="text-sm">Professional mediation and conflict resolution</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                    <span className="text-white text-sm">✓</span>
-                  </div>
-                  <span className="text-sm">Community building and engagement programs</span>
+                  <span className="text-sm">Improved neighbor relations and community harmony</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
@@ -284,122 +288,13 @@ const TownhomeManagement = () => {
                   </div>
                   <span className="text-sm">Comprehensive insurance and risk management</span>
                 </div>
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm">✓</span>
+                  </div>
+                  <span className="text-sm">24/7 emergency response and coordination</span>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Seasonal Services */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Seasonal Maintenance Programs</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Chicago's changing seasons require specialized maintenance programs 
-              to protect townhome communities year-round.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">🌸</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Spring Preparation</h3>
-              <ul className="text-sm text-gray-600 space-y-1 text-left">
-                <li>• Roof and gutter inspections</li>
-                <li>• Landscaping restoration</li>
-                <li>• HVAC system maintenance</li>
-                <li>• Exterior cleaning and repairs</li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">☀️</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Summer Maintenance</h3>
-              <ul className="text-sm text-gray-600 space-y-1 text-left">
-                <li>• Irrigation system optimization</li>
-                <li>• Deck and patio maintenance</li>
-                <li>• Exterior painting projects</li>
-                <li>• Pest control programs</li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">🍂</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Fall Preparation</h3>
-              <ul className="text-sm text-gray-600 space-y-1 text-left">
-                <li>• Leaf removal and cleanup</li>
-                <li>• Winterization procedures</li>
-                <li>• Heating system inspections</li>
-                <li>• Storm preparation measures</li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <span className="text-xl">❄️</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Winter Services</h3>
-              <ul className="text-sm text-gray-600 space-y-1 text-left">
-                <li>• Snow removal and ice management</li>
-                <li>• Emergency heating repairs</li>
-                <li>• Pipe freeze prevention</li>
-                <li>• Winter safety measures</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Community Benefits */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <div className="text-center mb-16">
-            <h2 className="heading-2 mb-4">Benefits of Professional Townhome Management</h2>
-            <p className="body-large max-w-3xl mx-auto">
-              Professional management enhances property values, improves quality of life, 
-              and creates stronger, more cohesive communities.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">📈</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Enhanced Property Values</h3>
-              <p className="text-sm text-gray-600">
-                Professional maintenance and management help preserve and increase 
-                property values for all community members.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🏡</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Improved Quality of Life</h3>
-              <p className="text-sm text-gray-600">
-                Well-maintained common areas and coordinated services create a 
-                more enjoyable living environment for residents.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl">🤝</span>
-              </div>
-              <h3 className="text-lg font-semibold mb-3">Stronger Community</h3>
-              <p className="text-sm text-gray-600">
-                Professional management fosters better communication and cooperation 
-                among neighbors, building a stronger community.
-              </p>
             </div>
           </div>
         </div>
@@ -408,16 +303,15 @@ const TownhomeManagement = () => {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-secondary text-white">
         <div className="container-max text-center">
-          <h2 className="heading-2 mb-4 text-white">Transform Your Townhome Community</h2>
+          <h2 className="heading-2 mb-4 text-white">Ready to Partner with Manage369?</h2>
           <p className="body-large mb-8 text-green-100 max-w-2xl mx-auto">
-            Contact us today to learn how our specialized townhome management 
-            services can enhance your community's value, appearance, and quality of life.
+            Contact Manage369 today to learn how our specialized townhome management 
+            services can enhance your community's value, reduce board workload, and improve quality of life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary bg-white text-secondary-500 hover:bg-gray-100 text-lg px-8 py-4">
               Get Free Consultation
             </Link>
-
             <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-secondary-500 text-lg px-8 py-4">
               Call (847) 834-4131
             </a>
@@ -429,4 +323,3 @@ const TownhomeManagement = () => {
 }
 
 export default TownhomeManagement
-  
