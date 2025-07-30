@@ -285,7 +285,6 @@ const Services: React.FC = () => {
         <section className="section-padding bg-gradient-primary text-white">
           <div className="container-max text-center">
             <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
-            <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
             <div className="mb-8 text-blue-100 max-w-4xl mx-auto">
               <p className="body-large mb-6">
                 Manage369 provides comprehensive property management services to select communities throughout Chicago, the Northshore, and Northwest suburbs. As residents and business owners based in Glenview, we have deep roots in these well-established neighborhoods and understand the unique needs of HOAs and Townhome Associations.
