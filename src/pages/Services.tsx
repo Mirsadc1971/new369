@@ -110,20 +110,6 @@ const Services: React.FC = () => {
           </div>
         </section>
 
-        {/* Company Description Section */}
-        <section className="section-padding bg-white">
-          <div className="container-max">
-            <div className="max-w-4xl mx-auto text-center">
-              <p className="body-large mb-6">
-                Manage369 provides comprehensive property management services to select communities throughout Chicago, the Northshore, and Northwest suburbs. As residents and business owners based in Glenview, we have deep roots in these well-established neighborhoods and understand the unique needs of HOAs and Townhome Associations.
-              </p>
-              <p className="body-large">
-                Our local expertise, combined with years of experience in property management, allows us to deliver personalized solutions that address the specific challenges facing your community. We are committed to maintaining and enhancing property values while fostering positive relationships among residents.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Property Type Selection */}
         <section className="section-padding bg-white">
           <div className="container-max">
@@ -299,9 +285,14 @@ const Services: React.FC = () => {
         <section className="section-padding bg-gradient-primary text-white">
           <div className="container-max text-center">
             <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
-            <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
-              Contact us today for a free consultation and discover how our local expertise can benefit your community.
-            </p>
+            <div className="mb-8 text-blue-100 max-w-4xl mx-auto">
+              <p className="body-large mb-6">
+                Manage369 provides comprehensive property management services to select communities throughout Chicago, the Northshore, and Northwest suburbs. As residents and business owners based in Glenview, we have deep roots in these well-established neighborhoods and understand the unique needs of HOAs and Townhome Associations.
+              </p>
+              <p className="body-large">
+                Our local expertise, combined with years of experience in property management, allows us to deliver personalized solutions that address the specific challenges facing your community. We are committed to maintaining and enhancing property values while fostering positive relationships among residents.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
                 Get Free Consultation
