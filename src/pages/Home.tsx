@@ -210,10 +210,10 @@ const Home: React.FC = () => {
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-primary text-white">
-          <div className="container-max text-center">
+              Northshore & Northwest Suburbs Property Management | Glenview-Based HOA Services
             <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
             <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
-              Contact us today to learn how Manage369 can help your property thrive
+              Professional property management services for condominiums, HOAs, and residential communities throughout the Northshore, Northwest suburbs, Glenview, and the city of Chicago area. Local expertise serving your community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
