@@ -18,10 +18,10 @@ const Home: React.FC = () => {
           <div className="container-max">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="heading-1 mb-6 text-white">
-                Chicago Property Management
+                Northshore & Northwest Suburbs Property Management | Glenview-Based HOA Services
               </h1>
               <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-                Professional property management services for condominiums, HOAs, and residential communities throughout Chicago and surrounding suburbs.
+                Professional property management services for condominiums, HOAs, and residential communities throughout the Northshore, Northwest suburbs, Glenview, and greater Chicago area. Local expertise serving your community.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
