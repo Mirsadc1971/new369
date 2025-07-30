@@ -1,82 +1,284 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Contact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Construct mailto URL
+    const subject = encodeURIComponent('Website Contact Inquiry');
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Phone: ${formData.phone}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    const mailtoUrl = `mailto:service@manage369.com?subject=${subject}&body=${body}`;
+    
+    // Open email client
+    window.location.href = mailtoUrl;
+  };
+
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-            Contact Us
-          </h1>
-          <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-            Get in touch with our property management experts.
-          </p>
-        </div>
-        
-        <div className="mt-12 max-w-lg mx-auto">
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <form className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
-                ></textarea>
-              </div>
-              
-              <div>
-                <button
-                  type="submit"
-                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
+    <>
+      <Helmet>
+        <title>Contact Us - Manage369 Property Management</title>
+        <meta name="description" content="Contact Manage369 for professional property management services in Chicago. Get expert consultation for your condominium, townhome, or HOA management needs." />
+        <link rel="canonical" href="https://www.manage369.com/contact" />
+      </Helmet>
+
+      <div className="min-h-screen bg-gray-50">
+        {/* Hero Section */}
+        <section className="bg-gradient-to-br from-primary-500 to-primary-700 text-white section-padding">
+          <div className="container-max">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="heading-1 mb-6 text-white">
+                Contact{' '}
+                <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                  Manage369
+                </span>
+              </h1>
+              <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
+                Get in touch with Chicago's premier property management company. 
+                We're here to help with all your condominium, townhome, and HOA management needs.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="section-padding bg-white">
+          <div className="container-max">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Contact Information */}
+              <div>
+                <h2 className="heading-2 mb-6">Get In Touch</h2>
+                <p className="body-text mb-8">
+                  Ready to experience the difference professional property management can make? 
+                  Contact us today for a free consultation and discover why we're Chicago's 
+                  most trusted property management company.
+                </p>
+
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl">📞</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+                      <p className="text-gray-600">
+                        <a href="tel:847-834-4131" className="hover:text-primary-500">(847) 834-4131</a>
+                      </p>
+                      <p className="text-gray-600">
+                        <a href="tel:312-402-7002" className="hover:text-primary-500">(312) 402-7002</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl">✉️</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+                      <p className="text-gray-600">
+                        <a href="mailto:service@manage369.com" className="hover:text-secondary-500">service@manage369.com</a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl">📍</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900 mb-1">Office Locations</h3>
+                      <div className="text-gray-600 space-y-2">
+                        <div>
+                          <p className="font-medium">Chicago Office:</p>
+                          <p>5107 N Western Ave, Suite 1S</p>
+                          <p>Chicago, IL 60625</p>
+                        </div>
+                        <div>
+                          <p className="font-medium">Glenview Office:</p>
+                          <p>1400 Patriot Boulevard 357</p>
+                          <p>Glenview, IL 60026</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <span className="text-xl">🕒</span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
+                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                      <p className="text-gray-600">24/7 Emergency Response Available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Form */}
+              <div className="bg-gray-50 p-8 rounded-xl">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
+                
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent mobile-form-input"
+                      placeholder="Your full name"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent mobile-form-input"
+                      placeholder="your.email@example.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      Phone Number
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent mobile-form-input"
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                      Message *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      required
+                      rows={6}
+                      value={formData.message}
+                      onChange={handleChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent mobile-form-input"
+                      placeholder="Tell us about your property management needs..."
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full btn-primary text-lg py-4"
+                  >
+                    Send Message
+                  </button>
+                  
+                  <p className="text-sm text-gray-500 text-center">
+                    This will open your email client with a pre-filled message to send to us.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Areas Preview */}
+        <section className="section-padding bg-gray-50">
+          <div className="container-max">
+            <div className="text-center mb-12">
+              <h2 className="heading-2 mb-4">We Serve Chicago & Surrounding Areas</h2>
+              <p className="body-large max-w-3xl mx-auto">
+                Professional property management services throughout the greater Chicago metropolitan area.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏙️</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Chicago City</h3>
+                <p className="text-gray-600">All major neighborhoods and districts</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🏘️</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Suburban Communities</h3>
+                <p className="text-gray-600">Cook, DuPage, Lake, and Kane Counties</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl">🌆</span>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">Metro Area</h3>
+                <p className="text-gray-600">Extended Chicagoland coverage</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Emergency Contact */}
+        <section className="section-padding bg-red-50 border-t-4 border-red-500">
+          <div className="container-max text-center">
+            <h2 className="text-2xl font-bold text-red-800 mb-4">🚨 Emergency Property Management</h2>
+            <p className="text-red-700 mb-6">
+              For urgent property management emergencies outside business hours, 
+              call our emergency hotline immediately.
+            </p>
+            <a 
+              href="tel:847-834-4131" 
+              className="inline-flex items-center bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors text-lg"
+            >
+              📞 Emergency: (847) 834-4131
+            </a>
+            <p className="text-red-600 text-sm mt-4">
+              For life-threatening emergencies, call 911 first, then contact Manage369
+            </p>
+          </div>
+        </section>
       </div>
-    </div>
+    </>
   );
 };
 
