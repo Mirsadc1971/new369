@@ -96,15 +96,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           
-          {/* Additional missing routes */}
-          <Route path="/loop" element={<ServiceAreaDetail />} />
-          <Route path="/highwood" element={<ServiceAreaDetail />} />
           <Route path="/request-proposal" element={<Contact />} />
-          <Route path="/edgewater" element={<ServiceAreaDetail />} />
-          <Route path="/old-town" element={<ServiceAreaDetail />} />
-          <Route path="/gold-coast" element={<ServiceAreaDetail />} />
-          <Route path="/barrington" element={<ServiceAreaDetail />} />
-          <Route path="/wheeling" element={<ServiceAreaDetail />} />
           <Route path="/category/uncategorized/" element={<NoIndexPage />} />
           <Route path="/category/*" element={<NoIndexPage />} />
           
@@ -112,8 +104,8 @@ function App() {
           <Route path="/tinggi/*" element={<NoIndexPage />} />
           <Route path="/tinggi" element={<NoIndexPage />} />
           
-          {/* Dynamic service area route */}
-          <Route path="/service-areas/:slug" element={<ServiceAreaDetail />} />
+          {/* Dynamic service area route with new URL structure */}
+          <Route path="/property-management-:slug" element={<ServiceAreaDetail />} />
           
           {/* Catch-all route for 404s with noindex */}
           <Route path="*" element={<NoIndexPage />} />
