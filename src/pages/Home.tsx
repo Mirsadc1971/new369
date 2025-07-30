@@ -114,7 +114,7 @@ const Home: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Specialized management services for townhome communities and mixed-use developments
                 </p>
-                <Link to="/services/townhome-management" className="btn-primary">
+                <Link to="/services/townhome-management" className="bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation">
                   Learn More
                 </Link>
               </div>
