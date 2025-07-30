@@ -210,7 +210,7 @@ const Home: React.FC = () => {
 
         {/* Contact CTA */}
         <section className="section-padding bg-gradient-primary text-white">
-              Northshore & Northwest Suburbs Property Management | Glenview-Based HOA Services
+          <div className="container-max text-center">
             <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
             <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
               Professional property management services for condominiums, HOAs, and residential communities throughout the Northshore, Northwest suburbs, Glenview, and the city of Chicago area. Local expertise serving your community.
