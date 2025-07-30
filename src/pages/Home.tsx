@@ -18,10 +18,10 @@ const Home: React.FC = () => {
           <div className="container-max">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="heading-1 mb-6 text-white">
-                Northshore & Northwest Suburbs Property Management | Glenview-Based HOA Services
+                Chicago Property Management Service | Professional Property Management Company
               </h1>
               <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-                Professional property management services for condominiums, HOAs, and residential communities throughout the Northshore, Northwest suburbs, Glenview, and greater Chicago area. Local expertise serving your community.
+                Premier property management service for Chicago condominiums, HOAs, and residential communities. Trusted property management company serving 50+ properties with 2450+ units throughout Chicago and suburbs since 2007.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
@@ -83,7 +83,7 @@ const Home: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className="heading-2 mb-4">Our Services</h2>
               <p className="body-large max-w-3xl mx-auto">
-                Comprehensive property management solutions tailored to Chicago's diverse real estate market
+                Professional property management service solutions tailored to Chicago's diverse real estate market
               </p>
             </div>
 
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
                 <Building2 className="w-12 h-12 text-primary-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Condominium Management</h3>
                 <p className="text-gray-600 mb-6">
-                  Full-service management for high-rise and mid-rise condominium buildings throughout Chicago
+                  Professional property management service for high-rise and mid-rise condominium buildings throughout Chicago
                 </p>
                 <Link to="/services/condominium-management" className="btn-primary">
                   Learn More
@@ -102,7 +102,7 @@ const Home: React.FC = () => {
                 <Users className="w-12 h-12 text-secondary-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">HOA Management</h3>
                 <p className="text-gray-600 mb-6">
-                  Professional homeowner association management for suburban communities and developments
+                  Expert property management service for homeowner associations in suburban communities and developments
                 </p>
                 <Link to="/services/hoa-management" className="btn-secondary">
                   Learn More
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
                 <MapPin className="w-12 h-12 text-accent-600 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Townhome Management</h3>
                 <p className="text-gray-600 mb-6">
-                  Specialized management services for townhome communities and mixed-use developments
+                  Specialized property management service for townhome communities and mixed-use developments
                 </p>
                 <Link to="/services/townhome-management" className="bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation">
                   Learn More
@@ -213,7 +213,7 @@ const Home: React.FC = () => {
           <div className="container-max text-center">
             <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
             <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
-              Professional property management services for condominiums, HOAs, and residential communities throughout the Northshore, Northwest suburbs, Glenview, and the city of Chicago area. Local expertise serving your community.
+              Professional property management service for condominiums, HOAs, and residential communities throughout Chicago and suburbs. Expert property management company with local expertise serving your community since 2007.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link to="/contact" className="btn-secondary text-lg px-8 py-4">

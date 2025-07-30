@@ -92,19 +92,19 @@ const Services: React.FC = () => {
           <div className="container-max">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="heading-1 mb-6 text-white">
-                Our{' '}
+                Property Management{' '}
                 <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                  Services
+                  Service
                 </span>
               </h1>
               <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-                Comprehensive property management solutions tailored to your needs.
+                Professional property management service solutions tailored to your Chicago property needs.
               </p>
               <h2 className="text-2xl font-semibold text-white mb-4">
-                Select Your Property Type
+                Select Your Property Management Service Type
               </h2>
               <p className="text-blue-100">
-                Choose the service that matches your property to learn more about our specialized management solutions.
+                Choose the property management service that matches your property to learn more about our specialized solutions.
               </p>
             </div>
           </div>
@@ -180,7 +180,7 @@ const Services: React.FC = () => {
             <div className="text-center mb-16">
               <h2 className="heading-2 mb-4">Why Choose Manage369?</h2>
               <p className="body-large max-w-3xl mx-auto">
-                Our comprehensive approach to property management ensures your investment 
+                Our comprehensive property management service approach ensures your investment 
                 is protected and your community thrives.
               </p>
             </div>
@@ -212,7 +212,7 @@ const Services: React.FC = () => {
                 </div>
                 <h3 className="text-lg font-semibold mb-2">24/7 Support</h3>
                 <p className="text-sm text-gray-600">
-                  Emergency response and dedicated customer service
+                  Emergency property management service and dedicated customer support
                 </p>
               </div>
 
@@ -235,7 +235,7 @@ const Services: React.FC = () => {
             <div className="text-center mb-12">
               <h2 className="heading-2 mb-4">Serving Chicago & Surrounding Areas</h2>
               <p className="body-large max-w-3xl mx-auto">
-                Professional property management services throughout the greater Chicago metropolitan area.
+                Professional property management service throughout the greater Chicago metropolitan area.
               </p>
             </div>
 

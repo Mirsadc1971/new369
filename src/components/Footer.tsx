@@ -20,8 +20,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Chicago's most trusted property management company with <strong>50+ properties with over 2450+ doors</strong> across 100+ communities.
-              Specializing in condominium management, townhome management, and HOA management throughout Chicago and surrounding suburbs. 
+              Chicago's most trusted property management service company with <strong>50+ properties with over 2450+ doors</strong> across 100+ communities.
+              Specializing in property management service for condominiums, townhomes, and HOAs throughout Chicago and surrounding suburbs. 
               Unlike large corporate chains, we provide personalized service with proven results since 2007.
             </p>
             <div className="space-y-2">
@@ -63,7 +63,7 @@ const Footer = () => {
               <li><Link to="/services/condominium-management" className="text-gray-300 hover:text-white transition-colors">Condominium Management</Link></li>
               <li><Link to="/services/townhome-management" className="text-gray-300 hover:text-white transition-colors">Townhome Management</Link></li>
               <li><Link to="/services/hoa-management" className="text-gray-300 hover:text-white transition-colors">HOA Management</Link></li>
-              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">All Property Management Services</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">All Property Management Service Options</Link></li>
             </ul>
           </div>
 
@@ -113,10 +113,10 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               <p className="mb-2">
-                © {currentYear} Manage369 - Chicago's Premier Property Management Company. All rights reserved.
+                © {currentYear} Manage369 - Chicago's Premier Property Management Service Company. All rights reserved.
               </p>
               <p className="text-xs">
-                Licensed Chicago Property Management Company | IDFPR Licensed | CAI Member | Serving Chicago Since 2007
+                Licensed Chicago Property Management Service Company | IDFPR Licensed | CAI Member | Serving Chicago Since 2007
               </p>
             </div>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
