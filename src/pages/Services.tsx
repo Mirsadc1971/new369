@@ -166,6 +166,19 @@ const Services: React.FC = () => {
                 );
               })}
             </div>
+
+            <div className="text-center mt-16">
+              <div className="bg-blue-50 p-8 rounded-xl">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Need Help Choosing?</h3>
+                <p className="text-gray-600 mb-6">
+                  Not sure which service is right for your property? Contact our experts 
+                  for a free consultation and personalized recommendation.
+                </p>
+                <Link to="/contact" className="btn-primary">
+                  Get Expert Guidance
+                </Link>
+              </div>
+            </div>
           </div>
         </section>
 
