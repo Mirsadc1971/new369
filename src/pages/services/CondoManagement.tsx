@@ -20,7 +20,7 @@ const CondoManagement = () => {
             </h1>
             <p className="body-large mb-8 text-blue-100">
               Manage369 provides professional condominium association management services specifically designed for Chicago condo boards. 
-              With over 18 years of experience managing 50+ properties with 2450+ units, we understand the unique challenges facing 
+              With over 18 years of experience managing 50+ properties with over 2450+ doors, we understand the unique challenges facing 
               condominium boards in Chicago and surrounding areas. Our comprehensive management approach protects your investment 
               while reducing board workload and ensuring regulatory compliance.
             </p>

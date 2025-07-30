@@ -123,9 +123,9 @@ const ServiceAreas = () => {
           <div className="text-center mb-16">
             <h2 className="heading-2 mb-4">Chicago Property Management - Suburban Communities</h2>
             <p className="body-large max-w-3xl mx-auto">
-              Leading Chicago property management throughout Chicago's suburban communities, managing <strong>50+ properties with 2450+ units</strong>. 
+              Leading Chicago property management throughout Chicago's suburban communities, managing <strong>50+ properties with over 2450+ doors</strong>. 
               From established family neighborhoods to modern planned developments, Manage369
-              provides tailored property management services for every Chicago suburban market with <strong>proven expertise managing 50+ properties since 2007</strong>.
+              provides tailored property management services for every Chicago suburban market with <strong>proven expertise managing 50+ properties with over 2450+ doors since 2007</strong>.
             </p>
           </div>
 
