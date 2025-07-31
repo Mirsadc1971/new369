@@ -90,7 +90,7 @@ const LocateUs = () => {
                   <div>
                     <p className="font-semibold">Phone:</p>
                     <p className="text-gray-600">
-                      <a href="tel:847-834-4131" className="hover:text-secondary-500">(847) 834-4131</a>
+                      <a href="tel:224-647-5621" className="hover:text-secondary-500">(224) 647-5621</a>
                     </p>
                   </div>
                 </div>
@@ -176,8 +176,7 @@ const LocateUs = () => {
                 Speak directly with our property management experts
               </p>
               <div className="space-y-1">
-                <p><a href="tel:312-402-7002" className="text-primary-500 hover:underline">(312) 402-7002</a></p>
-                <p><a href="tel:847-834-4131" className="text-primary-500 hover:underline">(847) 834-4131</a></p>
+                <p><a href="tel:224-647-5621" className="text-primary-500 hover:underline">(224) 647-5621</a></p>
               </div>
             </div>
 
@@ -218,8 +217,8 @@ const LocateUs = () => {
                 24/7 emergency property management support
               </p>
               <p>
-                <a href="tel:847-834-4131" className="text-red-500 hover:underline font-semibold">
-                  (847) 834-4131
+                <a href="tel:224-647-5621" className="text-red-500 hover:underline font-semibold">
+                  (224) 647-5621
                 </a>
               </p>
             </div>
@@ -304,7 +303,7 @@ const LocateUs = () => {
               Schedule Consultation
             </Link>
             <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (847) 834-4131
+              Call (224) 647-5621
             </a>
           </div>
         </div>

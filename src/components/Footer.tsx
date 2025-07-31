@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="space-y-2">
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">📞</span>
-                <a href="tel:+18478344131" className="hover:text-white">(847) 834-4131</a>
+                <a href="tel:+12246475621" className="hover:text-white">(224) 647-5621</a>
               </p>
               <p className="flex items-center text-gray-300">
                 <span className="w-5 h-5 mr-2">✉️</span>
@@ -150,8 +150,8 @@ const Footer = () => {
                 🚨 EMERGENCY PROPERTY MANAGEMENT HOTLINE 🚨
               </p>
               <p className="text-red-100 text-lg font-bold">
-                <a href="tel:847-834-4131" className="hover:text-white transition-colors">
-                  (847) 834-4131
+                <a href="tel:224-647-5621" className="hover:text-white transition-colors">
+                  (224) 647-5621
                 </a>
               </p>
               <p className="text-red-200 text-xs mt-1">

@@ -223,10 +223,10 @@ const Home: React.FC = () => {
               <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
                 Get Free Consultation
               </Link>
-              <div className="flex items-center space-x-2 text-blue-100">
-                <Phone className="w-5 h-5" />
-                <a href="tel:847-834-4131" className="hover:text-white transition-colors">
-                  (847) 834-4131
+              <a href="tel:224-647-5621" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
+                Call (224) 647-5621
+                <a href="tel:224-647-5621" className="hover:text-white transition-colors">
+                  (224) 647-5621
                 </a>
               </div>
             </div>

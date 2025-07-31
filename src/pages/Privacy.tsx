@@ -298,8 +298,7 @@ const Privacy = () => {
                 <h3 className="text-lg font-semibold mb-4">Manage369</h3>
                 <div className="space-y-2 text-gray-600">
                   <p><strong>Email:</strong> service@manage369.com</p>
-                  <p><strong>Phone:</strong> (312) 402-7002</p>
-                  <p><strong>Phone:</strong> (847) 834-4131</p>
+                  <p><strong>Phone:</strong> (224) 647-5621</p>
                   <p><strong>Address:</strong> Glenview, IL</p>
                 </div>
                 <p className="text-sm text-gray-500 mt-4">
@@ -341,7 +340,7 @@ const Privacy = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="tel:847-834-4131" className="btn-secondary text-lg px-8 py-4">
-              Call (847) 834-4131
+              Call (224) 647-5621
             </a>
             <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
               Contact Us

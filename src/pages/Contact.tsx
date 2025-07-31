@@ -82,10 +82,7 @@ const Contact: React.FC = () => {
                     <div>
                       <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                       <p className="text-gray-600">
-                        <a href="tel:847-834-4131" className="hover:text-primary-500">(847) 834-4131</a>
-                      </p>
-                      <p className="text-gray-600">
-                        <a href="tel:312-402-7002" className="hover:text-primary-500">(312) 402-7002</a>
+                        <a href="tel:224-647-5621" className="hover:text-primary-500">(224) 647-5621</a>
                       </p>
                     </div>
                   </div>
@@ -267,10 +264,10 @@ const Contact: React.FC = () => {
               call our emergency hotline immediately.
             </p>
             <a 
-              href="tel:847-834-4131" 
+              href="tel:224-647-5621" 
               className="inline-flex items-center bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition-colors text-lg"
             >
-              📞 Emergency: (847) 834-4131
+              📞 Emergency: (224) 647-5621
             </a>
             <p className="text-red-600 text-sm mt-4">
               For life-threatening emergencies, call 911 first, then contact Manage369

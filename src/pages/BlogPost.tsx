@@ -202,6 +202,7 @@ const BlogPost = () => {
               <p>🌐 <a href="https://www.manage369.com" class="text-yellow-300 hover:underline">www.manage369.com</a></p>
               <p>📞 <a href="tel:773-728-0652" class="text-yellow-300 hover:underline">(773) 728-0652</a></p>
               <p>📞 <a href="tel:847-834-4131" class="text-yellow-300 hover:underline">(847) 834-4131</a></p>
+              <p>📞 <a href="tel:224-647-5621" class="text-yellow-300 hover:underline">(224) 647-5621</a></p>
               <p>📍 Serving Chicago and surrounding suburbs</p>
               <div class="mt-4 pt-4 border-t border-white border-opacity-30">
                 <p class="text-blue-100 text-sm"><strong>File a complaint with IDFPR:</strong></p>
@@ -784,7 +785,7 @@ const BlogPost = () => {
               Get Free Consultation
             </Link>
             <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-              Call (847) 834-4131
+              Call (224) 647-5621
             </a>
           </div>
         </div>
