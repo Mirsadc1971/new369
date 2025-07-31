@@ -282,7 +282,7 @@ const Services: React.FC = () => {
                 Get Free Consultation
               </Link>
               <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-                Call (847) 834-4131
+                Call (224) 647-5621
               </a>
             </div>
           </div>
