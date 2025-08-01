@@ -303,52 +303,6 @@ export const chicagoAreas: ServiceArea[] = [
       "Local vendor partnerships"
     ]
   },
-  {
-    id: 6,
-    name: "Hyde Park",
-    slug: "hyde-park",
-    county: "Cook",
-    type: "neighborhood",
-    population: 25000,
-    description: "Historic lakefront neighborhood home to the University of Chicago with diverse architecture and strong community. Manage369 offers specialized property management in Hyde Park.",
-    keyFeatures: [
-      "University of Chicago campus",
-      "Historic architecture",
-      "Lakefront parks and beaches",
-      "Cultural institutions",
-      "Diverse community"
-    ],
-    propertyTypes: [
-      "Historic apartment buildings",
-      "University-adjacent housing",
-      "Single-family homes",
-      "Condominium conversions"
-    ],
-    marketInsights: [
-      "Stable market with university influence",
-      "Mix of student and professional residents",
-      "Year-round rental demand",
-      "Historic property premium"
-    ],
-    localRegulations: [
-      "University area development guidelines",
-      "Historic district requirements",
-      "Lakefront protection ordinances",
-      "Rental housing regulations"
-    ],
-    managementChallenges: [
-      "Balancing student and professional tenant needs",
-      "Maintaining historic properties",
-      "Academic calendar rental cycles",
-      "University relationship management"
-    ],
-    solutions: [
-      "Specialized student housing management",
-      "Historic property expertise",
-      "Academic calendar leasing strategies",
-      "University partnership programs"
-    ]
-  }
 ]
 
 export const suburbAreas: ServiceArea[] = [
