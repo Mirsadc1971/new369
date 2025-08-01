@@ -43,7 +43,21 @@ const Header = () => {
             <div 
               className="relative inline-flex items-center"
               onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => setIsServicesOpen(false)}
+              onMouseLeave={(e) => {
+                // Add delay before closing to prevent accidental closes
+                setTimeout(() => {
+                  // Check if mouse is still not over the dropdown area
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  const mouseX = e.clientX;
+                  const mouseY = e.clientY;
+                  
+                  // If mouse is not within the dropdown area, close it
+                  if (mouseX < rect.left - 10 || mouseX > rect.right + 10 || 
+                      mouseY < rect.top - 10 || mouseY > rect.bottom + 280) {
+                    setIsServicesOpen(false);
+                  }
+                }, 300);
+              }}
             >
               <button className="inline-flex items-center text-gray-700 hover:text-primary-500 font-medium transition-colors whitespace-nowrap">
                 Services
@@ -51,7 +65,13 @@ const Header = () => {
               </button>
               
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50">
+                <div 
+                  className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50"
+                  onMouseEnter={() => setIsServicesOpen(true)}
+                  onMouseLeave={() => {
+                    setTimeout(() => setIsServicesOpen(false), 200);
+                  }}
+                >
                   <Link 
                     to="/services/condominium-management"
                     className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
