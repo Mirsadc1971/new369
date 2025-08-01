@@ -217,43 +217,6 @@ const Contact: React.FC = () => {
           </div>
         </section>
 
-        {/* Service Areas Preview */}
-        <section className="section-padding bg-gray-50">
-          <div className="container-max">
-            <div className="text-center mb-12">
-              <h2 className="heading-2 mb-4">We Serve Chicago & Surrounding Areas</h2>
-              <p className="body-large max-w-3xl mx-auto">
-                Professional property management services throughout the greater Chicago metropolitan area.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🏙️</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Chicago City</h3>
-                <p className="text-gray-600">All major neighborhoods and districts</p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🏘️</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Suburban Communities</h3>
-                <p className="text-gray-600">Cook, DuPage, Lake, and Kane Counties</p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🌆</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Metro Area</h3>
-                <p className="text-gray-600">Extended Chicagoland coverage</p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Emergency Contact */}
         <section className="section-padding bg-red-50 border-t-4 border-red-500">
