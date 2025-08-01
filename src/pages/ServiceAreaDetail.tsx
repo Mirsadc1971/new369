@@ -1,115 +1,351 @@
 import React from 'react'
-import { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
 import { serviceAreas } from '../data/serviceAreas'
 
 const ServiceAreaDetail = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { slug } = useParams<{ slug: string }>()
   
-  // Find the area in our service areas
-  const area = serviceAreas.find(area => area.slug === slug);
+  // Find the service area by slug
+  const area = serviceAreas.find(area => area.slug === slug?.replace('property-management-', ''))
   
-  useEffect(() => {
-    // If no area found, redirect to service areas page
-    if (!area) {
-      window.location.href = '/service-areas';
-      return;
-    }
-    
-    // Ensure scroll to top when component mounts
-    window.scrollTo(0, 0)
-    
-    // Additional scroll to top after content loads
-    const scrollTimer = setTimeout(() => {
-      window.scrollTo(0, 0)
-    }, 200)
-
-    return () => {
-      clearTimeout(scrollTimer)
-    }
-  }, [slug, area])
-
   if (!area) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-gray-900 mb-4">Redirecting...</h1>
-          <p className="text-gray-600">Taking you to our service areas page</p>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">Area Not Found</h1>
+          <p className="text-gray-600">The requested service area could not be found.</p>
         </div>
       </div>
     )
   }
 
-  // Get nearby communities (same region, excluding current area)
+  // Get area-specific content
+  const getAreaContent = (areaName: string) => {
+    switch (areaName.toLowerCase()) {
+      case 'glenview':
+        return {
+          intro: "Glenview is one of the North Shore's most desirable communities, known for The Glen Town Center, The Grove National Historic Landmark, and excellent schools. Manage369 provides specialized property management services for Glenview's condominium, HOA, and townhome communities — ensuring boards benefit from transparent reporting, 24/7 emergency response, and proactive local support.",
+          finalCta: "Boards in Glenview choose Manage369 for precise, proactive, and concierge-level service. Let's connect today."
+        }
+      
+      case 'downtown chicago':
+        return {
+          intro: "Downtown Chicago represents the pinnacle of urban living, featuring iconic Loop high-rises, Millennium Park, and the bustling Chicago River corridor. Manage369 provides specialized property management services for Downtown's luxury condominiums and mixed-use developments — ensuring boards benefit from 24/7 concierge-level support, transparent financial reporting, and expert vendor management in the city's most demanding market.",
+          finalCta: "Boards in Downtown Chicago choose Manage369 for sophisticated, white-glove service that matches the prestige of their properties. Let's connect today."
+        }
+      
+      case 'river north':
+        return {
+          intro: "River North combines Chicago's industrial heritage with modern luxury, featuring converted warehouse lofts, boutique condominiums, and proximity to the Magnificent Mile. Manage369 provides specialized property management services for River North's diverse property portfolio — ensuring boards benefit from expert building system management, transparent reporting, and 24/7 emergency response tailored to both historic and contemporary buildings.",
+          finalCta: "Boards in River North choose Manage369 for sophisticated management that honors both historic character and modern expectations. Let's connect today."
+        }
+      
+      case 'gold coast':
+        return {
+          intro: "The Gold Coast epitomizes Chicago elegance, featuring historic mansions, luxury high-rises along Lake Shore Drive, and tree-lined streets steeped in architectural heritage. Manage369 provides specialized property management services for Gold Coast's prestigious condominium and co-op buildings — ensuring boards benefit from discreet, white-glove service, meticulous financial oversight, and vendor management that meets the highest standards.",
+          finalCta: "Boards in the Gold Coast choose Manage369 for refined, discreet service that matches the sophistication of their community. Let's connect today."
+        }
+      
+      case 'streeterville':
+        return {
+          intro: "Streeterville offers dynamic urban living with Navy Pier, Northwestern Memorial Hospital, and bustling downtown energy just steps from Lake Michigan. Manage369 provides specialized property management services for Streeterville's high-rise condominiums and mixed-use developments — ensuring boards benefit from responsive 24/7 support, transparent financial management, and expert coordination in this fast-paced neighborhood.",
+          finalCta: "Boards in Streeterville choose Manage369 for dynamic, responsive service that keeps pace with their vibrant community. Let's connect today."
+        }
+      
+      case 'old town':
+        return {
+          intro: "Old Town charms with its historic brownstones, cobblestone streets, and proximity to Second City comedy club, blending 19th-century architecture with modern urban amenities. Manage369 provides specialized property management services for Old Town's boutique condominiums and historic conversions — ensuring boards benefit from preservation-minded maintenance, transparent reporting, and respectful stewardship of architectural heritage.",
+          finalCta: "Boards in Old Town choose Manage369 for thoughtful, heritage-conscious service that preserves their community's unique character. Let's connect today."
+        }
+      
+      case 'lincoln park':
+        return {
+          intro: "Lincoln Park combines natural beauty with urban sophistication, featuring the Lincoln Park Zoo, DePaul University, and some of Chicago's most prestigious residential streets. Manage369 provides specialized property management services for Lincoln Park's diverse housing stock — from vintage walk-ups to luxury high-rises — ensuring boards benefit from comprehensive maintenance programs, transparent financial oversight, and 24/7 emergency response.",
+          finalCta: "Boards in Lincoln Park choose Manage369 for comprehensive, sophisticated service that enhances their community's desirability. Let's connect today."
+        }
+      
+      case 'lakeview':
+        return {
+          intro: "Lakeview pulses with energy around Wrigley Field and the lakefront, featuring a vibrant mix of vintage walk-ups, modern condominiums, and bustling commercial corridors. Manage369 provides specialized property management services for Lakeview's diverse property types — ensuring boards benefit from proactive maintenance, transparent budgeting, and responsive service that keeps pace with this dynamic neighborhood.",
+          finalCta: "Boards in Lakeview choose Manage369 for energetic, proactive service that matches their community's vibrant spirit. Let's connect today."
+        }
+      
+      case 'wicker park':
+        return {
+          intro: "Wicker Park embodies Chicago's artistic soul with converted industrial lofts, trendy boutiques, and a rich music heritage that continues to attract creative professionals. Manage369 provides specialized property management services for Wicker Park's unique building stock — from historic conversions to modern developments — ensuring boards benefit from creative problem-solving, transparent communication, and maintenance that respects architectural character.",
+          finalCta: "Boards in Wicker Park choose Manage369 for creative, flexible service that honors their community's artistic heritage. Let's connect today."
+        }
+      
+      case 'bucktown':
+        return {
+          intro: "Bucktown offers family-friendly charm with tree-lined streets, the popular 606 trail, and a perfect blend of residential tranquility and urban convenience. Manage369 provides specialized property management services for Bucktown's growing condominium and townhome communities — ensuring boards benefit from neighborhood-focused maintenance, transparent financial management, and service that supports the area's family-oriented lifestyle.",
+          finalCta: "Boards in Bucktown choose Manage369 for family-focused, community-minded service that enhances their neighborhood's appeal. Let's connect today."
+        }
+      
+      case 'logan square':
+        return {
+          intro: "Logan Square celebrates its historic boulevards and craft brewery culture while maintaining strong community ties and artistic character. Manage369 provides specialized property management services for Logan Square's mix of vintage buildings and new developments — ensuring boards benefit from community-focused maintenance, transparent reporting, and service that supports the neighborhood's creative energy.",
+          finalCta: "Boards in Logan Square choose Manage369 for community-focused, authentic service that supports their neighborhood's unique character. Let's connect today."
+        }
+      
+      case 'edgewater':
+        return {
+          intro: "Edgewater combines lakefront luxury with multicultural vibrancy, featuring high-rise condominiums along Loyola Beach and diverse dining options throughout the neighborhood. Manage369 provides specialized property management services for Edgewater's lakefront buildings and mid-rise developments — ensuring boards benefit from comprehensive building system management, transparent financial oversight, and service that celebrates the community's diversity.",
+          finalCta: "Boards in Edgewater choose Manage369 for inclusive, comprehensive service that reflects their community's welcoming spirit. Let's connect today."
+        }
+      
+      case 'rogers park':
+        return {
+          intro: "Rogers Park thrives as one of Chicago's most diverse neighborhoods, home to Loyola University and residents speaking over 80 languages, creating a truly global community atmosphere. Manage369 provides specialized property management services for Rogers Park's varied housing stock — from lakefront high-rises to vintage courtyard buildings — ensuring boards benefit from culturally sensitive service, transparent communication, and maintenance that serves diverse resident needs.",
+          finalCta: "Boards in Rogers Park choose Manage369 for inclusive, globally-minded service that celebrates their community's diversity. Let's connect today."
+        }
+      
+      case 'uptown':
+        return {
+          intro: "Uptown showcases 1920s grandeur with historic theaters, the Green Mill Cocktail Lounge, and a rich entertainment heritage that continues to attract music lovers and history enthusiasts. Manage369 provides specialized property management services for Uptown's historic buildings and modern developments — ensuring boards benefit from preservation-conscious maintenance, transparent financial management, and service that honors the neighborhood's cultural legacy.",
+          finalCta: "Boards in Uptown choose Manage369 for culturally-aware, preservation-minded service that honors their community's rich heritage. Let's connect today."
+        }
+      
+      case 'lincoln square':
+        return {
+          intro: "Lincoln Square maintains its German heritage with Oktoberfest celebrations, European-style architecture, and the charming Lincoln Square farmers market creating a distinctly Old World atmosphere. Manage369 provides specialized property management services for Lincoln Square's boutique condominiums and historic buildings — ensuring boards benefit from detail-oriented maintenance, transparent reporting, and service that preserves the neighborhood's European charm.",
+          finalCta: "Boards in Lincoln Square choose Manage369 for detail-oriented, heritage-conscious service that maintains their community's European character. Let's connect today."
+        }
+      
+      case 'ravenswood':
+        return {
+          intro: "Ravenswood offers quiet residential charm with tree-lined streets, convenient Brown Line access, and a strong sense of community among families and young professionals. Manage369 provides specialized property management services for Ravenswood's growing condominium developments and vintage buildings — ensuring boards benefit from neighborhood-focused maintenance, transparent budgeting, and service that supports the area's residential tranquility.",
+          finalCta: "Boards in Ravenswood choose Manage369 for peaceful, community-focused service that enhances their neighborhood's residential appeal. Let's connect today."
+        }
+      
+      case 'north center':
+        return {
+          intro: "North Center combines family-friendly atmosphere with the vibrant Southport Corridor, featuring the Music Box Theatre and tree-lined residential streets perfect for raising children. Manage369 provides specialized property management services for North Center's family-oriented condominiums and townhomes — ensuring boards benefit from safety-focused maintenance, transparent communication, and service that supports the neighborhood's family values.",
+          finalCta: "Boards in North Center choose Manage369 for family-focused, safety-conscious service that supports their community's values. Let's connect today."
+        }
+      
+      case 'albany park':
+        return {
+          intro: "Albany Park celebrates incredible diversity with residents speaking over 40 languages, the scenic North Branch River, and a strong immigrant community creating a truly multicultural neighborhood. Manage369 provides specialized property management services for Albany Park's diverse housing stock — ensuring boards benefit from culturally sensitive service, multilingual communication support, and maintenance that serves varied community needs.",
+          finalCta: "Boards in Albany Park choose Manage369 for culturally-sensitive, inclusive service that celebrates their community's global character. Let's connect today."
+        }
+      
+      case 'irving park':
+        return {
+          intro: "Irving Park blends Polish heritage with modern convenience, featuring Independence Park, Blue Line accessibility, and strong community organizations that maintain neighborhood character. Manage369 provides specialized property management services for Irving Park's mix of vintage buildings and newer developments — ensuring boards benefit from community-minded maintenance, transparent financial oversight, and service that honors local traditions.",
+          finalCta: "Boards in Irving Park choose Manage369 for community-minded, tradition-respecting service that honors their neighborhood's heritage. Let's connect today."
+        }
+      
+      case 'avondale':
+        return {
+          intro: "Avondale transforms from its industrial past into a vibrant residential neighborhood, attracting young professionals and families with affordable housing and growing amenities. Manage369 provides specialized property management services for Avondale's emerging condominium developments and converted buildings — ensuring boards benefit from growth-oriented maintenance, transparent budgeting, and service that supports the neighborhood's positive transformation.",
+          finalCta: "Boards in Avondale choose Manage369 for forward-thinking, growth-oriented service that supports their community's bright future. Let's connect today."
+        }
+      
+      case 'evanston':
+        return {
+          intro: "Evanston combines Northwestern University's academic prestige with lakefront beauty, diverse neighborhoods, and a strong commitment to sustainability and community engagement. Manage369 provides specialized property management services for Evanston's varied housing stock — from historic mansions converted to condominiums to modern lakefront high-rises — ensuring boards benefit from academically-rigorous financial oversight, environmentally-conscious maintenance, and service that reflects the community's progressive values.",
+          finalCta: "Boards in Evanston choose Manage369 for progressive, academically-rigorous service that reflects their community's values. Let's connect today."
+        }
+      
+      case 'wilmette':
+        return {
+          intro: "Wilmette epitomizes North Shore elegance with tree-lined streets, excellent schools, and the stunning Bahá'í House of Worship creating a serene, family-oriented community. Manage369 provides specialized property management services for Wilmette's prestigious condominiums and townhome developments — ensuring boards benefit from meticulous attention to detail, transparent financial stewardship, and service that maintains the community's reputation for excellence.",
+          finalCta: "Boards in Wilmette choose Manage369 for meticulous, excellence-focused service that maintains their community's prestigious reputation. Let's connect today."
+        }
+      
+      case 'winnetka':
+        return {
+          intro: "Winnetka represents the pinnacle of North Shore prestige with lakefront estates, top-rated schools, and a commitment to privacy and discretion that attracts discerning residents. Manage369 provides specialized property management services for Winnetka's exclusive condominium developments and luxury townhomes — ensuring boards benefit from white-glove service, confidential financial management, and maintenance that meets the highest standards of excellence.",
+          finalCta: "Boards in Winnetka choose Manage369 for white-glove, discreet service that meets their community's exceptional standards. Let's connect today."
+        }
+      
+      case 'kenilworth':
+        return {
+          intro: "Kenilworth maintains its status as one of the North Shore's most exclusive communities with historic estates, pristine lakefront access, and an unwavering commitment to preserving its village character. Manage369 provides specialized property management services for Kenilworth's select condominium conversions and luxury developments — ensuring boards benefit from discreet, preservation-minded service, confidential financial oversight, and maintenance that honors the community's historic legacy.",
+          finalCta: "Boards in Kenilworth choose Manage369 for discreet, preservation-minded service that honors their community's exclusive character. Let's connect today."
+        }
+      
+      case 'glencoe':
+        return {
+          intro: "Glencoe combines lakefront beauty with small-town charm, featuring the Chicago Botanic Garden, excellent schools, and a strong sense of community among residents who value both privacy and civic engagement. Manage369 provides specialized property management services for Glencoe's boutique condominium developments and luxury townhomes — ensuring boards benefit from personalized service, transparent stewardship, and maintenance that reflects the community's commitment to natural beauty.",
+          finalCta: "Boards in Glencoe choose Manage369 for personalized, nature-conscious service that reflects their community's values. Let's connect today."
+        }
+      
+      case 'highland park':
+        return {
+          intro: "Highland Park celebrates arts and culture with Ravinia Festival, beautiful lakefront parks, and a vibrant downtown that attracts families seeking both sophistication and community spirit. Manage369 provides specialized property management services for Highland Park's diverse condominium and townhome communities — ensuring boards benefit from culturally-aware service, transparent financial management, and maintenance that supports the community's artistic heritage.",
+          finalCta: "Boards in Highland Park choose Manage369 for culturally-aware, sophisticated service that celebrates their community's artistic spirit. Let's connect today."
+        }
+      
+      case 'lake forest':
+        return {
+          intro: "Lake Forest embodies North Shore sophistication with historic estates, Lake Forest College, and pristine forest preserves creating an atmosphere of refined elegance and natural beauty. Manage369 provides specialized property management services for Lake Forest's exclusive condominium developments and luxury communities — ensuring boards benefit from refined service, discreet financial oversight, and maintenance that preserves both architectural heritage and natural landscapes.",
+          finalCta: "Boards in Lake Forest choose Manage369 for refined, heritage-conscious service that maintains their community's sophisticated character. Let's connect today."
+        }
+      
+      case 'northbrook':
+        return {
+          intro: "Northbrook combines excellent schools with family-friendly amenities, featuring beautiful parks, the Northbrook Court shopping center, and a strong sense of community that attracts families seeking suburban excellence. Manage369 provides specialized property management services for Northbrook's growing condominium and townhome developments — ensuring boards benefit from family-focused service, transparent budgeting, and maintenance that supports the community's commitment to quality of life.",
+          finalCta: "Boards in Northbrook choose Manage369 for family-focused, quality-oriented service that enhances their community's appeal. Let's connect today."
+        }
+      
+      case 'deerfield':
+        return {
+          intro: "Deerfield offers suburban tranquility with excellent schools, beautiful parks, and the scenic Des Plaines River creating an ideal environment for families and professionals seeking peaceful living. Manage369 provides specialized property management services for Deerfield's condominium and townhome communities — ensuring boards benefit from peaceful, professional service, transparent financial management, and maintenance that preserves the area's natural beauty.",
+          finalCta: "Boards in Deerfield choose Manage369 for peaceful, professional service that maintains their community's tranquil character. Let's connect today."
+        }
+      
+      case 'buffalo grove':
+        return {
+          intro: "Buffalo Grove thrives as a diverse, family-oriented community with excellent schools, beautiful parks, and a strong commitment to maintaining its suburban character while embracing cultural diversity. Manage369 provides specialized property management services for Buffalo Grove's varied condominium and townhome developments — ensuring boards benefit from inclusive service, transparent communication, and maintenance that serves diverse community needs.",
+          finalCta: "Boards in Buffalo Grove choose Manage369 for inclusive, family-oriented service that celebrates their community's diversity. Let's connect today."
+        }
+      
+      case 'vernon hills':
+        return {
+          intro: "Vernon Hills combines modern amenities with natural beauty, featuring Cuneo Mansion and Gardens, excellent shopping at Hawthorn Hills, and a growing community of young families and professionals. Manage369 provides specialized property management services for Vernon Hills' newer condominium and townhome developments — ensuring boards benefit from modern, efficient service, transparent financial oversight, and maintenance that supports the community's growth and development.",
+          finalCta: "Boards in Vernon Hills choose Manage369 for modern, efficient service that supports their community's continued growth. Let's connect today."
+        }
+      
+      case 'libertyville':
+        return {
+          intro: "Libertyville maintains its historic charm with a vibrant downtown, beautiful lakes, and strong community traditions that create a perfect blend of small-town atmosphere and modern convenience. Manage369 provides specialized property management services for Libertyville's boutique condominium developments and townhome communities — ensuring boards benefit from tradition-honoring service, transparent stewardship, and maintenance that preserves the community's historic character.",
+          finalCta: "Boards in Libertyville choose Manage369 for tradition-honoring, community-focused service that preserves their town's historic charm. Let's connect today."
+        }
+      
+      case 'mundelein':
+        return {
+          intro: "Mundelein offers lakefront living with Diamond Lake, strong community spirit, and growing amenities that attract families seeking affordable North Shore lifestyle with small-town values. Manage369 provides specialized property management services for Mundelein's lakefront condominiums and family-oriented developments — ensuring boards benefit from value-conscious service, transparent budgeting, and maintenance that supports the community's lakefront lifestyle.",
+          finalCta: "Boards in Mundelein choose Manage369 for value-conscious, lakefront-focused service that enhances their community's appeal. Let's connect today."
+        }
+      
+      case 'lake zurich':
+        return {
+          intro: "Lake Zurich centers around its beautiful namesake lake with water activities, charming downtown, and a strong sense of community that attracts families seeking lakefront living with suburban convenience. Manage369 provides specialized property management services for Lake Zurich's lakefront condominiums and townhome communities — ensuring boards benefit from lake-focused maintenance, transparent financial oversight, and service that celebrates the community's water-centered lifestyle.",
+          finalCta: "Boards in Lake Zurich choose Manage369 for lake-focused, community-centered service that celebrates their waterfront lifestyle. Let's connect today."
+        }
+      
+      case 'barrington':
+        return {
+          intro: "Barrington combines equestrian heritage with modern sophistication, featuring horse farms, the Barrington Hills countryside, and a commitment to preserving rural character within suburban convenience. Manage369 provides specialized property management services for Barrington's unique condominium developments and luxury communities — ensuring boards benefit from heritage-conscious service, discreet financial management, and maintenance that respects the area's rural character.",
+          finalCta: "Boards in Barrington choose Manage369 for heritage-conscious, sophisticated service that honors their community's equestrian traditions. Let's connect today."
+        }
+      
+      case 'inverness':
+        return {
+          intro: "Inverness epitomizes luxury living with rolling hills, pristine golf courses, and custom estates creating an exclusive community that values privacy and natural beauty. Manage369 provides specialized property management services for Inverness's select condominium developments and luxury communities — ensuring boards benefit from exclusive, discreet service, confidential financial oversight, and maintenance that preserves the area's natural landscape.",
+          finalCta: "Boards in Inverness choose Manage369 for exclusive, discreet service that maintains their community's luxury standards. Let's connect today."
+        }
+      
+      case 'palatine':
+        return {
+          intro: "Palatine offers diverse neighborhoods with excellent transportation, strong schools, and a vibrant downtown that attracts families and commuters seeking suburban convenience with urban accessibility. Manage369 provides specialized property management services for Palatine's varied condominium and townhome developments — ensuring boards benefit from accessible, efficient service, transparent communication, and maintenance that serves diverse community needs.",
+          finalCta: "Boards in Palatine choose Manage369 for accessible, efficient service that meets their community's diverse needs. Let's connect today."
+        }
+      
+      case 'arlington heights':
+        return {
+          intro: "Arlington Heights combines historic charm with modern amenities, featuring Arlington Park racetrack heritage, vibrant downtown, and excellent transportation making it a premier northwest suburban destination. Manage369 provides specialized property management services for Arlington Heights' diverse condominium and townhome communities — ensuring boards benefit from comprehensive service, transparent financial management, and maintenance that honors both historic character and modern needs.",
+          finalCta: "Boards in Arlington Heights choose Manage369 for comprehensive, heritage-conscious service that balances tradition with modern convenience. Let's connect today."
+        }
+      
+      case 'mount prospect':
+        return {
+          intro: "Mount Prospect thrives with family-friendly neighborhoods, excellent schools, and strong community programs that create an ideal environment for raising families while maintaining suburban charm. Manage369 provides specialized property management services for Mount Prospect's family-oriented condominium and townhome developments — ensuring boards benefit from family-focused service, transparent budgeting, and maintenance that supports safe, welcoming communities.",
+          finalCta: "Boards in Mount Prospect choose Manage369 for family-focused, safety-conscious service that enhances their community's appeal to families. Let's connect today."
+        }
+      
+      case 'des plaines':
+        return {
+          intro: "Des Plaines offers convenient living with excellent transportation, diverse neighborhoods, and the scenic Des Plaines River creating opportunities for both urban convenience and natural recreation. Manage369 provides specialized property management services for Des Plaines' varied condominium developments — ensuring boards benefit from convenient, accessible service, transparent financial oversight, and maintenance that serves diverse resident needs.",
+          finalCta: "Boards in Des Plaines choose Manage369 for convenient, accessible service that meets their community's diverse transportation and lifestyle needs. Let's connect today."
+        }
+      
+      case 'park ridge':
+        return {
+          intro: "Park Ridge maintains its reputation as a premier family community with excellent schools, beautiful parks, and strong civic engagement that attracts families seeking suburban excellence with urban accessibility. Manage369 provides specialized property management services for Park Ridge's established condominium and townhome communities — ensuring boards benefit from excellence-focused service, transparent stewardship, and maintenance that maintains the community's high standards.",
+          finalCta: "Boards in Park Ridge choose Manage369 for excellence-focused, civic-minded service that maintains their community's premier reputation. Let's connect today."
+        }
+      
+      case 'niles':
+        return {
+          intro: "Niles combines cultural diversity with suburban convenience, featuring the Leaning Tower of Niles, strong community services, and neighborhoods that welcome families from many backgrounds. Manage369 provides specialized property management services for Niles' diverse condominium developments — ensuring boards benefit from culturally-sensitive service, transparent communication, and maintenance that serves multicultural community needs.",
+          finalCta: "Boards in Niles choose Manage369 for culturally-sensitive, inclusive service that celebrates their community's diversity. Let's connect today."
+        }
+      
+      case 'skokie':
+        return {
+          intro: "Skokie celebrates incredible diversity with residents from around the world, excellent schools, and strong community programs that create a welcoming environment for all families. Manage369 provides specialized property management services for Skokie's diverse condominium and townhome communities — ensuring boards benefit from inclusive service, multilingual communication support, and maintenance that serves varied cultural needs.",
+          finalCta: "Boards in Skokie choose Manage369 for inclusive, globally-minded service that celebrates their community's international character. Let's connect today."
+        }
+      
+      case 'morton grove':
+        return {
+          intro: "Morton Grove offers family-friendly living with excellent schools, beautiful parks, and a strong sense of community that attracts families seeking suburban tranquility with urban convenience. Manage369 provides specialized property management services for Morton Grove's family-oriented condominium developments — ensuring boards benefit from family-focused service, transparent budgeting, and maintenance that supports safe, welcoming neighborhoods.",
+          finalCta: "Boards in Morton Grove choose Manage369 for family-focused, community-minded service that enhances their neighborhood's family appeal. Let's connect today."
+        }
+      
+      case 'lincolnwood':
+        return {
+          intro: "Lincolnwood combines small-town charm with big-city convenience, featuring beautiful residential neighborhoods, excellent schools, and easy access to both Chicago and the North Shore. Manage369 provides specialized property management services for Lincolnwood's boutique condominium developments — ensuring boards benefit from personalized service, transparent financial management, and maintenance that preserves the community's residential character.",
+          finalCta: "Boards in Lincolnwood choose Manage369 for personalized, residential-focused service that maintains their community's small-town charm. Let's connect today."
+        }
+      
+      case 'oak park':
+        return {
+          intro: "Oak Park showcases architectural heritage with Frank Lloyd Wright homes, diverse community spirit, and progressive values that create a unique blend of historic preservation and social consciousness. Manage369 provides specialized property management services for Oak Park's historic condominium conversions and modern developments — ensuring boards benefit from preservation-minded service, transparent stewardship, and maintenance that honors architectural significance.",
+          finalCta: "Boards in Oak Park choose Manage369 for preservation-minded, socially-conscious service that honors their community's architectural and cultural heritage. Let's connect today."
+        }
+      
+      case 'river forest':
+        return {
+          intro: "River Forest epitomizes suburban elegance with tree-lined streets, architectural treasures, and a commitment to preserving its historic character while embracing modern community needs. Manage369 provides specialized property management services for River Forest's prestigious condominium developments — ensuring boards benefit from elegant, preservation-focused service, discreet financial oversight, and maintenance that honors architectural heritage.",
+          finalCta: "Boards in River Forest choose Manage369 for elegant, preservation-focused service that maintains their community's architectural distinction. Let's connect today."
+        }
+      
+      case 'forest park':
+        return {
+          intro: "Forest Park combines convenient transportation with community charm, featuring easy CTA access, diverse neighborhoods, and strong local businesses that create a welcoming environment for residents and families. Manage369 provides specialized property management services for Forest Park's accessible condominium developments — ensuring boards benefit from convenient, community-focused service, transparent communication, and maintenance that serves diverse resident needs.",
+          finalCta: "Boards in Forest Park choose Manage369 for convenient, community-focused service that enhances their neighborhood's accessibility and charm. Let's connect today."
+        }
+      
+      case 'berwyn':
+        return {
+          intro: "Berwyn celebrates its Czech heritage with Houby Day festival, diverse neighborhoods, and strong community spirit that attracts families seeking affordable living with cultural richness. Manage369 provides specialized property management services for Berwyn's diverse condominium developments — ensuring boards benefit from culturally-aware service, value-conscious budgeting, and maintenance that honors the community's heritage while serving modern needs.",
+          finalCta: "Boards in Berwyn choose Manage369 for culturally-aware, value-conscious service that celebrates their community's rich heritage. Let's connect today."
+        }
+      
+      case 'cicero':
+        return {
+          intro: "Cicero thrives with strong Latino heritage, vibrant community celebrations, and growing neighborhoods that attract families seeking affordable homeownership with cultural connections. Manage369 provides specialized property management services for Cicero's emerging condominium developments — ensuring boards benefit from culturally-sensitive service, bilingual communication support, and maintenance that serves diverse community needs.",
+          finalCta: "Boards in Cicero choose Manage369 for culturally-sensitive, bilingual service that celebrates their community's vibrant Latino heritage. Let's connect today."
+        }
+      
+      default:
+        return {
+          intro: `${areaName} offers unique community character and residential opportunities that attract discerning residents. Manage369 provides specialized property management services for ${areaName}'s condominium, HOA, and townhome communities — ensuring boards benefit from professional service, transparent reporting, and proactive local support.`,
+          finalCta: `Boards in ${areaName} choose Manage369 for professional, community-focused service. Let's connect today.`
+        }
+    }
+  }
+
+  const content = getAreaContent(area.name)
+  
+  // Get nearby communities from same region
   const nearbyAreas = serviceAreas
     .filter(a => a.region === area.region && a.id !== area.id)
-    .slice(0, 4);
-
-  // Generate detailed local storytelling content for each area
-  const getLocalStoryContent = (area: any) => {
-    const stories = {
-      // Chicago (Core & Near-North)
-      'downtown-chicago': 'In the heart of America\'s third-largest city, downtown Chicago represents the pinnacle of urban living. From the iconic Willis Tower casting its shadow over bustling LaSalle Street to the gleaming residential towers that line the Chicago River, this is where Chicago\'s most discerning residents call home. The Loop\'s converted office buildings have become some of the city\'s most sought-after condominiums, while luxury high-rises near Millennium Park offer residents front-row seats to the city\'s cultural heartbeat. Here, where the "L" trains create a symphony of urban life and Lake Michigan stretches endlessly to the horizon, property management requires more than expertise—it demands an understanding of the sophisticated lifestyle that downtown living represents. Manage369 has earned the trust of downtown Chicago boards not just through our 18+ years of experience, but through our deep appreciation for what it means to manage properties where residents expect nothing less than perfection. From coordinating with world-class concierge services to managing the complex building systems that keep these architectural marvels running smoothly, we understand that downtown Chicago isn\'t just an address—it\'s a statement. Our 24/7 emergency response isn\'t just a service; it\'s a necessity in a neighborhood that never sleeps, where a single elevator outage or HVAC failure can impact hundreds of residents who depend on seamless building operations.',
-      'river-north': 'River North tells the story of Chicago\'s transformation from industrial powerhouse to cultural epicenter. Walk down any street in this vibrant neighborhood and you\'ll see the narrative written in brick and steel: massive warehouse buildings that once housed the city\'s manufacturing might now shelter some of Chicago\'s most coveted loft conversions. These aren\'t just apartments—they\'re pieces of living history, where 14-foot ceilings and original timber beams remind residents of the neighborhood\'s gritty past while floor-to-ceiling windows frame views of the glittering Magnificent Mile. The contrast is striking and intentional: industrial authenticity meets luxury retail, where residents can walk from their converted loft to world-class shopping, dining, and entertainment. Managing properties in River North requires an appreciation for this duality. The historic buildings demand specialized knowledge of older building systems and preservation requirements, while the modern towers require cutting-edge technology and contemporary amenities management. Manage369 has built relationships with craftsmen who understand how to maintain the character of these converted spaces while ensuring they meet modern living standards. We know which vendors can work with the unique challenges of buildings that were never designed for residential use, and we understand the community of residents who chose River North specifically for its authentic, urban character.',
-      'gold-coast': 'The Gold Coast isn\'t just a neighborhood—it\'s Chicago\'s crown jewel, where old money meets new luxury along the pristine shores of Lake Michigan. This is where Chicago\'s elite have lived for over a century, in magnificent mansions that have been carefully converted into some of the city\'s most exclusive condominiums. Walking down Astor Street feels like stepping into a different era, where limestone facades and wrought-iron details speak to an age when craftsmanship was an art form. These aren\'t just buildings; they\'re architectural treasures that require stewardship, not just management. The residents who call the Gold Coast home expect a level of service that matches their surroundings—discretion, sophistication, and an understanding that every detail matters. From the doorman\'s greeting to the maintenance of century-old elevators, everything must reflect the neighborhood\'s prestigious reputation. Manage369 has earned the trust of Gold Coast boards because we understand that managing these properties isn\'t just about keeping the lights on—it\'s about preserving a legacy. We work with specialized craftsmen who understand historic preservation, coordinate with vendors who share our commitment to excellence, and maintain relationships with service providers who understand that in the Gold Coast, "good enough" simply isn\'t good enough. When a Gold Coast board chooses Manage369, they\'re choosing partners who understand that they\'re not just managing a building—they\'re stewarding a piece of Chicago history.',
-      'streeterville': 'Streeterville pulses with the energy of a neighborhood that perfectly balances urban sophistication with lakefront tranquility. Bounded by the Chicago River, Lake Michigan, and the bustling downtown core, this dynamic district offers residents the best of all worlds: stunning lake views from high-rise condominiums, world-class medical facilities at Northwestern Memorial Hospital, and the entertainment excitement of Navy Pier just steps away. The neighborhood\'s modern towers house everyone from medical professionals who work at the nearby hospitals to business executives who appreciate the quick commute to the Loop. But Streeterville\'s appeal goes beyond convenience—it\'s about lifestyle. Residents here can start their morning with a lakefront jog, grab lunch at one of the area\'s acclaimed restaurants, and end their day watching fireworks over Navy Pier from their private balcony. Managing properties in Streeterville means understanding this fast-paced, sophisticated lifestyle. Our residents expect seamless building operations because their own lives operate at the speed of the city around them. Manage369 has built our reputation in Streeterville on reliability and responsiveness—when a resident calls with an issue, they know we understand that their time is valuable and their expectations are high. Our 24/7 emergency response isn\'t just a service feature; it\'s essential in a neighborhood where residents work demanding schedules and need to trust that their home will be a sanctuary of comfort and efficiency.',
-      'old-town': 'Old Town is where Chicago\'s soul lives, in tree-lined streets where Victorian-era brownstones stand as testaments to the city\'s resilience and character. This is the neighborhood that survived the Great Chicago Fire and emerged stronger, where cobblestone alleys and gas-lit streets create an atmosphere that feels both historic and timeless. The brownstones that line these streets aren\'t just buildings—they\'re pieces of Chicago\'s story, carefully converted into luxury condominiums that honor their 19th-century origins while providing modern comfort. Living in Old Town means being part of Chicago\'s cultural heartbeat: Second City comedy club has launched countless careers just blocks away, the Old Town Art Fair draws visitors from around the world, and Lincoln Park\'s green spaces provide an urban oasis. The residents who choose Old Town appreciate authenticity—they want the character that comes with original hardwood floors and decorative fireplaces, but they also expect modern amenities and flawless building operations. Managing properties in Old Town requires a delicate balance: preserving the historic character that makes these buildings special while ensuring they meet contemporary living standards. Manage369 has earned the trust of Old Town boards because we understand this balance. We work with craftsmen who specialize in historic preservation, coordinate with vendors who appreciate the unique challenges of older buildings, and maintain the kind of personal relationships that reflect the neighborhood\'s close-knit community feel.',
-      'lincoln-park': 'Lincoln Park represents the perfect synthesis of Chicago living: historic charm meets modern sophistication in one of the city\'s most coveted neighborhoods. Here, tree-lined streets showcase some of Chicago\'s most beautiful architecture, from meticulously restored Victorian brownstones to sleek contemporary high-rises that offer stunning lake and park views. The neighborhood takes its name from the 1,200-acre Lincoln Park that serves as Chicago\'s front yard, where residents can enjoy everything from the Lincoln Park Zoo to miles of lakefront trails. This is also an intellectual hub, home to DePaul University and a community of residents who value both culture and convenience. The dining scene along Lincoln Avenue and Halsted Street rivals any in the city, while the proximity to downtown makes it ideal for professionals who want urban access without sacrificing neighborhood character. Managing properties in Lincoln Park means serving a sophisticated, educated community that expects excellence in every detail. These residents have chosen one of Chicago\'s most desirable neighborhoods, and they expect their buildings to reflect that choice. Manage369 has built lasting relationships with Lincoln Park boards because we understand what makes this community special. We know that a Lincoln Park resident isn\'t just looking for a place to live—they\'re investing in a lifestyle that balances urban sophistication with neighborhood charm, and our management approach reflects that understanding.',
-      'lakeview': 'Lakeview embodies the spirit of Chicago living, where vintage three-flats with classic bay windows stand alongside modern condominiums, all united by their proximity to both Wrigley Field and the stunning lakefront. This is a neighborhood that celebrates its contradictions: quiet residential streets just blocks from the roar of Cubs fans, historic architecture next to cutting-edge developments, and a community that\'s both deeply rooted in tradition and constantly evolving. On summer evenings, you can feel the energy building as fans stream toward Wrigley Field, while just a few blocks east, residents enjoy peaceful lakefront walks along one of Chicago\'s most beautiful stretches of shoreline. The neighborhood\'s diversity is its strength—young professionals, families, students, and longtime residents all find their place in Lakeview\'s welcoming community. Managing properties in Lakeview means understanding this dynamic mix. Our buildings house everyone from Cubs season ticket holders who love the game-day energy to families who appreciate the excellent schools and parks, to young professionals who want easy access to downtown but prefer the neighborhood feel of Lakeview. Manage369 has earned the trust of Lakeview boards because we understand that this neighborhood isn\'t just about location—it\'s about community. We know that a Lakeview resident values authenticity, appreciates character, and expects their building management to reflect the same commitment to quality that makes this neighborhood special.',
-      'wicker-park': 'Wicker Park is where Chicago\'s creative soul comes alive, in a neighborhood that has transformed from industrial district to artistic haven while never losing its edge or authenticity. The massive brick buildings that once housed factories and warehouses now shelter some of the city\'s most sought-after loft conversions, where soaring ceilings and original architectural details provide the perfect backdrop for the artists, musicians, and entrepreneurs who call this neighborhood home. This is where Chicago\'s music scene was born and continues to thrive, where independent boutiques line Division Street and Milwaukee Avenue, and where the spirit of creativity infuses everything from the local coffee shops to the vibrant street art that decorates building walls. The residents who choose Wicker Park aren\'t just looking for a place to live—they\'re seeking a community that celebrates individuality and creativity. Managing properties in Wicker Park requires an understanding of this unique culture. Our residents value authenticity over luxury, character over conformity, and community over convenience. They\'ve chosen a neighborhood that prizes creativity and independence, and they expect their building management to reflect those same values. Manage369 has earned the trust of Wicker Park boards because we understand that managing properties here isn\'t just about maintaining buildings—it\'s about supporting a community that has chosen to live differently, to value art and music and creativity as much as square footage and amenities.',
-      'bucktown': 'Bucktown tells the story of Chicago\'s evolution, where a former industrial neighborhood has blossomed into one of the city\'s most desirable communities without losing its authentic character. The elevated 606 trail, built on former railway lines, now serves as the neighborhood\'s green spine, connecting residents to parks, art installations, and each other in a way that perfectly captures Bucktown\'s community spirit. Here, historic single-family homes have been thoughtfully converted into condominiums that preserve their original charm while providing modern comfort, and new townhome developments blend seamlessly with the neighborhood\'s established character. The dining scene along North Avenue and Damen Avenue has put Bucktown on Chicago\'s culinary map, while local boutiques and galleries reflect the creative energy that has always defined this community. This is a neighborhood that attracts families who want urban convenience with a strong sense of community, young professionals who appreciate authenticity over flash, and longtime residents who have watched Bucktown evolve while maintaining its essential character. Managing properties in Bucktown means serving a community that values both progress and preservation. Our residents have chosen a neighborhood that successfully balances growth with character, and they expect their building management to reflect that same thoughtful approach. Manage369 has built lasting relationships with Bucktown boards because we understand what makes this community special—it\'s not just about the buildings, it\'s about the people who have chosen to build their lives here.',
-      'logan-square': 'Logan Square represents Chicago\'s artistic renaissance, where historic boulevards lined with vintage courtyard buildings provide the backdrop for one of the city\'s most vibrant creative communities. The neighborhood\'s tree-lined streets showcase some of Chicago\'s most beautiful early 20th-century architecture, from elegant graystones to distinctive courtyard buildings that were designed to create community spaces where neighbors could gather and connect. Today, those same principles of community and creativity continue to define Logan Square, where local breweries have put the neighborhood on Chicago\'s craft beer map, where independent music venues showcase emerging talent, and where the Logan Square Farmers Market has become a weekly celebration of local culture and community. The residents who choose Logan Square are drawn to its authentic character and creative energy—they appreciate neighborhoods that have evolved organically rather than being manufactured, and they value community connections over corporate amenities. Managing properties in Logan Square means understanding this unique culture and supporting the community that has made this neighborhood special. Our residents have chosen Logan Square because it represents something real and authentic in an increasingly homogenized city, and they expect their building management to reflect those same values. Manage369 has earned the trust of Logan Square boards because we understand that managing properties here isn\'t just about maintaining buildings—it\'s about supporting a community that has chosen to prioritize creativity, authenticity, and connection over convenience and conformity.',
-      
-      // Inner North / Lakeshore Communities
-      'edgewater': 'Edgewater stands as one of Chicago\'s most beautifully diverse communities, where the stunning lakefront serves as a backdrop for a neighborhood that celebrates both its architectural heritage and its multicultural character. The historic high-rises that line Sheridan Road offer some of the most spectacular lake views in the city, while vintage courtyard buildings throughout the neighborhood showcase the elegant design principles of early 20th-century Chicago architecture. This is a community where over 40 languages are spoken, where the Edgewater Beach Apartments represent one of Chicago\'s most significant architectural landmarks, and where residents can enjoy everything from the tranquil beauty of Loyola Beach to the vibrant energy of the neighborhood\'s diverse dining and shopping districts. The lakefront trail that runs through Edgewater connects residents to miles of green space and recreational opportunities, while the neighborhood\'s proximity to both downtown and the northern suburbs makes it ideal for residents who want the best of urban and suburban living. Managing properties in Edgewater means serving a sophisticated, internationally-minded community that values both quality and diversity. Our residents have chosen a neighborhood that offers stunning natural beauty, rich cultural diversity, and architectural significance, and they expect their building management to reflect that same commitment to excellence. Manage369 has built lasting relationships with Edgewater boards because we understand that this community represents the best of Chicago living—where beautiful architecture, natural amenities, and cultural diversity come together to create something truly special.',
-      'rogers-park': 'Rogers Park embodies Chicago\'s promise as a city of neighborhoods, where incredible diversity and academic energy create one of the most vibrant communities in the city. Home to Loyola University Chicago and residents who speak over 80 languages, this lakefront neighborhood represents the global nature of modern Chicago while maintaining the intimate feel of a true community. The historic apartment buildings that line the tree-lined streets near the lake have been home to generations of students, families, and professionals who appreciate the neighborhood\'s authentic character and affordable charm. From the beautiful lakefront parks to the bustling commercial districts along Devon Avenue and Clark Street, Rogers Park offers residents a rich tapestry of cultural experiences, educational opportunities, and community connections. This is a neighborhood where a morning walk might take you past Loyola\'s Gothic Revival buildings, through peaceful lakefront parks, and into commercial districts that reflect the incredible diversity of the community. Managing properties in Rogers Park means serving a community that values authenticity, diversity, and education. Our residents have chosen a neighborhood that celebrates differences while building connections, and they expect their building management to reflect those same values of inclusivity and community support. Manage369 has earned the trust of Rogers Park boards because we understand that this neighborhood isn\'t just about buildings—it\'s about supporting a community that represents the best of what Chicago can be when diversity, education, and neighborhood character come together.',
-      'uptown': 'Uptown is experiencing one of Chicago\'s most remarkable neighborhood transformations, where historic grandeur meets contemporary renewal in a community that has never lost its cultural soul. The magnificent high-rises that line the lakefront showcase the neighborhood\'s 1920s heyday, when Uptown was known as Chicago\'s entertainment capital, home to grand theaters, elegant hotels, and a thriving music scene that helped define American popular culture. Today, those same buildings are being restored to their original splendor while new developments add modern amenities and contemporary style. The Uptown Theatre, the Aragon Ballroom, and Green Mill Cocktail Lounge continue to anchor a music scene that spans from jazz to indie rock, while the lakefront location provides residents with stunning views and easy access to Chicago\'s most beautiful recreational areas. This is a neighborhood in transition, where longtime residents who remember Uptown\'s cultural heyday work alongside newcomers who are drawn to its authentic character and artistic energy. Managing properties in Uptown means understanding both the neighborhood\'s rich history and its bright future. Our residents have chosen a community that values cultural authenticity, artistic expression, and historic preservation, and they expect their building management to support the ongoing renaissance while honoring the character that makes Uptown special. Manage369 has earned the trust of Uptown boards because we understand that managing properties here means being part of a community\'s renewal story.',
-      'lincoln-square': 'Lincoln Square feels like a piece of old-world Europe transplanted to the heart of Chicago, where German heritage and family-friendly charm create one of the city\'s most distinctive and welcoming neighborhoods. The tree-lined streets showcase beautiful vintage courtyard buildings and single-family homes that reflect the neighborhood\'s European roots, while Lincoln Avenue\'s charming commercial district offers everything from traditional German restaurants to contemporary boutiques and cafes. This is a community that celebrates its heritage—the annual Oktoberfest celebration draws visitors from across the city, while the Old Town School of Folk Music serves as a cultural anchor that reflects the neighborhood\'s commitment to arts and community education. The Giddings Plaza provides a European-style town square where neighbors gather for farmers markets and community events, while nearby parks and playgrounds make this an ideal neighborhood for families. Managing properties in Lincoln Square means serving a community that values tradition, family, and neighborhood character. Our residents have chosen a neighborhood that successfully maintains its European charm while providing all the amenities of modern urban living, and they expect their building management to reflect that same commitment to quality and community. Manage369 has built lasting relationships with Lincoln Square boards because we understand that this neighborhood isn\'t just about buildings—it\'s about preserving and supporting a community that has maintained its unique character and strong sense of identity.',
-      'ravenswood': 'Ravenswood represents the ideal of Chicago neighborhood living, where tree-lined streets, beautiful architecture, and strong community connections create an oasis of residential tranquility just minutes from downtown. This is a neighborhood that has successfully preserved its quiet, family-friendly character while adapting to the needs of modern urban living. The historic single-family homes that have been thoughtfully converted into condominiums maintain their original charm while providing contemporary comfort, and new townhome developments blend seamlessly with the established architectural character. The Brown Line provides easy access to downtown, while the neighborhood\'s tree-canopied streets and well-maintained sidewalks make it perfect for walking, biking, and enjoying the kind of community connections that define great neighborhoods. Ravenswood Manor, with its distinctive architecture and strong homeowner association, exemplifies the neighborhood\'s commitment to maintaining high standards and community pride. Managing properties in Ravenswood means serving residents who have chosen quality of life over urban excitement, community connections over anonymous city living. Our residents appreciate the neighborhood\'s quiet streets, excellent schools, and strong sense of community, and they expect their building management to reflect those same values of quality, reliability, and personal attention. Manage369 has earned the trust of Ravenswood boards because we understand that this neighborhood represents what many people are looking for in urban living—the convenience of the city with the character and community of a small town.',
-      'north-center': 'North Center has earned its reputation as one of Chicago\'s most desirable family neighborhoods, where the perfect combination of urban convenience and suburban charm creates an ideal environment for residents who want the best of both worlds. The Southport Corridor serves as the neighborhood\'s main street, lined with boutique shops, family-friendly restaurants, and the iconic Music Box Theatre, which has been showing independent and classic films since 1929. The tree-lined residential streets showcase a beautiful mix of vintage buildings and modern developments, all within walking distance of excellent schools, parks, and recreational facilities. This is a neighborhood where families can put down roots while maintaining easy access to downtown Chicago, where children can walk safely to school while parents enjoy sophisticated dining and entertainment options. The proximity to Lincoln Park and the lakefront provides residents with access to some of Chicago\'s best recreational amenities, while the strong sense of community ensures that neighbors know each other and work together to maintain the neighborhood\'s high standards. Managing properties in North Center means serving a sophisticated, family-oriented community that has high expectations for quality and service. Our residents have chosen one of Chicago\'s most sought-after neighborhoods, and they expect their building management to reflect the same commitment to excellence that defines their community. Manage369 has built lasting relationships with North Center boards because we understand that this neighborhood represents a lifestyle choice—residents who want urban sophistication with neighborhood character, convenience with community, and quality in every aspect of their living experience.',
-      'albany-park': 'Albany Park stands as one of Chicago\'s most authentically diverse neighborhoods, where the North Branch of the Chicago River provides a scenic backdrop for a community that celebrates its multicultural character while embracing thoughtful development and renewal. This is a neighborhood where over 40 languages are spoken, where immigrants from around the world have found their American dream, and where longtime residents work alongside newcomers to build a stronger community. The historic courtyard buildings that line the tree-shaded streets reflect the neighborhood\'s early 20th-century development, while new construction and thoughtful renovations show Albany Park\'s commitment to growth that respects its character. The North Branch Trail provides residents with access to miles of scenic walking and biking paths, while the diverse commercial districts along Lawrence Avenue and Kedzie Avenue offer authentic cuisine, services, and shopping that reflect the neighborhood\'s global character. This is a community in transition, where rising property values reflect growing recognition of Albany Park\'s assets: beautiful architecture, river access, diverse culture, and strong community organizations that work to ensure development benefits longtime residents as well as newcomers. Managing properties in Albany Park means serving a community that values diversity, authenticity, and inclusive growth. Our residents have chosen a neighborhood that represents Chicago\'s multicultural promise, and they expect their building management to reflect those same values of respect, inclusion, and community support. Manage369 has earned the trust of Albany Park boards because we understand that this neighborhood isn\'t just about buildings—it\'s about supporting a community that is working to ensure that growth and change benefit everyone.',
-      'irving-park': 'Irving Park embodies the story of Chicago\'s immigrant communities, where Polish heritage and working-class values have created a neighborhood that successfully balances tradition with progress, community with growth. The vintage buildings that line the tree-shaded streets showcase the solid construction and practical design that characterized early Chicago development, while new construction and thoughtful renovations reflect the neighborhood\'s ongoing evolution. Independence Park serves as the community\'s recreational heart, providing residents with sports facilities, playgrounds, and green space that bring neighbors together and create the kind of community connections that define great neighborhoods. The Blue Line provides easy access to downtown and O\'Hare Airport, making Irving Park ideal for residents who want neighborhood character with urban convenience. The commercial districts along Irving Park Road and Milwaukee Avenue reflect the neighborhood\'s Polish heritage while embracing new businesses that serve the community\'s evolving demographics. This is a neighborhood where longtime residents who remember when Irving Park was primarily Polish work alongside newcomers who are drawn to its authentic character, affordable housing, and strong sense of community. Managing properties in Irving Park means serving residents who value authenticity, community, and practical quality over flash and luxury. Our residents have chosen a neighborhood that represents honest Chicago living—good value, strong community, and the kind of neighborhood character that comes from generations of residents who take pride in their community. Manage369 has earned the trust of Irving Park boards because we understand that this neighborhood values substance over style, community over convenience, and the kind of reliable, personal service that reflects the neighborhood\'s working-class values.',
-      'avondale': 'Avondale is experiencing one of Chicago\'s most dramatic neighborhood transformations, where industrial heritage meets contemporary development in a community that is redefining what urban renewal can look like when it\'s done thoughtfully and inclusively. The massive brick buildings that once housed factories and warehouses are being converted into some of the city\'s most sought-after loft spaces, while new townhome developments and modern apartment buildings add contemporary style and amenities. This is a neighborhood where you can still see the bones of Chicago\'s industrial past—the wide streets that were designed for truck traffic, the solid brick buildings that were built to last, the proximity to transportation infrastructure that made this area vital to Chicago\'s economy. Today, those same assets are attracting residents who appreciate authentic character, convenient location, and the excitement of being part of a neighborhood\'s transformation story. The Blue Line provides easy access to downtown and O\'Hare, while the neighborhood\'s central location makes it a convenient base for exploring all of Chicago. The growing dining and entertainment scene reflects Avondale\'s evolving character, while community organizations work to ensure that longtime residents benefit from the neighborhood\'s growth. Managing properties in Avondale means serving a community that is actively shaping its own future. Our residents have chosen a neighborhood that represents opportunity and potential, and they expect their building management to support the kind of thoughtful development that makes neighborhoods stronger. Manage369 has earned the trust of Avondale boards because we understand that managing properties in a transforming neighborhood requires flexibility, vision, and a commitment to supporting positive change.',
-      
-      // Outer North Shore & Northwest Suburbs
-      'evanston': 'Evanston represents the perfect synthesis of academic excellence, cultural diversity, and lakefront beauty, where Northwestern University\'s Gothic Revival campus provides the intellectual foundation for one of Chicago\'s most progressive and sophisticated communities. This is a city that has always prided itself on being ahead of its time—the first to grant women the right to vote, home to the Woman\'s Christian Temperance Union, and a community that has consistently championed social justice and educational excellence. The magnificent lakefront provides residents with miles of beaches, parks, and recreational opportunities, while the historic downtown district offers sophisticated shopping, dining, and cultural amenities that rival any in the region. From the elegant high-rises near the Northwestern campus to the historic mansions that line the tree-shaded streets, Evanston\'s architecture reflects both its academic heritage and its commitment to preserving the character that makes this community special. The diversity that defines modern Evanston—economic, racial, and cultural—creates a richness of experience that attracts residents who value both intellectual stimulation and community engagement. Managing properties in Evanston means serving a sophisticated, educated community that expects excellence in every aspect of their living experience. Our residents have chosen a community that represents the best of suburban living with urban sophistication, and they expect their building management to reflect those same high standards. Manage369 has earned the trust of Evanston boards because we understand that this community isn\'t just about location—it\'s about values, education, diversity, and a commitment to making their community better for everyone.',
-      'wilmette': 'Wilmette embodies the North Shore ideal, where lakefront elegance meets small-town charm in a community that has successfully preserved its character while adapting to the needs of modern families. The village\'s crown jewel is its stunning lakefront, where Gillson Park and the harbor provide residents with a private oasis of beaches, sailing, and recreational opportunities that feel like a world away from urban life. The tree-lined streets showcase some of the North Shore\'s most beautiful architecture, from elegant lakefront estates to charming colonial and Tudor-style homes that reflect the community\'s commitment to architectural excellence and historic preservation. The village\'s compact downtown district along Green Bay Road offers sophisticated shopping and dining in a walkable environment that encourages community connections and neighborhood interaction. Wilmette\'s excellent schools have long been a draw for families who want the best educational opportunities for their children, while the community\'s strong civic engagement ensures that the village maintains the high standards that have made it one of the most desirable places to live in the Chicago area. Managing properties in Wilmette means serving residents who have chosen one of the North Shore\'s most prestigious communities and who expect their living environment to reflect that choice. Our residents value quality, character, and community, and they expect their building management to provide the kind of sophisticated, personal service that matches their lifestyle and expectations. Manage369 has built lasting relationships with Wilmette boards because we understand that this community represents a lifestyle choice—residents who want the best of suburban living with easy access to Chicago, who value education and community engagement, and who expect excellence in every aspect of their living experience.',
-      'winnetka': 'Winnetka stands as the crown jewel of Chicago\'s North Shore, where understated elegance and exceptional quality create one of America\'s most prestigious residential communities. This is a village where privacy and discretion are valued as much as beauty and excellence, where the magnificent lakefront estates and tree-lined streets reflect a commitment to preserving the character and values that have made Winnetka synonymous with the finest in suburban living. The village\'s compact downtown area along Green Bay Road offers sophisticated shopping and services in an environment that feels more like a private club than a commercial district, while the stunning lakefront provides residents with private beaches and recreational opportunities that are among the finest in the region. Winnetka\'s schools are consistently ranked among the best in the nation, attracting families who want the finest educational opportunities for their children, while the community\'s strong commitment to civic engagement ensures that the village maintains the high standards that have defined it for generations. The architecture throughout Winnetka reflects the community\'s commitment to excellence—from the grand lakefront estates designed by renowned architects to the charming village homes that showcase the finest in residential design. Managing properties in Winnetka means serving residents who have chosen one of America\'s most exclusive communities and who expect their living environment to reflect that choice. Our residents value privacy, quality, and discretion, and they expect their building management to provide the kind of sophisticated, personal service that matches their lifestyle and maintains the community\'s reputation for excellence. Manage369 has earned the trust of Winnetka boards because we understand that this community represents the pinnacle of suburban living, where every detail matters and where service must be both exceptional and discreet.',
-      'kenilworth': 'Kenilworth represents the ultimate in exclusive North Shore living, where an intimate village atmosphere and uncompromising commitment to excellence create one of Chicago\'s most distinctive and prestigious communities. This is the smallest incorporated village in Illinois, a community where every resident is known and where the commitment to maintaining exceptional standards is shared by all. The magnificent lakefront estates that line the village\'s tree-shaded streets represent some of the finest residential architecture in the region, while the village\'s compact size ensures that every property contributes to the overall character and beauty of the community. The lakefront provides residents with private beaches and recreational opportunities that feel like a private resort, while the village\'s location provides easy access to Chicago while maintaining the privacy and tranquility that define Kenilworth living. The community\'s commitment to excellence extends to every aspect of village life—from the meticulously maintained streets and parks to the exceptional municipal services that ensure Kenilworth remains one of the most desirable places to live in the Chicago area. Managing properties in Kenilworth means serving residents who have chosen the most exclusive community on the North Shore and who expect their living environment to reflect that choice. Our residents value privacy, quality, and the kind of personal attention that comes with living in a small, close-knit community, and they expect their building management to provide service that matches those expectations. Manage369 has earned the trust of Kenilworth boards because we understand that this community represents something truly special—a place where excellence is not just expected but required, where privacy and discretion are paramount, and where every detail must reflect the community\'s commitment to being the finest residential community in the region.',
-      'glencoe': 'Glencoe represents the perfect harmony between natural beauty and refined living, where the stunning lakefront and proximity to the Chicago Botanic Garden create an environment that feels more like a private estate than a suburban community. This is a village that has always understood the value of preserving natural beauty while providing the finest in residential amenities and services. The magnificent lakefront provides residents with miles of private beaches and recreational opportunities, while the village\'s tree-lined streets showcase some of the North Shore\'s most beautiful architecture, from elegant lakefront estates to charming village homes that reflect the community\'s commitment to architectural excellence and environmental harmony. The proximity to the Chicago Botanic Garden provides residents with access to one of the world\'s finest horticultural displays, while the village\'s own parks and green spaces create an environment where nature and community life blend seamlessly. Glencoe\'s excellent schools and strong civic engagement attract families who want the best for their children while living in a community that values both education and environmental stewardship. The village\'s commitment to preserving its natural character while providing modern amenities creates a living environment that is both sophisticated and sustainable. Managing properties in Glencoe means serving residents who have chosen a community that represents the finest in North Shore living, where natural beauty and refined character create an unparalleled quality of life. Our residents value excellence, environmental stewardship, and the kind of community engagement that ensures Glencoe remains one of the most desirable places to live in the Chicago area. Manage369 has earned the trust of Glencoe boards because we understand that this community represents a commitment to living well while preserving the natural beauty that makes it special.',
-      'highland-park': 'Highland Park stands as the cultural heart of Chicago\'s North Shore, where the world-renowned Ravinia Festival creates a summer soundtrack that defines one of America\'s most sophisticated suburban communities. This is a city where culture and natural beauty combine to create an unparalleled quality of life, where residents can enjoy world-class musical performances in their own backyard while living in one of the region\'s most beautiful lakefront communities. The magnificent ravines that give the city its name create a dramatic natural landscape that sets Highland Park apart from other North Shore communities, while the stunning lakefront provides residents with beaches, parks, and recreational opportunities that rival any resort destination. The city\'s commitment to the arts extends far beyond Ravinia—from the Highland Park Country Club to the numerous galleries and cultural institutions that call the city home, this is a community that understands and values cultural excellence. The architecture throughout Highland Park reflects this commitment to excellence, from the grand lakefront estates designed by renowned architects to the charming neighborhoods that showcase the finest in residential design and planning. The city\'s excellent schools and strong civic engagement attract families who want the best educational and cultural opportunities for their children, while the sophisticated downtown district provides shopping, dining, and services that match the community\'s refined character. Managing properties in Highland Park means serving residents who have chosen one of the North Shore\'s most culturally sophisticated communities and who expect their living environment to reflect that choice. Our residents value excellence, cultural engagement, and the kind of refined lifestyle that comes with living in a community that has made culture and quality of life its highest priorities. Manage369 has earned the trust of Highland Park boards because we understand that this community represents more than just prestigious addresses—it represents a commitment to living well, to supporting the arts, and to maintaining the kind of community that enriches the lives of everyone who calls it home.',
-      'highwood': 'Highwood brings authentic character and cultural richness to Chicago\'s North Shore, where Italian heritage and small-town charm create a community that feels both intimate and sophisticated. This is a city where family-owned restaurants serve authentic Italian cuisine that has been passed down through generations, where community festivals celebrate the cultural diversity that makes Highwood special, and where neighbors know each other by name. The city\'s compact size and walkable downtown create an environment that encourages community connections and neighborhood interaction, while the proximity to the lakefront provides residents with access to beaches and recreational opportunities that rival any in the region. Highwood\'s unique character comes from its authentic cultural heritage—this is not a manufactured community but one that has grown organically around the families and businesses that have called it home for generations. The architecture throughout the city reflects this authentic character, from the historic buildings that house family businesses to the modern developments that provide contemporary amenities while respecting the community\'s established character. The city\'s excellent location provides easy access to Chicago and the rest of the North Shore while maintaining the intimate, small-town atmosphere that makes Highwood special. Managing properties in Highwood means serving residents who have chosen a community that values authenticity, cultural heritage, and the kind of personal connections that come with small-town living. Our residents appreciate the city\'s unique character and expect their building management to provide the kind of personal, attentive service that reflects the community\'s values. Manage369 has earned the trust of Highwood boards because we understand that this community represents something increasingly rare—a place where cultural heritage is preserved and celebrated, where neighbors know each other, and where community spirit creates a quality of life that cannot be manufactured or replicated.',
-      'lake-forest': 'Lake Forest represents the pinnacle of North Shore elegance, where historic preservation and contemporary luxury combine to create one of America\'s most prestigious residential communities. This is a city that has successfully preserved its character and charm while adapting to the needs of modern families, where the magnificent estates and tree-lined streets reflect a commitment to excellence that has defined the community for over a century. The city\'s crown jewel is Market Square, one of America\'s first planned shopping centers, designed by Howard Van Doren Shaw in 1916 and still serving as the heart of the community\'s commercial and social life. Lake Forest College adds intellectual vitality to the community, while the city\'s commitment to historic preservation ensures that the architectural heritage that makes Lake Forest special is protected for future generations. The stunning lakefront provides residents with private beaches and recreational opportunities that feel like a private resort, while the city\'s extensive park system and forest preserves create an environment where natural beauty and refined living exist in perfect harmony. The city\'s excellent schools and strong civic engagement attract families who want the finest educational opportunities for their children while living in a community that represents the best of American suburban planning and design. Managing properties in Lake Forest means serving residents who have chosen one of America\'s most prestigious communities and who expect their living environment to reflect that choice. Our residents value excellence, historic preservation, and the kind of refined lifestyle that comes with living in a community that has made quality and character its highest priorities. Manage369 has earned the trust of Lake Forest boards because we understand that this community represents more than just prestigious addresses—it represents a commitment to preserving the finest in American residential design and community planning while providing the amenities and services that modern families expect.',
-      'lake-bluff': 'Lake Bluff offers the ultimate in North Shore privacy and natural beauty, where dramatic bluffs overlooking Lake Michigan create one of the region\'s most spectacular residential settings. This is a community that has successfully preserved its small-village character while providing the amenities and services that attract discerning residents who value both privacy and quality. The city\'s unique topography—perched on bluffs high above the lake—provides residents with stunning views and a sense of separation from the bustle of urban life, while the charming downtown district offers sophisticated shopping and dining in an intimate, walkable environment. The city\'s commitment to preserving its natural character is evident in the extensive park system and forest preserves that protect the bluffs and ravines that give Lake Bluff its distinctive character. The architecture throughout the city reflects this commitment to harmony with the natural environment, from the historic lakefront estates that take advantage of the spectacular views to the newer developments that blend seamlessly with the established character of the community. Lake Bluff\'s excellent schools and strong civic engagement attract families who want the finest educational opportunities for their children while living in a community that values both privacy and community engagement. The city\'s small size ensures that residents know their neighbors and that community leaders are accessible and responsive to residents\' needs and concerns. Managing properties in Lake Bluff means serving residents who have chosen one of the North Shore\'s most exclusive and naturally beautiful communities and who expect their living environment to reflect that choice. Our residents value privacy, natural beauty, and the kind of personal attention that comes with living in a small, close-knit community. Manage369 has earned the trust of Lake Bluff boards because we understand that this community represents something increasingly rare—a place where natural beauty is preserved and protected, where privacy is respected, and where community character is maintained through the active engagement of residents who care deeply about their community.',
-      'glenview': 'Glenview represents the ideal of modern suburban living, where thoughtful planning and community pride have created one of Chicago\'s most desirable residential communities. This is a village that has successfully balanced growth with character, where new developments like The Glen shopping and entertainment district provide world-class amenities while established neighborhoods maintain the tree-lined charm that has always defined Glenview living. The village\'s excellent schools consistently rank among the best in the state, attracting families who want the finest educational opportunities for their children, while the extensive park system and recreational facilities provide residents with opportunities for active, healthy living. From the elegant homes in the historic districts to the modern condominiums and townhomes that provide contemporary amenities, Glenview offers housing options that appeal to residents at every stage of life. The village\'s strategic location provides easy access to Chicago and O\'Hare Airport while maintaining the suburban character that makes it an ideal place to raise a family or enjoy retirement. The Metra train service connects residents to downtown Chicago in just 30 minutes, while the village\'s own commercial districts provide shopping, dining, and services that meet residents\' daily needs. Glenview\'s strong civic engagement and community pride are evident in everything from the well-maintained streets and parks to the active volunteer organizations that make the village a better place for everyone. Managing properties in Glenview means serving residents who have chosen one of the Chicago area\'s most well-planned and well-managed communities and who expect their building management to reflect those same high standards. Our residents value quality, reliability, and the kind of professional service that matches their lifestyle and expectations. Manage369 has earned the trust of Glenview boards because we understand that this community represents the best of suburban living—excellent schools, beautiful neighborhoods, convenient location, and the kind of community engagement that makes a place feel like home.',
-      'northbrook': 'Northbrook embodies the success of thoughtful suburban planning, where excellent schools, beautiful neighborhoods, and outstanding recreational facilities combine to create one of Chicago\'s most family-friendly communities. This is a village that has earned its reputation as an ideal place to raise a family, where the excellent school system consistently ranks among the best in the state and where the extensive park system and recreational facilities provide opportunities for residents of all ages to stay active and engaged. The village\'s crown jewel is Northbrook Court, one of the region\'s premier shopping destinations, which provides residents with convenient access to high-quality retail, dining, and entertainment options. The established neighborhoods throughout Northbrook showcase beautiful architecture and mature landscaping that reflect the community\'s commitment to maintaining high standards and preserving the character that makes the village special. The village\'s strategic location along the Metra line provides easy access to downtown Chicago while maintaining the suburban character that attracts families and professionals who want the best of both worlds. From the Sports Center that provides world-class recreational facilities to the Village Green that hosts community events and festivals, Northbrook offers amenities and services that rival any community in the region. The village\'s strong civic engagement and community pride are evident in everything from the well-maintained streets and parks to the active volunteer organizations that work to make Northbrook an even better place to live. Managing properties in Northbrook means serving residents who have chosen one of the Chicago area\'s most successful suburban communities and who expect their building management to reflect the same commitment to excellence that defines their village. Our residents value quality, family-friendly amenities, and the kind of professional service that supports their active, engaged lifestyle. Manage369 has earned the trust of Northbrook boards because we understand that this community represents the best of suburban family living—excellent schools, beautiful neighborhoods, outstanding recreational facilities, and the kind of community engagement that creates lasting connections and lifelong memories.',
-      'skokie': 'From vintage buildings near the Yellow Line CTA to modern developments throughout this diverse community, Skokie boards trust Manage369 for reliable management that serves this family-oriented suburb\'s multicultural population, strong civic engagement, and excellent public services.',
-      'niles': 'From established condominium communities to modern townhome developments near the iconic Leaning Tower of Niles, Niles boards rely on Manage369 for professional management in this well-established suburban community known for its senior services and comprehensive community programs.',
-      'morton-grove': 'From vintage buildings to modern developments near the Prairie View Metra station, Morton Grove boards choose Manage369 for dependable management that supports this stable residential community\'s commitment to quality of life, family services, and environmental sustainability.',
-      'deerfield': 'From established neighborhoods near Deerfield High School to luxury developments along the lakefront areas, Deerfield boards trust Manage369 for sophisticated management in this prestigious North Shore community known for its excellent schools and family-oriented atmosphere.',
-      'lincolnshire': 'From luxury condominium communities to exclusive townhome developments near Marriott Theatre and corporate headquarters, Lincolnshire boards rely on Manage369 for premium management that matches this upscale community\'s high standards and professional corporate presence.',
-      'buffalo-grove': 'From established condominium communities to modern townhome developments near Buffalo Grove Golf Course, Buffalo Grove boards choose Manage369 for comprehensive management in this thriving suburban community known for its extensive parks, recreation programs, and family amenities.',
-      'vernon-hills': 'From modern condominium complexes to luxury townhome communities near Hawthorn Mall and corporate centers, Vernon Hills boards trust Manage369 for professional management that supports this dynamic suburban area\'s continued growth and business development.',
-      'libertyville': 'From historic buildings near downtown\'s charming Main Street to modern developments throughout this picturesque community, Libertyville boards rely on Manage369 for management that honors this community\'s small-town character, natural beauty, and historic preservation efforts.',
-      'mundelein': 'From lakefront properties near scenic Diamond Lake to modern developments throughout this growing community, Mundelein boards choose Manage369 for reliable management that supports this suburban area\'s family-friendly atmosphere, recreational amenities, and community festivals.',
-      'long-grove': 'From historic village properties to luxury developments near the iconic covered bridge, Long Grove boards trust Manage369 for sophisticated management that preserves this community\'s unique historic character, rural charm, and commitment to maintaining its village atmosphere.',
-      'hawthorn-woods': 'From luxury estate communities to exclusive developments near Deer Park Town Center, Hawthorn Woods boards rely on Manage369 for premium management in this prestigious suburban enclave known for its natural beauty, privacy, and commitment to environmental preservation.',
-      'lake-zurich': 'From lakefront properties overlooking scenic Lake Zurich to modern developments near the Metra station, Lake Zurich boards choose Manage369 for comprehensive management that supports this desirable lakefront community\'s recreational lifestyle and natural amenities.',
-      'kildeer': 'From luxury estate communities to exclusive developments near Kemper Lakes Golf Course, Kildeer boards trust Manage369 for discretionary management that matches this upscale community\'s commitment to privacy, natural preservation, and maintaining its rural character.'
-    };
-    
-    return stories[area.slug] || `From established neighborhoods to modern developments, ${area.name} boards trust Manage369 for proactive management, 24/7 emergency support, and complete financial transparency.`;
-  };
+    .slice(0, 6)
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
       <Helmet>
-        {/* Meta Title & Description */}
+        {/* Meta Tags */}
         <title>Property Management in {area.name}, IL | Manage369</title>
         <meta
           name="description"
-          content={`Manage369 provides premium condominium, HOA, and townhome management in ${area.name}, IL. Trusted by boards for 24/7 support, transparent financials, and proactive service.`}
+          content={`Manage369 provides premium property management services in ${area.name}, IL. Expert HOA, Condominium, and Townhome management with 24/7 support.`}
         />
 
         {/* LocalBusiness Schema */}
@@ -121,7 +357,7 @@ const ServiceAreaDetail = () => {
             "image": "https://manage369.com/369favicon.png",
             "@id": `https://manage369.com/property-management-${area.slug}`,
             "url": `https://manage369.com/property-management-${area.slug}`,
-            "telephone": "+12246475621",
+            "telephone": "+18478344131",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "1400 Patriot Boulevard 357",
@@ -132,16 +368,11 @@ const ServiceAreaDetail = () => {
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "42.0780",
-              "longitude": "-87.8150"
+              "latitude": area.coordinates?.lat || 42.078,
+              "longitude": area.coordinates?.lng || -87.815
             },
-            "areaServed": {
-              "@type": "Place",
-              "name": `${area.name}, Illinois`
-            },
-            "sameAs": [
-              "https://manage369.com"
-            ]
+            "areaServed": `${area.name}, IL`,
+            "priceRange": "$$"
           })}
         </script>
 
@@ -174,162 +405,78 @@ const ServiceAreaDetail = () => {
         </script>
       </Helmet>
 
-      {/* Breadcrumbs */}
-      <nav className="mb-8 text-sm text-gray-600">
-        <Link to="/" className="hover:text-blue-600">Home</Link>
-        <span className="mx-2">→</span>
-        <Link to="/service-areas" className="hover:text-blue-600">Service Areas</Link>
-        <span className="mx-2">→</span>
-        <span className="text-gray-900">{area.name}</span>
-      </nav>
+      {/* H1 */}
+      <h1 className="text-3xl font-bold text-center mb-6">
+        Property Management in {area.name}, IL | Manage369
+      </h1>
 
-      {/* 1. Hero Section */}
-      <section className="mb-16">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Property Management in {area.name}, IL | Manage369
-        </h1>
-        <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-          At Manage369, we provide premium property management services tailored for {area.name}'s condominium, HOA, and townhome communities. Our team combines 18+ years of experience with a local presence in {area.name} to deliver concierge-level service boards can rely on.
-        </p>
-        <Link 
-          to="/contact" 
-          className="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors text-lg"
-        >
-          Request a Proposal
-        </Link>
-      </section>
+      {/* Intro Paragraph */}
+      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+        {content.intro}
+      </p>
 
-      {/* 2. Services in This Community */}
+      {/* Services Section */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-gray-900 mb-8">
-          Comprehensive Management Solutions in {area.name}
+        <h2 className="text-2xl font-semibold text-center mb-8">
+          Our Property Management Services in {area.name}
         </h2>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          <Link 
-            to="/services/condominium-management"
-            className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow group"
-          >
-            <div className="text-4xl mb-4">🏢</div>
-            <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-600">
-              Condominium Management
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Tailored oversight for high-rise, mid-rise, and boutique condos.
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <a href="/services/condominium-management" className="block p-6 border rounded-xl shadow-sm hover:shadow-md hover:border-yellow-500 transition">
+            <h3 className="text-lg font-semibold">Condominium Management</h3>
+            <p className="text-sm mt-2">
+              Full-service support for boutique, mid-rise, and high-rise condos.
             </p>
-            <span className="text-blue-600 font-medium">Learn More →</span>
-          </Link>
-
-          <Link 
-            to="/services/hoa-management"
-            className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow group"
-          >
-            <div className="text-4xl mb-4">👥</div>
-            <h3 className="text-xl font-semibold mb-3 group-hover:text-green-600">
-              HOA Management
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Expert management for homeowner associations and planned communities.
+          </a>
+          <a href="/services/hoa-management" className="block p-6 border rounded-xl shadow-sm hover:shadow-md hover:border-yellow-500 transition">
+            <h3 className="text-lg font-semibold">HOA Management</h3>
+            <p className="text-sm mt-2">
+              Expert vendor oversight, budgeting, and governance for HOAs.
             </p>
-            <span className="text-green-600 font-medium">Learn More →</span>
-          </Link>
-
-          <Link 
-            to="/services/townhome-management"
-            className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow group"
-          >
-            <div className="text-4xl mb-4">🏠</div>
-            <h3 className="text-xl font-semibold mb-3 group-hover:text-red-600">
-              Townhome Management
-            </h3>
-            <p className="text-gray-600 mb-4">
-              Specialized management for townhome communities and attached housing.
+          </a>
+          <a href="/services/townhome-management" className="block p-6 border rounded-xl shadow-sm hover:shadow-md hover:border-yellow-500 transition">
+            <h3 className="text-lg font-semibold">Townhome Management</h3>
+            <p className="text-sm mt-2">
+              Tailored solutions for {area.name}'s townhome communities.
             </p>
-            <span className="text-red-600 font-medium">Learn More →</span>
-          </Link>
+          </a>
         </div>
       </section>
 
-      {/* 3. Local Storytelling Section */}
-      <section className="mb-16 bg-gray-50 rounded-lg p-8">
-        <h2 className="text-3xl font-bold text-gray-900 mb-6">
-          Why Boards in {area.name} Choose Manage369
-        </h2>
-        
-        <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-          {getLocalStoryContent(area)}
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="flex items-start space-x-3">
-            <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-              <span className="text-white text-xs">✓</span>
-            </div>
-            <span className="text-gray-700">Licensed & insured professionals</span>
-          </div>
-          <div className="flex items-start space-x-3">
-            <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-              <span className="text-white text-xs">✓</span>
-            </div>
-            <span className="text-gray-700">Local vendor relationships for faster service</span>
-          </div>
-          <div className="flex items-start space-x-3">
-            <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-              <span className="text-white text-xs">✓</span>
-            </div>
-            <span className="text-gray-700">Transparent reporting and budgeting</span>
-          </div>
-          <div className="flex items-start space-x-3">
-            <div className="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-              <span className="text-white text-xs">✓</span>
-            </div>
-            <span className="text-gray-700">24/7 emergency response</span>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. Nearby Communities */}
+      {/* Nearby Communities */}
       {nearbyAreas.length > 0 && (
         <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <h2 className="text-2xl font-semibold text-center mb-8">
             Nearby Communities We Also Serve
           </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {nearbyAreas.map((nearbyArea) => (
-              <Link 
+              <a 
                 key={nearbyArea.id}
-                to={`/property-management-${nearbyArea.slug}`} 
-                className="bg-gray-50 p-4 rounded-lg text-center hover:bg-blue-50 hover:text-blue-600 transition-all duration-300 group"
+                href={`/property-management-${nearbyArea.slug}`} 
+                className="px-5 py-3 border rounded-lg hover:border-yellow-500 hover:bg-gray-50 transition"
               >
-                <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                  {nearbyArea.name}
-                </h3>
-                <span className="text-sm text-gray-500 group-hover:text-blue-500">
-                  {nearbyArea.county} County
-                </span>
-              </Link>
+                {nearbyArea.name}
+              </a>
             ))}
           </div>
         </section>
       )}
 
-      {/* 5. Final CTA */}
-      <section className="bg-blue-600 text-white rounded-lg p-8 text-center">
-        <h2 className="text-3xl font-bold mb-6">
+      {/* Final CTA */}
+      <div className="text-center">
+        <h2 className="text-2xl font-semibold mb-4">
           Ready to Elevate Your {area.name} Community?
         </h2>
-        <p className="text-xl mb-8 text-blue-100">
-          We work exclusively with boards who expect precision, discretion, and accountability. 
-          If your community demands concierge-level service, let's connect.
+        <p className="text-gray-600 mb-6">
+          {content.finalCta}
         </p>
-        <Link 
-          to="/contact" 
-          className="inline-block bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-lg"
+        <a
+          href="/contact"
+          className="inline-block bg-yellow-500 text-white px-6 py-3 rounded-xl shadow-md hover:bg-yellow-600 transition"
         >
           Contact Manage369 Today
-        </Link>
-      </section>
+        </a>
+      </div>
     </div>
   )
 }
