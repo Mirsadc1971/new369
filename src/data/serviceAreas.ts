@@ -353,98 +353,6 @@ export const chicagoAreas: ServiceArea[] = [
 
 export const suburbAreas: ServiceArea[] = [
   {
-    id: 7,
-    name: "Naperville",
-    slug: "naperville",
-    county: "DuPage",
-    type: "suburb",
-    population: 149000,
-    description: "Highly-rated suburban community known for excellent schools, family neighborhoods, and planned developments. Manage369 is the #1 property management company in Naperville.",
-    keyFeatures: [
-      "Top-rated school districts",
-      "Master-planned communities",
-      "Family-oriented neighborhoods",
-      "Modern townhome developments",
-      "Corporate headquarters location"
-    ],
-    propertyTypes: [
-      "Single-family home subdivisions",
-      "Townhome communities",
-      "Luxury condominium complexes",
-      "Active adult communities"
-    ],
-    marketInsights: [
-      "High property values driven by schools",
-      "Strong family demographic",
-      "Corporate relocation market",
-      "Stable long-term residents"
-    ],
-    localRegulations: [
-      "HOA covenant enforcement",
-      "Municipal building codes",
-      "School district boundaries",
-      "Environmental protection ordinances"
-    ],
-    managementChallenges: [
-      "Meeting high homeowner expectations",
-      "Managing large-scale developments",
-      "Coordinating with multiple HOAs",
-      "Maintaining premium community standards"
-    ],
-    solutions: [
-      "Comprehensive HOA management services",
-      "Professional landscape and maintenance",
-      "Community amenity programming",
-      "Transparent financial reporting"
-    ]
-  },
-  {
-    id: 8,
-    name: "Wheaton",
-    slug: "wheaton",
-    county: "DuPage",
-    type: "suburb",
-    population: 53000,
-    description: "Family-oriented community with excellent schools and historic downtown charm. Manage369 is the #1 property management company in Wheaton.",
-    keyFeatures: [
-      "Top-rated school systems",
-      "Historic downtown district",
-      "Family-centered community",
-      "Religious institution presence",
-      "Conservative family values"
-    ],
-    propertyTypes: [
-      "Single-family subdivisions",
-      "Townhome communities",
-      "Small condominium complexes",
-      "Historic downtown residences"
-    ],
-    marketInsights: [
-      "Family-driven housing market",
-      "School district premium",
-      "Conservative demographic preferences",
-      "Long-term resident stability"
-    ],
-    localRegulations: [
-      "Family-oriented housing codes",
-      "Historic downtown preservation",
-      "School proximity requirements",
-      "Community standards enforcement"
-    ],
-    managementChallenges: [
-      "Meeting conservative community expectations",
-      "Managing family-focused amenities",
-      "Maintaining community standards",
-      "Coordinating with religious institutions"
-    ],
-    solutions: [
-      "Family-first management approach",
-      "Community values alignment",
-      "Conservative financial management",
-      "Long-term relationship building"
-    ]
-  },
-  {
     id: 9,
     name: "Arlington Heights",
     slug: "arlington-heights",
@@ -537,52 +445,6 @@ export const suburbAreas: ServiceArea[] = [
     ]
   },
   {
-    id: 11,
-    name: "Oak Park",
-    slug: "oak-park",
-    county: "Cook",
-    type: "suburb",
-    population: 54000,
-    description: "Historic community famous for Frank Lloyd Wright architecture and progressive values. Manage369 is the leading property management company in Oak Park.",
-    keyFeatures: [
-      "Frank Lloyd Wright historic homes",
-      "Diverse architectural styles",
-      "Progressive community values",
-      "Transit accessibility to Chicago",
-      "Arts and culture focus"
-    ],
-    propertyTypes: [
-      "Historic single-family homes",
-      "Vintage apartment buildings",
-      "Condominium conversions",
-      "Small-scale developments"
-    ],
-    marketInsights: [
-      "Historic property premium pricing",
-      "Socially conscious tenant base",
-      "Strong community involvement",
-      "Arts-focused demographics"
-    ],
-    localRegulations: [
-      "Historic preservation requirements",
-      "Diversity and inclusion ordinances",
-      "Environmental sustainability standards",
-      "Community garden regulations"
-    ],
-    managementChallenges: [
-      "Preserving historic property character",
-      "Meeting progressive community standards",
-      "Managing older building systems",
-      "Balancing preservation with modernization"
-    ],
-    solutions: [
-      "Historic property expertise",
-      "Sustainable management practices",
-      "Community-engaged approach",
-      "Specialized vintage building maintenance"
-    ]
-  },
-  {
     id: 12,
     name: "Evanston",
     slug: "evanston",
@@ -633,28 +495,22 @@ export const suburbAreas: ServiceArea[] = [
 // Additional service areas to reach 100+ total pages
 export const additionalServiceAreas: string[] = [
   // Chicago Neighborhoods
-  "Andersonville", "Bridgeport", "Bronzeville", "Bucktown", "Edgewater", "Loop",
+  "Andersonville", "Bridgeport", "Bucktown", "Edgewater", "Loop",
   "Gold Coast", "Old Town", "Humboldt Park", "Irving Park", "Lincoln Square", "Little Italy",
-  "North Center", "Old Town", "Pilsen", "Ravenswood", "River North",
+  "North Center", "Old Town", "Ravenswood", "River North",
   "Rogers Park", "South Loop", "Streeterville", "Ukrainian Village", "Uptown",
   "West Town", "Wrigleyville",
   
   // Suburbs
-  "Des Plaines", "Mount Prospect", "Prospect Heights", "Buffalo Grove", "Deerfield", "Highwood", "Wheeling",
-  "Northbrook", "Glenview", "Skokie", "Niles", "Park Ridge", "Elmwood Park",
-  "Riverside", "Brookfield", "La Grange", "Western Springs", "Hinsdale",
-  "Clarendon Hills", "Westmont", "Downers Grove", "Lisle", "Glen Ellyn",
-  "Lombard", "Villa Park", "Elmhurst", "Oak Brook", "Burr Ridge",
-  "Darien", "Woodridge", "Bolingbrook", "Romeoville", "Lemont",
-  "Orland Park", "Tinley Park", "Oak Forest", "Palos Heights", "Palos Hills",
-  "Worth", "Alsip", "Crestwood", "Midlothian", "Oak Lawn",
-  "Burbank", "Bridgeview", "Justice", "Willow Springs", "Indian Head Park",
-  "Schaumburg", "Hoffman Estates", "Streamwood", "Bartlett", "Hanover Park",
-  "Carol Stream", "Bloomingdale", "Roselle", "Itasca", "Wood Dale",
-  "Addison", "Bensenville", "Elk Grove Village", "Rolling Meadows", "Inverness",
-  "Barrington", "Lake Zurich", "Mundelein", "Vernon Hills", "Libertyville",
+  "Des Plaines", "Mount Prospect", "Buffalo Grove", "Deerfield", "Highwood", "Wheeling",
+  "Northbrook", "Glenview", "Skokie", "Niles", "Park Ridge",
+  "Brookfield", "Glen Ellyn",
+  "Villa Park", "Elmhurst", "Oak Brook",
+  "Woodridge", "Alsip", "Justice", "Willow Springs",
+  "Schaumburg", "Hoffman Estates", "Bartlett",
+  "Wood Dale", "Addison", "Elk Grove Village", "Rolling Meadows",
+  "Barrington", "Lake Zurich", "Vernon Hills", "Libertyville",
   "Highland Park", "Lake Forest", "Wilmette", "Winnetka", "Glencoe",
   "Morton Grove", "Lincolnwood", "Harwood Heights", "Norridge", "Rosemont",
-  "Franklin Park", "Melrose Park", "Bellwood", "Maywood", "Forest Park",
-  "River Forest", "Berwyn", "Cicero", "Stickney", "Lyons"
+  "Melrose Park", "Forest Park"
 ]
