@@ -2625,60 +2625,6 @@ export const outerNorthShoreAreas: ServiceArea[] = [
       "lakefront suburban property management"
     ],
     nearbyAreas: ["Mundelein", "Long Grove", "Hawthorn Woods", "Barrington"]
-  },
-  {
-    id: 49,
-    name: "Kildeer",
-    slug: "kildeer",
-    county: "Lake",
-    region: "outer-north-shore",
-    type: "suburb",
-    population: 4000,
-    establishedYear: 2029,
-    description: "Exclusive rural village with luxury homes and natural preservation. Manage369 provides elite property management services in Kildeer.",
-    keyFeatures: [
-      "Exclusive rural village",
-      "Luxury home developments",
-      "Natural preservation",
-      "Private community atmosphere",
-      "Elite residential areas"
-    ],
-    propertyTypes: [
-      "Luxury rural properties",
-      "Exclusive developments",
-      "Natural setting homes",
-      "Elite residential properties"
-    ],
-    marketInsights: [
-      "Luxury rural market",
-      "Exclusive community appeal",
-      "Natural preservation value",
-      "Elite property premiums"
-    ],
-    localRegulations: [
-      "Rural preservation requirements",
-      "Luxury development standards",
-      "Natural conservation guidelines",
-      "Elite community standards"
-    ],
-    managementChallenges: [
-      "Rural property maintenance",
-      "Luxury service expectations",
-      "Natural preservation coordination",
-      "Elite community management"
-    ],
-    solutions: [
-      "Rural property expertise",
-      "Luxury management services",
-      "Environmental coordination",
-      "Elite community programs"
-    ],
-    localSEOKeywords: [
-      "kildeer property management",
-      "kildeer condo management",
-      "luxury rural property management"
-    ],
-    nearbyAreas: ["Long Grove", "Hawthorn Woods", "Lake Zurich", "Deer Park"]
   }
 ]
 
