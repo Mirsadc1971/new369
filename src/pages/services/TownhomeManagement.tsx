@@ -304,6 +304,29 @@ const TownhomeManagement = () => {
       <section className="section-padding bg-gradient-secondary text-white">
         <div className="container-max text-center">
           <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">Explore Townhome Management by Location</h3>
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
+              <Link to="/property-management-wicker-park" className="text-green-200 hover:text-white underline">
+                Wicker Park Townhomes
+              </Link>
+              <Link to="/property-management-bucktown" className="text-green-200 hover:text-white underline">
+                Bucktown Townhomes
+              </Link>
+              <Link to="/property-management-logan-square" className="text-green-200 hover:text-white underline">
+                Logan Square Townhomes
+              </Link>
+              <Link to="/property-management-wilmette" className="text-green-200 hover:text-white underline">
+                Wilmette Townhomes
+              </Link>
+              <Link to="/property-management-winnetka" className="text-green-200 hover:text-white underline">
+                Winnetka Townhomes
+              </Link>
+            </div>
+            <Link to="/service-areas" className="text-green-200 hover:text-white underline">
+              View All Chicago & North Shore Communities →
+            </Link>
+          </div>
+          <div className="mb-8">
             <h3 className="text-xl font-semibold text-white mb-4">Explore Service Areas We Serve</h3>
             <Link to="/service-areas" className="text-green-200 hover:text-white underline">
               View All Chicago & North Shore Communities →

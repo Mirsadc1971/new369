@@ -580,29 +580,34 @@ const ServiceAreaDetail = () => {
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🏠</span>
               </div>
+            <p className="body-large max-w-3xl mx-auto mb-8">
+              Manage369 provides specialized property management services throughout {areaName}, 
+              currently managing properties with multiple units in this market. 
+              Our expertise ensures your {areaName} property receives professional attention.
+            </p>
               <h3 className="text-lg font-semibold mb-2">{areaName} Market Knowledge</h3>
               <p className="text-sm text-gray-600">
                 In-depth understanding of {areaName}'s property market, pricing trends, and resident preferences.
               </p>
             </div>
-
-            <div className="card text-center">
+                <h3 className="text-lg font-semibold mb-2">{areaName} Condominium Management</h3>
+                <p className="text-sm text-gray-600">Professional condo association management services in {areaName}</p>
               <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">{areaName} Community Connections</h3>
               <p className="text-sm text-gray-600">
                 Established relationships with local vendors, contractors, and service providers in {areaName}.
-              </p>
-            </div>
+                <h3 className="text-lg font-semibold mb-2">{areaName} HOA Management</h3>
+                <p className="text-sm text-gray-600">Homeowners association management services in {areaName}</p>
 
             <div className="card text-center">
               <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
               <h3 className="text-lg font-semibold mb-2">Rapid {areaName} Response</h3>
-              <p className="text-sm text-gray-600">
-                Quick response times for emergencies and maintenance requests throughout {areaName}.
+                <h3 className="text-lg font-semibold mb-2">{areaName} Townhome Management</h3>
+                <p className="text-sm text-gray-600">Townhome community management services in {areaName}</p>
               </p>
             </div>
           </div>

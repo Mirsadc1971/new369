@@ -172,7 +172,42 @@ const Services: React.FC = () => {
         </section>
 
         {/* Why Choose Our Services */}
-        <section className="section-padding bg-gray-50">
+        <section className="section-padding bg-white">
+          <div className="container-max">
+            <div className="text-center mb-16">
+              <h2 className="heading-2 mb-4">Where We Provide Property Management Services</h2>
+              <p className="body-large max-w-3xl mx-auto mb-8">
+                Our comprehensive property management services are available throughout Chicago, 
+                North Shore, and Northwest Suburban communities.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏙️</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Chicago Core & Near-North</h3>
+                <p className="text-gray-600 mb-4">
+                  Downtown, River North, Gold Coast, Lincoln Park, Lakeview, and surrounding neighborhoods
+                </p>
+                <Link to="/service-areas" className="text-primary-500 hover:underline font-medium">
+                  View Chicago Areas →
+                </Link>
+              </div>
+
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏖️</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">North Shore Communities</h3>
+                <p className="text-gray-600 mb-4">
+                  Evanston, Wilmette, Winnetka, Highland Park, Lake Forest, and elite lakefront communities
+                </p>
+                <Link to="/service-areas" className="text-secondary-500 hover:underline font-medium">
+                  View North Shore Areas →
+                </Link>
+              </div>
           <div className="container-max">
             <div className="text-center mb-16">
               <h2 className="heading-2 mb-4">Why Choose Manage369?</h2>
@@ -226,7 +261,24 @@ const Services: React.FC = () => {
           </div>
         </section>
 
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🌲</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Northwest Suburbs</h3>
+                <p className="text-gray-600 mb-4">
+                  Glenview, Northbrook, Buffalo Grove, Vernon Hills, and established suburban communities
+                </p>
+                <Link to="/service-areas" className="text-accent-500 hover:underline font-medium">
+                  View Northwest Areas →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        {/* Why Choose Our Services */}
+        <section className="section-padding bg-gray-50">
         {/* CTA Section */}
         <section className="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
           <div className="container-max text-center">

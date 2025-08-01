@@ -304,6 +304,29 @@ const HOAManagement = () => {
       <section className="section-padding bg-gradient-to-r from-accent-500 to-red-700 text-white">
         <div className="container-max text-center">
           <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">Explore HOA Management by Location</h3>
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
+              <Link to="/property-management-evanston" className="text-red-200 hover:text-white underline">
+                Evanston HOAs
+              </Link>
+              <Link to="/property-management-glenview" className="text-red-200 hover:text-white underline">
+                Glenview HOAs
+              </Link>
+              <Link to="/property-management-northbrook" className="text-red-200 hover:text-white underline">
+                Northbrook HOAs
+              </Link>
+              <Link to="/property-management-buffalo-grove" className="text-red-200 hover:text-white underline">
+                Buffalo Grove HOAs
+              </Link>
+              <Link to="/property-management-vernon-hills" className="text-red-200 hover:text-white underline">
+                Vernon Hills HOAs
+              </Link>
+            </div>
+            <Link to="/service-areas" className="text-red-200 hover:text-white underline">
+              View All Chicago & North Shore Communities →
+            </Link>
+          </div>
+          <div className="mb-8">
             <h3 className="text-xl font-semibold text-white mb-4">Explore Service Areas We Serve</h3>
             <Link to="/service-areas" className="text-red-200 hover:text-white underline">
               View All Chicago & North Shore Communities →

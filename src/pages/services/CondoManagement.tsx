@@ -304,6 +304,29 @@ const CondoManagement = () => {
       <section className="section-padding bg-gradient-primary text-white">
         <div className="container-max text-center">
           <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">Explore Condominium Management by Location</h3>
+            <div className="flex flex-wrap justify-center gap-4 mb-6">
+              <Link to="/property-management-downtown-chicago" className="text-blue-200 hover:text-white underline">
+                Downtown Chicago Condos
+              </Link>
+              <Link to="/property-management-river-north" className="text-blue-200 hover:text-white underline">
+                River North Condos
+              </Link>
+              <Link to="/property-management-gold-coast" className="text-blue-200 hover:text-white underline">
+                Gold Coast Condos
+              </Link>
+              <Link to="/property-management-lincoln-park" className="text-blue-200 hover:text-white underline">
+                Lincoln Park Condos
+              </Link>
+              <Link to="/property-management-lakeview" className="text-blue-200 hover:text-white underline">
+                Lakeview Condos
+              </Link>
+            </div>
+            <Link to="/service-areas" className="text-blue-200 hover:text-white underline">
+              View All Chicago & North Shore Communities →
+            </Link>
+          </div>
+          <div className="mb-8">
             <h3 className="text-xl font-semibold text-white mb-4">Explore Service Areas We Serve</h3>
             <Link to="/service-areas" className="text-blue-200 hover:text-white underline">
               View All Chicago & North Shore Communities →
