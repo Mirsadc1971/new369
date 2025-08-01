@@ -82,48 +82,6 @@ const Home: React.FC = () => {
           </div>
         </section>
 
-        {/* Our Story Section */}
-        <section className="section-padding bg-white">
-          <div className="container-max">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="heading-2 mb-6">Our Story</h2>
-                <p className="body-text mb-6">
-                  Founded in 2007, Manage369 has grown from a small local operation to Chicago's most trusted property management company. We've built our reputation on delivering exceptional service, maintaining transparent communication, and treating every property as if it were our own.
-                </p>
-                <p className="body-text mb-6">
-                  Our team combines deep local market knowledge with cutting-edge technology to provide comprehensive management solutions for condominiums, townhomes, and homeowner associations throughout Chicago and the surrounding suburbs.
-                </p>
-                <div className="flex items-center space-x-4">
-                  <Award className="w-8 h-8 text-primary-600" />
-                  <span className="text-lg font-semibold text-gray-900">Licensed & Insured</span>
-                </div>
-              </div>
-              <div className="bg-primary-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Manage369?</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Local expertise in Chicago's unique property market</span>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Transparent financial reporting and communication</span>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">24/7 emergency response and maintenance coordination</span>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
-                    <span className="text-gray-700">Comprehensive insurance and legal compliance</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Services Overview */}
         <section className="section-padding bg-gray-50">
           <div className="container-max">
@@ -164,6 +122,48 @@ const Home: React.FC = () => {
                 <Link to="/services/townhome-management" className="bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation">
                   Learn More
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Story Section */}
+        <section className="section-padding bg-white">
+          <div className="container-max">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h2 className="heading-2 mb-6">Our Story</h2>
+                <p className="body-text mb-6">
+                  Founded in 2007, Manage369 has grown from a small local operation to Chicago's most trusted property management company. We've built our reputation on delivering exceptional service, maintaining transparent communication, and treating every property as if it were our own.
+                </p>
+                <p className="body-text mb-6">
+                  Our team combines deep local market knowledge with cutting-edge technology to provide comprehensive management solutions for condominiums, townhomes, and homeowner associations throughout Chicago and the surrounding suburbs.
+                </p>
+                <div className="flex items-center space-x-4">
+                  <Award className="w-8 h-8 text-primary-600" />
+                  <span className="text-lg font-semibold text-gray-900">Licensed & Insured</span>
+                </div>
+              </div>
+              <div className="bg-primary-50 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Manage369?</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Local expertise in Chicago's unique property market</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Transparent financial reporting and communication</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">24/7 emergency response and maintenance coordination</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="w-6 h-6 text-green-500 mt-1 flex-shrink-0" />
+                    <span className="text-gray-700">Comprehensive insurance and legal compliance</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
