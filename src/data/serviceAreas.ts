@@ -1352,54 +1352,6 @@ export const serviceAreas: ServiceArea[] = [
     population: 13000,
     establishedYear: 1889,
     description: "Charming family neighborhood with tree-lined streets, local businesses, and strong community spirit.",
-    keyFeatures: [
-      "Tree-lined residential streets",
-      "Local business district",
-      "Family-friendly atmosphere",
-      "Good schools and parks",
-      "Brown Line accessibility"
-    ],
-    propertyTypes: [
-      "Single-family homes",
-      "Small condominium buildings",
-      "Vintage apartment buildings",
-      "Two-flat conversions"
-    ],
-    marketInsights: [
-      "Strong family market with premium pricing",
-      "Low turnover due to community attachment",
-      "Good schools drive property values",
-      "Excellent long-term investment potential"
-    ],
-    localRegulations: [
-      "Family-oriented zoning protections",
-      "Local business district preservation",
-      "Tree preservation ordinances",
-      "Brown Line development considerations"
-    ],
-    managementChallenges: [
-      "Maintaining small neighborhood character",
-      "Managing family community expectations",
-      "Limited parking in dense areas",
-      "Balancing growth with character preservation"
-    ],
-    solutions: [
-      "Community-focused management approach",
-      "Family-oriented services",
-      "Creative parking solutions",
-      "Character-sensitive development planning"
-    ],
-    keyNeighborhoods: ["Roscoe Street Corridor", "Addison Street Area", "Damen Avenue District"],
-    localSEOKeywords: [
-      "roscoe village property management",
-      "family neighborhood property management",
-      "tree lined streets property management",
-      "local business district management"
-    ]
-  },
-
-  // Outer North Shore & Northwest Suburbs
-  {
     id: 26,
     name: "Evanston",
     slug: "evanston",
