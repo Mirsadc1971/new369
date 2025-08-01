@@ -197,6 +197,24 @@ const Services: React.FC = () => {
               </div>
 
               <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🌲</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Northwest Suburbs</h3>
+                <p className="text-gray-600 mb-4">
+                  Glenview, Northbrook, Buffalo Grove, Vernon Hills, and established suburban communities
+                </p>
+                <Link to="/service-areas" className="text-accent-500 hover:underline font-medium">
+                  View Northwest Areas →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Manage369 */}
+        <section className="section-padding bg-white">
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
                 <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl">🏖️</span>
                 </div>
@@ -261,20 +279,7 @@ const Services: React.FC = () => {
           </div>
         </section>
 
-              <div className="card text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🌲</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Northwest Suburbs</h3>
-                <p className="text-gray-600 mb-4">
-                  Glenview, Northbrook, Buffalo Grove, Vernon Hills, and established suburban communities
-                </p>
-                <Link to="/service-areas" className="text-accent-500 hover:underline font-medium">
-                  View Northwest Areas →
-                </Link>
-              </div>
-            </div>
-          </div>
+        {/* CTA Section */}
         <section className="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
           <div className="container-max text-center">
             <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
