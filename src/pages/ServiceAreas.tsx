@@ -175,7 +175,7 @@ const ServiceAreas = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mb-12">
             {additionalServiceAreas.map((area, index) => (
               <Link to={`/property-management-${area.toLowerCase().replace(/\s+/g, '-')}`} key={index} className="bg-gray-50 p-4 rounded-lg text-center hover:bg-primary-50 transition-colors duration-200">
-                <span className="text-sm font-medium text-gray-700">{area}</span>
+                {area.name} Property Management
               </Link>
             ))}
           </div>
