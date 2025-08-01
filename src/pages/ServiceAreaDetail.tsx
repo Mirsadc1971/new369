@@ -254,44 +254,6 @@ const ServiceAreaDetail = () => {
           <section className="section-padding bg-blue-50">
             <div className="container-max">
               {/* Service Links Section */}
-              <div className="text-center mb-16">
-                <h2 className="heading-2 mb-8">Our Property Management Services in {areaName}</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                  <Link to="/services/condominium-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <span className="text-xl">🏢</span>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">{areaName} Condominium Management</h3>
-                    <p className="text-sm text-gray-600">Professional condo association management services in {areaName}</p>
-                    <div className="mt-4">
-                      <span className="text-primary-500 text-sm font-medium">Learn More →</span>
-                    </div>
-                  </Link>
-                  
-                  <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <span className="text-xl">👥</span>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">{areaName} HOA Management</h3>
-                    <p className="text-sm text-gray-600">Homeowners association management services in {areaName}</p>
-                    <div className="mt-4">
-                      <span className="text-secondary-500 text-sm font-medium">Learn More →</span>
-                    </div>
-                  </Link>
-                  
-                  <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <span className="text-xl">🏠</span>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">{areaName} Townhome Management</h3>
-                    <p className="text-sm text-gray-600">Townhome community management services in {areaName}</p>
-                    <div className="mt-4">
-                      <span className="text-accent-500 text-sm font-medium">Learn More →</span>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              
               <div className="text-center mb-12">
                 <h2 className="heading-2 mb-4">Local {area.name} Property Management Services</h2>
                 <p className="body-large max-w-3xl mx-auto">
@@ -472,44 +434,6 @@ const ServiceAreaDetail = () => {
           <section className="section-padding bg-white">
             <div className="container-max">
               {/* Service Links for Additional Areas */}
-              <div className="text-center mb-16">
-                <h2 className="heading-2 mb-8">Our Property Management Services in {additionalAreaName}</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                  <Link to="/services/condominium-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <span className="text-xl">🏢</span>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">{additionalAreaName} Condominium Management</h3>
-                    <p className="text-sm text-gray-600">Professional condo association management services in {additionalAreaName}</p>
-                    <div className="mt-4">
-                      <span className="text-primary-500 text-sm font-medium">Learn More →</span>
-                    </div>
-                  </Link>
-                  
-                  <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <span className="text-xl">👥</span>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">{additionalAreaName} HOA Management</h3>
-                    <p className="text-sm text-gray-600">Homeowners association management services in {additionalAreaName}</p>
-                    <div className="mt-4">
-                      <span className="text-secondary-500 text-sm font-medium">Learn More →</span>
-                    </div>
-                  </Link>
-                  
-                  <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                    <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                      <span className="text-xl">🏠</span>
-                    </div>
-                    <h3 className="text-lg font-semibold mb-2">{additionalAreaName} Townhome Management</h3>
-                    <p className="text-sm text-gray-600">Townhome community management services in {additionalAreaName}</p>
-                    <div className="mt-4">
-                      <span className="text-accent-500 text-sm font-medium">Learn More →</span>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              
               <h2 className="heading-2 mb-8">#1 Property Management Company in {additionalAreaName}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
