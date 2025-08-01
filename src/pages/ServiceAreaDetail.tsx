@@ -248,55 +248,55 @@ const ServiceAreaDetail = () => {
         </div>
       </section>
 
+      {/* Mini Service Cards */}
+      <section className="section-padding bg-white">
+        <div className="container-max">
+          <div className="text-center mb-12">
+            <h2 className="heading-2 mb-4">Property Management Services in {areaName}</h2>
+            <p className="body-large max-w-3xl mx-auto">
+              Choose the type of property management service you need in {areaName}
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <Link to="/services/condominium-management" className="card text-center hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🏢</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Condominium Management</h3>
+              <p className="text-gray-600 mb-6">
+                Professional condo association management services in {areaName}
+              </p>
+              <span className="btn-primary">Learn More</span>
+            </Link>
+            
+            <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">👥</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">HOA Management</h3>
+              <p className="text-gray-600 mb-6">
+                Expert homeowners association management in {areaName}
+              </p>
+              <span className="btn-secondary">Learn More</span>
+            </Link>
+            
+            <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
+              <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl">🏠</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Townhome Management</h3>
+              <p className="text-gray-600 mb-6">
+                Specialized townhome community management in {areaName}
+              </p>
+              <span className="bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation">Learn More</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {area ? (
         <>
-          {/* Mini Service Cards for Main Areas */}
-          <section className="section-padding bg-white">
-            <div className="container-max">
-              <div className="text-center mb-12">
-                <h2 className="heading-2 mb-4">Property Management Services in {area.name}</h2>
-                <p className="body-large max-w-3xl mx-auto">
-                  Choose the type of property management service you need in {area.name}
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                <Link to="/services/condominium-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                  <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-2xl">🏢</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">Condominium Management</h3>
-                  <p className="text-gray-600 mb-6">
-                    Professional condo association management services in {area.name}
-                  </p>
-                  <span className="btn-primary">Learn More</span>
-                </Link>
-                
-                <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                  <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-2xl">👥</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">HOA Management</h3>
-                  <p className="text-gray-600 mb-6">
-                    Expert homeowners association management in {area.name}
-                  </p>
-                  <span className="btn-secondary">Learn More</span>
-                </Link>
-                
-                <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                  <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <span className="text-2xl">🏠</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">Townhome Management</h3>
-                  <p className="text-gray-600 mb-6">
-                    Specialized townhome community management in {area.name}
-                  </p>
-                  <span className="bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-colors duration-200 inline-flex items-center justify-center text-center min-h-[48px] whitespace-nowrap touch-manipulation">Learn More</span>
-                </Link>
-              </div>
-            </div>
-          </section>
-
           {/* Local SEO Keywords Section */}
           <section className="section-padding bg-blue-50">
             <div className="container-max">
@@ -480,38 +480,7 @@ const ServiceAreaDetail = () => {
           {/* Generic content for additional areas */}
           <section className="section-padding bg-white">
             <div className="container-max">
-              {/* Service Links for Additional Areas */}
               <h2 className="heading-2 mb-8">#1 Property Management Company in {additionalAreaName}</h2>
-              
-              {/* Mini Service Cards */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                <Link to="/services/condominium-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <span className="text-xl">🏢</span>
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">Condo Management</h3>
-                  <p className="text-sm text-gray-600 mb-4">Professional condominium association management in {additionalAreaName}</p>
-                  <span className="text-primary-500 text-sm font-medium">Learn More →</span>
-                </Link>
-
-                <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <span className="text-xl">👥</span>
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">HOA Management</h3>
-                  <p className="text-sm text-gray-600 mb-4">Homeowners association management services in {additionalAreaName}</p>
-                  <span className="text-secondary-500 text-sm font-medium">Learn More →</span>
-                </Link>
-
-                <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
-                  <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <span className="text-xl">🏠</span>
-                  </div>
-                  <h3 className="text-lg font-semibold mb-2">Townhome Management</h3>
-                  <p className="text-sm text-gray-600 mb-4">Townhome community management services in {additionalAreaName}</p>
-                  <span className="text-accent-500 text-sm font-medium">Learn More →</span>
-                </Link>
-              </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <div>
@@ -638,9 +607,6 @@ const ServiceAreaDetail = () => {
             </div>
 
             <div className="card text-center">
-                <div className="mt-4">
-                  <span className="text-primary-500 text-sm font-medium">Learn More →</span>
-                </div>
               <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
@@ -649,9 +615,6 @@ const ServiceAreaDetail = () => {
                 Established relationships with local vendors, contractors, and service providers in {areaName}.
               </p>
             </div>
-                <div className="mt-4">
-                  <span className="text-secondary-500 text-sm font-medium">Learn More →</span>
-                </div>
 
             <div className="card text-center">
               <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -660,9 +623,6 @@ const ServiceAreaDetail = () => {
               <h3 className="text-lg font-semibold mb-2">Rapid {areaName} Response</h3>
               <p className="text-sm text-gray-600">
                 24/7 emergency response and dedicated support for {areaName} properties.
-                <div className="mt-4">
-                  <span className="text-accent-500 text-sm font-medium">Learn More →</span>
-                </div>
               </p>
             </div>
           </div>
