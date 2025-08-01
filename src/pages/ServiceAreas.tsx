@@ -84,29 +84,15 @@ const ServiceAreas: React.FC = () => {
                     <Link 
                       key={area.id}
                       to={`/property-management-${area.slug}`} 
-                      className={`bg-white p-6 rounded-xl shadow-lg border ${colorClasses.border} hover:shadow-xl transition-shadow duration-300 group`}
+                      className={`bg-white p-4 rounded-lg shadow-md border ${colorClasses.border} hover:shadow-lg transition-all duration-300 group hover:scale-105`}
                     >
-                      <div className="flex justify-between items-start mb-4">
-                        <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
+                      <div className="text-center">
+                        <h3 className="text-lg font-semibold text-gray-900 group-hover:text-primary-600 transition-colors mb-2">
                           {area.name}
                         </h3>
-                        <span className={`text-sm ${colorClasses.text} ${colorClasses.badge} px-2 py-1 rounded`}>
+                        <span className={`text-xs ${colorClasses.text} ${colorClasses.badge} px-2 py-1 rounded-full`}>
                           {area.county} County
                         </span>
-                      </div>
-                      <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                        {area.description}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-2 text-xs text-gray-500">
-                          {area.population && (
-                            <span>{area.population.toLocaleString()} residents</span>
-                          )}
-                          <span className="capitalize">{area.type}</span>
-                        </div>
-                        <div className={`${colorClasses.text} font-medium text-sm hover:underline group-hover:translate-x-1 transition-transform duration-200`}>
-                          View Details →
-                        </div>
                       </div>
                     </Link>
                   ))}
