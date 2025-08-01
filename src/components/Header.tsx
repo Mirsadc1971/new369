@@ -210,7 +210,6 @@ const Services: React.FC = () => {
                 </Link>
               </div>
             </div>
-          </div>
         </section>
 
         {/* Why Choose Manage369 */}
