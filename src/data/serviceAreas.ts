@@ -2641,3 +2641,62 @@ export const suburbAreas = [...innerNorthAreas, ...outerNorthShoreAreas]
 
 // Additional service areas (kept for additional pages)
 export const additionalServiceAreas: string[] = []
+
+// Export the flat array for the new ServiceAreas component
+export const serviceAreas = [
+  // Chicago (Core & Near-North)
+  { name: "Downtown Chicago", slug: "downtown-chicago", region: "Chicago" },
+  { name: "River North", slug: "river-north", region: "Chicago" },
+  { name: "Gold Coast", slug: "gold-coast", region: "Chicago" },
+  { name: "Streeterville", slug: "streeterville", region: "Chicago" },
+  { name: "Old Town", slug: "old-town", region: "Chicago" },
+  { name: "Lincoln Park", slug: "lincoln-park", region: "Chicago" },
+  { name: "Lakeview", slug: "lakeview", region: "Chicago" },
+  { name: "Wicker Park", slug: "wicker-park", region: "Chicago" },
+  { name: "Bucktown", slug: "bucktown", region: "Chicago" },
+  { name: "Logan Square", slug: "logan-square", region: "Chicago" },
+  { name: "West Loop", slug: "west-loop", region: "Chicago" },
+  { name: "South Loop", slug: "south-loop", region: "Chicago" },
+  { name: "Near North Side", slug: "near-north-side", region: "Chicago" },
+  { name: "Ukrainian Village", slug: "ukrainian-village", region: "Chicago" },
+  { name: "Andersonville", slug: "andersonville", region: "Chicago" },
+
+  // Inner North / Lakeshore Communities
+  { name: "Edgewater", slug: "edgewater", region: "Inner North" },
+  { name: "Rogers Park", slug: "rogers-park", region: "Inner North" },
+  { name: "Uptown", slug: "uptown", region: "Inner North" },
+  { name: "Lincoln Square", slug: "lincoln-square", region: "Inner North" },
+  { name: "Ravenswood", slug: "ravenswood", region: "Inner North" },
+  { name: "North Center", slug: "north-center", region: "Inner North" },
+  { name: "Albany Park", slug: "albany-park", region: "Inner North" },
+  { name: "Irving Park", slug: "irving-park", region: "Inner North" },
+  { name: "Avondale", slug: "avondale", region: "Inner North" },
+  { name: "Roscoe Village", slug: "roscoe-village", region: "Inner North" },
+
+  // Outer North Shore & Northwest Suburbs
+  { name: "Evanston", slug: "evanston", region: "North Shore" },
+  { name: "Wilmette", slug: "wilmette", region: "North Shore" },
+  { name: "Kenilworth", slug: "kenilworth", region: "North Shore" },
+  { name: "Winnetka", slug: "winnetka", region: "North Shore" },
+  { name: "Glencoe", slug: "glencoe", region: "North Shore" },
+  { name: "Highland Park", slug: "highland-park", region: "North Shore" },
+  { name: "Highwood", slug: "highwood", region: "North Shore" },
+  { name: "Lake Forest", slug: "lake-forest", region: "North Shore" },
+  { name: "Lake Bluff", slug: "lake-bluff", region: "North Shore" },
+  { name: "Northbrook", slug: "northbrook", region: "Northwest Suburbs" },
+  { name: "Glenview", slug: "glenview", region: "Northwest Suburbs" },
+  { name: "Skokie", slug: "skokie", region: "Northwest Suburbs" },
+  { name: "Niles", slug: "niles", region: "Northwest Suburbs" },
+  { name: "Morton Grove", slug: "morton-grove", region: "Northwest Suburbs" },
+  { name: "Deerfield", slug: "deerfield", region: "Northwest Suburbs" },
+  { name: "Lincolnshire", slug: "lincolnshire", region: "Northwest Suburbs" },
+  { name: "Buffalo Grove", slug: "buffalo-grove", region: "Northwest Suburbs" },
+  { name: "Vernon Hills", slug: "vernon-hills", region: "Northwest Suburbs" },
+  { name: "Libertyville", slug: "libertyville", region: "Northwest Suburbs" },
+  { name: "Mundelein", slug: "mundelein", region: "Northwest Suburbs" },
+  { name: "Long Grove", slug: "long-grove", region: "Northwest Suburbs" },
+  { name: "Hawthorn Woods", slug: "hawthorn-woods", region: "Northwest Suburbs" },
+  { name: "Lake Zurich", slug: "lake-zurich", region: "Northwest Suburbs" }
+]
+
+export { chicagoAreas, innerNorthAreas, outerNorthAreas, additionalServiceAreas }
