@@ -2698,5 +2698,3 @@ export const serviceAreas = [
   { name: "Hawthorn Woods", slug: "hawthorn-woods", region: "Northwest Suburbs" },
   { name: "Lake Zurich", slug: "lake-zurich", region: "Northwest Suburbs" }
 ]
-
-export { chicagoAreas, innerNorthAreas, outerNorthAreas, additionalServiceAreas }
