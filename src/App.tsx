@@ -175,6 +175,18 @@ const ServiceAreaDetail = () => {
       
       case 'highland park':
         return {
+          intro: "Highland Park represents the pinnacle of North Shore elegance, combining historic charm with modern sophistication. This prestigious lakefront community is home to Ravinia Festival, America's oldest outdoor music festival, and boasts tree-lined streets with magnificent estates designed by renowned architects like David Adler and Howard Van Doren Shaw. The city's commitment to preserving its natural beauty is evident in its extensive park system and protected lakefront, making it a haven for families seeking the perfect balance of cultural enrichment and outdoor recreation.",
+          details: {
+            founded: "1869",
+            population: "30,176",
+            medianIncome: "$147,067",
+            keyIndustries: ["Finance", "Healthcare", "Professional Services", "Arts & Culture"],
+            landmarks: ["Ravinia Festival", "Highland Park Country Club", "Rosewood Beach", "Port Clinton Square"],
+            schools: ["Highland Park High School", "Braeside Elementary", "Edgewood Middle School"],
+            transportation: ["Metra Union Pacific North Line", "US Route 41", "Sheridan Road"],
+            culturalHighlights: ["Highland Park Players", "North Shore Art League", "Highland Park Historical Society"]
+          }
+        };
       case 'lake forest':
         return {
           intro: "Lake Forest embodies North Shore sophistication with historic estates, Lake Forest College's prestigious liberal arts education, and pristine forest preserves that create an atmosphere of refined elegance and natural beauty unmatched in the Chicago area. This exclusive community attracts old-money families, successful entrepreneurs, and cultural leaders who value privacy, architectural heritage, and environmental preservation. The city's Market Square, designed by Howard Van Doren Shaw, represents one of America's first planned shopping centers, while the Deer Path Inn provides luxury accommodations that reflect the community's commitment to excellence. Manage369 manages Lake Forest's exclusive condominium developments and luxury communities, where residents expect refined service, discreet financial oversight, architectural preservation, and management that maintains both the community's natural beauty and its reputation as one of America's most prestigious residential communities.",
