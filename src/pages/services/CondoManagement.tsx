@@ -306,6 +306,17 @@ const CondoManagement = () => {
           <div className="mb-8">
             <h3 className="text-xl font-semibold text-white mb-4">We Manage Condominiums Across Chicago & North Shore</h3>
             <p className="text-blue-100 mb-6">
+              We manage condominiums in Glenview, Wilmette, and across the North Shore. 
+              From downtown high-rises to North Shore boutique buildings, we provide specialized 
+              condominium management throughout the region.
+            </p>
+            <Link to="/service-areas" className="text-blue-200 hover:text-white underline text-lg">
+              See Our Service Areas →
+            </Link>
+          </div>
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">We Manage Condominiums Across Chicago & North Shore</h3>
+            <p className="text-blue-100 mb-6">
               From downtown high-rises to North Shore boutique buildings, we provide specialized 
               condominium management throughout the region.
             </p>
