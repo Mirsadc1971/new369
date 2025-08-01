@@ -275,11 +275,6 @@ const Services: React.FC = () => {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* Why Choose Our Services */}
-        <section className="section-padding bg-gray-50">
-        {/* CTA Section */}
         <section className="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
           <div className="container-max text-center">
             <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
