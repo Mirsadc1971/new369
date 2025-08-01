@@ -48,10 +48,7 @@ const Contact: React.FC = () => {
           <div className="container-max">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="heading-1 mb-6 text-white">
-                Contact{' '}
-                <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                  Manage369
-                </span>
+                Contact Manage369 Property Management in Glenview
               </h1>
               <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
                 Get in touch with Chicago's premier property management company. 

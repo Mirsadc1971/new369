@@ -18,7 +18,7 @@ const Home: React.FC = () => {
           <div className="container-max">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="heading-1 mb-6 text-white">
-                Northshore & Northwest Suburbs Property Management | Glenview-Based HOA Services
+                Exclusive Property Management in Glenview, Chicago, and the North Shore | Manage369
               </h1>
               <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
                 Premier property management service for Chicago condominiums, HOAs, and residential communities. Trusted property management company serving 50+ properties with 2450+ units throughout Chicago and suburbs since 2007.

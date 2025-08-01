@@ -16,7 +16,7 @@ const HOAManagement = () => {
               <span>HOA Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Chicago HOA Management Services by Manage369
+              HOA Management in Glenview & Chicago Suburbs | Manage369
             </h1>
             <p className="body-large mb-8 text-red-100">
               Manage369 provides comprehensive HOA management services specifically designed for Chicago homeowner association boards. 

@@ -92,10 +92,7 @@ const Services: React.FC = () => {
           <div className="container-max">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="heading-1 mb-6 text-white">
-                Property Management{' '}
-                <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                  Service
-                </span>
+                Property Management Services for Condominiums, Townhomes, and HOAs
               </h1>
               <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
                 Professional property management service solutions tailored to your Chicago property needs.

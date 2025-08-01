@@ -11,10 +11,7 @@ const Resources = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              Property Management{' '}
-              <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Resources
-              </span>
+              Board Resources & Property Management Insights
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
               Access helpful resources and information about our property management services 

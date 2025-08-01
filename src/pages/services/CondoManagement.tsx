@@ -16,7 +16,7 @@ const CondoManagement = () => {
               <span>Condominium Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Chicago Condominium Management Services by Manage369
+              Condominium Management in Glenview & Chicago Suburbs | Manage369
             </h1>
             <p className="body-large mb-8 text-blue-100">
               Manage369 provides professional condominium association management services specifically designed for Chicago condo boards. 

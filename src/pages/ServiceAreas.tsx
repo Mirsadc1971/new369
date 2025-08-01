@@ -44,10 +44,7 @@ const ServiceAreas = () => {
         <div className="container-max">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="heading-1 mb-6 text-white">
-              Chicago Property Management Service{' '}
-              <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                Areas
-              </span>
+              Property Management Across Chicago & North Shore Communities
             </h1>
             <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
               #1 Chicago property management service throughout Chicago neighborhoods 
