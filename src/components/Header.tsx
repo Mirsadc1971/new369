@@ -31,21 +31,21 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <Link 
               to="/" 
-              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors whitespace-nowrap"
             >
               Home
             </Link>
             
             {/* Services Dropdown */}
             <div 
-              className="relative"
+              className="relative flex items-center"
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <button className="flex items-center text-gray-700 hover:text-primary-500 font-medium transition-colors">
+              <button className="flex items-center text-gray-700 hover:text-primary-500 font-medium transition-colors whitespace-nowrap">
                 Services
                 <ChevronDown className="w-4 h-4 ml-1" />
               </button>
@@ -91,28 +91,28 @@ const Header = () => {
 
             <Link 
               to="/service-areas" 
-              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors whitespace-nowrap"
             >
               Service Areas
             </Link>
             
             <Link 
               to="/resources" 
-              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors whitespace-nowrap"
             >
               Resources
             </Link>
             
             <Link 
               to="/payment-options" 
-              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors whitespace-nowrap"
             >
               Payments
             </Link>
             
             <Link 
               to="/contact" 
-              className="btn-primary"
+              className="btn-primary whitespace-nowrap"
             >
               Contact
             </Link>
