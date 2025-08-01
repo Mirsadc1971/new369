@@ -220,7 +220,10 @@ const ServiceAreaDetail = () => {
               <span>{areaName}</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Property Management in {areaName}, IL | Manage369
+              #1 Property Management in{' '}
+              <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+                {areaName}
+              </span>
             </h1>
             <p className="body-large mb-8 text-blue-100">
               {area ? area.description : `Manage369 is Chicago's #1 property management company serving ${additionalAreaName}. Our local expertise and comprehensive services are specifically tailored to meet the unique needs of ${additionalAreaName} properties. As the premier property management company in ${additionalAreaName}, we provide professional condominium management, townhome management, and HOA management services.`}
@@ -249,6 +252,36 @@ const ServiceAreaDetail = () => {
           {/* Local SEO Keywords Section */}
           <section className="section-padding bg-blue-50">
             <div className="container-max">
+              {/* Service Links Section */}
+              <div className="text-center mb-16">
+                <h2 className="heading-2 mb-8">Our Property Management Services in {areaName}</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                  <Link to="/services/condominium-management" className="card text-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                      <span className="text-xl">🏢</span>
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2">Condominium Management</h3>
+                    <p className="text-sm text-gray-600">Professional condo association management in {areaName}</p>
+                  </Link>
+                  
+                  <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                      <span className="text-xl">👥</span>
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2">HOA Management</h3>
+                    <p className="text-sm text-gray-600">Homeowners association management in {areaName}</p>
+                  </Link>
+                  
+                  <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                      <span className="text-xl">🏠</span>
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2">Townhome Management</h3>
+                    <p className="text-sm text-gray-600">Townhome community management in {areaName}</p>
+                  </Link>
+                </div>
+              </div>
+              
               <div className="text-center mb-12">
                 <h2 className="heading-2 mb-4">Local {area.name} Property Management Services</h2>
                 <p className="body-large max-w-3xl mx-auto">

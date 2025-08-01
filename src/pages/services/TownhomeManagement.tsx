@@ -16,7 +16,7 @@ const TownhomeManagement = () => {
               <span>Townhome Management</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              Townhome Management in Glenview & Chicago Suburbs | Manage369
+              Chicago Townhome Management Services by Manage369
             </h1>
             <p className="body-large mb-8 text-green-100">
               Manage369 provides comprehensive townhome management services specifically designed for Chicago townhome association boards. 
@@ -303,6 +303,12 @@ const TownhomeManagement = () => {
       {/* CTA Section */}
       <section className="section-padding bg-gradient-secondary text-white">
         <div className="container-max text-center">
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">Explore Service Areas We Serve</h3>
+            <Link to="/service-areas" className="text-green-200 hover:text-white underline">
+              View All Chicago & North Shore Communities →
+            </Link>
+          </div>
           <h2 className="heading-2 mb-4 text-white">Ready to Partner with Manage369?</h2>
           <p className="body-large mb-8 text-green-100 max-w-2xl mx-auto">
             Contact Manage369 today to learn how our specialized townhome management 

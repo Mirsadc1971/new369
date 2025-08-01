@@ -120,6 +120,9 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
           
+          {/* Clean URL for payments */}
+          <Route path="/payments" element={<PaymentOptions />} />
+          
           <Route path="/request-proposal" element={<Contact />} />
           <Route path="/category/uncategorized/" element={<NoIndexPage />} />
           <Route path="/category/*" element={<NoIndexPage />} />
