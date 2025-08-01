@@ -1,317 +1,230 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Building2, Users, Home as HomeIcon, ArrowRight, CheckCircle } from 'lucide-react';
-import CanonicalLink from '../components/CanonicalLink';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { Menu, X, ChevronDown } from 'lucide-react'
 
-const Services: React.FC = () => {
-  const propertyTypes = [
-    {
-      id: 1,
-      name: 'Condominium Management',
-      description: 'Full-service management for condominium associations including financial management, maintenance coordination, and board support.',
-      features: [
-        'Financial management and budgeting',
-        'Maintenance coordination',
-        'Board meeting support',
-        'Legal compliance'
-      ],
-      icon: Building2,
-      color: 'primary',
-      link: '/services/condominium-management'
-    },
-    {
-      id: 2,
-      name: 'HOA Management',
-      description: 'Professional homeowners association management services to maintain community standards and property values.',
-      features: [
-        'Community governance',
-        'Covenant enforcement',
-        'Amenity management',
-        'Vendor coordination'
-      ],
-      icon: Users,
-      color: 'secondary',
-      link: '/services/hoa-management'
-    },
-    {
-      id: 3,
-      name: 'Townhome Management',
-      description: 'Specialized management services for townhome communities with focus on maintenance and community relations.',
-      features: [
-        'Exterior maintenance',
-        'Landscaping coordination',
-        'Community management',
-        'Shared facility oversight'
-      ],
-      icon: HomeIcon,
-      color: 'accent',
-      link: '/services/townhome-management'
-    }
-  ];
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
 
-  const getColorClasses = (color: string) => {
-    switch (color) {
-      case 'primary':
-        return {
-          bg: 'bg-primary-100',
-          text: 'text-primary-600',
-          button: 'btn-primary',
-          hover: 'hover:bg-primary-50'
-        };
-      case 'secondary':
-        return {
-          bg: 'bg-secondary-100',
-          text: 'text-secondary-600',
-          button: 'btn-secondary',
-          hover: 'hover:bg-secondary-50'
-        };
-      case 'accent':
-        return {
-          bg: 'bg-accent-100',
-          text: 'text-accent-600',
-          button: 'bg-accent-500 text-white hover:bg-accent-600',
-          hover: 'hover:bg-accent-50'
-        };
-      default:
-        return {
-          bg: 'bg-gray-100',
-          text: 'text-gray-600',
-          button: 'btn-primary',
-          hover: 'hover:bg-gray-50'
-        };
-    }
-  };
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+    setIsServicesOpen(false)
+  }
 
   return (
-    <>
-      <CanonicalLink href="https://www.manage369.com/services" />
-      
-      <div className="min-h-screen bg-gray-50">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-primary-500 to-primary-700 text-white section-padding">
-          <div className="container-max">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="heading-1 mb-6 text-white">
-                Property Management Services for Condominiums, Townhomes, and HOAs
-              </h1>
-              <p className="body-large mb-8 text-blue-100 max-w-3xl mx-auto">
-                Professional property management service solutions tailored to your Chicago property needs.
-              </p>
-              <h2 className="text-2xl font-semibold text-white mb-4">
-                Select Your Property Management Service Type
-              </h2>
-              <p className="text-blue-100">
-                Choose the property management service that matches your property to learn more about our specialized solutions.
-              </p>
+    <header className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50">
+      <div className="container-max">
+        <div className="flex items-center justify-between h-20">
+          {/* Logo */}
+          <Link to="/" className="flex items-center space-x-2" onClick={closeMenu}>
+            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-xl">M</span>
             </div>
-          </div>
-        </section>
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-gray-900">Manage369</span>
+              <span className="text-xs text-gray-500">Property Management</span>
+            </div>
+          </Link>
 
-        {/* Property Type Selection */}
-        <section className="section-padding bg-white">
-          <div className="container-max">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {propertyTypes.map((propertyType) => {
-                const colors = getColorClasses(propertyType.color);
-                const IconComponent = propertyType.icon;
-                
-                return (
-                  <Link
-                    key={propertyType.id}
-                    to={propertyType.link}
-                    className={`bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 hover:scale-105 ${colors.hover} group`}
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <Link 
+              to="/" 
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            >
+              Home
+            </Link>
+            
+            {/* Services Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
+              <button className="flex items-center text-gray-700 hover:text-primary-500 font-medium transition-colors">
+                Services
+                <ChevronDown className="w-4 h-4 ml-1" />
+              </button>
+              
+              {isServicesOpen && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-gray-200 py-2 z-50">
+                  <Link 
+                    to="/services/condominium-management"
+                    className="block px-4 py-3 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
                   >
-                    <div className="text-center mb-6">
-                      <div className={`w-16 h-16 ${colors.bg} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                        <IconComponent className={`w-8 h-8 ${colors.text}`} />
-                      </div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                        {propertyType.name}
-                      </h3>
-                      <p className="text-gray-600 mb-6">
-                        {propertyType.description}
-                      </p>
-                    </div>
-
-                    <div className="mb-6">
-                      <h4 className="font-semibold text-gray-900 mb-3">Key Services Include:</h4>
-                      <ul className="space-y-2">
-                        {propertyType.features.map((feature, index) => (
-                          <li key={index} className="flex items-start text-sm text-gray-600">
-                            <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
-                            {feature}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <div className="text-center">
-                      <span className={`inline-flex items-center px-6 py-3 rounded-lg font-semibold transition-colors duration-200 ${colors.button} group-hover:shadow-md`}>
-                        Learn More
-                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-200" />
-                      </span>
-                    </div>
+                    <div className="font-medium">Condominium Management</div>
+                    <div className="text-sm text-gray-500">Professional condo association management</div>
                   </Link>
-                );
-              })}
+                  <Link 
+                    to="/services/hoa-management"
+                    className="block px-4 py-3 text-gray-700 hover:bg-secondary-50 hover:text-secondary-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    <div className="font-medium">HOA Management</div>
+                    <div className="text-sm text-gray-500">Homeowners association management</div>
+                  </Link>
+                  <Link 
+                    to="/services/townhome-management"
+                    className="block px-4 py-3 text-gray-700 hover:bg-accent-50 hover:text-accent-600 transition-colors"
+                    onClick={() => setIsServicesOpen(false)}
+                  >
+                    <div className="font-medium">Townhome Management</div>
+                    <div className="text-sm text-gray-500">Townhome community management</div>
+                  </Link>
+                  <div className="border-t border-gray-200 mt-2 pt-2">
+                    <Link 
+                      to="/services"
+                      className="block px-4 py-2 text-primary-600 hover:bg-primary-50 font-medium transition-colors"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      View All Services →
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
 
-            <div className="text-center mt-16">
-              <div className="bg-blue-50 p-8 rounded-xl">
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Need Help Choosing?</h3>
-                <p className="text-gray-600 mb-6">
-                  Not sure which service is right for your property? Contact our experts 
-                  for a free consultation and personalized recommendation.
-                </p>
-                <Link to="/contact" className="btn-primary">
-                  Get Expert Guidance
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
+            <Link 
+              to="/service-areas" 
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            >
+              Service Areas
+            </Link>
+            
+            <Link 
+              to="/resources" 
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            >
+              Resources
+            </Link>
+            
+            <Link 
+              to="/payment-options" 
+              className="text-gray-700 hover:text-primary-500 font-medium transition-colors"
+            >
+              Payments
+            </Link>
+            
+            <Link 
+              to="/contact" 
+              className="btn-primary"
+            >
+              Contact
+            </Link>
+          </nav>
 
-        {/* Why Choose Our Services */}
-        <section className="section-padding bg-white">
-          <div className="container-max">
-            <div className="text-center mb-16">
-              <h2 className="heading-2 mb-4">Looking for Management in Your Area?</h2>
-              <p className="body-large max-w-3xl mx-auto mb-8">
-                Explore our service areas to find specialized property management solutions 
-                in your specific Chicago neighborhood or suburban community.
-              </p>
-              <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
-                Explore Our Service Areas →
+          {/* Mobile Menu Button */}
+          <button
+            onClick={toggleMenu}
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X className="w-6 h-6 text-gray-700" />
+            ) : (
+              <Menu className="w-6 h-6 text-gray-700" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200">
+            <nav className="py-4 space-y-2">
+              <Link 
+                to="/" 
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors"
+                onClick={closeMenu}
+              >
+                Home
               </Link>
-            </div>
-              <div className="card text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🏙️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Chicago Core & Near-North</h3>
-                <p className="text-gray-600 mb-4">
-                  Downtown, River North, Gold Coast, Lincoln Park, Lakeview, and surrounding neighborhoods
-                </p>
-                <Link to="/service-areas" className="text-primary-500 hover:underline font-medium">
-                  View Chicago Areas →
-                </Link>
+              
+              {/* Mobile Services Section */}
+              <div>
+                <button
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
+                  className="flex items-center justify-between w-full px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors"
+                >
+                  Services
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                
+                {isServicesOpen && (
+                  <div className="bg-gray-50 py-2">
+                    <Link 
+                      to="/services/condominium-management"
+                      className="block px-8 py-2 text-gray-600 hover:text-primary-600 transition-colors"
+                      onClick={closeMenu}
+                    >
+                      Condominium Management
+                    </Link>
+                    <Link 
+                      to="/services/hoa-management"
+                      className="block px-8 py-2 text-gray-600 hover:text-secondary-600 transition-colors"
+                      onClick={closeMenu}
+                    >
+                      HOA Management
+                    </Link>
+                    <Link 
+                      to="/services/townhome-management"
+                      className="block px-8 py-2 text-gray-600 hover:text-accent-600 transition-colors"
+                      onClick={closeMenu}
+                    >
+                      Townhome Management
+                    </Link>
+                    <Link 
+                      to="/services"
+                      className="block px-8 py-2 text-primary-600 font-medium transition-colors"
+                      onClick={closeMenu}
+                    >
+                      View All Services
+                    </Link>
+                  </div>
+                )}
               </div>
-
-              <div className="card text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🌲</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-4">Northwest Suburbs</h3>
-                <p className="text-gray-600 mb-4">
-                  Glenview, Northbrook, Buffalo Grove, Vernon Hills, and established suburban communities
-                </p>
-                <Link to="/service-areas" className="text-accent-500 hover:underline font-medium">
-                  View Northwest Areas →
-                </Link>
-              </div>
-            </div>
-        </section>
-
-        {/* Why Choose Manage369 */}
-        <section className="section-padding bg-white">
-          <div className="container-max">
-            <div className="text-center mb-16">
-              <h2 className="heading-2 mb-4">Looking for Management in Your Area?</h2>
-              <p className="body-large max-w-3xl mx-auto mb-8">
-                Explore our comprehensive property management services across Chicago, 
-                North Shore, and Northwest Suburban communities.
-              </p>
-              <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
-                Explore Our Service Areas →
+              
+              <Link 
+                to="/service-areas" 
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors"
+                onClick={closeMenu}
+              >
+                Service Areas
               </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Manage369 */}
-        <section className="section-padding bg-gray-50">
-              <div className="card text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🏖️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-4">North Shore Communities</h3>
-                <p className="text-gray-600 mb-4">
-                  Evanston, Wilmette, Winnetka, Highland Park, Lake Forest, and elite lakefront communities
-                </p>
-                <Link to="/service-areas" className="text-secondary-500 hover:underline font-medium">
-                  View North Shore Areas →
-                </Link>
-              </div>
-          <div className="container-max">
-            <div className="text-center mb-16">
-              <h2 className="heading-2 mb-4">Why Choose Manage369?</h2>
-              <p className="body-large max-w-3xl mx-auto">
-                Our comprehensive property management service approach ensures your investment 
-                is protected and your community thrives.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🏆</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Proven Experience</h3>
-                <p className="text-sm text-gray-600">
-                  Managing 50+ properties with 2450+ units since 2007
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">🌟</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Local Expertise</h3>
-                <p className="text-sm text-gray-600">
-                  Deep knowledge of Chicago's unique property market and regulations
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">📞</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">24/7 Support</h3>
-                <p className="text-sm text-gray-600">
-                  Emergency property management service and dedicated customer support
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💰</span>
-                </div>
-                <h3 className="text-lg font-semibold mb-2">Transparent Pricing</h3>
-                <p className="text-sm text-gray-600">
-                  Clear, competitive pricing with no hidden fees
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="section-padding bg-gradient-to-br from-primary-500 to-primary-700 text-white">
-          <div className="container-max text-center">
-            <h2 className="heading-2 mb-4 text-white">Ready to Get Started?</h2>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-secondary text-lg px-8 py-4">
-                Get Free Consultation
+              
+              <Link 
+                to="/resources" 
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors"
+                onClick={closeMenu}
+              >
+                Resources
               </Link>
-              <a href="tel:847-834-4131" className="btn-outline border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-                Call (224) 647-5621
-              </a>
-            </div>
+              
+              <Link 
+                to="/payment-options" 
+                className="block px-4 py-2 text-gray-700 hover:bg-gray-50 transition-colors"
+                onClick={closeMenu}
+              >
+                Payments
+              </Link>
+              
+              <Link 
+                to="/contact" 
+                className="block mx-4 mt-4 btn-primary text-center"
+                onClick={closeMenu}
+              >
+                Contact
+              </Link>
+            </nav>
           </div>
-        </section>
+        )}
       </div>
-    </>
-  );
-};
+    </header>
+  )
+}
 
-export default Services;
+export default Header
