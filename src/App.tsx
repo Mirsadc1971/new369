@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Helmet } from 'react-helmet-async'
-import { serviceAreas } from '../data/serviceAreas'
+import { serviceAreas } from './data/serviceAreas';
 
 const ServiceAreaDetail = () => {
   const { slug } = useParams<{ slug: string }>()
