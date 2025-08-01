@@ -314,6 +314,16 @@ const TownhomeManagement = () => {
             </Link>
           </div>
           <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">We Manage Townhomes Across Chicago & Suburbs</h3>
+            <p className="text-green-100 mb-6">
+              From urban Chicago townhome developments to suburban attached housing communities, 
+              we provide specialized townhome management throughout the area.
+            </p>
+            <Link to="/service-areas" className="text-green-200 hover:text-white underline text-lg">
+              See Our Service Areas →
+            </Link>
+          </div>
+          <div className="mb-8">
             <h3 className="text-xl font-semibold text-white mb-4">Explore Townhome Management by Location</h3>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               <Link to="/property-management-wicker-park" className="text-green-200 hover:text-white underline">
@@ -332,15 +342,6 @@ const TownhomeManagement = () => {
                 Winnetka Townhomes
               </Link>
             </div>
-            <Link to="/service-areas" className="text-green-200 hover:text-white underline">
-              View All Chicago & North Shore Communities →
-            </Link>
-          </div>
-          <div className="mb-8">
-            <h3 className="text-xl font-semibold text-white mb-4">Explore Service Areas We Serve</h3>
-            <Link to="/service-areas" className="text-green-200 hover:text-white underline">
-              View All Chicago & North Shore Communities →
-            </Link>
           </div>
           <h2 className="heading-2 mb-4 text-white">Ready to Partner with Manage369?</h2>
           <p className="body-large mb-8 text-green-100 max-w-2xl mx-auto">

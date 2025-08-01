@@ -175,6 +175,23 @@ const Services: React.FC = () => {
         <section className="section-padding bg-white">
           <div className="container-max">
             <div className="text-center mb-16">
+              <h2 className="heading-2 mb-4">Looking for Management in Your Area?</h2>
+              <p className="body-large max-w-3xl mx-auto mb-8">
+                Explore our comprehensive property management services throughout Chicago, 
+                North Shore, and Northwest Suburban communities. Find specialized management 
+                for your specific area.
+              </p>
+              <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
+                Explore Our Service Areas →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Our Services */}
+        <section className="section-padding bg-white">
+          <div className="container-max">
+            <div className="text-center mb-16">
               <h2 className="heading-2 mb-4">Where We Provide Property Management Services</h2>
               <p className="body-large max-w-3xl mx-auto mb-8">
                 Our comprehensive property management services are available throughout Chicago, 
@@ -197,6 +214,19 @@ const Services: React.FC = () => {
               </div>
 
               <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏖️</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">North Shore Communities</h3>
+                <p className="text-gray-600 mb-4">
+                  Evanston, Wilmette, Winnetka, Highland Park, Lake Forest, and elite lakefront communities
+                </p>
+                <Link to="/service-areas" className="text-secondary-500 hover:underline font-medium">
+                  View North Shore Areas →
+                </Link>
+              </div>
+
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
                 <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl">🌲</span>
                 </div>
@@ -213,35 +243,7 @@ const Services: React.FC = () => {
         </section>
 
         {/* Why Choose Manage369 */}
-        <section className="section-padding bg-white">
-          <div className="container-max">
-            <div className="text-center mb-16">
-              <h2 className="heading-2 mb-4">Looking for Management in Your Area?</h2>
-              <p className="body-large max-w-3xl mx-auto mb-8">
-                Explore our comprehensive property management services across Chicago, 
-                North Shore, and Northwest Suburban communities.
-              </p>
-              <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
-                Explore Our Service Areas →
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* Why Choose Manage369 */}
         <section className="section-padding bg-gray-50">
-              <div className="card text-center hover:scale-105 transition-transform duration-300">
-                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <span className="text-2xl">🏖️</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-4">North Shore Communities</h3>
-                <p className="text-gray-600 mb-4">
-                  Evanston, Wilmette, Winnetka, Highland Park, Lake Forest, and elite lakefront communities
-                </p>
-                <Link to="/service-areas" className="text-secondary-500 hover:underline font-medium">
-                  View North Shore Areas →
-                </Link>
-              </div>
           <div className="container-max">
             <div className="text-center mb-16">
               <h2 className="heading-2 mb-4">Why Choose Manage369?</h2>
