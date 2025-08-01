@@ -261,24 +261,33 @@ const ServiceAreaDetail = () => {
                     <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <span className="text-xl">🏢</span>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Condominium Management</h3>
-                    <p className="text-sm text-gray-600">Professional condo association management in {areaName}</p>
+                    <h3 className="text-lg font-semibold mb-2">{areaName} Condominium Management</h3>
+                    <p className="text-sm text-gray-600">Professional condo association management services in {areaName}</p>
+                    <div className="mt-4">
+                      <span className="text-primary-500 text-sm font-medium">Learn More →</span>
+                    </div>
                   </Link>
                   
                   <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
                     <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <span className="text-xl">👥</span>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">HOA Management</h3>
-                    <p className="text-sm text-gray-600">Homeowners association management in {areaName}</p>
+                    <h3 className="text-lg font-semibold mb-2">{areaName} HOA Management</h3>
+                    <p className="text-sm text-gray-600">Homeowners association management services in {areaName}</p>
+                    <div className="mt-4">
+                      <span className="text-secondary-500 text-sm font-medium">Learn More →</span>
+                    </div>
                   </Link>
                   
                   <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
                     <div className="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <span className="text-xl">🏠</span>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">Townhome Management</h3>
-                    <p className="text-sm text-gray-600">Townhome community management in {areaName}</p>
+                    <h3 className="text-lg font-semibold mb-2">{areaName} Townhome Management</h3>
+                    <p className="text-sm text-gray-600">Townhome community management services in {areaName}</p>
+                    <div className="mt-4">
+                      <span className="text-accent-500 text-sm font-medium">Learn More →</span>
+                    </div>
                   </Link>
                 </div>
               </div>

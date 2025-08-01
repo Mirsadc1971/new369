@@ -304,6 +304,16 @@ const CondoManagement = () => {
       <section className="section-padding bg-gradient-primary text-white">
         <div className="container-max text-center">
           <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">We Manage Condominiums Across Chicago & North Shore</h3>
+            <p className="text-blue-100 mb-6">
+              From downtown high-rises to North Shore boutique buildings, we provide specialized 
+              condominium management throughout the region.
+            </p>
+            <Link to="/service-areas" className="text-blue-200 hover:text-white underline text-lg">
+              See Our Service Areas →
+            </Link>
+          </div>
+          <div className="mb-8">
             <h3 className="text-xl font-semibold text-white mb-4">Explore Condominium Management by Location</h3>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               <Link to="/property-management-downtown-chicago" className="text-blue-200 hover:text-white underline">

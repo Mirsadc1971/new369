@@ -214,6 +214,22 @@ const Services: React.FC = () => {
 
         {/* Why Choose Manage369 */}
         <section className="section-padding bg-white">
+          <div className="container-max">
+            <div className="text-center mb-16">
+              <h2 className="heading-2 mb-4">Looking for Management in Your Area?</h2>
+              <p className="body-large max-w-3xl mx-auto mb-8">
+                Explore our comprehensive property management services across Chicago, 
+                North Shore, and Northwest Suburban communities.
+              </p>
+              <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
+                Explore Our Service Areas →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Manage369 */}
+        <section className="section-padding bg-gray-50">
               <div className="card text-center hover:scale-105 transition-transform duration-300">
                 <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <span className="text-2xl">🏖️</span>

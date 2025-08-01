@@ -119,6 +119,20 @@ const Resources = () => {
       {/* Contact CTA */}
       <section className="section-padding bg-gradient-primary text-white">
         <div className="container-max text-center">
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">Explore Our Services & Areas</h3>
+            <div className="flex flex-wrap justify-center gap-6 mb-6">
+              <Link to="/services" className="text-blue-200 hover:text-white underline">
+                View All Services
+              </Link>
+              <Link to="/service-areas" className="text-blue-200 hover:text-white underline">
+                Browse Service Areas
+              </Link>
+              <Link to="/blog" className="text-blue-200 hover:text-white underline">
+                Read Our Blog
+              </Link>
+            </div>
+          </div>
           <h2 className="heading-2 mb-4 text-white">Need More Information?</h2>
           <p className="body-large mb-8 text-blue-100 max-w-2xl mx-auto">
             Contact our property management experts for personalized guidance 

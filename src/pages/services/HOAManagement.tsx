@@ -304,6 +304,16 @@ const HOAManagement = () => {
       <section className="section-padding bg-gradient-to-r from-accent-500 to-red-700 text-white">
         <div className="container-max text-center">
           <div className="mb-8">
+            <h3 className="text-xl font-semibold text-white mb-4">We Manage HOAs Throughout Chicago Suburbs</h3>
+            <p className="text-red-100 mb-6">
+              From established North Shore communities to growing Northwest suburbs, we provide 
+              comprehensive HOA management services across the region.
+            </p>
+            <Link to="/service-areas" className="text-red-200 hover:text-white underline text-lg">
+              See Our Service Areas →
+            </Link>
+          </div>
+          <div className="mb-8">
             <h3 className="text-xl font-semibold text-white mb-4">Explore HOA Management by Location</h3>
             <div className="flex flex-wrap justify-center gap-4 mb-6">
               <Link to="/property-management-evanston" className="text-red-200 hover:text-white underline">
