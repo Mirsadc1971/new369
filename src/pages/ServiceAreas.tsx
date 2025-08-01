@@ -42,17 +42,55 @@ const ServiceAreas: React.FC = () => {
           Choose your community below to view tailored property management services from Manage369.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {serviceAreas.map((area) => (
-            <Link
-              key={area.slug}
-              to={`/property-management-${area.slug}`}
-              className="block border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-yellow-500 hover:bg-gray-50 transition duration-200"
-            >
-              <h3 className="text-lg font-semibold text-gray-900">{area.name}</h3>
-              <p className="text-sm text-gray-500">{area.region}</p>
-            </Link>
-          ))}
+        {/* Chicago Areas */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold text-center mb-8 text-primary-600">Chicago</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {chicagoAreas.map((area) => (
+              <Link
+                key={area.slug}
+                to={`/property-management-${area.slug}`}
+                className="block border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-yellow-500 hover:bg-gray-50 transition duration-200"
+              >
+                <h3 className="text-lg font-semibold text-gray-900">{area.name}</h3>
+                <p className="text-sm text-gray-500">{area.region}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* North Shore Areas */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold text-center mb-8 text-secondary-600">North Shore</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {suburbAreas.filter(area => area.region === 'North Shore').map((area) => (
+              <Link
+                key={area.slug}
+                to={`/property-management-${area.slug}`}
+                className="block border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-yellow-500 hover:bg-gray-50 transition duration-200"
+              >
+                <h3 className="text-lg font-semibold text-gray-900">{area.name}</h3>
+                <p className="text-sm text-gray-500">{area.region}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Northwest Suburbs */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold text-center mb-8 text-accent-600">Northwest Suburbs</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {suburbAreas.filter(area => area.region === 'Northwest Suburbs').map((area) => (
+              <Link
+                key={area.slug}
+                to={`/property-management-${area.slug}`}
+                className="block border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:border-yellow-500 hover:bg-gray-50 transition duration-200"
+              >
+                <h3 className="text-lg font-semibold text-gray-900">{area.name}</h3>
+                <p className="text-sm text-gray-500">{area.region}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </div>

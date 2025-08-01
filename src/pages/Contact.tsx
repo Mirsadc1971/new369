@@ -40,6 +40,34 @@ const Contact: React.FC = () => {
         <title>Contact Us - Manage369 Property Management</title>
         <meta name="description" content="Contact Manage369 for professional property management services in Chicago. Get expert consultation for your condominium, townhome, or HOA management needs." />
         <link rel="canonical" href="https://www.manage369.com/contact" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Manage369 Property Management",
+            "description": "Professional property management services in Chicago and North Shore communities",
+            "url": "https://www.manage369.com",
+            "telephone": "+1-224-647-5621",
+            "email": "service@manage369.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1400 Patriot Boulevard 357",
+              "addressLocality": "Glenview",
+              "addressRegion": "IL",
+              "postalCode": "60026",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 42.080154,
+              "longitude": -87.81858
+            },
+            "openingHours": [
+              "Mo-Fr 09:00-17:00"
+            ],
+            "priceRange": "$$"
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-gray-50">

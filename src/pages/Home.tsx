@@ -35,6 +35,112 @@ const Home: React.FC = () => {
           </div>
         </section>
 
+        {/* Quick Service Teaser */}
+        <section className="section-padding bg-white">
+          <div className="container-max">
+            <div className="text-center mb-12">
+              <h2 className="heading-2 mb-4">Our Property Management Services</h2>
+              <p className="body-large max-w-3xl mx-auto">
+                Professional management solutions for every type of Chicago property
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Link to="/services/condominium-management" className="card text-center hover:scale-105 transition-transform duration-300">
+                <Building2 className="w-12 h-12 text-primary-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Condominium Management</h3>
+                <p className="text-gray-600 mb-6">
+                  Professional management for high-rise and mid-rise condominium buildings
+                </p>
+                <span className="btn-primary">Learn More</span>
+              </Link>
+              
+              <Link to="/services/hoa-management" className="card text-center hover:scale-105 transition-transform duration-300">
+                <Users className="w-12 h-12 text-secondary-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">HOA Management</h3>
+                <p className="text-gray-600 mb-6">
+                  Expert management for homeowner associations and planned communities
+                </p>
+                <span className="btn-secondary">Learn More</span>
+              </Link>
+              
+              <Link to="/services/townhome-management" className="card text-center hover:scale-105 transition-transform duration-300">
+                <MapPin className="w-12 h-12 text-accent-600 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Townhome Management</h3>
+                <p className="text-gray-600 mb-6">
+                  Specialized management for townhome communities and attached housing
+                </p>
+                <span className="bg-accent-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent-600 transition-colors duration-200">Learn More</span>
+              </Link>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link to="/services" className="btn-primary text-lg px-8 py-4">
+                View All Services
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Featured Service Areas Teaser */}
+        <section className="section-padding bg-gray-50">
+          <div className="container-max">
+            <div className="text-center mb-12">
+              <h2 className="heading-2 mb-4">Where We Serve</h2>
+              <p className="body-large max-w-3xl mx-auto">
+                Professional property management across Chicago's most desirable communities
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏙️</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Chicago Core</h3>
+                <p className="text-gray-600 mb-4">
+                  Downtown, River North, Gold Coast, Lincoln Park, Lakeview
+                </p>
+                <Link to="/service-areas" className="text-primary-500 hover:underline font-medium">
+                  View Chicago Areas →
+                </Link>
+              </div>
+
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🏖️</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">North Shore</h3>
+                <p className="text-gray-600 mb-4">
+                  Evanston, Wilmette, Winnetka, Highland Park, Lake Forest
+                </p>
+                <Link to="/service-areas" className="text-secondary-500 hover:underline font-medium">
+                  View North Shore →
+                </Link>
+              </div>
+
+              <div className="card text-center hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl">🌲</span>
+                </div>
+                <h3 className="text-xl font-semibold mb-4">Northwest Suburbs</h3>
+                <p className="text-gray-600 mb-4">
+                  Glenview, Northbrook, Buffalo Grove, Vernon Hills
+                </p>
+                <Link to="/service-areas" className="text-accent-500 hover:underline font-medium">
+                  View Northwest Areas →
+                </Link>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link to="/service-areas" className="btn-primary text-lg px-8 py-4">
+                View All Service Areas
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* Why Boards Switch to Manage369 */}
         <section className="section-padding bg-gray-50">
           <div className="container-max text-center">

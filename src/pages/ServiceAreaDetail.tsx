@@ -220,13 +220,14 @@ const ServiceAreaDetail = () => {
               <span>{areaName}</span>
             </div>
             <h1 className="heading-1 mb-6 text-white">
-              #1 Property Management in{' '}
+              Property Management in{' '}
               <span className="text-gradient bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
-                {areaName}
+                {areaName}, IL
               </span>
+              {' '}| Manage369
             </h1>
             <p className="body-large mb-8 text-blue-100">
-              {area ? area.description : `Manage369 is Chicago's #1 property management company serving ${additionalAreaName}. Our local expertise and comprehensive services are specifically tailored to meet the unique needs of ${additionalAreaName} properties. As the premier property management company in ${additionalAreaName}, we provide professional condominium management, townhome management, and HOA management services.`}
+              {area ? area.description : `Professional property management services in ${additionalAreaName}. Our local expertise and comprehensive services are specifically tailored to meet the unique needs of ${additionalAreaName} properties.`}
             </p>
             {area && (
               <div className="flex flex-wrap gap-4">
